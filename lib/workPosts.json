@@ -1,0 +1,23 @@
+[
+  {
+    "key": 1,
+    "header": "MyHumber Redesign",
+    "media": "/01/thumbnail.png",
+    "alt": "Project Image Of The MyHumber Redesign",
+    "file": "myhumber"
+  },
+  {
+    "key": 2,
+    "header": "City Of Toronto App",
+    "media": "/02/thumbnail.webp",
+    "alt": "Project Image Of The City Of Toronto App",
+    "file": "mycto"
+  },
+  {
+    "key": 3,
+    "header": "Forcon Startup",
+    "media": "/03/thumbnail.png",
+    "alt": "Project Image Of The Forcon Startup",
+    "file": "forcon"
+  }
+]
