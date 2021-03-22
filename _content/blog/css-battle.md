@@ -1,5 +1,5 @@
 ---
-title: CSS Battle
+title: Battling My CSS Skills
 description: MyHumber is Humber Colleges Student Dashboard
 date: 2021-02-14T19:05:27.220Z
 ---
@@ -33,13 +33,13 @@ Once I figured that out, I then started and headed into the battlegrounds
 
 ## The Battle & Results
 
-### Battle 01
+### Battle 01: Simply Square
 
 ![1st Battle On CSSBattle](/img/blog/01/cssbattle-01.png)
 
 High Score: 732.41 (116 chars)
 
-Thoughts: Simply Square challenge was straightforward, and there were barely any challenges recreating the main image. The hardest part of this challenge was figuring out how to reduce the number of characters as the primary user got 54.
+Simply Square was not challenging to create but figuring out how to cut down the number of characters was difficult even with the suggestions. 1st place managed 54 characters for this challange.
 
 ### Battle 02: Carrom
 
@@ -47,7 +47,7 @@ Thoughts: Simply Square challenge was straightforward, and there were barely any
 
 High Score: 726.24 (121 chars)
 
-Thoughts: The carrom challenge taught me how to play with values to get to the most accurate position and value for each shape. I did this by changing the CSS value to px, %, em until the images looked alike.
+This challenge taught me how to experiment with CSS values. You experiment with values to get an accurate position.
 
 ### Battle 03: Push Button
 
@@ -55,7 +55,7 @@ Thoughts: The carrom challenge taught me how to play with values to get to the m
 
 High Score: 726.24 (121 chars)
 
-Thoughts: The Push Button challenge was straightforward, and there were minimal challenges; my most challenging task was figuring how to play with values to get to the most accurate position and value for each shape. I did this by changing the CSS value to px, %, em until it looked the same.
+This challenge taught me to examine the arranging order of the stack. z-index made this possible as this changes the stack order of an elements.
 
 ### Battle 04: Ups n Downs
 
@@ -63,7 +63,7 @@ Thoughts: The Push Button challenge was straightforward, and there were minimal 
 
 High Score: 726.24 (121 chars)
 
-Thoughts: The Ups n Downs challenge taught me how to use the n-th child to select multiple divs. I used the nth-child(odd) for the right and left and did not do anything for the middle shape.
+This challenge taught me how to apply the nth-child selector. I applied the nth-child(odd) for the 1st and 3rd container and did not touch the middle shape.
 
 ### Battle 05: Acid Rain
 
@@ -71,7 +71,7 @@ Thoughts: The Ups n Downs challenge taught me how to use the n-th child to selec
 
 High Score: 726.24 (121 chars)
 
-Thoughts: The challenge was formidable. Staring at a computer for too long fogged up my mind. I forgot how to break things down, position the shapes correctly, and change elements.
+This challenge taught me how to adjust the border-radius with one line and helped me center and align the whole pie to the center. At this stage I am seeing improvement in my CSS and web development.
 
 ### Battle 06: Missing Slice
 
@@ -79,7 +79,7 @@ Thoughts: The challenge was formidable. Staring at a computer for too long fogge
 
 High Score: 726.24 (121 chars)
 
-Thoughts: This challange taught me how to merge the pies to the center and align the whole pie to the center of the square.
+This challenge taught me how to adjust the border-radius with one line and helped me center and align the whole pie to the center. At this stage I am seeing improvement in my CSS and web development.
 
 ### Battle 07: Leafy Trail
 
@@ -87,7 +87,7 @@ Thoughts: This challange taught me how to merge the pies to the center and align
 
 High Score: 726.24 (121 chars)
 
-Thoughts: This challenge taught me how to positioning things correctly with the transform translate it also helped me find out how to adjust each corner for the border-radius.
+Helped me understand how to use transform translation in CSS. I learned to rotate the square and change the shape.
 
 ### Battle 08: Forking Crazy
 
@@ -95,7 +95,7 @@ Thoughts: This challenge taught me how to positioning things correctly with the 
 
 High Score: 726.24 (121 chars)
 
-Thoughts: This challenge taught me how to break things down into small pieces. The hardest part of this challenge was figuring out how to apply the fork's negative space to using minimal shapes. I had to give up on this challenge as I went over the time limit.
+The hardest part of this challenge is figuring out how to apply the fork’s negative space to use minimal shapes. I went over the time limit.
 
 ### Battle 09: Tesseract
 
@@ -103,7 +103,7 @@ Thoughts: This challenge taught me how to break things down into small pieces. T
 
 High Score: 726.24 (121 chars)
 
-Thoughts: This challenge taught me how to use z-index and negative space in CSS. The hardest aligning things correctly and playing around with the values to get the exact position.
+This challenge taught me new CSS elements clip-path the round(). The clip-path saved many characters.
 
 ### Battle 10
 
@@ -111,16 +111,10 @@ Thoughts: This challenge taught me how to use z-index and negative space in CSS.
 
 High Score: 548.36 (888 chars)
 
-Thoughts: This challenge taught me new CSS elements clip-path the round(). Doing this saved many characters vs border-radius. The hardest part of this challenge was figuring out how to align each yellow box using minimal CSS, as I wanted to keep under 1,000 characters.
-
-## How Has CSSBattle Benifited Me?
-
-Doing this challange helped me get back into web development. It is a nice sepping stone for me to get back into code and not dread readinig documentation. This challange also taught me new tips and tricks about css that I never knew existed and renforced my current understaning of CSS. It also me get out of that mental fatuge.
+This challenge taught me new CSS elements clip-path the round(). The clip-path saved many characters.
 
 ## Should You Use CSSBattle?
 
-CSSBattle is a great resource for people that have experience with CSS. It was really benificial for me becuase it forced me to challange my current knowledge and then rely on the documentation to help me understand how things work properly. But I would not recommend it to someone starting out as there are weird convectioins may not be suited for learning CSS. I would recommedn freecodecamp or a web dev femintal course instead
+CSSBattle is a great tool for people with experience. As you challenge your knowledge. with CSS. Testing yourself may help you get back into web development as it saved me. it helped me to get back into developmet and not dread reading documentation. This challenge also taught me new tips and tricks about CSS that I never knew existed.
 
-## Final Conclusion
-
-Using CSSBattle is great for people who have experience HTML and CSS. This project was a great stepping stone to help me develop my website and get back into web development. I would deffiinely give it a go if you like to challange yourself.
+However, I would not recommend it to someone starting out. There are weird convections may not be great for learning CSS. I would advocate for you to use freecodecamp. Thank you for reading my blog post and stay safe.
