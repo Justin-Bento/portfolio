@@ -19,12 +19,12 @@ export default function Home() {
                   Hi I'm Justin Bento
                 </h1>
                 <h2 className="text-2xl leading-relaxed mb-4 font-light text-gray-700 md:text-4xl md:tracking-relaxed md:mb-4 tracking-wide md:leading-relaxed">
-                  I am a designer and developer that helps businesses evolve by creating accessible solutions driven by user
+                  I am a Multimedia Designer that helps businesses evolve by creating accessible solutions driven by user
                   research.
                 </h2>
                 <a
                   className="text-base inline-flex items-center mt-5 p-3 rounded font-medium btn text-white bg-blue-500 btn-lg sm:w-auto sm:mb-0"
-                  href="#"
+                  href="/work"
                 >
                   View Work
                 </a>
@@ -47,32 +47,29 @@ export default function Home() {
                 <div className="my-16 sm:my-12 md:my-24">
                   <h2 className="mb-8 text-3xl font-extrabold leading-tight text-gray-900">What Do I Do?</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-16">
-                    <div className="Understand">
-                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Design</h3>
+                    <div className="solve-problems">
+                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">User Interface Design</h3>
                       <p className="text-base text-gray-500">
-                        In the Understand phase, inform and shared knowledges across all participants to help articulate the
-                        problem for the business and user.
+                        Create responsive designges that follow the web accessibility standards to help your brand be
+                        innovative and inclusive.
                       </p>
                     </div>
-                    <div className="Define">
-                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Develop</h3>
+                    <div className="accessibility">
+                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">User Experience Design</h3>
                       <p className="text-base text-gray-500">
-                        Evaluate everything learned in the Understand phase to establish focus by defining specific context
-                        and desired outcomes of potential solutions.
+                        Test and iterate designges to enesure user satisfaction and web accessibility standards.
                       </p>
                     </div>
-                    <div className="Define">
-                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Solve Problems</h3>
+                    <div className="mobile-first">
+                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Front-End Web Development</h3>
                       <p className="text-base text-gray-500">
-                        Evaluate everything learned in the Understand phase to establish focus by defining specific context
-                        and desired outcomes of potential solutions.
+                        Develop websites with front-end technologies that support accessibility requirements and standards.
                       </p>
                     </div>
-                    <div className="Define">
-                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Develop</h3>
+                    <div className="mobile-first">
+                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Branding</h3>
                       <p className="text-base text-gray-500">
-                        Evaluate everything learned in the Understand phase to establish focus by defining specific context
-                        and desired outcomes of potential solutions.
+                        Develop and adhear to brands standards to help give users a unified experience on web.
                       </p>
                     </div>
                   </div>
