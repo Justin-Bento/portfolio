@@ -154,13 +154,13 @@ export default function Home() {
                       {blogData.map((posts, index) => (
                         <BlogCard
                           key={index}
-                          BlogLink={posts.blog_link}
-                          Thumbnail={posts.thumbnail}
-                          ThumbnailAlt={posts.thumbnail_alt}
+                          Action={posts.action}
+                          Media={posts.media}
+                          MediaAlt={posts.alt}
                           Headline={posts.headline}
                           Description={posts.description}
-                          UserInfo={posts.user_info}
-                          PostDate={posts.post_date}
+                          MetaInfo={posts.info}
+                          MetaDate={posts.time}
                         />
                       ))}
                     </div>
@@ -202,35 +202,35 @@ const workData = [
 const blogData = [
   {
     id: 1,
-    blog_link: "/blog/posts/battling-my-css-skills",
-    thumbnail: "/01/thumbnail.png",
-    thumbnail_alt: "css-battle",
+    action: "blog/posts/css-battle",
+    media: "/img/blog/01/thumbnail.png",
+    alt: "css-battle",
     headline: "Battling My CSS Skills",
     description:
       "Battling My CSS Skills on CSS Battle was the best way to refresh my Knowledge On CSS. What does this mean for you?",
-    user_info: "Justin Bento",
-    post_date: "Mar 05, 2021",
+    info: "Justin Bento",
+    time: "Mar 05, 2021",
   },
   {
     id: 2,
-    blog_link: "blog/posts/json-and-design",
-    thumbnail: "/02/thumbnail.png",
-    thumbnail_alt: "JSON homapge",
+    action: "blog/posts/json-design",
+    media: "/img/blog/02/thumbnail.png",
+    alt: "JSON homapge",
     headline: "Using JSON For Design",
     description:
       "Designers that have having a good understanding and control over the data they are designing is crucial especially in web-based products.",
-    user_info: "Justin Bento",
-    post_date: "Mar 05, 2021",
+    info: "Justin Bento",
+    time: "Mar 05, 2021",
   },
   {
     id: 3,
-    blog_link: "blog/posts/markdown-and-design",
-    thumbnail: "/03/thumbnail.png",
-    thumbnail_alt: "css-battle",
+    action: "blog/posts/markdown-design",
+    media: "/img/blog/03/thumbnail.png",
+    alt: "css-battle",
     headline: "Using Markdown For Design",
     description:
       "Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents.s",
-    user_info: "Justin Bento",
-    post_date: "Mar 05, 2021",
+    info: "Justin Bento",
+    time: "Mar 05, 2021",
   },
 ];
