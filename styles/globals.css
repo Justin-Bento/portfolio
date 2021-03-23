@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: goudy_bookletter_1911;
+  src: url("/fonts/goudy/goudy_bookletter_1911-webfont.ttf") format("ttf");
+}
