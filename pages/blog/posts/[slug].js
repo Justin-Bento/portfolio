@@ -3,6 +3,7 @@ import { format, parseISO } from "date-fns";
 import renderToString from "next-mdx-remote/render-to-string";
 import hydrate from "next-mdx-remote/hydrate";
 import { Article } from "../../../components/Article";
+import { Breadcrumb } from "../../../components/Breadcrumb";
 
 import { getBlogPosts } from "../../../lib/blog-data";
 
@@ -18,6 +19,7 @@ export default function Blog({ title, date, content, description }) {
 
       <main className="w-11/12 my-16 mx-auto sm:max-w-4xl">
         <div className="blog-post">
+          <Breadcrumb Name="Blog" Link="/blog" PathName={title} />
           <Article Headline={title} Meta={format(parseISO(date), "MMMM do, uuu")} Subtitle={description} />
           <div className="prose my-8 sm:max-w-5xl">{hydratedContent}</div>
         </div>
