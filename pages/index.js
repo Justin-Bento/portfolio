@@ -131,7 +131,7 @@ export default function Home() {
                 <div className="why">
                   <div className="my-16 sm:my-12 md:my-24">
                     <h2 className="mb-8 text-3xl font-extrabold leading-tight text-gray-900">Why Do I Design?</h2>
-                    <blockquote className="mb-8 font-serif text-xl italic font-thin  text-gray-800 md:leading-relaxed md:text-3xl">
+                    <blockquote className="mb-8 font-serif text-xl italic tracking-wide font-thin  text-gray-800 md:leading-relaxed md:text-3xl">
                       “Why do we need to know about the human mind? Because things are designed to be used by people, and
                       without a deep understanding of people, the designs are apt to be faulty, difficult to use, difficult
                       to understand.”
