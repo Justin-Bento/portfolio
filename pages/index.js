@@ -213,7 +213,7 @@ const blogData = [
     action: "blog/posts/json-design",
     media: "/img/blog/02/thumbnail.png",
     alt: "JSON homapge",
-    headline: "Using JSON For Design",
+    headline: "Designing With Data",
     description:
       "Designers that have having a good understanding and control over the data they are designing is crucial especially in web-based products.",
     info: "Justin Bento",
