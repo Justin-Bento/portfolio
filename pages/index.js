@@ -50,14 +50,14 @@ export default function Home() {
                     <div className="solve-problems">
                       <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">User Interface Design</h3>
                       <p className="text-base text-gray-500">
-                        Create responsive designges that follow the web accessibility standards to help your brand be
+                        Create responsive designs that follow the web accessibility standards to help your brand be
                         innovative and inclusive.
                       </p>
                     </div>
                     <div className="accessibility">
                       <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">User Experience Design</h3>
                       <p className="text-base text-gray-500">
-                        Test and iterate designges to enesure user satisfaction and web accessibility standards.
+                        Test and iterate designs to enesure user satisfaction and web accessibility standards.
                       </p>
                     </div>
                     <div className="mobile-first">
@@ -69,7 +69,7 @@ export default function Home() {
                     <div className="mobile-first">
                       <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Branding</h3>
                       <p className="text-base text-gray-500">
-                        Develop and adhear to brands standards to help give users a unified experience on web.
+                        Develop and adhere to brands standards to help give users a unified experience on web.
                       </p>
                     </div>
                   </div>
