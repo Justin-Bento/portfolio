@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Barlow", "system-ui", "-apple-system", "sans-serif", '"Apple Color Emoji"'],
+        sans: ['"Public Sans"', "system-ui", "-apple-system", "sans-serif", '"Apple Color Emoji"'],
         serif: ['"Goudy Bookletter 1911"', "Cambria", '"Times New Roman"', "Times", "serif"],
       },
     },
