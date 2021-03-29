@@ -142,28 +142,6 @@ export default function Home() {
                   </div>
                 </div>
                 {/* end of  why */}
-                <div className="blog">
-                  <div className="my-16 sm:my-12 md:my-24">
-                    <div className="title">
-                      <h2 className="mb-8 text-3xl font-extrabold leading-tight text-gray-900">Check Out My Blog Posts</h2>
-                    </div>
-                    <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
-                      {blogData.map((posts, index) => (
-                        <BlogCard
-                          key={index}
-                          Action={posts.action}
-                          Media={posts.media}
-                          MediaAlt={posts.alt}
-                          Headline={posts.headline}
-                          Description={posts.description}
-                          MetaInfo={posts.info}
-                          MetaDate={posts.time}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                {/* end of blog */}
               </div>
             </div>
           </div>
@@ -194,40 +172,5 @@ const workData = [
     media: "/03/thumbnail.png",
     alt: "Project Image Of The Forcon Startup",
     file: "forcon",
-  },
-];
-const blogData = [
-  {
-    id: 1,
-    action: "blog/posts/css-battle",
-    media: "/img/blog/01/thumbnail.png",
-    alt: "css-battle",
-    headline: "Battling My CSS Skills",
-    description:
-      "Battling My CSS Skills on CSS Battle was the best way to refresh my Knowledge On CSS. What does this mean for you?",
-    info: "Justin Bento",
-    time: "Mar 05, 2021",
-  },
-  {
-    id: 2,
-    action: "blog/posts/json-design",
-    media: "/img/blog/02/thumbnail.png",
-    alt: "JSON homapge",
-    headline: "Designing With Data",
-    description:
-      "Designers that have having a good understanding and control over the data they are designing is crucial especially in web-based products.",
-    info: "Justin Bento",
-    time: "Mar 05, 2021",
-  },
-  {
-    id: 3,
-    action: "blog/posts/markdown-design",
-    media: "/img/blog/03/thumbnail.png",
-    alt: "css-battle",
-    headline: "Using Markdown For Design",
-    description:
-      "Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents.s",
-    info: "Justin Bento",
-    time: "Mar 05, 2021",
   },
 ];
