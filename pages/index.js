@@ -17,8 +17,8 @@ export default function Home() {
               <div className="hero">
                 <h1 className="mb-3 text-4xl font-bold text-black md:leading-tight md:text-5xl">Hi I'm Justin Bento</h1>
                 <h2 className="mb-6 text-2xl leading-normal text-gray-600 md:text-3xl md:leading-normal">
-                  I’m a multimedia designer from Toronto, that is focused on finding solutions that are easy to use and help
-                  people achieve their goals.
+                  I’m a multimedia designer from Toronto, focused on finding solutions that are easy to use and help people
+                  achieve their goals.
                 </h2>
                 <a
                   className="text-base inline-flex items-center mt-3 p-3 px-5 rounded font-medium btn text-white bg-blue-500 btn-lg sm:w-auto sm:mb-0"
