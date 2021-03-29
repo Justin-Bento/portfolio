@@ -15,11 +15,10 @@ export default function Home() {
           <div className="my-16 sm:my-12 md:my-24">
             <div className="w-11/12	mx-auto md:max-w-6xl">
               <div className="hero">
-                <h1 className="mb-3 text-5xl font-semibold text-gray-900 md:text-6xl md:leading-tight md:font-bold capitalize">
-                  Hi I'm Justin Bento
-                </h1>
-                <h2 className="text-2xl leading-relaxed mb-4 font-light text-gray-700 md:text-4xl md:tracking-relaxed md:mb-4 tracking-wide md:leading-relaxed">
-                  I’m a multimedia designer from Toronto, that is focused on finding solutions that are easy to use and help people achieve their goals.
+                <h1 className="mb-3 text-4xl font-bold text-black md:leading-tight md:text-5xl">Hi I'm Justin Bento</h1>
+                <h2 className="mb-3 text-2xl tracking-wide text-gray-700 md:leading-relaxed md:text-3xl md:tracking-wide">
+                  I’m a multimedia designer from Toronto, that is focused on finding solutions that are easy to use and help
+                  people achieve their goals.
                 </h2>
                 <a
                   className="text-base inline-flex items-center mt-5 p-3 rounded font-medium btn text-white bg-blue-500 btn-lg sm:w-auto sm:mb-0"
@@ -31,7 +30,7 @@ export default function Home() {
               {/* end of hero section */}
               <div className="projects">
                 <div className="my-16 sm:my-12 md:my-24">
-                  <h2 className="mb-8 text-3xl font-extrabold leading-tight text-gray-900">Recent Projects</h2>
+                  <h2 className="mb-8 text-3xl font-extrabold  text-gray-900">Recent Projects</h2>
                   <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
                     {workData.map((user, index) => (
                       <div key={index}>
@@ -44,29 +43,29 @@ export default function Home() {
               {/* end  of projects */}
               <div className="what">
                 <div className="my-16 sm:my-12 md:my-24">
-                  <h2 className="mb-8 text-3xl font-extrabold leading-tight text-gray-900">What Do I Do?</h2>
+                  <h2 className="mb-8 text-3xl font-extrabold  text-gray-900">What Do I Do?</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-16">
                     <div className="solve-problems">
-                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">User Interface Design</h3>
+                      <h3 className="mb-2 text-lg font-semibold  text-gray-900">User Interface Design</h3>
                       <p className="text-base text-gray-500">
                         Create responsive designs that follow the web accessibility standards to help your brand be
                         innovative and inclusive.
                       </p>
                     </div>
                     <div className="accessibility">
-                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">User Experience Design</h3>
+                      <h3 className="mb-2 text-lg font-semibold  text-gray-900">User Experience Design</h3>
                       <p className="text-base text-gray-500">
                         Test and iterate designs to enesure user satisfaction and web accessibility standards.
                       </p>
                     </div>
                     <div className="mobile-first">
-                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Front-End Web Development</h3>
+                      <h3 className="mb-2 text-lg font-semibold  text-gray-900">Front-End Web Development</h3>
                       <p className="text-base text-gray-500">
                         Develop websites with front-end technologies that support accessibility requirements and standards.
                       </p>
                     </div>
                     <div className="mobile-first">
-                      <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Branding</h3>
+                      <h3 className="mb-2 text-lg font-semibold  text-gray-900">Branding</h3>
                       <p className="text-base text-gray-500">
                         Develop and adhere to brands standards to help give users a unified experience on web.
                       </p>
@@ -76,48 +75,48 @@ export default function Home() {
                 {/* end of recent what do i do */}
                 <div className="how">
                   <div className="my-16 sm:my-12 md:my-24">
-                    <h2 className="mb-1 text-3xl font-extrabold leading-tight text-gray-900">How Do I Work?</h2>
+                    <h2 className="mb-1 text-3xl font-extrabold  text-gray-900">How Do I Work?</h2>
                     <p className="mb-8 text-lg text-gray-500 tracking-wide">
                       Get the insights on how my current design process, and how I dig down into powering your comapny.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 lg:gap-x-10 gap-y-20">
                       <div className="Understand">
-                        <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Phase 1: Understand</h3>
+                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 1: Understand</h3>
                         <p className="text-base text-gray-500">
                           In the Understand phase, inform and shared knowledges across all participants to help articulate
                           the problem for the business and user.
                         </p>
                       </div>
                       <div className="Define">
-                        <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Phase 2: Define</h3>
+                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 2: Define</h3>
                         <p className="text-base text-gray-500">
                           Evaluate everything learned in the Understand phase to establish focus by defining specific
                           context and desired outcomes of potential solutions.
                         </p>
                       </div>
                       <div className="Sketch">
-                        <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Phase 3: Sketch</h3>
+                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 3: Sketch</h3>
                         <p className="text-base text-gray-500">
                           Generate and share a broad range of ideas by looking for inspiration, solutions and narrow down
                           ideas as group to a single, well-articulated solution Sketch.
                         </p>
                       </div>
                       <div className="Decide">
-                        <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Phase 4: Decide</h3>
+                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 4: Decide</h3>
                         <p className="text-base text-gray-500">
                           Talk with the owners to finalize the direction, by sharing plauseable solution sketches and reach
                           a consensus on an idea through decision-making exercises.
                         </p>
                       </div>
                       <div className="Prototype">
-                        <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Phase 5: Prototype</h3>
+                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 5: Prototype</h3>
                         <p className="text-base text-gray-500">
                           Build prototypes that are real enough to get an authentic response from a potential user and help
                           business understand what features they will need.
                         </p>
                       </div>
                       <div className="Validate">
-                        <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900">Phase 6: Validate</h3>
+                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 6: Validate</h3>
                         <p className="text-base text-gray-500">
                           gather feedback from users and talk with stakeholders for feasibility reviews to help validate a
                           concept.
@@ -129,7 +128,7 @@ export default function Home() {
                 {/* end of  how */}
                 <div className="why">
                   <div className="my-16 sm:my-12 md:my-24">
-                    <h2 className="mb-8 text-3xl font-extrabold leading-tight text-gray-900">Why Do I Design?</h2>
+                    <h2 className="mb-8 text-3xl font-extrabold  text-gray-900">Why Do I Design?</h2>
                     <blockquote className="mb-8 font-serif text-xl italic tracking-wide font-thin  text-gray-800 md:leading-relaxed md:text-3xl">
                       “Why do we need to know about the human mind? Because things are designed to be used by people, and
                       without a deep understanding of people, the designs are apt to be faulty, difficult to use, difficult
