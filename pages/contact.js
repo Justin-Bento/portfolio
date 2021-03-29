@@ -25,8 +25,8 @@ export default function Contact() {
 
 const contactTitle = (
   <div className="contact-title">
-    <h1 className="mb-1 text-3xl font-bold leading-tight text-gray-900">Let's Get In Touch!</h1>
-    <p className="mb-2 sm:mb-16 text-lg text-gray-500 tracking-wide">
+    <h1 className="mb-4 text-xl font-bold text-black md:text-2xl capitalize">Let's Get In Touch!</h1>
+    <p className="text-base text-black">
       Message me your amazing idea for a project? I will get back to you when avilable.
     </p>
   </div>
