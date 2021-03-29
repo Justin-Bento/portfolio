@@ -1,12 +1,14 @@
 ---
 title: Forcon
 description: Created and launch a fake startup company
-date: 2021-01-06T19:05:27.220Z
+media: 03/thumbnail.png
+mediaAlt: Forcon Startup Thumbnail
+date: 2021-03-21T19:05:27.220Z
 ---
 
-## Introduction
-
 Welcome to my last project for digital branding strategies. This article will show the brandinig and UI design aspect of the assginment and show you my process of how of I took an idea and made it into reality.
+
+## Introduction
 
 The name of the company is Forcon. Forcon’s goal is to help foreign students transition into Canada by teaching them the quirks, culture, laws and work environment. So students can focus on school and adapt quickly into a new country.
 

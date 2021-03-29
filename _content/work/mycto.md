@@ -1,6 +1,8 @@
 ---
 title: City Of Tornroto App
 description: MyCto Is An App For The City Of Tornroto
+media: 02/thumbnail.webp
+mediaAlt: Forcon Startup Thumbnail
 date: 2021-03-21T19:05:27.220Z
 ---
 

@@ -1,12 +1,14 @@
 ---
 title: Redesigning MyHumber
 description: MyHumber is Humber Colleges Student Dashboard
-date: 2021-01-06T19:05:27.220Z
+media: 01/thumbnail.png
+mediaAlt: Forcon Startup Thumbnail
+date: 2021-03-21T19:05:27.220Z
 ---
 
-## Project Background
+For my Emerging Multimedia Design Class, I redesign Humber College's student dashboard. The dashboard is called MyHumber and it allows Humber students and staff to view and manage Humber courses, grades.
 
-For my Emerging Multimedia Design Class, I redesign Humber College's student dashboard. The dashboard is called MyHumber and it allows Humber students and staff to view and manage information about Humber courses, grades, fees and more.
+## Project Background
 
 MyHumber is a mandatory dashboard for staff and studnets at Humber College. To find out the users pains I sent out a form to Humber Colleges staff and studnets to hear their thoughts on MyHumber. After compileing the form data I've learned that MyHumber undergoes a step learning curve making it difficult for new students to access their information.
 
