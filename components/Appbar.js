@@ -49,9 +49,4 @@ const NextLinks = [
     Link: "/contact",
     Page: "Contact",
   },
-  {
-    key: 5,
-    Link: "/blog",
-    Page: "Blog",
-  },
 ];
