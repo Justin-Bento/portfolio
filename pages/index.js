@@ -30,7 +30,7 @@ export default function Home() {
               {/* end of hero section */}
               <div className="projects">
                 <div className="my-16 sm:my-12 md:my-24">
-                  <h2 className="mb-8 text-3xl font-extrabold  text-gray-900">Recent Projects</h2>
+                  <h2 className="my-5 text-xl font-bold text-black md:text-2xl">Recent Projects</h2>
                   <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
                     {workData.map((user, index) => (
                       <div key={index}>
@@ -43,7 +43,7 @@ export default function Home() {
               {/* end  of projects */}
               <div className="what">
                 <div className="my-16 sm:my-12 md:my-24">
-                  <h2 className="mb-8 text-3xl font-extrabold  text-gray-900">What Do I Do?</h2>
+                  <h2 className="my-5 text-xl font-bold text-black md:text-2xl">What Do I Do?</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-16">
                     <div className="solve-problems">
                       <h3 className="mb-2 text-lg font-semibold  text-gray-900">User Interface Design</h3>
@@ -75,10 +75,7 @@ export default function Home() {
                 {/* end of recent what do i do */}
                 <div className="how">
                   <div className="my-16 sm:my-12 md:my-24">
-                    <h2 className="mb-1 text-3xl font-extrabold  text-gray-900">How Do I Work?</h2>
-                    <p className="mb-8 text-lg text-gray-500 tracking-wide">
-                      Get the insights on how my current design process, and how I dig down into powering your comapny.
-                    </p>
+                    <h2 className="my-5 text-xl font-bold text-black md:text-2xl">How Do I Work?</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 lg:gap-x-10 gap-y-20">
                       <div className="Understand">
                         <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 1: Understand</h3>
@@ -128,7 +125,7 @@ export default function Home() {
                 {/* end of  how */}
                 <div className="why">
                   <div className="my-16 sm:my-12 md:my-24">
-                    <h2 className="mb-8 text-3xl font-extrabold  text-gray-900">Why Do I Design?</h2>
+                    <h2 className="my-5 text-xl font-bold text-black md:text-2xl">Why Do I Design?</h2>
                     <blockquote className="mb-8 font-serif text-xl italic tracking-wide font-thin  text-gray-800 md:leading-relaxed md:text-3xl">
                       “Why do we need to know about the human mind? Because things are designed to be used by people, and
                       without a deep understanding of people, the designs are apt to be faulty, difficult to use, difficult
