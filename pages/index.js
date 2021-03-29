@@ -16,12 +16,12 @@ export default function Home() {
             <div className="w-11/12	mx-auto md:max-w-6xl">
               <div className="hero">
                 <h1 className="mb-3 text-4xl font-bold text-black md:leading-tight md:text-5xl">Hi I'm Justin Bento</h1>
-                <h2 className="mb-3 text-2xl tracking-wide text-gray-700 md:leading-relaxed md:text-3xl md:tracking-wide">
+                <h2 className="mb-6 text-2xl leading-normal text-gray-600 md:text-3xl md:leading-normal">
                   I’m a multimedia designer from Toronto, that is focused on finding solutions that are easy to use and help
                   people achieve their goals.
                 </h2>
                 <a
-                  className="text-base inline-flex items-center mt-5 p-3 rounded font-medium btn text-white bg-blue-500 btn-lg sm:w-auto sm:mb-0"
+                  className="text-base inline-flex items-center mt-3 p-3 px-5 rounded font-medium btn text-white bg-blue-500 btn-lg sm:w-auto sm:mb-0"
                   href="/work"
                 >
                   View Work
