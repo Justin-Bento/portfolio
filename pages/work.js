@@ -14,9 +14,11 @@ export default function work({ posts }) {
       <main>
         <div className="my-8">
           <div className="w-11/12	mx-auto md:max-w-6xl">
-            {posts.map((item) => (
-              <WorkListItem key={item.slug} {...item} />
-            ))}
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+              {posts.map((item) => (
+                <WorkListItem key={item.slug} {...item} />
+              ))}
+            </div>
           </div>
         </div>
       </main>
@@ -38,28 +40,28 @@ export async function getStaticProps() {
   };
 }
 
-function WorkListItem({ slug, title, date, content }) {
+function WorkListItem({ slug, title, date, content, media, mediaAlt }) {
   return (
     <div>
-      <div className="work-date">
-        <p className="pt-12 mb-3 text-sm font-normal text-gray-500">{format(parseISO(date), "MMMM do, uuu")}</p>
-      </div>
-      <div className="work-Heading">
-        <h2 className="mb-2 text-xl font-extrabold leading-snug tracking-tight text-gray-800 md:text-3xl">
-          <Link href={`/work/posts/${slug}`}>
-            <a className=" font-bold capitalize text-gray-900 hover:text-blue-700">{title}</a>
-          </Link>
-        </h2>
-      </div>
-      <div className="work-supporting">
-        <p className="text-lg leading-relaxed">{content.substr(0, 300)}</p>
-      </div>
-      <div className="work-action">
+      <div className="img">
         <Link href={`/work/posts/${slug}`}>
-          <button className="p-2 mt-2 text-sm rounded text-gray-800 transition-colors duration-150 bg-gray-200 focus:shadow-outline hover:bg-gray-300">
-            Continue Reading
-          </button>
+          <img
+            src={`/img/work/${media}`}
+            class="object-cover w-full h-56 mb-3 bg-center rounded"
+            alt={mediaAlt}
+            loading="lazy"
+          />
         </Link>
+      </div>
+      <h2 className="mb-2 text-lg font-semibold text-gray-900">
+        <Link href={`/work/posts/${slug}`}>
+          <a className=" text-gray-900 hover:text-blue-700">{title}</a>
+        </Link>
+      </h2>
+      <div className="description">
+        <p class="mb-3 text-sm font-normal text-gray-500">
+          {content.substr(0, 200)} <br /> {format(parseISO(date), "MMMM do, uuu")}
+        </p>
       </div>
     </div>
   );
