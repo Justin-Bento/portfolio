@@ -6,11 +6,11 @@ mediaAlt: Forcon Startup Thumbnail
 date: 2021-02-14T19:05:27.220Z
 ---
 
-![First Battle On CSSBattle](/img/blog/01/thumbnail.png)
+After starting at a computer day in and day out. I realized I had mental fatigue with school and being creative, I felt burnted out. So during my break I decided to step away from my laptop and pick up and hold hobby.
+
+![First Battle On CSSBattle](/img/work/04/thumbnail.png)
 
 ## Understand The Problem
-
-During my break, this pandemic made me realize I had mental fatigue with school, and I struggled to be creative and I felt burnted out. So during my break I decided to step away from my laptop and pick up my old guitar to help me stay away from a computer.
 
 When the break was over and the new semester started, I realized I had to develop a portfolio website for my class, and I wanted to create it from scratch. But, I stoped codeing for so long and I did not know where to start again. I got nervous and thinking I had to learn everything again. I then found a YouTube video of developers testing their knowledge with CSS using cssbattles.
 
@@ -37,7 +37,7 @@ Once I figured that out, I then started and headed into the battlegrounds
 
 ### Battle 01: Simply Square
 
-![1st Battle On CSSBattle](/img/blog/01/cssbattle-01.png)
+![1st Battle On CSSBattle](/img/work/04/cssbattle-01.png)
 
 High Score: 732.41 (116 chars)
 
@@ -45,7 +45,7 @@ Simply Square was not challenging to create but figuring out how to cut down the
 
 ### Battle 02: Carrom
 
-![2nd Battle On CSSBattle](/img/blog/01/cssbattle-02.png)
+![2nd Battle On CSSBattle](/img/work/04/cssbattle-02.png)
 
 High Score: 726.24 (121 chars)
 
@@ -53,7 +53,7 @@ This challenge taught me how to experiment with CSS values. You experiment with 
 
 ### Battle 03: Push Button
 
-![3rd Battle On CSSBattle](/img/blog/01/cssbattle-03.png)
+![3rd Battle On CSSBattle](/img/work/04/cssbattle-03.png)
 
 High Score: 726.24 (121 chars)
 
@@ -61,7 +61,7 @@ This challenge taught me to examine the arranging order of the stack. z-index ma
 
 ### Battle 04: Ups n Downs
 
-![4th Battle On CSSBattle](/img/blog/01/cssbattle-04.png)
+![4th Battle On CSSBattle](/img/work/04/cssbattle-04.png)
 
 High Score: 726.24 (121 chars)
 
@@ -69,7 +69,7 @@ This challenge taught me how to apply the nth-child selector. I applied the nth-
 
 ### Battle 05: Acid Rain
 
-![5th Battle On CSSBattle](/img/blog/01/cssbattle-05.png)
+![5th Battle On CSSBattle](/img/work/04/cssbattle-05.png)
 
 High Score: 726.24 (121 chars)
 
@@ -77,7 +77,7 @@ This challenge taught me how to adjust the border-radius with one line and helpe
 
 ### Battle 06: Missing Slice
 
-![6th Battle On CSSBattle](/img/blog/01/cssbattle-06.png)
+![6th Battle On CSSBattle](/img/work/04/cssbattle-06.png)
 
 High Score: 726.24 (121 chars)
 
@@ -85,7 +85,7 @@ This challenge taught me how to adjust the border-radius with one line and helpe
 
 ### Battle 07: Leafy Trail
 
-![7th Battle On CSSBattle](/img/blog/01/cssbattle-07.png)
+![7th Battle On CSSBattle](/img/work/04/cssbattle-07.png)
 
 High Score: 726.24 (121 chars)
 
@@ -93,7 +93,7 @@ Helped me understand how to use transform translation in CSS. I learned to rotat
 
 ### Battle 08: Forking Crazy
 
-![8th Battle On CSSBattle](/img/blog/01/cssbattle-08.png)
+![8th Battle On CSSBattle](/img/work/04/cssbattle-08.png)
 
 High Score: 726.24 (121 chars)
 
@@ -101,7 +101,7 @@ The hardest part of this challenge is figuring out how to apply the fork’s neg
 
 ### Battle 09: Tesseract
 
-![9th Battle On CSSBattle](/img/blog/01/cssbattle-09.png)
+![9th Battle On CSSBattle](/img/work/04/cssbattle-09.png)
 
 High Score: 726.24 (121 chars)
 
@@ -109,7 +109,7 @@ This challenge taught me new CSS elements clip-path the round(). The clip-path s
 
 ### Battle 10
 
-![10th Battle On CSSBattle](/img/blog/01/cssbattle-10.png)
+![10th Battle On CSSBattle](/img/work/04/cssbattle-10.png)
 
 High Score: 548.36 (888 chars)
 
