@@ -19,8 +19,7 @@ export default function Home() {
                   Hi I'm Justin Bento
                 </h1>
                 <h2 className="text-2xl leading-relaxed mb-4 font-light text-gray-700 md:text-4xl md:tracking-relaxed md:mb-4 tracking-wide md:leading-relaxed">
-                  I am a Multimedia Designer that helps businesses evolve by creating accessible solutions driven by user
-                  research.
+                  I’m a multimedia designer from Toronto, that is focused on finding solutions that are easy to use and help people achieve their goals.
                 </h2>
                 <a
                   className="text-base inline-flex items-center mt-5 p-3 rounded font-medium btn text-white bg-blue-500 btn-lg sm:w-auto sm:mb-0"
