@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
           name="description"
           content="Hi, I’m Justin Bento. I am a  UI/UX designer in Canada. I enjoy helping business evolve by solving problems that enhance your brand and drive innovation."
         />
-        <meta property="og:image" content="/website-meta.png" />
+        <meta property="og:image" content="https://www.justinbento.com/website-meta.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="preload" as="font" type="font/ttf" href="/fonts/goudy/goudy_bookletter_191.ttf" crossorigin />
