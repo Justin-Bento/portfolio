@@ -46,26 +46,26 @@ export default function Home() {
                   <h2 className="my-5 text-xl font-bold text-black md:text-2xl">What Do I Do?</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-16">
                     <div className="solve-problems">
-                      <h3 className="mb-2 text-lg font-semibold  text-gray-900">User Interface Design</h3>
+                      <h3 className="mb-1 text-lg font-semibold  text-gray-900">User Interface Design</h3>
                       <p className="text-base text-gray-500">
                         Create responsive designs that follow the web accessibility standards to help your brand be
                         innovative and inclusive.
                       </p>
                     </div>
                     <div className="accessibility">
-                      <h3 className="mb-2 text-lg font-semibold  text-gray-900">User Experience Design</h3>
+                      <h3 className="mb-1 text-lg font-semibold  text-gray-900">User Experience Design</h3>
                       <p className="text-base text-gray-500">
                         Test and iterate designs to enesure user satisfaction and web accessibility standards.
                       </p>
                     </div>
                     <div className="mobile-first">
-                      <h3 className="mb-2 text-lg font-semibold  text-gray-900">Front-End Web Development</h3>
+                      <h3 className="mb-1 text-lg font-semibold  text-gray-900">Front-End Web Development</h3>
                       <p className="text-base text-gray-500">
                         Develop websites with front-end technologies that support accessibility requirements and standards.
                       </p>
                     </div>
                     <div className="mobile-first">
-                      <h3 className="mb-2 text-lg font-semibold  text-gray-900">Branding</h3>
+                      <h3 className="mb-1 text-lg font-semibold  text-gray-900">Branding</h3>
                       <p className="text-base text-gray-500">
                         Develop and adhere to brands standards to help give users a unified experience on web.
                       </p>
@@ -75,45 +75,45 @@ export default function Home() {
                 {/* end of recent what do i do */}
                 <div className="how">
                   <div className="my-16 sm:my-12 md:my-24">
-                    <h2 className="my-5 text-xl font-bold text-black md:text-2xl">How Do I Work?</h2>
+                    <h2 className="my-3 text-xl font-bold text-black md:text-2xl">How Do I Work?</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 lg:gap-x-10 gap-y-20">
                       <div className="Understand">
-                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 1: Understand</h3>
+                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 1: Understand</h3>
                         <p className="text-base text-gray-500">
                           In the Understand phase, inform and shared knowledges across all participants to help articulate
                           the problem for the business and user.
                         </p>
                       </div>
                       <div className="Define">
-                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 2: Define</h3>
+                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 2: Define</h3>
                         <p className="text-base text-gray-500">
                           Evaluate everything learned in the Understand phase to establish focus by defining specific
                           context and desired outcomes of potential solutions.
                         </p>
                       </div>
                       <div className="Sketch">
-                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 3: Sketch</h3>
+                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 3: Sketch</h3>
                         <p className="text-base text-gray-500">
                           Generate and share a broad range of ideas by looking for inspiration, solutions and narrow down
                           ideas as group to a single, well-articulated solution Sketch.
                         </p>
                       </div>
                       <div className="Decide">
-                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 4: Decide</h3>
+                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 4: Decide</h3>
                         <p className="text-base text-gray-500">
                           Talk with the owners to finalize the direction, by sharing plauseable solution sketches and reach
                           a consensus on an idea through decision-making exercises.
                         </p>
                       </div>
                       <div className="Prototype">
-                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 5: Prototype</h3>
+                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 5: Prototype</h3>
                         <p className="text-base text-gray-500">
                           Build prototypes that are real enough to get an authentic response from a potential user and help
                           business understand what features they will need.
                         </p>
                       </div>
                       <div className="Validate">
-                        <h3 className="mb-2 text-lg font-semibold  text-gray-900">Phase 6: Validate</h3>
+                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 6: Validate</h3>
                         <p className="text-base text-gray-500">
                           gather feedback from users and talk with stakeholders for feasibility reviews to help validate a
                           concept.
