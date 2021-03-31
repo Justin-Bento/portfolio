@@ -4,6 +4,7 @@ description: Created and launch a fake startup company
 media: 03/thumbnail.png
 mediaAlt: Forcon Startup Thumbnail
 date: 2021-03-21T19:05:27.220Z
+type: School Project
 ---
 
 Welcome to my last project for digital branding strategies. This article will show the brandinig and UI design aspect of the assginment and show you my process of how of I took an idea and made it into reality.

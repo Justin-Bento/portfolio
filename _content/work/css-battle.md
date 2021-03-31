@@ -4,6 +4,7 @@ description: MyHumber is Humber Colleges Student Dashboard
 media: 04/thumbnail.png
 mediaAlt: Forcon Startup Thumbnail
 date: 2021-02-14T19:05:27.220Z
+type: Personal Project
 ---
 
 After starting at a computer day in and day out. I realized I had mental fatigue with school and being creative, I felt burnted out. So during my break I decided to step away from my laptop and pick up and hold hobby.
