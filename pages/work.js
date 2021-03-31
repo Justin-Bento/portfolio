@@ -40,7 +40,7 @@ export async function getStaticProps() {
   };
 }
 
-function WorkListItem({ slug, title, date, content, media, mediaAlt }) {
+function WorkListItem({ slug, title, date, content, media, mediaAlt, type }) {
   return (
     <div>
       <div className="img">
@@ -59,9 +59,14 @@ function WorkListItem({ slug, title, date, content, media, mediaAlt }) {
         </Link>
       </h2>
       <div className="description">
-        <p class="mb-3 text-sm font-normal text-gray-500">
-          {content.substr(0, 200)} <br /> {format(parseISO(date), "MMMM do, uuu")}
-        </p>
+        <Link href={`/work/posts/${slug}`}>
+          <a>
+            <p className="mb-1 text-sm font-normal text-gray-500">{content.substr(0, 200)}</p>
+            <p className="text-sm font-normal text-gray-500">
+              {type} &sdot; {format(parseISO(date), "MMMM, uuu")}
+            </p>
+          </a>
+        </Link>
       </div>
     </div>
   );
