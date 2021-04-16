@@ -1,6 +1,5 @@
 import Head from "next/head";
 import WorkCard from "../components/WorkCard";
-import BlogCard from "../components/BlogCard";
 
 export default function Home() {
   return (
