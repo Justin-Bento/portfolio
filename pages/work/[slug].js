@@ -2,10 +2,10 @@ import Head from "next/head";
 import { format, parseISO } from "date-fns";
 import renderToString from "next-mdx-remote/render-to-string";
 import hydrate from "next-mdx-remote/hydrate";
-import { Article } from "../../../components/Article";
-import { Breadcrumb } from "../../../components/Breadcrumb";
+import { Article } from "../../components/Article";
+import { Breadcrumb } from "../../components/Breadcrumb";
 
-import { getWorkPosts } from "../../../lib/work-data";
+import { getWorkPosts } from "../../lib/work-data";
 
 export default function Work({ title, date, content, description }) {
   const hydratedContent = hydrate(content);
