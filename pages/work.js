@@ -44,7 +44,7 @@ function WorkListItem({ slug, title, date, content, media, mediaAlt, type }) {
   return (
     <div>
       <div className="img">
-        <Link href={`/work/posts/${slug}`}>
+        <Link href={`/work/${slug}`}>
           <img
             src={`/img/work/${media}`}
             class="object-cover w-full h-56 mb-3 bg-center rounded"
