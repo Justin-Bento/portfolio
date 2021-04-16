@@ -6,7 +6,7 @@ export default class WorkCard extends Component {
     return (
       <div className="BlogCard">
         <div className="BlogCard-Image">
-          <Link href={"/work/posts/" + this.props.File}>
+          <Link href={"/work/" + this.props.File}>
             <a>
               <img
                 src={"/img/work" + this.props.Media}
