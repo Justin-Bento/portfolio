@@ -1,0 +1,43 @@
+.btn-primary {
+  border-radius: 6px;
+  padding: 12px 14px;
+  border: 1px solid var(--oc-teal-7);
+  color: var(--oc-gray-1);
+  background: var(--oc-teal-7);
+  transition: 100ms;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  border: 1px solid var(--oc-teal-9);
+  color: var(--oc-gray-1);
+  background: var(--oc-teal-9);
+}
+.btn-secondary {
+  border-radius: 6px;
+  padding: 12px 18px;
+  border: 1px solid var(--oc-gray-7);
+  color: var(--oc-gray-1);
+  background: var(--oc-gray-7);
+  transition: 100ms;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  border: 1px solid var(--oc-gray-9);
+  color: var(--oc-gray-1);
+  background: var(--oc-gray-9);
+}
+.secondary-light {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 12px 18px;
+  border: 1px solid var(--oc-gray-1);
+  color: var(--oc-gray-7);
+  background: var(--oc-gray-1);
+  transition: 100ms;
+  cursor: pointer;
+}
+.secondary-light box-icon {
+  color: var(--oc-gray-7);
+  padding: 0.125rem;
+}
