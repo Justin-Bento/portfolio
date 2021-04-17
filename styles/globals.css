@@ -1,8 +1,94 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("./color.css");
+@import url("./layout.css");
+@import url("./typography.css");
+@import url("./button.css");
 
+* {
+  margin: 0rem;
+  padding: 0rem;
+  font-family: "General Sans", sans-serif;
+  color: var(--oc-gray-7);
+  font-size: 1rem;
+}
+.wrapper {
+  width: 90%;
+  margin: 0rem auto;
+}
+.home > .wrapper > * {
+  margin: 5rem 0rem;
+}
+.home .wrapper .hero * {
+  margin: 0.5rem 0rem;
+}
+.home .wrapper .work * {
+  margin: 0.5rem 0rem;
+}
+.home .wrapper .what * {
+  margin: 1rem 0rem;
+}
+.home .wrapper .how * {
+  margin: 1rem 0rem;
+}
+.home .wrapper .why * {
+  margin: 1rem 0rem;
+}
+.home .wrapper .collab * {
+  margin: 1rem 0rem;
+}
 @font-face {
   font-family: goudy_bookletter_1911;
   src: url("/fonts/goudy/goudy_bookletter_1911-webfont.ttf") format("ttf");
+}
+
+@media (min-width: 640px) {
+  .wrapper {
+    width: 80%;
+    margin: 0rem auto;
+  }
+  .hero .grid {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-image {
+    width: 480px;
+    height: 480px;
+  }
+  .projects .grid {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .how .grid {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .what .grid {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .what .grid .col-2 {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .how .grid {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects .grid {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .how .grid {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
