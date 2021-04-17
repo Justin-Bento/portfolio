@@ -10,31 +10,6 @@
   color: var(--oc-gray-7);
   font-size: 1rem;
 }
-.wrapper {
-  width: 90%;
-  margin: 0rem auto;
-}
-.home > .wrapper > * {
-  margin: 5rem 0rem;
-}
-.home .wrapper .hero * {
-  margin: 0.5rem 0rem;
-}
-.home .wrapper .work * {
-  margin: 0.5rem 0rem;
-}
-.home .wrapper .what * {
-  margin: 1rem 0rem;
-}
-.home .wrapper .how * {
-  margin: 1rem 0rem;
-}
-.home .wrapper .why * {
-  margin: 1rem 0rem;
-}
-.home .wrapper .collab * {
-  margin: 1rem 0rem;
-}
 @font-face {
   font-family: goudy_bookletter_1911;
   src: url("/fonts/goudy/goudy_bookletter_1911-webfont.ttf") format("ttf");
