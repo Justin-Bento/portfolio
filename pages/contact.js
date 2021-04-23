@@ -1,10 +1,16 @@
-import Head from "next/head";
+import Head from 'next/head';
+
+let headline_primary = 'text-4xl md:text-5xl font-bold mb-4';
+let headline_secondary = 'mb-2 text-3xl font-bold';
+let headline_tertiary = 'mb-1 font-semibold text-lg';
+let body_lg = 'prose-xl pr-5';
+let body = 'prose 2xl:prose-xl';
 
 export default function Contact() {
   return (
     <div className="Contact">
       <Head>
-        <title>Justin Bento: Contact</title>
+        <title>Contact</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
@@ -25,10 +31,8 @@ export default function Contact() {
 
 const contactTitle = (
   <div className="contact-title">
-    <h1 className="mb-4 text-xl font-bold text-black md:text-2xl capitalize">Let's Get In Touch!</h1>
-    <p className="text-base text-black">
-      Message me your amazing idea for a project? I will get back to you when avilable.
-    </p>
+    <h1 className={headline_secondary}>Let's Get In Touch!</h1>
+    <p className={body}>Message me your amazing idea for a project? I will get back to you when avilable.</p>
   </div>
 );
 
@@ -36,11 +40,11 @@ const contactForm = (
   <form name="contact" method="POST" data-netlify="true">
     <div className="text-gray-700 mb-4">
       <input type="hidden" name="form-name" value="contact" />
-      <label className="block mb-1" htmlFor="yourname">
+      <label className={body} htmlFor="yourname">
         Full Name
       </label>
       <input
-        className="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline"
+        className="w-full h-10 px-3 text-base placeholder-gray-800 border rounded focus:shadow-outline"
         type="text"
         name="firstname"
         id="firstname"
@@ -49,11 +53,11 @@ const contactForm = (
     </div>
     {/* end of Full Name input */}
     <div className="text-gray-700 mb-4">
-      <label className="block mb-1" htmlFor="youremail">
+      <label className={body} htmlFor="youremail">
         Email
       </label>
       <input
-        className="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline"
+        className="w-full h-10 px-3 text-base placeholder-gray-600 border rounded focus:shadow-outline"
         type="email"
         name="email"
         id="youremail"
@@ -62,13 +66,13 @@ const contactForm = (
     </div>
     {/* end of Email input */}
     <div className="text-gray-700 mb-4">
-      <label className="block mb-1" htmlFor="yourmessage">
+      <label className={body} htmlFor="yourmessage">
         What Is On Your Mind?
       </label>
       <textarea
         name="message"
         id="yourmessage"
-        className="w-full h-16 px-3 py-2 text-base text-gray-700 placeholder-gray-600 border rounded-lg focus:shadow-outline"
+        className="w-full h-16 px-3 py-2 text-base text-gray-700 placeholder-gray-600 border rounded focus:shadow-outline"
       ></textarea>
       <span className="text-xs text-gray-600">Your email must be example@example.com</span>
     </div>
@@ -76,7 +80,7 @@ const contactForm = (
     <div className="mt-8">
       <button
         type="submit"
-        className="h-10 px-5 font-medium text-blue-100 transition-colors duration-150 bg-blue-500 rounded-lg focus:shadow-outline hover:bg-blue-600"
+        className="h-10 px-5 text-indigo-100 duration-150 bg-green-600 rounded focus:shadow-outline hover:bg-green-700"
       >
         Submit
       </button>
