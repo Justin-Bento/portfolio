@@ -12,7 +12,7 @@ const how = [
   {
     id: 1,
     Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
-    Icon: 'bx:bxs-search',
+    Icon: 'search-sharp',
     Headline: 'Understand',
     Body:
       'Understand to be understood by creating a shared base across all participants and articulate the problem from business, user, competitor.',
@@ -20,7 +20,7 @@ const how = [
   {
     id: 2,
     Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
-    Icon: 'bx:bxs-book-alt',
+    Icon: 'book-sharp',
     Headline: 'Define',
     Body:
       'Evaluates everything learned to establish a main focus, by defining specific context and desired outcomes of potential solutions.',
@@ -28,7 +28,7 @@ const how = [
   {
     id: 3,
     Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
-    Icon: 'bx:bxs-dashboard',
+    Icon: 'create-sharp',
     Headline: 'Sketch',
     Body:
       'Generate and shares a broad range of ideas for consideration, by narrow down ideas into a single, well-articulated Solution Sketch.',
@@ -36,7 +36,7 @@ const how = [
   {
     id: 4,
     Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
-    Icon: 'bx:bxs-calendar-check',
+    Icon: 'checkmark-circle-sharp',
     Headline: 'Decide',
     Body:
       'Finalize the concept to be prototyped by sharing a Solution Sketch, to help find a consensus on a single idea. To finalize the products direction ',
@@ -44,7 +44,7 @@ const how = [
   {
     id: 5,
     Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
-    Icon: 'bx:bxs-mobile',
+    Icon: 'desktop-sharp',
     Headline: 'Prototype',
     Body:
       'Create an Interactive prototype of the concept, for clients and users to get an authentic response, by mapping out the exact flow.',
@@ -52,7 +52,7 @@ const how = [
   {
     id: 6,
     Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
-    Icon: 'bx:bxs-check-circle',
+    Icon: 'checkmark-circle-sharp',
     Headline: 'Validate',
     Body:
       'Put your concept in front of users and gather feedback from users who interact with your product, and conduct stakeholder feasibility reviews',
@@ -60,7 +60,7 @@ const how = [
   {
     id: 7,
     Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
-    Icon: 'bx:bx-git-branch',
+    Icon: 'git-branch-sharp',
     Headline: 'Iterate',
     Body:
       'Gather feedback, update the design, and present new findings to the client to ensure that the product is meets the clients expectations. ',
@@ -68,7 +68,7 @@ const how = [
   {
     id: 8,
     Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
-    Icon: 'bx:bxs-rocket',
+    Icon: 'rocket-sharp',
     Headline: 'Launch',
     Body:
       'Aid in the development process, by collaberating with developers to ensure that the design translates well the final version product',
@@ -142,7 +142,7 @@ export default function Home() {
                 {what.map((stages, index) => (
                   <div className="md:flex md:align-top" key={index}>
                     <div className="col-1 mb-2 md:mt-1 md:pr-2">
-                      <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
                     </div>
                     <div className="col-2">
                       <h3 className={headline_tertiary}>{stages.Headline}</h3>
@@ -189,7 +189,7 @@ export default function Home() {
                 {how.map((stages, index) => (
                   <div className="grid-item" key={index}>
                     <div className={stages.Icon_Bg}>
-                      <span className="iconify" data-icon={stages.Icon} data-inline="false"></span>
+                      <ion-icon name={stages.Icon}></ion-icon>
                     </div>
                     <h3 className={headline_tertiary}>{stages.Headline}</h3>
                     <p className={body}>{stages.Body}</p>
@@ -208,35 +208,35 @@ export default function Home() {
                     <div className="">
                       <div className="flex items-center py-2">
                         <div className="p-2">
-                          <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
+                          <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                         <p className={body}>Solve Real-World Prolems Through Design</p>
                       </div>
                       {/*  */}
                       <div className="flex items-center py-2">
                         <div className="p-2">
-                          <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
+                          <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                         <p className={body}>Collaberate With People</p>
                       </div>
                       {/*  */}
                       <div className="flex items-center py-2">
                         <div className="p-2">
-                          <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
+                          <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                         <p className="text-lg text-gray-700">Constantly Learn New Things</p>
                       </div>
                       {/*  */}
                       <div className="flex items-center py-2">
                         <div className="p-2">
-                          <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
+                          <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                         <p className={body}>Understand The World Through People </p>
                       </div>
                       {/*  */}
                       <div className="flex items-center py-2">
                         <div className="p-2">
-                          <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
+                          <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                         <p className={body}>Make A Difference</p>
                       </div>
