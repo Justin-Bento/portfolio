@@ -49,7 +49,7 @@ const contactForm = (
         name="firstname"
         id="firstname"
       />
-      <span className="text-xs text-gray-600">Please Enter your first and last name</span>
+      <p className="text-xs text-gray-600">Please Enter your first and last name</p>
     </div>
     {/* end of Full Name input */}
     <div className="text-gray-700 mb-4">
@@ -62,7 +62,7 @@ const contactForm = (
         name="email"
         id="youremail"
       />
-      <span className="text-xs text-gray-600">Your email must be example@example.com</span>
+      <p className="text-xs text-gray-600">Your email must be example@example.com</p>
     </div>
     {/* end of Email input */}
     <div className="text-gray-700 mb-4">
@@ -74,7 +74,7 @@ const contactForm = (
         id="yourmessage"
         className="w-full h-16 px-3 py-2 text-base text-gray-700 placeholder-gray-600 border rounded focus:shadow-outline"
       ></textarea>
-      <span className="text-xs text-gray-600">Your email must be example@example.com</span>
+      <p className="text-xs text-gray-600">Your email must be example@example.com</p>
     </div>
     {/* end of input */}
     <div className="mt-8">
