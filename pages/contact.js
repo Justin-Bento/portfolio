@@ -80,7 +80,7 @@ const contactForm = (
     <div className="mt-8">
       <button
         type="submit"
-        className="h-10 px-5 text-indigo-100 duration-150 bg-green-600 rounded focus:shadow-outline hover:bg-green-700"
+        className="flex items-center h-11 my-10 px-4 text-green-50 duration-150 bg-green-600 rounded focus:shadow-outline hover:bg-green-700"
       >
         Submit
       </button>
