@@ -1,170 +1,270 @@
-import Head from "next/head";
-import WorkCard from "../components/WorkCard";
+import Head from 'next/head';
+import Link from 'next/link';
+import Card from '../components/Card.js';
+
+let headline_primary = 'text-4xl md:text-5xl font-bold mb-4';
+let headline_secondary = 'mb-4 text-3xl font-bold';
+let headline_tertiary = 'mb-1 font-semibold text-lg';
+let body_lg = 'prose-xl pr-5';
+let body = 'prose 2xl:prose-xl';
+
+const how = [
+  {
+    id: 1,
+    Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
+    Icon: 'bx:bxs-search',
+    Headline: 'Understand',
+    Body:
+      'Understand to be understood by creating a shared base across all participants and articulate the problem from business, user, competitor.',
+  },
+  {
+    id: 2,
+    Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
+    Icon: 'bx:bxs-book-alt',
+    Headline: 'Define',
+    Body:
+      'Evaluates everything learned to establish a main focus, by defining specific context and desired outcomes of potential solutions.',
+  },
+  {
+    id: 3,
+    Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
+    Icon: 'bx:bxs-dashboard',
+    Headline: 'Sketch',
+    Body:
+      'Generate and shares a broad range of ideas for consideration, by narrow down ideas into a single, well-articulated Solution Sketch.',
+  },
+  {
+    id: 4,
+    Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
+    Icon: 'bx:bxs-calendar-check',
+    Headline: 'Decide',
+    Body:
+      'Finalize the concept to be prototyped by sharing a Solution Sketch, to help find a consensus on a single idea. To finalize the products direction ',
+  },
+  {
+    id: 5,
+    Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
+    Icon: 'bx:bxs-mobile',
+    Headline: 'Prototype',
+    Body:
+      'Create an Interactive prototype of the concept, for clients and users to get an authentic response, by mapping out the exact flow.',
+  },
+  {
+    id: 6,
+    Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
+    Icon: 'bx:bxs-check-circle',
+    Headline: 'Validate',
+    Body:
+      'Put your concept in front of users and gather feedback from users who interact with your product, and conduct stakeholder feasibility reviews',
+  },
+  {
+    id: 7,
+    Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
+    Icon: 'bx:bx-git-branch',
+    Headline: 'Iterate',
+    Body:
+      'Gather feedback, update the design, and present new findings to the client to ensure that the product is meets the clients expectations. ',
+  },
+  {
+    id: 8,
+    Icon_Bg: 'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
+    Icon: 'bx:bxs-rocket',
+    Headline: 'Launch',
+    Body:
+      'Aid in the development process, by collaberating with developers to ensure that the design translates well the final version product',
+  },
+];
+const what = [
+  {
+    id: 1,
+    Headline: 'User Interface Design',
+    Body:
+      'Create responsive designs that follow the web accessibility standards to help your brand be innovative and inclusive.',
+  },
+  {
+    id: 2,
+    Headline: 'User Experience Design',
+    Body: 'Bridge the gap between the user, development team, and business stakeholders to make the product enjoyable.',
+  },
+  {
+    id: 3,
+    Headline: 'Front-End Website Development',
+    Body: 'Develop concepts to life and improve the quality of web pages by using the latests standards for the web.',
+  },
+  {
+    id: 4,
+    Headline: 'Micro Copy',
+    Body: 'Modernize a website voice that guides, engage and cue users into functionality, by removing industry jargon.',
+  },
+];
 
 export default function Home() {
   return (
     <div className="Home">
       <Head>
-        <title>Justin Bento: Home</title>
+        <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <div className="Home">
-          <div className="my-16 sm:my-12 md:my-24">
-            <div className="w-11/12	mx-auto md:max-w-6xl">
-              <div className="hero">
-                <h1 className="mb-3 text-4xl font-bold text-black md:leading-tight md:text-5xl">Hi I'm Justin Bento</h1>
-                <h2 className="mb-6 text-2xl leading-normal text-gray-600 md:text-3xl md:leading-normal">
-                  I’m a multimedia designer from Toronto, focused on finding solutions that are easy to use and help people
-                  achieve their goals.
-                </h2>
-                <a
-                  className="text-base inline-flex items-center mt-3 p-3 px-5 rounded font-medium btn text-white bg-blue-500 btn-lg sm:w-auto sm:mb-0"
-                  href="/work"
-                >
-                  View Work
-                </a>
-              </div>
-              {/* end of hero section */}
-              <div className="projects">
-                <div className="my-16 sm:my-12 md:my-24">
-                  <h2 className="my-5 text-xl font-bold text-black md:text-2xl">Recent Projects</h2>
-                  <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
-                    {workData.map((user, index) => (
-                      <div key={index}>
-                        <WorkCard Headline={user.header} Media={user.media} MediaAlt={user.alt} File={user.file} />
-                      </div>
-                    ))}
-                  </div>
+          <div className="w-11/12 mx-auto md:max-w-6xl">
+            <div className="Hero my-10 md:my-16">
+              <section className="grid grid-cols-1 gap-0 bg-opacity-25 md:grid-cols-2">
+                <div className="flex flex-col items-start justify-center px-4">
+                  <h1 className={headline_primary}>Hey I'm Justin Bento</h1>
+                  <p className={body_lg}>
+                    I’m a multimedia designer from Toronto, focused on finding solutions that are easy to use and help
+                    people achieve their goals.
+                  </p>
+                  <Link href="/work">
+                    <a>
+                      <button className="flex items-center h-11 my-10 px-4 text-green-50 duration-150 bg-green-600 rounded focus:shadow-outline hover:bg-green-700">
+                        View Work
+                      </button>
+                    </a>
+                  </Link>
                 </div>
-              </div>
-              {/* end  of projects */}
-              <div className="what">
-                <div className="my-16 sm:my-12 md:my-24">
-                  <h2 className="my-5 text-xl font-bold text-black md:text-2xl">What Do I Do?</h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-16">
-                    <div className="solve-problems">
-                      <h3 className="mb-1 text-lg font-semibold  text-gray-900">User Interface Design</h3>
-                      <p className="text-base text-gray-500">
-                        Create responsive designs that follow the web accessibility standards to help your brand be
-                        innovative and inclusive.
-                      </p>
+                <div className="flex justify-end">
+                  <img
+                    src="./img/profile.png"
+                    alt="Justin Bento profile picture"
+                    className="object-cover w-full h-full bg-gray-100  md:w-10/12 md:h-full"
+                    loading="lazy"
+                  />
+                </div>
+              </section>
+            </div>
+            {/* end of hero section */}
+            <div className="What my-24">
+              <h2 className={headline_secondary}>What Do I Do?</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                {what.map((stages, index) => (
+                  <div className="md:flex md:align-top" key={index}>
+                    <div className="col-1 mb-2 md:mt-1 md:pr-2">
+                      <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
                     </div>
-                    <div className="accessibility">
-                      <h3 className="mb-1 text-lg font-semibold  text-gray-900">User Experience Design</h3>
-                      <p className="text-base text-gray-500">
-                        Test and iterate designs to enesure user satisfaction and web accessibility standards.
-                      </p>
-                    </div>
-                    <div className="mobile-first">
-                      <h3 className="mb-1 text-lg font-semibold  text-gray-900">Front-End Web Development</h3>
-                      <p className="text-base text-gray-500">
-                        Develop websites with front-end technologies that support accessibility requirements and standards.
-                      </p>
-                    </div>
-                    <div className="mobile-first">
-                      <h3 className="mb-1 text-lg font-semibold  text-gray-900">Branding</h3>
-                      <p className="text-base text-gray-500">
-                        Develop and adhere to brands standards to help give users a unified experience on web.
-                      </p>
+                    <div className="col-2">
+                      <h3 className={headline_tertiary}>{stages.Headline}</h3>
+                      <p className={body}>{stages.Body}</p>
                     </div>
                   </div>
-                </div>
-                {/* end of recent what do i do */}
-                <div className="how">
-                  <div className="my-16 sm:my-12 md:my-24">
-                    <h2 className="my-3 text-xl font-bold text-black md:text-2xl">How Do I Work?</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 lg:gap-x-10 gap-y-20">
-                      <div className="Understand">
-                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 1: Understand</h3>
-                        <p className="text-base text-gray-500">
-                          In the Understand phase, inform and shared knowledges across all participants to help articulate
-                          the problem for the business and user.
-                        </p>
-                      </div>
-                      <div className="Define">
-                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 2: Define</h3>
-                        <p className="text-base text-gray-500">
-                          Evaluate everything learned in the Understand phase to establish focus by defining specific
-                          context and desired outcomes of potential solutions.
-                        </p>
-                      </div>
-                      <div className="Sketch">
-                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 3: Sketch</h3>
-                        <p className="text-base text-gray-500">
-                          Generate and share a broad range of ideas by looking for inspiration, solutions and narrow down
-                          ideas as group to a single, well-articulated solution Sketch.
-                        </p>
-                      </div>
-                      <div className="Decide">
-                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 4: Decide</h3>
-                        <p className="text-base text-gray-500">
-                          Talk with the owners to finalize the direction, by sharing plauseable solution sketches and reach
-                          a consensus on an idea through decision-making exercises.
-                        </p>
-                      </div>
-                      <div className="Prototype">
-                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 5: Prototype</h3>
-                        <p className="text-base text-gray-500">
-                          Build prototypes that are real enough to get an authentic response from a potential user and help
-                          business understand what features they will need.
-                        </p>
-                      </div>
-                      <div className="Validate">
-                        <h3 className="mb-1 text-lg font-semibold  text-gray-900">Phase 6: Validate</h3>
-                        <p className="text-base text-gray-500">
-                          gather feedback from users and talk with stakeholders for feasibility reviews to help validate a
-                          concept.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* end of  how */}
-                <div className="why">
-                  <div className="my-16 sm:my-12 md:my-24">
-                    <h2 className="my-5 text-xl font-bold text-black md:text-2xl">Why Do I Design?</h2>
-                    <blockquote className="mb-8 font-serif text-xl italic tracking-wide font-thin  text-gray-800 md:leading-relaxed md:text-3xl">
-                      “Why do we need to know about the human mind? Because things are designed to be used by people, and
-                      without a deep understanding of people, the designs are apt to be faulty, difficult to use, difficult
-                      to understand.”
-                    </blockquote>
-                    <blockquote className="text-xs font-semibold tracking-widest text-gray-800 uppercase ">
-                      ― Donald A. Norman, The Design of Everyday Things
-                    </blockquote>
-                  </div>
-                </div>
-                {/* end of  why */}
+                ))}
               </div>
             </div>
+            {/* end of What section */}
+            <div className="projects my-24">
+              <h2 className={headline_secondary}>Projects</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-x-16 lg:gap-x-20 gap-y-20">
+                <Card
+                  Link="/work/css-battle"
+                  Thumbnail="../img/work/01/thumbnail.png"
+                  MediaAlt="CSS Battle Website Homepages"
+                  Headline="Battling My Skills With CSS"
+                  Content="After starting at a computer day in and day out. I realized I had mental fatigue with school and being creative, I felt burnted out."
+                  tags="Personal Project"
+                />
+                <Card
+                  Link="/work/mycto"
+                  Thumbnail="../img/work/02/thumbnail.webp"
+                  MediaAlt="Final Design For Application"
+                  Headline="City Of Tornoto App Design"
+                  Content="Create an mobile app for the City Of Tornoto, that engages Tornoto Youth's in City planning projects. While featuring augmented reality (A.R)."
+                  tags="Personal Project"
+                />
+                <Card
+                  Link="/work/forcon"
+                  Thumbnail="../img/work/03/thumbnail.png"
+                  MediaAlt="Forcon Adversisement"
+                  Headline="Creating A Startup Brand"
+                  Content="The goal of this company is to help international students transition into Canada. Get To Know Forcon's Story."
+                  tags="Branding"
+                />
+              </div>
+            </div>
+            {/* end of projects section */}
+            <div className="How my-24">
+              <h2 className={headline_secondary}>How Do I Work?</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 lg:gap-x-20 gap-y-20">
+                {how.map((stages, index) => (
+                  <div className="grid-item" key={index}>
+                    <div className={stages.Icon_Bg}>
+                      <span className="iconify" data-icon={stages.Icon} data-inline="false"></span>
+                    </div>
+                    <h3 className={headline_tertiary}>{stages.Headline}</h3>
+                    <p className={body}>{stages.Body}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* end of How section */}
+            <div className="Why my-24">
+              <section className=" mx-auto max-w-7xl">
+                <section className="mx-auto max-w-7xl">
+                  <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-y-20 gap-x-10 lg:gap-x-24">
+                    <div className="">
+                      <h2 className={headline_secondary}>Why Do I Design?</h2>
+                    </div>
+                    <div className="">
+                      <div className="flex items-center py-2">
+                        <div className="p-2">
+                          <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
+                        </div>
+                        <p className={body}>Solve Real-World Prolems Through Design</p>
+                      </div>
+                      {/*  */}
+                      <div className="flex items-center py-2">
+                        <div className="p-2">
+                          <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
+                        </div>
+                        <p className={body}>Collaberate With People</p>
+                      </div>
+                      {/*  */}
+                      <div className="flex items-center py-2">
+                        <div className="p-2">
+                          <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
+                        </div>
+                        <p className="text-lg text-gray-700">Constantly Learn New Things</p>
+                      </div>
+                      {/*  */}
+                      <div className="flex items-center py-2">
+                        <div className="p-2">
+                          <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
+                        </div>
+                        <p className={body}>Understand The World Through People </p>
+                      </div>
+                      {/*  */}
+                      <div className="flex items-center py-2">
+                        <div className="p-2">
+                          <span className="iconify" data-icon="bx:bx-check-circle" data-inline="false"></span>
+                        </div>
+                        <p className={body}>Make A Difference</p>
+                      </div>
+                      {/*  */}
+                    </div>
+                  </div>
+                </section>
+              </section>
+            </div>
+            {/* end of Why section */}
+            <div className="Collab my-24">
+              <h2 className={headline_secondary}>Let's Work Togther</h2>
+              <p className={body}>
+                I'm available for full time opportunities and I'm always open to chat about design and find new ways to
+                collaberate with people. Does this sound like you?
+              </p>
+              <button
+                className="flex items-center h-11 my-10 px-4 text-green-50 duration-150 bg-green-600 rounded focus:shadow-outline hover:bg-green-700"
+                onClick={() => navigator.clipboard.writeText('hello@justinbento.ca')}
+              >
+                hello@justinbento.ca
+              </button>
+            </div>
+            {/* end of Why section */}
           </div>
+          {/* end of wrapper */}
         </div>
       </main>
     </div>
   );
 }
-
-const workData = [
-  {
-    key: 1,
-    header: "MyHumber Redesign",
-    media: "/01/thumbnail.png",
-    alt: "Project Image Of The MyHumber Redesign",
-    file: "myhumber",
-  },
-  {
-    key: 2,
-    header: "City Of Toronto App",
-    media: "/02/thumbnail.webp",
-    alt: "Project Image Of The City Of Toronto App",
-    file: "mycto",
-  },
-  {
-    key: 3,
-    header: "Forcon Startup",
-    media: "/03/thumbnail.png",
-    alt: "Project Image Of The Forcon Startup",
-    file: "forcon",
-  },
-];
