@@ -1,27 +1,33 @@
-import Head from "next/head";
-import Experience from "../components/Experience";
+import Head from 'next/head';
+import Experience from '../components/Experience';
+
+let headline_primary = 'text-4xl md:text-5xl font-bold mb-4';
+let headline_secondary = 'mb-4 text-3xl font-bold capitalize';
+let headline_tertiary = 'mb-1 font-semibold text-lg';
+let body_lg = 'prose-xl pr-5';
+let body = 'prose 2xl:prose-xl max-w-6xl';
 
 export default function About() {
   return (
     <div>
       <Head>
-        <title>Justin Bento: About</title>
+        <title>About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <div className="my-8">
-          <div className="w-11/12	mx-auto md:max-w-6xl">
+          <div className="mx-auto max-w-6xl">
             <div className="know-me">
               <div className="mb-4">
-                <h1 className="mb-4 text-xl font-bold text-black md:text-2xl capitalize">get to know me </h1>
-                <p className="text-base text-black mb-4">
+                <h1 className={headline_secondary}>get to know me </h1>
+                <p className={body}>
                   Hi, my name is Justin Bento. I am a student at Humber College that focouses on website design and
                   development. I got into website design and development through a class in my Multimedia Design course our
                   class had to create a single landing page and develop a replica with html and css and ever since then I
                   wanted to know more about it so I applied to a Multimedia Design and Development course at Humber College.
                 </p>
-                <p className="text-base text-black mb-4">
+                <p className={body}>
                   Humber College has taught me the necessary skills to land a job in the Multimedia Design and Development
                   filed. This course taught how to take ownership of my projects by applying effective design workflows, ux
                   methodlogies, and understand varous design tools to enhance my projects. you can view my design here or
@@ -32,7 +38,7 @@ export default function About() {
             {/* end of know me */}
             <div className="experience">
               <div className="my-8">
-                <h2 className="mb-4 text-xl font-bold text-black md:text-2xl capitalize">My Experience</h2>
+                <h2 className={headline_secondary}>My Experience</h2>
                 <Experience
                   Title="UI/UX Designer"
                   EmploymentType="Humber College, Multimedia Design And Development Class Assignment"
@@ -59,10 +65,8 @@ export default function About() {
             {/* end of experience */}
             <div className="awards">
               <div className="my-8">
-                <h2 className="mb-4 text-xl font-bold text-black md:text-2xl capitalize">Awards</h2>
-                <p className="text-base text-black">
-                  Deans List, Humber College Multimedia Design and Development, Febuary 2020
-                </p>
+                <h2 className={headline_secondary}>Awards</h2>
+                <p className={body}>Deans List, Humber College Multimedia Design and Development, Febuary 2020</p>
               </div>
             </div>
             {/* end of awards */}
