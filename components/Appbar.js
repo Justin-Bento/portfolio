@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Appbar() {
   return (
@@ -14,7 +14,7 @@ export default function Appbar() {
                 {NextLinks.map((website, index) => (
                   <div key={index}>
                     <Link href={website.Link}>
-                      <a className="m-3 hover:text-blue-500">{website.Page}</a>
+                      <a className="px-4 duration-75 py-2 hover:text-green-900 hover:bg-green-50">{website.Page}</a>
                     </Link>
                   </div>
                 ))}
@@ -31,22 +31,22 @@ export { Appbar };
 const NextLinks = [
   {
     key: 1,
-    Link: "/",
-    Page: "Home",
+    Link: '/',
+    Page: 'Home',
   },
   {
     key: 2,
-    Link: "/work",
-    Page: "Work",
+    Link: '/work',
+    Page: 'Work',
   },
   {
     key: 3,
-    Link: "/about",
-    Page: "About",
+    Link: '/about',
+    Page: 'About',
   },
   {
     key: 4,
-    Link: "/contact",
-    Page: "Contact",
+    Link: '/contact',
+    Page: 'Contact',
   },
 ];
