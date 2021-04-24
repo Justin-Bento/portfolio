@@ -1,44 +1,15 @@
 ---
 title: Forcon
-description: Created and launch a fake startup company
+description: Create a startup that helps people and stratagize their brand
 media: 03/thumbnail.png
 mediaAlt: Forcon Startup Thumbnail
 date: 2021-03-21T19:05:27.220Z
 type: School Project
 ---
 
-Welcome to my last project for digital branding strategies. This article will show the brandinig and UI design aspect of the assginment and show you my process of how of I took an idea and made it into reality.
+The name of the company is Forcon and it stands for Foregin Exchange. Our mission is to teach foreign students how to transition into Canada. By showing them Canada's quirks, culture, laws and work environment through an online platform. So students can adapt quickly into a new country.
 
-## Introduction
-
-The name of the company is Forcon. Forcon’s goal is to help foreign students transition into Canada by teaching them the quirks, culture, laws and work environment. So students can focus on school and adapt quickly into a new country.
-
-[https://youtu.be/Sv-btZM28LQ](https://youtu.be/Sv-btZM28LQ)
-
-## Project Roles
-
-### Role
-
-- Branding Designer
-
-### Project Type
-
-- Brand Development
-- Comany Launch
-- School Assignment
-
-### Tools Used
-
-- Sketch, Adobe CC, Maze, Usertesting.com, Lookback
-
-### Duration
-
-- January 2021 – Febuary 2021 (1 month)
-
-### Team
-
-- Justin Bento - Brand Designer
-- Christopher Pinto - Marterker and Content Creator
+You can [Click Here](https://youtu.be/Sv-btZM28LQ) to watch our launch video but keep in mind it was made by students that have zero editing and videography experience. Please watch at your own risk.
 
 ## Launching Forcon
 
