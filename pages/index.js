@@ -111,7 +111,7 @@ export default function Home() {
           <div className="w-11/12 mx-auto md:max-w-6xl">
             <div className="Hero my-10 md:my-16">
               <section className="grid grid-cols-1 gap-0 bg-opacity-25 md:grid-cols-2">
-                <div className="flex flex-col items-start justify-center px-4">
+                <div className="flex flex-col items-start justify-center">
                   <h1 className={headline_primary}>Hey I'm Justin Bento</h1>
                   <p className={body_lg}>
                     I’m a multimedia designer from Toronto, focused on finding solutions that are easy to use and help
