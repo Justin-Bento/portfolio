@@ -158,7 +158,7 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-x-16 lg:gap-x-20 gap-y-20">
                 <Card
                   Link="/work/css-battle"
-                  Thumbnail="../img/work/01/thumbnail.png"
+                  Thumbnail="../img/work/04/thumbnail.png"
                   MediaAlt="CSS Battle Website Homepages"
                   Headline="Battling My Skills With CSS"
                   Content="After starting at a computer day in and day out. I realized I had mental fatigue with school and being creative, I felt burnted out."
