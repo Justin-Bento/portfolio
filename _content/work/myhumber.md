@@ -7,83 +7,31 @@ date: 2021-03-21T19:05:27.220Z
 type: School Project
 ---
 
-For my Emerging Multimedia Design Class, I redesign Humber College's student dashboard. The dashboard is called MyHumber and it allows Humber students and staff to view and manage Humber courses, grades.
-
-## Project Background
-
 MyHumber is a mandatory dashboard for staff and studnets at Humber College. To find out the users pains I sent out a form to Humber Colleges staff and studnets to hear their thoughts on MyHumber. After compileing the form data I've learned that MyHumber undergoes a step learning curve making it difficult for new students to access their information.
 
-> My goal for this project was to make the MyHumber more convenient for Humber's students and staff. So over the semester I tackled, making the website mobile friendly by using a mobile first approach. Creating a help page for updates, alerts and tips. Implemeent a search feature that lets students Navigate MyHumber quickly.
-
-![MyHumber Project Overview](/img/work/01/thumbnail.png)
-
-**Role**
-UI/UX Designer
-
-**Tools Used** Adobe XD, Google Meet, Google Design Sprint
-
-**Team** One Person
-
-**Project Type** Website Redesign
-
-**Live Website** Adobe Xd Link
-
-**Duration** 3 Months
+My goal for this project was to make the MyHumber more convenient for Humber's students and staff. So over the semester I redesigned the website to feature mobile friendly by using a mobile first approach. Creating a help page for updates, alerts and tips. Implement a search feature that lets students Navigate MyHumber quickly.
 
 ## Discovery
 
 When researching MyHumber's issues, I've realized that there are three main features that where porlerly implemented. The first drawback is the search fature. It does not notify or give users feedback when a user types in and enters their information. The second drawback is the help page. When you click the link to enter the help page, it gives a users an error 404 status. The last drawback is that it is not mobile firendly. Students have to download an another app to access their account.
 
-## Business Objectives
-
-**What were we trying to achieve?**
-
-- Have Humber staff help students learn how to use MyHumber.
-
-## Constraints
-
-**What restrictions did I have to consider?**
-
-- Humber's Design Guidelines
-- Only use Google's design sprint methodoly
-- Design with a mobile first approach
-
-## Users Goals
-
-**What were we trying to achieve?**
-
-- Help students learn basics of the UI.
-- Make The Website Mobile Friendly
-- Find a solution that assists students on navigating the website.
-- Find a solution that make navigating the website easier
-
-## Responsibilities
-
-### What was I responsible for?
-
-- Redesigning the main dashboard to increase usablity.
-- Understand The Needs and wants of Humber Staff and Students
--
-
-## Figuring Out The Problem With Qualitative Data and User Testing.
+## The Problem.
 
 During the user testing stage I tried loading MyHumber on different screensizes to see if the website was mobile friendly, the website finshed loading and I realized that MyHumber only shrinks the desktop website to fit on mobile.
 
 ![MyHumber Current On Screensizes](/img/work/01/current-home.png)
 
-> MyHumber Screen Size On Desktop
+This is the application shell when students access MyHumber, they are greeted with a menu and a short description of what each section is. There is no prompt that tells students to click on the menu, it gets really confusing when you are tryinig to apply to courses and get your grades.
 
 ![MyHumber Current Search Fearture](/img/work/01/current-search.png)
 
-The search fearture did not give any results or filters options.
+When you input text into the search bar something In MyHumber, the fearture did not give you any access to any results and the final search result just opens up a menu with more clicks.
 
-> Search Fearture With Final Result
+![MyHumber Current Help Fearture](/img/work/01/current-help.png)
 
-![MyHumber Current Search Fearture](/img/work/01/current-help.png)
+MyHumber help page does not have access to any information and shows an error page. What students have to do is go back to MyHumbers main page and scroll down to access PDF files on how to use MyHumber.
 
-The help pages revealed an error 404 page and never gave any assistive information about the perform.
-
-> Search Fearture With Final Result
+## My Soloution
 
 ## Key Consideratioin
 
