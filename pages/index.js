@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Card from '../components/Card.js';
+import dynamic from 'next/dynamic';
+const Card = dynamic(() => import('../components/Card.js'));
 
 let headline_primary = 'text-4xl md:text-5xl font-bold mb-4';
 let headline_secondary = 'mb-4 text-3xl font-bold';

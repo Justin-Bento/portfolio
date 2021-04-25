@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import Experience from '../components/Experience';
+import dynamic from 'next/dynamic';
+const Experience = dynamic(() => import('../components/Experience.js'));
 
 let headline_primary = 'text-4xl md:text-5xl font-bold mb-4';
 let headline_secondary = 'mb-4 text-3xl font-bold capitalize';

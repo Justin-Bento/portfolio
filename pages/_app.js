@@ -1,6 +1,7 @@
-import { Appbar } from '../components/Appbar';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import 'tailwindcss/tailwind.css';
+const Appbar = dynamic(() => import('../components/Appbar.js'));
 
 function MyApp({ Component, pageProps }) {
   return (

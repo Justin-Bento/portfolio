@@ -1,9 +1,10 @@
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import { format, parseISO } from 'date-fns';
 import renderToString from 'next-mdx-remote/render-to-string';
 import hydrate from 'next-mdx-remote/hydrate';
-import { Article } from '../../components/Article';
-import { Breadcrumb } from '../../components/Breadcrumb';
+const Article = dynamic(() => import('../../components/Article.js'));
+const Breadcrumb = dynamic(() => import('../../components/Breadcrumb.js'));
 
 import { getWorkPosts } from '../../lib/work-data';
 

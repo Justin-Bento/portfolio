@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import Card from '../components/Card.js';
+import dynamic from 'next/dynamic';
 import { format, parseISO } from 'date-fns';
 import { getWorkPosts } from '../lib/work-data';
+const Card = dynamic(() => import('../components/Card.js'));
 
 export default function work({ posts }) {
   return (
