@@ -18,7 +18,7 @@ export default function Work({ title, date, content, description, media }) {
       </Head>
 
       <main>
-        <img src={`/img/work/${media}`} alt="" className="w-full h-80 mb-16 object-cover" />
+        <img src={`/img/work/${media}`} alt="" className="w-full h-80 mb-16 object-cover" loading="lazy" />
         <div className="w-11/12  mx-auto sm:max-w-4xl">
           <div className="work-post">
             <Breadcrumb Name="Work" Link="/work" PathName={title} />
