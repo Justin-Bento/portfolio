@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Justin Bento • Front-end Designer</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="description"
           content="Hi, I’m Justin Bento. I am a  UI/UX designer in Canada. I enjoy helping business evolve by solving problems that enhance your brand and drive innovation."
