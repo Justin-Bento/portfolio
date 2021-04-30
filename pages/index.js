@@ -166,12 +166,12 @@ export default function Home() {
                   tags="Personal Project"
                 />
                 <Card
-                  Link="/work/mycto"
-                  Thumbnail="../img/work/02/thumbnail.webp"
-                  MediaAlt="Final Design For Application"
-                  Headline="City Of Tornoto App Design"
-                  Content="Create an mobile app for the City Of Tornoto, that engages Tornoto Youth's in City planning projects. While featuring augmented reality (A.R)."
-                  tags="Personal Project"
+                  Link="/work/myhumber"
+                  Thumbnail="../img/work/01/thumbnail.png"
+                  MediaAlt="MyHumber Website"
+                  Headline="Redesigning MyHumber"
+                  Content="MyHumber is a mandatory dashboard for staff and studnets at Humber College. To find out the users pains I sent out a form to Humber Colleges staff and studnets to hear their thoughts on MyHumber."
+                  tags="School Project"
                 />
                 <Card
                   Link="/work/forcon"
