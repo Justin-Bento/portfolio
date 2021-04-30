@@ -7,13 +7,11 @@ date: 2021-02-14T19:05:27.220Z
 type: Personal Project
 ---
 
-After starting at a computer day in and day out. I realized I had mental fatigue with school and being creative, I felt burnted out. So during my break I decided to step away from my laptop and pick up and hold hobby. It was great I took a long deserved break after completing six classes in one semester. However, when the next semester started I realized I had to develop a portfolio website as I was about to graduate this year.
-
-I wanted to create it from scratch. But, I stoped coding for a long time and I did not know where to start. I got nervous and thinking I had to learn everything again, thankfully I was watching developers battle eachother on with css and I thought that would be a great way to get back into website development.
+After starting at the computer all day for an entire 14 weeks. I realized I had mental fatigue with school and being creative; I felt burned out. So during my break, I stepped away from my laptop and picked up my old guitar. It was great I took a long deserved break after completing six classes in one semester.
 
 ## Understanding The Problem
 
-I had to re-teach myself the basics of website development, and learn Reactjs from scratch while developing my portfolio website, for a school assignment. **Disclaimer:** CSSBattle should not be used to learn CSS or be used in real projects. I used this website to help me get back into Website Development.
+When reaching my last semester at Humber College I realized I had to develop my portfolio website. I brainstormed ideas for my website, and made one rule to myself. That rule was Justin Bento would design and develop my website myself with react and tailwindcss. I had to re-teach myself the basics of website development, and learn ReactJS.
 
 ## Deciding The Project Scope
 
@@ -37,27 +35,29 @@ As this was for an assignment I also had to showcase the result. So I decide to 
 
 ![1st Battle On CSSBattle](/img/work/04/cssbattle-01.png)
 
+Top Score: 732.41 (116 chars).
+
 ### Battle 01: Simply Square
 
-High Score: 732.41 (116 chars). Simply Square was not challenging to create but figuring out how to cut down the number of characters was difficult even with the suggestions. 1st place managed 54 characters for this challange.
+High Score: 732.41 (116 chars). Simply Square was a great introduction to help me get started and undertsand CSSBattle. The only challange I faced with this battle was cutting understanding how to reduce the number of characters from 116 to 54.
 
 ![2nd Battle On CSSBattle](/img/work/04/cssbattle-02.png)
 
 ### Battle 02: Carrom
 
-High Score: 726.24 (121 chars). This challenge taught me how to experiment with CSS values. You experiment with values to get an accurate position.
+High Score: 726.24 (121 chars). Carrom was a bit diffuclt, as I had to use the grid and flexbox to help me position the squares. This challange taught me how to use align items and justify-cotnent to move things insde the grid.
 
 ![3rd Battle On CSSBattle](/img/work/04/cssbattle-03.png)
 
 ### Battle 03: Push Button
 
-High Score: 726.24 (121 chars). This challenge taught me to examine the arranging order of the stack. z-index made this possible as this changes the stack order of an elements.
+High Score: 726.24 (121 chars). Push Button was a diffuclt battle, as I had to change the position and stacking order to allign the shapes. This challange taught me how to use position absoloute and z-index to move things freely around the website.
 
 ![4th Battle On CSSBattle](/img/work/04/cssbattle-04.png)
 
 ### Battle 04: Ups n Downs
 
-High Score: 726.24 (121 chars). This challenge taught me how to apply the nth-child selector. I applied the nth-child(odd) for the 1st and 3rd container and did not touch the middle shape.
+High Score: 726.24 (121 chars). Ups n Downs was a diffuclt, as I had to change the position and stacking order of an item and allign the shapes correcty to get a full score. This challange taught me how to position absolout and z-index to move things freely around the website.
 
 ![5th Battle On CSSBattle](/img/work/04/cssbattle-05.png)
 
