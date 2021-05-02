@@ -79,23 +79,22 @@ const what = [
   {
     id: 1,
     Headline: 'User Interface Design',
-    Body:
-      'Create responsive designs that follow the web accessibility standards to help your brand be innovative and inclusive.',
+    Body: 'Create mobile friendly designs, that follow the industry standards to help reach your audience on all devices.',
   },
   {
     id: 2,
     Headline: 'User Experience Design',
-    Body: 'Bridge the gap between the user, development team, and business stakeholders to make the product enjoyable.',
+    Body: 'Create experiences that are meaningfull to your business and audience, to help make the product fresh.',
   },
   {
     id: 3,
     Headline: 'Front-End Website Development',
-    Body: 'Develop concepts to life and improve the quality of web pages by using the latests standards for the web.',
+    Body: 'Bring the design to life, through developing design concepts and see how peope interact with your website.',
   },
   {
     id: 4,
-    Headline: 'Micro Copy',
-    Body: 'Modernize a website voice that guides, engage and cue users into functionality, by removing industry jargon.',
+    Headline: 'MicroCopy',
+    Body: 'Speak to your audience by removing all technical stuff, and help your audience understand your mission.',
   },
 ];
 
