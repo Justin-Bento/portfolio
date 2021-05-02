@@ -16,7 +16,7 @@ const how = [
     Icon: 'search-sharp',
     Headline: 'Understand',
     Body:
-      'Understand to be understood by creating a shared base across all participants and articulate the problem from business, user, competitor.',
+      'Understand the problem from a business, user and competitor level and create a shared knowledge base for everyone in the project.',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const how = [
     Icon: 'book-sharp',
     Headline: 'Define',
     Body:
-      'Evaluates everything learned to establish a main focus, by defining specific context and desired outcomes of potential solutions.',
+      'By evaluating the infromation gathered in the understand phase. To create a main focus and give the project context with desired outcomes.',
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const how = [
     Icon: 'create-sharp',
     Headline: 'Sketch',
     Body:
-      'Generate and shares a broad range of ideas for consideration, by narrow down ideas into a single, well-articulated Solution Sketch.',
+      'A broad range of ideas by looking for inspiration. Then narrow the ideas by considerating key features that fit into a single sketch.',
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const how = [
     Icon: 'checkmark-circle-sharp',
     Headline: 'Decide',
     Body:
-      'Finalize the concept to be prototyped by sharing a Solution Sketch, to help find a consensus on a single idea. To finalize the products direction ',
+      'Finalize the concept to be prototyped, by sharing the solution sketch and address the project focus. To ensure everyone is on the same page.',
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const how = [
     Icon: 'desktop-sharp',
     Headline: 'Prototype',
     Body:
-      'Create an Interactive prototype of the concept, for clients and users to get an authentic response, by mapping out the exact flow.',
+      'Create an dummy sample of the soloution sketch, to allow clients and users to interact with the design and give authentic response.',
   },
   {
     id: 6,
@@ -56,7 +56,7 @@ const how = [
     Icon: 'checkmark-circle-sharp',
     Headline: 'Validate',
     Body:
-      'Put your concept in front of users and gather feedback from users who interact with your product, and conduct stakeholder feasibility reviews',
+      'Put the sample product in front of users and gather feedback. By seeing how people interact and react to the product.',
   },
   {
     id: 7,
@@ -64,7 +64,7 @@ const how = [
     Icon: 'git-branch-sharp',
     Headline: 'Iterate',
     Body:
-      'Gather feedback, update the design, and present new findings to the client to ensure that the product is meets the clients expectations. ',
+      'Gather feedback and make changes to the design to ensure the product is meets everyones standard and keep the design up to date. ',
   },
   {
     id: 8,
@@ -72,7 +72,7 @@ const how = [
     Icon: 'rocket-sharp',
     Headline: 'Launch',
     Body:
-      'Aid in the development process, by collaberating with developers to ensure that the design translates well the final version product',
+      'Develop and create a real-world sample of the finalized design. To ensure that the final design is up to date and follows industry standards.',
   },
 ];
 const what = [
