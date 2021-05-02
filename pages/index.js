@@ -115,8 +115,8 @@ export default function Home() {
                 <div className="flex flex-col items-start justify-center">
                   <h1 className={headline_primary}>Hey I'm Justin Bento</h1>
                   <p className={body_lg}>
-                    I’m a multimedia designer from Toronto, focused on finding solutions that are easy to use and help
-                    people achieve their goals.
+                    I am a Product Designer from Toronto, that likes to solves complex problems and help people achieve
+                    their goals.
                   </p>
                   <Link href="/work">
                     <a>
