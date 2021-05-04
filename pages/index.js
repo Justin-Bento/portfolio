@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 const Card = dynamic(() => import('../components/Card.js'));
 
 let headline_primary = 'text-4xl md:text-4xl font-bold mb-4';
-let headline_secondary = 'mb-4 text-3xl font-bold';
+let headline_secondary = 'mb-4 text-3xl font-bold capitalize';
 let headline_tertiary = 'mb-1 font-semibold text-lg';
 let body_lg = 'prose-xl pr-5 text-gray-600';
 let body = 'prose 2xl:prose-xl';
@@ -187,9 +187,9 @@ export default function Home() {
             {/* end of projects section */}
             <div className="How my-24">
               <h2 className={headline_secondary}>How Do I Work?</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 lg:gap-x-20 gap-y-20">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 lg:gap-x-10 gap-y-10">
                 {how.map((stages, index) => (
-                  <div className="grid-item" key={index}>
+                  <div className="grid-item mt-2" key={index}>
                     <div className={stages.Icon_Bg}>
                       <ion-icon name={stages.Icon}></ion-icon>
                     </div>
@@ -249,21 +249,43 @@ export default function Home() {
               </section>
             </div>
             {/* end of Why section */}
-            <div className="Collab my-24">
-              <h2 className={headline_secondary}>Let's Work Togther</h2>
-              <p className={body}>
-                I'm available for full time opportunities and I'm always open to chat about design and find new ways to
-                collaberate with people. Does this sound like you?
-              </p>
-              <button
-                className="flex items-center h-11 my-10 px-4 text-green-50 duration-150 bg-green-600 rounded focus:shadow-outline hover:bg-green-700"
-                onClick={() => navigator.clipboard.writeText('hello@justinbento.ca')}
-              >
-                hello@justinbento.ca
-              </button>
+            <div className="about-me my-24">
+              <h1 className={headline_secondary}>get to know me </h1>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="mb-10">
+                  <p className={body}>
+                    Hi, I’m Justin Bento. Thank you for looking at my website. I got into website design and development
+                    through my Multimedia Design class in High School. I then applied to a Multimedia Design and Development
+                    course at Humber College, to teach me the skills of a designer.
+                  </p>
+                </div>
+                <p className={body}>
+                  Now I am currently looking for an internship. When I am not designing, you can find me pursuing the piano
+                  and learning music for fun. Or I like to exercise, playing video games. When I am not doing any hobbies, I
+                  like to socialize with my people close to me take or take naps.
+                </p>
+              </div>
             </div>
             {/* end of Why section */}
           </div>
+          <div className="Collab mt-24">
+            <div className="bg-gray-100 py-24">
+              <div className="w-11/12 mx-auto md:max-w-6xl">
+                <h2 className={headline_secondary}>Let's Work Togther</h2>
+                <p className={body}>
+                  I'm available for full time opportunities and I'm always open to chat about design and find new ways to
+                  collaberate with people.
+                </p>
+                <button
+                  className="flex items-center h-11 my-8 px-4 text-green-50 duration-150 bg-green-600 rounded focus:shadow-outline hover:bg-green-700"
+                  onClick={() => navigator.clipboard.writeText('hello@justinbento.ca')}
+                >
+                  hello@justinbento.ca
+                </button>
+              </div>
+            </div>
+          </div>
+          {/* end of Why section */}
           {/* end of wrapper */}
         </div>
       </main>
