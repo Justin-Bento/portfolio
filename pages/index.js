@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 const Card = dynamic(() => import('../components/Card.js'));
+const Footer = dynamic(() => import('../components/Footer.js'));
 
 let headline_primary = 'text-4xl md:text-4xl font-bold mb-4';
 let headline_secondary = 'mb-4 text-3xl font-bold capitalize';
@@ -263,24 +264,7 @@ export default function Home() {
             </div>
             {/* end of Why section */}
           </div>
-          <div className="Collab mt-24">
-            <div className="bg-gray-100 py-24">
-              <div className="w-11/12 mx-auto md:max-w-6xl">
-                <h2 className={headline_secondary}>Let's Work Togther</h2>
-                <p className={body}>
-                  I'm available for full time opportunities and I'm always open to chat about design and find new ways to
-                  collaberate with people.
-                </p>
-                <button
-                  className="flex items-center h-11 my-8 px-4 text-green-50 duration-150 bg-green-600 rounded focus:shadow-outline hover:bg-green-700"
-                  onClick={() => navigator.clipboard.writeText('hello@justinbento.ca')}
-                >
-                  hello@justinbento.ca
-                </button>
-              </div>
-            </div>
-          </div>
-          {/* end of Why section */}
+          <Footer />
           {/* end of wrapper */}
         </div>
       </main>
