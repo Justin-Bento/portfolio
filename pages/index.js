@@ -99,6 +99,28 @@ const what = [
     Body: 'Speak to your audience by removing all technical stuff, and help your audience understand your mission.',
   },
 ];
+const why = [
+  {
+    icons: 'checkmark-circle-outline',
+    message: 'Solve Real-World Prolems Through Design',
+  },
+  {
+    icons: 'checkmark-circle-outline',
+    message: 'Collaberate With People',
+  },
+  {
+    icons: 'checkmark-circle-outline',
+    message: 'Constantly Learn New Things',
+  },
+  {
+    icons: 'checkmark-circle-outline',
+    message: 'Understand The World Through People',
+  },
+  {
+    icons: 'checkmark-circle-outline',
+    message: 'Make A Difference',
+  },
+];
 
 export default function Home() {
   return (
@@ -202,50 +224,23 @@ export default function Home() {
             {/* end of How section */}
             <div className="Why my-24">
               <section className=" mx-auto max-w-7xl">
-                <section className="mx-auto max-w-7xl">
-                  <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-y-20 gap-x-10 lg:gap-x-24">
-                    <div className="">
-                      <h2 className={headline_secondary}>Why Do I Design?</h2>
-                    </div>
-                    <div className="">
-                      <div className="flex items-center py-2">
-                        <div className="p-2">
-                          <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div>
-                        <p className={body}>Solve Real-World Prolems Through Design</p>
-                      </div>
-                      {/*  */}
-                      <div className="flex items-center py-2">
-                        <div className="p-2">
-                          <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div>
-                        <p className={body}>Collaberate With People</p>
-                      </div>
-                      {/*  */}
-                      <div className="flex items-center py-2">
-                        <div className="p-2">
-                          <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div>
-                        <p className="text-lg text-gray-700">Constantly Learn New Things</p>
-                      </div>
-                      {/*  */}
-                      <div className="flex items-center py-2">
-                        <div className="p-2">
-                          <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div>
-                        <p className={body}>Understand The World Through People </p>
-                      </div>
-                      {/*  */}
-                      <div className="flex items-center py-2">
-                        <div className="p-2">
-                          <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        </div>
-                        <p className={body}>Make A Difference</p>
-                      </div>
-                      {/*  */}
-                    </div>
+                <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-y-20 gap-x-10 lg:gap-x-24">
+                  <div className="">
+                    <h2 className={headline_secondary}>Why Do I Design?</h2>
                   </div>
-                </section>
+                  <div className="">
+                    {why.map((item, index) => {
+                      return (
+                        <div className="flex items-center py-2" key={index}>
+                          <div className="p-2">
+                            <ion-icon name={item.icons}></ion-icon>
+                          </div>
+                          <p className={body}>{item.message}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
               </section>
             </div>
             {/* end of Why section */}
