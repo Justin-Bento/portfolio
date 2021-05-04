@@ -3,10 +3,10 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 const Card = dynamic(() => import('../components/Card.js'));
 
-let headline_primary = 'text-4xl md:text-5xl font-bold mb-4';
+let headline_primary = 'text-4xl md:text-4xl font-bold mb-4';
 let headline_secondary = 'mb-4 text-3xl font-bold';
 let headline_tertiary = 'mb-1 font-semibold text-lg';
-let body_lg = 'prose-xl pr-5';
+let body_lg = 'prose-xl pr-5 text-gray-600';
 let body = 'prose 2xl:prose-xl';
 
 const how = [
@@ -114,12 +114,12 @@ export default function Home() {
                 <div className="flex flex-col items-start justify-center">
                   <h1 className={headline_primary}>Hey I'm Justin Bento</h1>
                   <p className={body_lg}>
-                    I am a Product Designer from Toronto, that likes to solves complex problems and help people achieve
-                    their goals.
+                    I am a product and visual designer, who creates intuitive and clean designs to help people achieve their
+                    goal.
                   </p>
                   <Link href="/work">
                     <a>
-                      <button className="flex items-center h-11 my-10 px-4 text-green-50 duration-150 bg-green-600 rounded focus:shadow-outline hover:bg-green-700">
+                      <button className="flex items-center h-10 my-8 px-4 text-green-50 duration-150 bg-green-600 rounded focus:shadow-outline hover:bg-green-700">
                         View Work
                       </button>
                     </a>
