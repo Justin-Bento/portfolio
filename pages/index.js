@@ -79,17 +79,19 @@ const what = [
   {
     id: 1,
     Headline: 'User Interface Design',
-    Body: 'Create mobile friendly designs, that follow the industry standards to help reach your audience on all devices.',
+    Body: 'Sketch and organize an easy and intuitive interface. That helps people achive their goal.',
   },
   {
     id: 2,
     Headline: 'User Experience Design',
-    Body: 'Create experiences that are meaningfull to your business and audience, to help make the product fresh.',
+    Body:
+      'Research and understand how users interact and react to your product, to design strong and meaningful expriences for your user.',
   },
   {
     id: 3,
     Headline: 'Front-End Website Development',
-    Body: 'Bring the design to life, through developing design concepts and see how peope interact with your website.',
+    Body:
+      'Bring the design to life, by programminig the final design and  seeing if the design fits the web standards and best practices.',
   },
   {
     id: 4,
