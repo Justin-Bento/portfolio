@@ -258,7 +258,7 @@ export default function Home() {
                 <p className={body}>
                   Now I am currently looking for an internship. When I am not designing, you can find me pursuing the piano
                   and learning music for fun. Or I like to exercise, playing video games. When I am not doing any hobbies, I
-                  like to socialize with my people close to me take or take naps.
+                  like to cook, excersize and socialize with people.
                 </p>
               </div>
             </div>
