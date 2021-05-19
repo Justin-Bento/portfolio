@@ -136,7 +136,7 @@ export default function Home() {
 
       <main>
         <div className="Home">
-          <div className="w-11/12 mx-auto md:max-w-6xl">
+          <div className="container mx-auto p-4">
             <div className="Hero my-10 md:my-16">
               <section className="grid grid-cols-1 gap-0 bg-opacity-25 md:grid-cols-2">
                 <div className="flex flex-col items-start justify-center">
