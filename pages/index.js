@@ -30,7 +30,7 @@ const how = [
       'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
     Icon: 'book-sharp',
     Headline: 'Define',
-    Body: 'By evaluating the infromation gathered in the understand phase. To create a main focus and give the project context with desired outcomes.',
+    Body: 'Your business needs by creating a shared knowledge base for everyone in the project by evaluating the problem.',
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const how = [
       'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
     Icon: 'create-sharp',
     Headline: 'Sketch',
-    Body: 'A broad range of ideas by looking for inspiration. Then narrow the ideas by considerating key features that fit into a single sketch.',
+    Body: 'A broad range of ideas by looking for inspiration. Then narrow the ideas by considering key features that fit into a single sketch.',
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const how = [
       'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
     Icon: 'desktop-sharp',
     Headline: 'Prototype',
-    Body: 'Create an dummy sample of the soloution sketch, to allow clients and users to interact with the design and give authentic response.',
+    Body: 'Create interactive prototypes of the solution sketch, to allow clients and users to interact with the design before launch.',
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ const how = [
       'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
     Icon: 'checkmark-circle-sharp',
     Headline: 'Validate',
-    Body: 'Put the sample product in front of users and gather feedback. By seeing how people interact and react to the product.',
+    Body: 'The design by testing the sample product. While seeing how people interact with the product in real world  situations. .',
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ const how = [
       'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
     Icon: 'git-branch-sharp',
     Headline: 'Iterate',
-    Body: 'Gather feedback and make changes to the design to ensure the product is meets everyones standard and keep the design up to date. ',
+    Body: 'The design by compiling the responses and testing the new changes to see if the design meets the needs of the clients.',
   },
   {
     id: 8,
@@ -78,19 +78,19 @@ const how = [
       'flex items-center justify-center w-8 h-8 bg-gray-200 rounded-full mb-2',
     Icon: 'rocket-sharp',
     Headline: 'Launch',
-    Body: 'Develop and create a real-world sample of the finalized design. To ensure that the final design is up to date and follows industry standards.',
+    Body: 'The finalized design and using the correct tools and ensuring that the final design is up to date and follows industry standards.',
   },
 ];
 const what = [
   {
     id: 1,
     Headline: 'User Interface Design',
-    Body: 'Sketch and organize an easy and intuitive interface. That helps people achive their goal.',
+    Body: ' Create simple yet intuitive designs that are invisible to the user to help things get things done more quickly while adhering to company standards.',
   },
   {
     id: 2,
     Headline: 'User Experience Design',
-    Body: 'Research and understand how users interact and react to your product, to design strong and meaningful expriences for your user.',
+    Body: 'Research how users interact with your product by having a deep understanding of your users, needs, value and abilities and limitations.',
   },
   {
     id: 3,
@@ -100,29 +100,29 @@ const what = [
   {
     id: 4,
     Headline: 'MicroCopy',
-    Body: 'Speak to your audience by removing all technical stuff, and help your audience understand your mission.',
+    Body: 'Speak to your audience by removing all technical jargon, and help your audience understand their goal.',
   },
 ];
 const why = [
   {
     icons: 'checkmark-circle-outline',
-    message: 'Solve Real-World Prolems Through Design',
+    message: 'Solve Real-World Problems Through Design.',
   },
   {
     icons: 'checkmark-circle-outline',
-    message: 'Collaberate With People',
+    message: 'Collaborate with people around the world.',
   },
   {
     icons: 'checkmark-circle-outline',
-    message: 'Constantly Learn New Things',
+    message: 'Constantly Learn New Standards and Technologies.',
   },
   {
     icons: 'checkmark-circle-outline',
-    message: 'Understand The World Through People',
+    message: 'Understand The World Through People.',
   },
   {
     icons: 'checkmark-circle-outline',
-    message: 'Make A Difference',
+    message: 'Help Solve Problems and  Make A Difference.',
   },
 ];
 
@@ -260,17 +260,16 @@ export default function Home() {
                   <p className={body}>
                     Hi, I’m Justin Bento. Thank you for looking at my website. I
                     got into website design and development through my
-                    Multimedia Design class in High School. I then applied to a
-                    Multimedia Design and Development course at Humber College,
-                    to teach me the skills of a designer.
+                    Multimedia Design class in High School. Ever since then I
+                    was addicted Website Design and Development and studied
+                    these practices further in college.
                   </p>
                 </div>
                 <p className={body}>
-                  Now I am currently looking for an internship. When I am not
-                  designing, you can find me pursuing the piano and learning
-                  music for fun. Or I like to exercise, playing video games.
-                  When I am not doing any hobbies, I like to cook, excersize and
-                  socialize with people.
+                  When I am not designing, you can find me playing the piano and
+                  practicing music for fun or playing video games. When I am not
+                  doing any hobbies, I like to I like head to the gym, cook, and
+                  socialize with close friends and my family to help me.
                 </p>
               </div>
             </div>

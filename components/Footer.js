@@ -13,14 +13,17 @@ export default class Footer extends Component {
         <div className="Footer mt-24">
           <div className="bg-green-600 py-12">
             <div className="w-11/12 mx-auto md:max-w-6xl">
-              <h2 className={headline_secondary}>Let’s Work Together</h2>
+              <h2 className={headline_secondary}>Let’s Work Together!</h2>
               <p className={body}>
-                I'm available for full time opportunities and I'm always open to chat about design and find new ways to
-                collaberate with people.
+                I'I'm available for full time opportunities and I'm always open
+                to chat about design and find new ways to collaborate with
+                people.
               </p>
               <button
                 className="flex items-center h-11 mt-8 px-4 bg-green-50 rounded-sm hover:bg-green-100 hover:text-green-900 transition-colors delay-75"
-                onClick={() => navigator.clipboard.writeText('hello@justinbento.ca')}
+                onClick={() =>
+                  navigator.clipboard.writeText('hello@justinbento.ca')
+                }
               >
                 hello@justinbento.ca
               </button>
