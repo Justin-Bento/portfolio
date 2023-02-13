@@ -1,3 +1,32 @@
+@font-face {
+  font-family: 'Epilogue';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('/fonts/Epilogue-VariableFont_wght.ttf')format('truetype');
+}
+@font-face {
+  font-family: 'Epilogue';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url('/fonts/Epilogue-Italic-VariableFont_wght.ttf')format('truetype');
+}
+@font-face {
+  font-family: 'Julee';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('/fonts/Julee-Regular.ttf')format('truetype');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  @apply bg-[#ECE6E1]
+}
