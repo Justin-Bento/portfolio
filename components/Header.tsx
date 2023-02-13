@@ -25,6 +25,9 @@ export default function Header() {
                   <Link aria-label="project-page-internal-link" href="/projects" className="font-sans block py-2 pl-3 pr-4 text-[#443733] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B45720] md:p-0">Projects</Link>
                 </li>
                 <li>
+                  <Link aria-label="uses-page-internal-link" href="/uses" className="font-sans block py-2 pl-3 pr-4 text-[#443733] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B45720] md:p-0">Uses</Link>
+                </li>
+                <li>
                   <Link aria-label="contact-page-internal-link" href="/contact" className="font-sans block py-2 pl-3 pr-4 text-[#443733] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#B45720] md:p-0">Contact</Link>
                 </li>
               </ul>
