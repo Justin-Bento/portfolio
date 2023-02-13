@@ -31,4 +31,6 @@ const project_history = [
   {title: "Option One Staffing Agency"},
   {title: "Portfolio Website"},
   {title: "Marker"},
+  {title: "Redesign: Antigua News Room"},
+  {title: "ParkSmart"},
 ]
