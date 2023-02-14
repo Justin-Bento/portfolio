@@ -24,9 +24,10 @@
 }
 
 @tailwind base;
+@layer base {
+  html, body {
+    @apply bg-primary-50
+  }
+}
 @tailwind components;
 @tailwind utilities;
-
-* {
-  @apply bg-[#ECE6E1]
-}
