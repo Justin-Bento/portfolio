@@ -23,9 +23,8 @@ export default function Home() {
           <div className="">
             <p className="max-w-xl text-lg lg:text-xl leading-10 lg:leading-loose tracking-wide text-[#443733]">
               I&#39;m Justin Bento, a Full Stack Developer and Cyber security
-              Specialist based in Toronto. I&#39;m the founder and CEO of Planetaria,
-              where we develop technologies that empower regular people to explore
-              space on their own terms.
+              Specialist based in Toronto. That, develops friendly technologies for 
+              people to explore and use on their own terms.
             </p>
             <div className="flex items-center gap-8 mt-8">
               <Link href="https://github.com/Justin-Bento" target="_blank" aria-label="github-icon">
