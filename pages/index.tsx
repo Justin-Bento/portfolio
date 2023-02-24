@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Project_Card from "@/components/Project_Card";
 import Head from "next/head";
 import Image from "next/image";
@@ -8,6 +10,7 @@ export default function index() {
       <Head>
         <title>Justin Bento</title>
       </Head>
+      <Header />
       <div className="isolate">
         <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
           <svg
@@ -91,26 +94,17 @@ export default function index() {
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 capitalize">Signature Prjects I’ve made, over my carrer.</h2>
             <p className="max-w-6xl mt-2">I’ve worked on tons of projects over the years but these are the ones that have stood out and I’m most proud of. Some are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
             <div className="grid grid-cols-1 gap-8 my-8 lg:grid-cols-2">
-              <Project_Card Headline="Paramount Properties LTD" Media="" Link=""/>
-              <Project_Card Headline="Option One Staffing Agency" Media="" Link=""/>
-              <Project_Card Headline="Believe Support Services" Media="" Link=""/>
-              <Project_Card Headline="Marker App" Media="" Link=""/>
-              <Project_Card Headline="Urban Greens Antigua" Media="" Link=""/>
-              <Project_Card Headline="Urban Greens Antigua" Media="" Link=""/>
-            </div>
-          </section>
-          <section className="w-full mx-auto mt-32 bg-gray-100">
-            <div className="flex justify-between mx-auto max-w-7xl">
-              <div className="">
-                <h2 className="text-xl font-bold tracking-tight text-gray-900">Keep In Tougch With Me</h2>
-              </div>
-              <div className="">
-                <h2 className="text-xl font-bold tracking-tight text-gray-900"> Newsletter Subscription</h2>
-              </div>
+              <Project_Card Headline="Paramount Properties LTD" Media="" Link="" />
+              <Project_Card Headline="Option One Staffing Agency" Media="" Link="" />
+              <Project_Card Headline="Believe Support Services" Media="" Link="" />
+              <Project_Card Headline="Marker App" Media="" Link="" />
+              <Project_Card Headline="Urban Greens Antigua" Media="" Link="" />
+              <Project_Card Headline="Urban Greens Antigua" Media="" Link="" />
             </div>
           </section>
         </main>
       </div>
+      <Footer />
     </>
   )
 }
