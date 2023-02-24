@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-import { HiMenu, HiX } from 'react-icons/hi'
+import { HiMenu, HiX, HiExternalLink } from 'react-icons/hi'
+import Link from 'next/link'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Home', href: '#' },
+  { name: 'Projects', href: '#' },
+  { name: 'About', href: '#' },
+  { name: 'Contact', href: '#' },
 ]
 
 export default function Example() {
@@ -38,10 +39,11 @@ export default function Example() {
             </a>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            View Resume
-          </a>
+        <div className="items-center hidden gap-2 lg:flex lg:flex-1 lg:justify-end">
+          <Link href="https://docs.google.com/document/d/13TFxDfDENVr2-qXO2_zdYv6jHs-m582U/edit?usp=sharing&ouid=114993777085049054802&rtpof=true&sd=true" className="flex inline-flex items-center gap-2 text-sm font-semibold leading-6 text-gray-900 hover:cursor-pointer">
+            <HiExternalLink className="mb-0.5" />
+            Resume
+          </Link>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -79,12 +81,10 @@ export default function Example() {
                 ))}
               </div>
               <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  View Resume
-                </a>
+                <Link href="https://docs.google.com/document/d/13TFxDfDENVr2-qXO2_zdYv6jHs-m582U/edit?usp=sharing&ouid=114993777085049054802&rtpof=true&sd=true" className="flex inline-flex items-center gap-2 text-sm font-semibold leading-6 text-gray-900 hover:cursor-pointer">
+                  <HiExternalLink className="mb-0.5" />
+                  Resume
+                </Link>
               </div>
             </div>
           </div>
