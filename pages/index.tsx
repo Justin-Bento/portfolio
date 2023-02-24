@@ -121,12 +121,12 @@ function Project_Sample() {
       <p className="max-w-6xl mt-2 dark:text-slate-50">I’ve worked on tons of projects over the years but these are the ones that have stood out and I’m most proud of. Some are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
       <div className="grid grid-cols-1 my-8 lg:grid-cols-2">
         <Project_Card Headline="Paramount Properties LTD" Media="/projects/paramount-properties-ltd.png" Link="" />
-        <Project_Card Headline="Option One Staffing Agency" Media="/projects/option-one-staffing-agency.png" Link="https://optionone-staffing-agency.vercel.app/" />
-        <Project_Card Headline="Believe Support Services" Media="/projects/beelieve-support-services.png" Link="https://believe-support-services.vercel.app/" />
+        <Project_Card Headline="Option One Staffing Agency" Media="/projects/option-one-staffing-agency.webp" Link="https://optionone-staffing-agency.vercel.app/" />
+        <Project_Card Headline="Believe Support Services" Media="/projects/believe-support-services-logo.webp" Link="https://believe-support-services.vercel.app/" />
         <Project_Card Headline="Marker App" Media="/projects/marker-brand.png" Link="" />
-        <Project_Card Headline="Urban Greens Antigua" Media="/projects/urban-green-antigua.png" Link="https://www.urbangreensantigua.com/" />
+        <Project_Card Headline="Urban Greens Antigua" Media="/projects/urban-greens-antigua.png" Link="https://www.urbangreensantigua.com/" />
         <Project_Card Headline="ParkSmart" Media="/projects/parksmart-project.png" Link="https://www.canva.com/design/DAEXeWFsbI4/GeiVkAU9MYeVHZc0SDYlJw/view?utm_content=DAEXeWFsbI4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" />
-        <Project_Card Headline="Antigua News Room Redesign" Media="/projects/antigua-news-room.png" Link="https://www.figma.com/file/x5pcKa5FUxF85JMBolszC9/Antigua-News-Room?node-id=0%3A1&t=FmqPUlUteGYw2OQo-1" />
+        <Project_Card Headline="Antigua News Room Redesign" Media="/projects/antigua-news-room-logo.png" Link="https://www.figma.com/file/x5pcKa5FUxF85JMBolszC9/Antigua-News-Room?node-id=0%3A1&t=FmqPUlUteGYw2OQo-1" />
       </div>
     </>
   )
