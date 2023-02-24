@@ -64,7 +64,7 @@ const navigation = [
 
 export default function Example() {
   return (
-    <footer className="bg-slate-200">
+    <footer className="bg-slate-200 dark:bg-black/40">
       <div className="px-6 py-12 mx-auto max-w-7xl md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
@@ -75,7 +75,7 @@ export default function Example() {
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-xs leading-5 text-center text-gray-500">
+          <p className="text-xs leading-5 text-center text-gray-500 dark:text-slate-50">
             &copy; {new Date().getFullYear()} Justin Bento, Inc. All rights reserved.
           </p>
         </div>

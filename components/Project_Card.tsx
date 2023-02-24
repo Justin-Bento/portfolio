@@ -10,9 +10,9 @@ interface Project_Card_Props {
 export default function Project_Card(props: Project_Card_Props) {
   return (
     <>
-      <Link href={props.Link}>
+      <Link href={props.Link} target="_blank">
         <div className="z-10 p-4 transition-all cursor-pointer">
-          <div className="p-3 overflow-hidden border rounded-lg border-primary-200 hover:border-primary-300 hover:bg-primary-100">
+          <div className="p-3 overflow-hidden transition-all border rounded-lg border-primary-200 hover:border-primary-300 hover:bg-primary-100 hover:dark:bg-slate-800/50 ">
             <div className="pt-4 sm:px-6">
               <div className="relative z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md hover:shadow-none">
                 <Image src={props.Media} width={32} height={32} className="object-cover w-8 h-8 rounded-full" alt={props.Headline} />
@@ -20,8 +20,8 @@ export default function Project_Card(props: Project_Card_Props) {
             </div>
             <div className="px-4 pb-4 space-y-2">
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">{props.Headline}</h2>
-              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">Creating technology to empower civilians to explore space on their own terms.</p>
-              <button type="button" className="inline-flex items-center gap-2 py-2 mt-4 text-xs font-medium text-gray-700 ">
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Creating technology to empower civilians to explore space on their own terms.</p>
+              <button type="button" className="inline-flex items-center gap-2 py-2 mt-4 text-xs font-medium text-gray-700 dark:text-zinc-100">
                 <Link_Icon />
                 View Project
               </button>
