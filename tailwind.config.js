@@ -29,7 +29,17 @@ module.exports = {
           '900': '#2a3850',
         },
 
-      }
+      },
+      keyframes: {
+        'fade-in': {
+          from: {
+            opacity: 0,
+          },
+          to: {
+            opacity: 1,
+          },
+        },
+      },
     },
   },
   plugins: [],
