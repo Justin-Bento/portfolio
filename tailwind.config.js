@@ -40,6 +40,9 @@ module.exports = {
           },
         },
       },
+      animation: {
+        'fade-in': 'fade-in 1s linear forwards',
+      },
     },
   },
   plugins: [],
