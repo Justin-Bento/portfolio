@@ -87,7 +87,7 @@ function Hero_Section() {
     <>
       <div className="max-w-2xl py-32 mx-auto sm:py-48 lg:py-56">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <Image src="" width={64} height={64} alt="Avatar" className="bg-gray-500 rounded-full" />
+          <Image src="/projects/avatar.jpg" width={72} height={72} alt="Avatar" className="bg-gray-500 rounded-full" />
         </div>
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-slate-50">
