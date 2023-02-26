@@ -17,6 +17,7 @@ export default function index() {
         <meta name="keywords" content="Full-Stack, website design website developer" />
         <meta name="description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:image" content="/public/website-screenshot.webp" />
       </Head>
       <Header />
       <div className="isolate">
