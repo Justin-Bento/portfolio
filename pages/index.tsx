@@ -24,6 +24,12 @@ export default function index() {
         <meta property="og:title" content="Justin Bento — Portfolio" />
         <meta property="og:description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
         <meta property="og:image" content="/public/website-screenshot.webp" />
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://justin-bento.com/" />
+        <meta property="twitter:title" content="Justin Bento — Portfolio" />
+        <meta property="twitter:description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
+        <meta property="twitter:image" content="/public/website-screenshot.webp" />
       </Head>
       <Header />
       <div className="isolate">
