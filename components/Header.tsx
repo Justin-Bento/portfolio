@@ -4,10 +4,10 @@ import { HiMenu, HiX, HiExternalLink } from 'react-icons/hi'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Projects', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'About', href: '/about' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export default function Example() {
