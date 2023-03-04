@@ -88,9 +88,6 @@ export default function index() {
             </div>
           </section>
           <section className="wrapper">
-            <Project_Sample />
-          </section>
-          <section className="wrapper">
             <Contact_Form />
           </section>
         </main>
@@ -102,17 +99,18 @@ export default function index() {
 function Hero_Section() {
   return (
     <>
-      <div className="max-w-2xl py-32 mx-auto sm:py-48 lg:py-56">
+      <div className="max-w-2xl py-40 mx-auto">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <Image src="/projects/avatar.jpg" width={72} height={72} alt="Avatar" className="bg-gray-500 rounded-full" />
         </div>
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-slate-50">
-            Creative Developer Based In Toronto.
+          <p className="text-base leading-8 text-gray-600">Hey i&#39;m Justin Bento.</p>
+          <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-slate-50">
+            A Creative Developer Based In Toronto.
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-slate-100">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat aliqua.
+          <p className="mt-6 text-base leading-8 text-gray-600 dark:text-slate-100">
+            Here, all the information about me, my work, and my accomplishments gathered in one place. 
+            If you&#39;re interested in collaborating with me on a project or if there&#39;s anything missing, please don&#39;t hesitate to reach out. 
           </p>
           <div className="flex items-center justify-center mt-10 gap-x-6">
             <a
@@ -131,23 +129,7 @@ function Hero_Section() {
     </>
   )
 }
-function Project_Sample() {
-  return (
-    <>
-      <h2 className="text-4xl font-bold tracking-tight text-gray-900 capitalize dark:text-slate-50">Signature Prjects I’ve made, over my carrer.</h2>
-      <p className="max-w-6xl mt-2 dark:text-slate-50">I’ve worked on tons of projects over the years but these are the ones that have stood out and I’m most proud of. Some are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
-      <div className="grid grid-cols-1 my-8 lg:grid-cols-2">
-        <Project_Card Headline="Paramount Properties LTD" Media="/projects/paramount-properties-ltd.png" Link="" />
-        <Project_Card Headline="Option One Staffing Agency" Media="/projects/option-one-staffing-agency.webp" Link="https://optionone-staffing-agency.vercel.app/" />
-        <Project_Card Headline="Believe Support Services" Media="/projects/believe-support-services-logo.webp" Link="https://believe-support-services.vercel.app/" />
-        <Project_Card Headline="Marker App" Media="/projects/marker-brand.png" Link="" />
-        <Project_Card Headline="Urban Greens Antigua" Media="/projects/urban-greens-antigua.png" Link="https://www.urbangreensantigua.com/" />
-        <Project_Card Headline="ParkSmart" Media="/projects/parksmart-project.png" Link="https://www.canva.com/design/DAEXeWFsbI4/GeiVkAU9MYeVHZc0SDYlJw/view?utm_content=DAEXeWFsbI4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" />
-        <Project_Card Headline="Antigua News Room Redesign" Media="/projects/antigua-news-room-logo.png" Link="https://www.figma.com/file/x5pcKa5FUxF85JMBolszC9/Antigua-News-Room?node-id=0%3A1&t=FmqPUlUteGYw2OQo-1" />
-      </div>
-    </>
-  )
-}
+
 
 type FormInputs = {
   First_Name: string,
