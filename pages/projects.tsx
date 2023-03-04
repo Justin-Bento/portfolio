@@ -1,38 +1,27 @@
+import Project_Card from "@/components/Project_Card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Head from "next/head";
-import Project_Card from "@/components/Project_Card";
 
-export default function projects() {
+export default function Projects() {
   return (
     <>
-      <Head>
-        {/* <!-- Primary Meta Tags --> */}
-        <title>Projects - Justin Bento Portfolio</title>
-        <meta name="title" content="Justin Bento Portfolio" />
-        <meta name="description" content="Join me, on this adventure through my portfolio. Experience my passion for design, dev, and music all located  in one convenient place." />
-      </Head>
       <Header />
-      <main className="p-4">
-        <section className="my-12 md:my-24">
-          <h1 className="text-5xl leading-relaxed capitalize lg:leading-[7rem] lg:text-8xl font-display text-[#443733]">Things I’ve made trying to put my dent in the space.</h1>
+      <main className="my-32 space-y-8">
+        <section className="wrapper">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 capitalize dark:text-slate-50">Signature Prjects I’ve made, over my carrer.</h2>
+          <p className="mt-2 text-base leading-8 text-gray-600 dark:text-slate-100">I’ve worked on tons of projects over the years but these are the ones that have stood out and I’m most proud of. Some are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
         </section>
-        <section className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {project_history.map((data: any) => {
-            return <Project_Card key={data.title.toString()} Link={`projects/${data.title.toLowerCase().replace(/ /g, '-')}`} Headline={data.title} Media={data.Image} />
-          })}
+        <section className="grid grid-cols-1 my-8 wrapper lg:grid-cols-2">
+          <Project_Card Headline="Paramount Properties LTD" Media="/projects/paramount-properties-ltd.png" Link="" />
+          <Project_Card Headline="Option One Staffing Agency" Media="/projects/option-one-staffing-agency.webp" Link="https://optionone-staffing-agency.vercel.app/" />
+          <Project_Card Headline="Believe Support Services" Media="/projects/believe-support-services-logo.webp" Link="https://believe-support-services.vercel.app/" />
+          <Project_Card Headline="Marker App" Media="/projects/marker-brand.png" Link="" />
+          <Project_Card Headline="Urban Greens Antigua" Media="/projects/urban-greens-antigua.png" Link="https://www.urbangreensantigua.com/" />
+          <Project_Card Headline="ParkSmart" Media="/projects/parksmart-project.png" Link="https://www.canva.com/design/DAEXeWFsbI4/GeiVkAU9MYeVHZc0SDYlJw/view?utm_content=DAEXeWFsbI4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" />
+          <Project_Card Headline="Antigua News Room Redesign" Media="/projects/antigua-news-room-logo.png" Link="https://www.figma.com/file/x5pcKa5FUxF85JMBolszC9/Antigua-News-Room?node-id=0%3A1&t=FmqPUlUteGYw2OQo-1" />
         </section>
       </main>
       <Footer />
     </>
   )
 }
-
-const project_history = [
-  { title: "Paramount Properties LTD", Image: "/media/websites/paramount-properties-ltd.png" },
-  { title: "Belive Support Services", Image: "/media/websites/belive-support-services.png" },
-  { title: "Option One Staffing Agency", Image: "/media/websites/option-one-staffing-agency.png" },
-  { title: "Portfolio Website", Image: "/media/websites/justin-bento.png" },
-  { title: "Urban Greens Antigua", Image: "/media/websites/urban-greens-antigua.png"  },
-  { title: "Redesign: Antigua News Room", Image: "/media/websites/antigua-newsroom-redesign.png" },
-]
