@@ -1,69 +1,133 @@
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import clsx from "clsx";
+import { FaGithub, FaInstagram, FaLinkedin, FaSoundcloud, FaTwitter } from "react-icons/fa";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Head from "next/head";
-import Link from "next/link";
 
-export default function about() {
+export default function About() {
   return (
     <>
       <Head>
-        {/* <!-- Primary Meta Tags --> */}
-        <title>About - Justin Bento Portfolio</title>
-        <meta name="title" content="Justin Bento Portfolio" />
-        <meta name="description" content="Join me, on this adventure through my portfolio. Experience my passion for design, dev, and music all located  in one convenient place." />
+        <title>Justin Bento — About</title>
+        <meta name="title" content="Justin Bento — About" />
+        <meta name="keywords" content="Full-Stack, website design website developer" />
+        <meta name="description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="/public/website-screenshot.webp" />
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://justin-bento.com/" />
+        <meta property="og:title" content="Justin Bento — About" />
+        <meta property="og:description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
+        <meta property="og:image" content="/public/website-screenshot.webp" />
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://justin-bento.com/" />
+        <meta property="twitter:title" content="Justin Bento — About" />
+        <meta property="twitter:description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
+        <meta property="twitter:image" content="/public/website-screenshot.webp" />
       </Head>
       <Header />
-      <main className="p-4 my-12 md:my-24">
-        <section className="">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            <div className="space-y-10">
-              <h1 className="max-w-2xl text-5xl leading-relaxed capitalize lg:leading-[7rem] lg:text-8xl font-display text-[#443733]">I&#39;m Justin Bento. I live in Toronto, where I create internet stuff.</h1>
-              <div className="max-w-xl lg:rotate-[4deg] bg-amber-700 h-80">1</div>
-              <div className="space-y-4">
-                {/* Be sure to use this with a layout container that is full-width on mobile */}
-                <Link href="#" className="transition-all shadow hover:border hover:border-gray-200 hover:shadow-transparent sm:rounded-lg">
-                  <div className="w-full lg:max-w-lg overflow-hidden bg-[#739884]">
-                    <div className="px-4 py-5 sm:p-6">
-                      <p className="text-base font-medium leading-tight">Follow on Github</p>
-                    </div>
-                  </div>
-                </Link>
-                {/* Be sure to use this with a layout container that is full-width on mobile */}
-                <Link href="#" className="transition-all shadow hover:border hover:border-gray-200 hover:shadow-transparent sm:rounded-lg">
-                  <div className="w-full lg:max-w-lg overflow-hidden bg-[#739884]">
-                    <div className="px-4 py-5 sm:p-6">
-                      <p className="text-base font-medium leading-tight">Follow on Linkedin</p>
-                    </div>
-                  </div>
-                </Link>
-                {/* Be sure to use this with a layout container that is full-width on mobile */}
-                <Link href="#" className="transition-all shadow hover:border hover:border-gray-200 hover:shadow-transparent sm:rounded-lg">
-                  <div className="w-full lg:max-w-lg overflow-hidden bg-[#739884]">
-                    <div className="px-4 py-5 sm:p-6">
-                      <p className="text-base font-medium leading-tight">Follow on Soundcloud</p>
-                    </div>
-                  </div>
-                </Link>
-                {/* Be sure to use this with a layout container that is full-width on mobile */}
-                <Link href="#" className="transition-all shadow hover:border hover:border-gray-200 hover:shadow-transparent sm:rounded-lg">
-                  <div className="w-full lg:max-w-lg overflow-hidden bg-[#739884]">
-                    <div className="px-4 py-5 sm:p-6">
-                      <p className="text-base font-medium leading-tight">Follow on Twitter</p>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="max-w-xl space-y-10 text-lg lg:text-xl leading-10 lg:leading-loose tracking-wide text-[#443733]">
-              <p className="">I&#39;ve loved creating things for as long as I can remember, and wrote my first program when I was in highschool learning pascal code and basic web development. Before highschool started my parents would keep old devices and allow me to tinker with them to see whats inside and reassemble the electronics.</p>
-              <p className="">The only thing I loved more than computers as a kid was music. When I was young, I remember my parents playing music at family functions and would instinctively start tapping my feet to the beat of a song. — my parents noticed this taught me basic dance moves but that didn&#39;t last long as I was a very shy kid growing up.</p>
-              <p className="">I spent the next few years getting creative through music and computers, I loved doing both and one day I stumbled accros blogs talking about building interactive parts for a webpage. It took a while, but when I was 15 I settled with software developmemt as I was alway crafty but never artsy.</p>
-              <p className="">Today, I&#39;m a Full Stack Developer, builds, streamlines, and be the bridge bettwen between art and the web. When I&#39;m not my free time I play chess, guitar and journal to help me .</p>
-            </div>
+      <main className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12 gap-12 wrapper my-20">
+        <div className="">
+          <div className="relative lg:w-full h-96">
+            <Image
+              src={"/media/tinywow_tinywow_playing-guitar_16596264_16596496.png"}
+              fill
+              alt=""
+              sizes="(min-width: 1024px) 32rem, 20rem"
+              className="object-cover bg-gray-400 aspect-square rotate-3 rounded-2xl"
+            />
           </div>
-        </section>
+        </div>
+        <div className="lg:order-first lg:row-span-2">
+          <h1 className="text-4xl font-bold leading-relaxed tracking-normal text-slate-800 sm:text-5xl">
+            I’m Justin Bento. I live in Toronto Canada, where I create
+            expirences unique for the web!
+          </h1>
+          <div className="mt-6 text-base leading-8 text-slate-600 space-y-7">
+            <p>
+              I have always been fascinated with technology and enjoy making
+              things. When I was in middle school, I took my first computer
+              class and became enamored with computers, leading me to pursue a
+              career in technology.{" "}
+            </p>
+            <p>
+              As a child, I had a deep love for music and found it to be a great
+              outlet for my creativity. I was naturally talented in pitch,
+              rhythm, and pattern recognition, which led me to pick up my first
+              guitar at the age of 12. Unfortunately, my focus shifted to sports
+              during my teenage years, and I had to put my passion for music on
+              hold.
+            </p>
+            <p>
+              After my competitive swimming career ended, I decided to focus on
+              my education and professional future. I graduated from college
+              with a degree in Multimedia Design and Development, completed an
+              internship in Social Media Marketing, and earned certification as
+              a Cyber Security Specialist. Currently, I am aiming to obtain
+              certification in Technical Support.
+            </p>
+            <p className="">
+              Throughout my life, I have gained unique experiences that have
+              helped me become a committed and creative problem solver. I am
+              excited to bring my skills and experiences to any team and to face
+              any challenge that comes my way.
+            </p>
+          </div>
+        </div>
+        <div className="">
+          <ul role="list" className="flex flex-col gap-2">
+            <SocialLink href="https://twitter.com/bilentoos" icon={FaTwitter}>
+              Follow on Twitter
+            </SocialLink>
+            <SocialLink href="https://soundcloud.com/bento-box-519166246" target="_blank" icon={FaSoundcloud} className="mt-4">
+              Follow on Soundcloud
+            </SocialLink>
+            <SocialLink href="https://github.com/Justin-Bento" icon={FaGithub} className="mt-4">
+              Follow on GitHub
+            </SocialLink>
+            <SocialLink href="https://www.linkedin.com/in/justin--bento/" icon={FaLinkedin} className="mt-4">
+              Follow on LinkedIn
+            </SocialLink>
+            <SocialLink
+              href="mailto:contact@justin-bento.com"
+              icon={MailIcon}
+              className="pt-8 mt-4 border-t border-gray-100 dark:border-gray-700/40"
+            >
+              contact@justin-bento.com
+            </SocialLink>
+          </ul>
+        </div>
       </main>
       <Footer />
     </>
-  )
+  );
+}
+
+function SocialLink({ className, href, children, icon: Icon }: any) {
+  return (
+    <li className={clsx(className, "flex")}>
+      <Link
+        href={href}
+        className="flex items-center text-sm font-medium transition text-slate-800 group hover:text-primary-500 dark:text-slate-200 dark:hover:text-primary-500"
+      >
+        <Icon className="flex-none w-5 h-5 transition fill-gray-500 group-hover:fill-primary-500" />
+        <span className="ml-3 text-sm">{children}</span>
+      </Link>
+    </li>
+  );
+}
+
+function MailIcon(props: any) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
+      />
+    </svg>
+  );
 }

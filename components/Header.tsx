@@ -2,12 +2,13 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { HiMenu, HiX, HiExternalLink } from 'react-icons/hi'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Projects', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'About', href: '/about' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export default function Example() {
@@ -17,9 +18,9 @@ export default function Example() {
     <header className="relative top-0 z-10 ">
       <nav className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="#" className="-m-1.5 p-1.5 w-10 h-10 relative">
             <span className="sr-only">Your Company</span>
-            <img className="w-auto h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+            <Image fill className="w-auto h-8" src="/justin-bento-logo.svg" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">

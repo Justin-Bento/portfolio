@@ -4,6 +4,7 @@ import Link from "next/link";
 interface Project_Card_Props {
   Link: string,
   Headline: string,
+  Supporting: string,
   Media: string
 }
 
@@ -20,7 +21,7 @@ export default function Project_Card(props: Project_Card_Props) {
             </div>
             <div className="px-4 pb-4 space-y-2">
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">{props.Headline}</h2>
-              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Creating technology to empower civilians to explore space on their own terms.</p>
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{props.Supporting || "Creating technology to empower civilians to explore space on their own terms."}</p>
               <button type="button" className="inline-flex items-center gap-2 py-2 mt-4 text-xs font-medium text-gray-700 dark:text-zinc-100">
                 <Link_Icon />
                 View Project
