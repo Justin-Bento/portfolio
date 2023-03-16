@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaSoundcloud, FaTwitter } from "react-icons/fa";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -34,7 +34,7 @@ export default function About() {
         <div className="">
           <div className="relative lg:w-full h-96">
             <Image
-              src={"/media/tinywow_me-playing-guitar_16595730.webp"}
+              src={"/media/tinywow_tinywow_playing-guitar_16596264_16596496.png"}
               fill
               alt=""
               sizes="(min-width: 1024px) 32rem, 20rem"
@@ -80,24 +80,24 @@ export default function About() {
         </div>
         <div className="">
           <ul role="list" className="flex flex-col gap-2">
-            <SocialLink href="#" icon={FaTwitter}>
+            <SocialLink href="https://twitter.com/bilentoos" icon={FaTwitter}>
               Follow on Twitter
             </SocialLink>
-            <SocialLink href="#" icon={FaInstagram} className="mt-4">
-              Follow on Instagram
+            <SocialLink href="https://soundcloud.com/bento-box-519166246" target="_blank" icon={FaSoundcloud} className="mt-4">
+              Follow on Soundcloud
             </SocialLink>
-            <SocialLink href="#" icon={FaGithub} className="mt-4">
+            <SocialLink href="https://github.com/Justin-Bento" icon={FaGithub} className="mt-4">
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="#" icon={FaLinkedin} className="mt-4">
+            <SocialLink href="https://www.linkedin.com/in/justin--bento/" icon={FaLinkedin} className="mt-4">
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
-              href="mailto:bento.a.justin@gmail.com"
+              href="mailto:contact@justin-bento.com"
               icon={MailIcon}
               className="pt-8 mt-4 border-t border-gray-100 dark:border-gray-700/40"
             >
-              bento.a.justin@gmail.com
+              contact@justin-bento.com
             </SocialLink>
           </ul>
         </div>
