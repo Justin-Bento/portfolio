@@ -51,11 +51,12 @@ export default function Example() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#" className="-m-1.5 p-1.5 relative w-10 h-10">
               <span className="sr-only">Your Company</span>
-              <img
-                className="w-auto h-8"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              <Image
+                fill
+                quality={40}
+                src="/justin-bento-logo.svg"
                 alt=""
               />
             </a>
