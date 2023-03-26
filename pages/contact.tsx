@@ -42,12 +42,8 @@ export default function Contact() {
       <Header />
       <main className="my-32 wrapper">
         <section className="">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 capitalize dark:text-slate-50">
-            Get In Touch
-          </h1>
-          <p className="mt-1 mb-8 leading-7 text-gray-600 dark:text-slate-50">
-            Have questions or interested in collaborating? Contact me below. Open to potential clients, employers, and creatives. Let&#39;s bring your ideas to life!.
-          </p>
+          <h1 className="headline-large">Get In Touch</h1>
+          <p className="mt-1 mb-8 body-large">Have questions or interested in collaborating? Contact me below. Open to potential clients, employers, and creatives. Let&#39;s bring your ideas to life!</p>
         </section>
         <form onSubmit={handleSubmit(onSubmit)} method="POST" className="">
           <div className="">

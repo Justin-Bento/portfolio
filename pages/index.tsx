@@ -99,11 +99,11 @@ function Hero_Section() {
           <Image src="/projects/avatar.jpg" width={72} height={72} alt="Avatar" className="bg-gray-500 rounded-full" />
         </div>
         <div className="my-4 space-y-4 text-start md:text-center">
-          <p className="text-base leading-8 text-gray-600">Hey i&#39;m Justin Bento.</p>
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-slate-50">
+          <p className="body-large">Hey i&#39;m Justin Bento.</p>
+          <h1 className="display-medium">
             A Creative Developer Based In Toronto.
           </h1>
-          <p className="my-6 text-base leading-8 text-gray-600 dark:text-slate-100">
+          <p className="my-6 body-large">
             Here, all the information about me, my work, and my accomplishments gathered in one place. 
             If you&#39;re interested in collaborating with me on a project or if there&#39;s anything missing, please don&#39;t hesitate to reach out. 
           </p>

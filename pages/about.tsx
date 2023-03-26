@@ -43,11 +43,11 @@ export default function About() {
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">
-          <h1 className="text-4xl font-bold leading-relaxed tracking-normal text-slate-800 sm:text-5xl">
+          <h1 className="display-small">
             I’m Justin Bento. I live in Toronto Canada, where I create
             expirences unique for the web!
           </h1>
-          <div className="mt-6 text-base leading-8 text-slate-600 space-y-7">
+          <div className="mt-6 body-large space-y-7">
             <p>
               I have always been fascinated with technology and enjoy making
               things. When I was in middle school, I took my first computer
