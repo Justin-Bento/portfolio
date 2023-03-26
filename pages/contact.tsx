@@ -46,7 +46,7 @@ export default function Contact() {
             Get In Touch
           </h1>
           <p className="mt-1 mb-8 leading-7 text-gray-600 dark:text-slate-50">
-            Quam nunc nunc eu sed. Sed rhoncus quis ultricies ac pellentesque.
+            Have questions or interested in collaborating? Contact me below. Open to potential clients, employers, and creatives. Let&#39;s bring your ideas to life!.
           </p>
         </section>
         <form onSubmit={handleSubmit(onSubmit)} method="POST" className="">
