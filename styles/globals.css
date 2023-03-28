@@ -32,7 +32,59 @@
 @tailwind components;
 @layer components {
   .wrapper {
-    @apply mx-auto max-w-7xl sm:px-6 lg:px-8;
+    @apply p-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
   }
+  .display-large {
+    @apply font-sans text-6xl font-extrabold leading-10 text-slate-800;
+  }
+  .display-medium {
+    @apply font-sans text-5xl font-extrabold leading-normal text-slate-800;
+  }
+  .display-small {
+    @apply font-sans text-4xl font-extrabold leading-snug capitalize text-slate-800;
+  }
+  /* Typography :: display :: End */
+  .headline-large {
+    @apply font-sans text-4xl font-extrabold leading-10 capitalize text-slate-800;
+  }
+  .headline-medium {
+    @apply font-sans text-3xl font-extrabold leading-10 text-slate-800;
+  }
+  .headline-small {
+    @apply font-sans text-2xl font-extrabold leading-8 text-slate-800;
+  }
+  /* Typography :: headline :: End */
+  .title-large {
+    @apply text-[1.375rem] leading-7 tracking-normal font-sans text-slate-700;
+  }
+  .title-medium {
+    @apply text-base font-medium leading-6 tracking-normal text-slate-700;
+  }
+  .title-small {
+    @apply text-sm font-medium leading-5 tracking-normal text-slate-700;
+  }
+  /* Typography :: title :: End */
+  .label-large {
+    @apply text-sm font-medium leading-5 tracking-normal text-slate-700;
+  }
+  .label-medium {
+    @apply text-xs font-medium leading-4 tracking-normal text-slate-700;
+  }
+  .label-small {
+    @apply text-[0.688rem] font-medium leading-4 tracking-normal text-slate-700;
+    
+  }
+  /* Typography :: label :: End */
+  .body-large {
+    @apply text-base font-normal leading-8 tracking-normal text-slate-700;
+  }
+  .body-medium {
+    @apply text-sm font-normal leading-5 tracking-normal text-slate-700;
+  }
+  .body-small {
+    @apply text-xs font-normal leading-4 tracking-normal text-slate-700;
+  }
+  /* Typography :: body :: End */
 }
+
 @tailwind utilities;
