@@ -101,7 +101,7 @@ export default function Contact() {
                   />
                 </div>
                 {errors.Email && (
-                  <span className="text-xs text-red-600">
+                  <span className="capitalize label-medium dark:text-red-400">
                     * Email field is required
                   </span>
                 )}
@@ -121,7 +121,7 @@ export default function Contact() {
                     {...register("Message", { required: true })}
                   />
                   {errors.Message && (
-                    <span className="text-xs text-red-600">
+                    <span className="capitalize label-medium dark:text-red-400">
                       * Message field is required
                     </span>
                   )}
