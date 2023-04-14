@@ -18,7 +18,7 @@ export const projects = [
     title: "Believe Support Services",
     body: "",
     image: "/projects/believe-support-services-logo.webp",
-    url: "https://believe-support-services.vercel.app/",
+    url: "https://believesupportservices.vercel.app/",
   },
   {
     id: 1,
