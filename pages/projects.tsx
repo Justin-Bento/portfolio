@@ -30,8 +30,8 @@ export default function Projects() {
       <Header />
       <main className="my-32 space-y-8">
         <section className="wrapper">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 capitalize dark:text-slate-50">Signature Projects I’ve made.</h2>
-          <p className="mt-2 text-base leading-8 text-gray-600 dark:text-slate-100">I’ve worked on tons of projects over the years but these are the ones that have stood out and I’m most proud of. Some are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
+          <h2 className="display-small">Signature Projects I’ve made.</h2>
+          <p className="mt-2 body-large">I’ve worked on tons of projects over the years but these are the ones that have stood out and I’m most proud of. Some are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
         </section>
         <section className="grid grid-cols-1 mx-auto my-8 lg:grid-cols-2 max-w-7xl">
           {projects.map((data) => {
