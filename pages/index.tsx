@@ -94,7 +94,7 @@ export default function index() {
 function Hero_Section() {
   return (
     <>
-      <div className="max-w-2xl p-4 mx-auto py-28">
+      <div className="max-w-2xl p-4 py-24 mx-auto">
         <div className="sm:mb-8 sm:flex md:justify-center">
           <Image src="/projects/avatar.jpg" width={72} height={72} alt="Avatar" className="bg-gray-500 rounded-full" />
         </div>
