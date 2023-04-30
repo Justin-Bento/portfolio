@@ -12,8 +12,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Julee', ...defaultTheme.fontFamily.sans],
-        sans: ['Epilogue', ...defaultTheme.fontFamily.sans],
+        sans: ['Instrument Sans', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {

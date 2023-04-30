@@ -1,28 +1,19 @@
 @font-face {
-  font-family: 'Epilogue';
+  font-family: 'Instrument Sans';
   font-weight: 100 900;
   font-display: block;
   font-style: normal;
   font-named-instance: 'Regular';
-  src: url('/fonts/Epilogue-VariableFont_wght.ttf')format('truetype');
+  src: url('/fonts/InstrumentSans.ttf')format('truetype');
 }
 @font-face {
-  font-family: 'Epilogue';
+  font-family: 'Instrument Sans';
   font-weight: 100 900;
   font-display: block;
   font-style: italic;
   font-named-instance: 'Italic';
-  src: url('/fonts/Epilogue-Italic-VariableFont_wght.ttf')format('truetype');
+  src: url('/fonts/InstrumentSans-Italic.ttf')format('truetype');
 }
-@font-face {
-  font-family: 'Julee';
-  font-weight: 100 900;
-  font-display: block;
-  font-style: normal;
-  font-named-instance: 'Regular';
-  src: url('/fonts/Julee-Regular.ttf')format('truetype');
-}
-
 @tailwind base;
 @layer base {
   html, body {
