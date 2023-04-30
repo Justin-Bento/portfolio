@@ -96,7 +96,7 @@ function Hero_Section() {
     <>
       <div className="max-w-2xl p-4 py-24 mx-auto">
         <div className="sm:mb-8 sm:flex md:justify-center">
-          <Image src="/projects/avatar.jpg" width={72} height={72} alt="Avatar" className="bg-gray-500 rounded-full" />
+          <Image src="/media/jusitn-bento--linkin.png" width={72} height={72} alt="Avatar" className="bg-gray-500 rounded-full" />
         </div>
         <div className="my-4 space-y-4 text-start md:text-center">
           <p className="body-large">Hey i&#39;m Justin Bento.</p>
