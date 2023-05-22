@@ -2,7 +2,13 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
-import { FaGithub, FaInstagram, FaLinkedin, FaSoundcloud, FaTwitter } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaSoundcloud,
+  FaTwitter,
+} from "react-icons/fa";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -12,29 +18,44 @@ export default function About() {
       <Head>
         <title>Justin Bento — About</title>
         <meta name="title" content="Justin Bento — About" />
-        <meta name="keywords" content="Full-Stack, website design website developer" />
-        <meta name="description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
+        <meta
+          name="keywords"
+          content="Full-Stack, website design website developer"
+        />
+        <meta
+          name="description"
+          content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:image" content="/public/website-screenshot.webp" />
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://justin-bento.com/" />
         <meta property="og:title" content="Justin Bento — About" />
-        <meta property="og:description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
+        <meta
+          property="og:description"
+          content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries."
+        />
         <meta property="og:image" content="/public/website-screenshot.webp" />
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://justin-bento.com/" />
         <meta property="twitter:title" content="Justin Bento — About" />
-        <meta property="twitter:description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
-        <meta property="twitter:image" content="/public/website-screenshot.webp" />
+        <meta
+          property="twitter:description"
+          content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries."
+        />
+        <meta
+          property="twitter:image"
+          content="/public/website-screenshot.webp"
+        />
       </Head>
       <Header />
       <main className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12 gap-12 wrapper my-20">
         <div className="">
           <div className="relative lg:w-full h-96">
             <Image
-              src={"/media/tinywow_tinywow_playing-guitar_16596264_16596496.png"}
+              src={"/media/tinywow_PXL_20230514_151905273_24263847.jpg"}
               fill
               alt=""
               sizes="(min-width: 1024px) 32rem, 20rem"
@@ -44,37 +65,45 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="display-small">
-            I’m Justin Bento. I live in Toronto Canada, where I create
+            I&#39;m Justin Bento. I live in Toronto Canada, where I create
             expirences unique for the web!
           </h1>
           <div className="mt-6 body-large space-y-7">
             <p>
-              I have always been fascinated with technology and enjoy making
-              things. When I was in middle school, I took my first computer
-              class and became enamored with computers, leading me to pursue a
-              career in technology.{" "}
+              Ever since I can remember, my fascination with technology has been
+              a driving force in my life. From dismantling old gadgets to
+              understand their inner workings, to putting them back together
+              again, I&#39;ve always been captivated by the world of technology. It
+              was during middle school when I took my first computer class that
+              I truly fell in love with this field, and nothing else seemed to
+              capture my interest for a full-time career.
             </p>
             <p>
-              As a child, I had a deep love for music and found it to be a great
-              outlet for my creativity. I was naturally talented in pitch,
-              rhythm, and pattern recognition, which led me to pick up my first
-              guitar at the age of 12. Unfortunately, my focus shifted to sports
-              during my teenage years, and I had to put my passion for music on
-              hold.
+              Over time, my passion for technology led me to pursue a path in
+              Humber College&#39;s Multimedia Design and Development Course. Here, I
+              gained valuable knowledge in UI/UX design and developed a solid
+              foundation of design and development skills. I have always
+              prioritized strategy and established strong conceptual frameworks
+              for my projects, ensuring that every aspect is thoughtfully
+              crafted. Furthermore, I have always upheld accessibility as a
+              crucial aspect of my work, recognizing the importance of
+              inclusivity in the digital space.
             </p>
             <p>
-              After my competitive swimming career ended, I decided to focus on
-              my education and professional future. I graduated from college
-              with a degree in Multimedia Design and Development, completed an
-              internship in Social Media Marketing, and earned certification as
-              a Cyber Security Specialist. Currently, I am aiming to obtain
-              certification in Technical Support.
+              What sets me apart from other developers is my unique skillset,
+              which allows me to envision the bigger picture, break things down,
+              and effectively help people. This ability showcases my commitment,
+              creativity, and problem-solving prowess, making me an ideal
+              candidate for a wide range of IT roles.
             </p>
             <p className="">
-              Throughout my life, I have gained unique experiences that have
-              helped me become a committed and creative problem solver. I am
-              excited to bring my skills and experiences to any team and to face
-              any challenge that comes my way.
+              Fuelled by an insatiable thirst for knowledge, my eagerness to
+              learn, passion, and growth mindset serve as the cornerstones of my
+              success. I constantly seek opportunities to expand my skills and
+              stay up-to-date with the latest advancements in the industry. From
+              personal side projects to customizing my Linux setup, I
+              consistently seek feedback and embrace challenges that come my
+              way.
             </p>
           </div>
         </div>
@@ -83,13 +112,26 @@ export default function About() {
             <SocialLink href="https://twitter.com/bilentoos" icon={FaTwitter}>
               Follow on Twitter
             </SocialLink>
-            <SocialLink href="https://soundcloud.com/bento-box-519166246" target="_blank" icon={FaSoundcloud} className="mt-4">
+            <SocialLink
+              href="https://soundcloud.com/bento-box-519166246"
+              target="_blank"
+              icon={FaSoundcloud}
+              className="mt-4"
+            >
               Follow on Soundcloud
             </SocialLink>
-            <SocialLink href="https://github.com/Justin-Bento" icon={FaGithub} className="mt-4">
+            <SocialLink
+              href="https://github.com/Justin-Bento"
+              icon={FaGithub}
+              className="mt-4"
+            >
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="https://www.linkedin.com/in/justin--bento/" icon={FaLinkedin} className="mt-4">
+            <SocialLink
+              href="https://www.linkedin.com/in/justin--bento/"
+              icon={FaLinkedin}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
