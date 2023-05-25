@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { HiExternalLink } from 'react-icons/hi'
 
 
 export default function index() {
