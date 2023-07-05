@@ -1,12 +1,8 @@
-import { defineConfig } from 'sanity'
-import { schemaTypes } from './schemas'
+import { defineCliConfig } from '@sanity/cli'
 
-export default defineConfig({
-  name: 'default',
-  title: 'portfolio-studio',
-  projectId: 'v30obm3j',
-  dataset: 'production',
-  schema: {
-    types: schemaTypes,
-  },
+export default defineCliConfig({
+  api: {
+    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET
+  }
 })
