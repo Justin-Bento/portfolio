@@ -1,5 +1,4 @@
 import Project_Card from "@/components/Project_Card";
-import { projects } from "@/lib/data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Head from "next/head";
