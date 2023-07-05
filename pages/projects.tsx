@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 
-export default function Projects() {
+export default function Projects({ posts }: AllPosts) {
   return (
     <>
       <Head>
@@ -43,3 +43,17 @@ export default function Projects() {
     </>
   )
 }
+
+export const getStaticProps: GetStaticProps<AllPosts> = async () => {
+  const data = await client.fetch(`
+    *[_type == "post"]{
+      _id, 
+      title, 
+      slug,   
+      "mainImage": mainImage.asset -> url
+    }
+  `);
+  return {
+    props: { posts: data },
+  };
+};
