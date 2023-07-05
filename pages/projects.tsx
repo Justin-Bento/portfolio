@@ -3,6 +3,9 @@ import { projects } from "@/lib/data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import { client, urlFor } from '../sanityClient';
+import { AllPosts } from '../typings';
+import { GetStaticProps } from "next";
 
 export default function Projects({ posts }: AllPosts) {
   return (
