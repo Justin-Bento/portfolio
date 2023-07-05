@@ -1,4 +1,4 @@
-import { defineConfig } from 'sanity/lib/exports'
+import { defineConfig } from 'sanity'
 import { schemaTypes } from './schemas'
 
 export default defineConfig({
