@@ -9,6 +9,9 @@ import { GetStaticProps } from 'next';
 interface IndividualPostsProps {
   _id: string;
   title: string;
+  description: string,
+  mainImage: string,
+  slug: any
 }
 
 interface AllPosts {
