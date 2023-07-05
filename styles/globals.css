@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  html, body {
+  html {
     @apply bg-primary-50 dark:bg-slate-900
   }
   @font-face {
