@@ -11,7 +11,7 @@ interface Project_Card_Props {
 export default function Project_Card(props: Project_Card_Props) {
   return (
     <>
-      <Link href={props.Link} target="_blank">
+      <Link href={`projects/${props.Link}`}>
         <div className="z-10 p-4 transition-all cursor-pointer">
           <div className="p-3 overflow-hidden transition-all border rounded-lg border-primary-200 hover:border-primary-300 hover:bg-primary-100 hover:dark:bg-slate-800/50 dark:border-primary-700">
             <div className="pt-4 sm:px-6">
@@ -21,7 +21,7 @@ export default function Project_Card(props: Project_Card_Props) {
             </div>
             <div className="px-4 pb-4 space-y-2">
               <h2 className="mt-6 title-medium">{props.Headline}</h2>
-              <p className="mt-2 text-base dark:text-zinc-200/70">{props.Supporting || "Creating technology to empower civilians to explore space on their own terms."}</p>
+              <p className="mt-2 text-base text-zinc-600 dark:text-zinc-200/70">{props.Supporting || "Creating technology to empower civilians to explore space on their own terms."}</p>
               <button type="button" className="inline-flex items-center gap-2 py-2 mt-4 text-zinc-700 body-medium dark:text-zinc-200/70">
                 <Link_Icon />
                 View Project
