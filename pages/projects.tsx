@@ -3,8 +3,19 @@ import { projects } from "@/lib/data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import { client, urlFor } from "@/sanityClient";
+import { GetStaticProps } from 'next';
 
-export default function Projects() {
+interface IndividualPostsProps {
+  _id: string;
+  title: string;
+}
+
+interface AllPosts {
+  posts: IndividualPostsProps[];
+}
+
+export default function Projects({ posts }: AllPosts) {
   return (
     <>
       <Head>
@@ -34,8 +45,8 @@ export default function Projects() {
           <p className="mt-2 body-large">I’ve worked on tons of projects over the years but these are the ones that have stood out and I’m most proud of. Some are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
         </section>
         <section className="grid grid-cols-1 mx-auto my-8 lg:grid-cols-2 max-w-7xl">
-          {projects.map((data) => {
-            return <Project_Card key={data.title.toString().toLowerCase()} Headline={data.title} Supporting={data.body} Media={data.image!} Link={data.url} />
+          {posts.map((data) => {
+            return <Project_Card key={data.title.toString().toLowerCase()} Headline={data.title} Supporting={data.description} Media={urlFor(data.mainImage).url()} Link={data.slug.current} />
           })}
         </section>
       </main>
@@ -43,3 +54,17 @@ export default function Projects() {
     </>
   )
 }
+export const getStaticProps: GetStaticProps<AllPosts> = async () => {
+  const data = await client.fetch(`
+  *[_type == "post"] {
+      _id,
+      title,
+      description,
+      slug,
+      mainImage
+  }
+  `);
+  return {
+    props: { posts: data },
+  };
+};
