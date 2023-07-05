@@ -1,26 +1,29 @@
-@font-face {
-  font-family: 'Instrument Sans';
-  font-weight: 100 900;
-  font-display: block;
-  font-style: normal;
-  font-named-instance: 'Regular';
-  src: url('/fonts/InstrumentSans.ttf')format('truetype');
-}
-@font-face {
-  font-family: 'Instrument Sans';
-  font-weight: 100 900;
-  font-display: block;
-  font-style: italic;
-  font-named-instance: 'Italic';
-  src: url('/fonts/InstrumentSans-Italic.ttf')format('truetype');
-}
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
   html, body {
     @apply bg-primary-50 dark:bg-slate-900
   }
+  @font-face {
+    font-family: 'Instrument Sans';
+    font-weight: 100 900;
+    font-display: block;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url('/fonts/InstrumentSans.ttf')format('truetype');
+  }
+  @font-face {
+    font-family: 'Instrument Sans';
+    font-weight: 100 900;
+    font-display: block;
+    font-style: italic;
+    font-named-instance: 'Italic';
+    src: url('/fonts/InstrumentSans-Italic.ttf')format('truetype');
+  }
 }
-@tailwind components;
+
 @layer components {
   .wrapper {
     @apply p-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
@@ -77,5 +80,3 @@
   }
   /* Typography :: body :: End */
 }
-
-@tailwind utilities;
