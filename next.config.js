@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  image: {
+  images: {
     domains: [
-      "cdn.sanity.io",
-      "images.unsplash.com",
+      "images.unsplash.com", 
+      "cdn.sanity.io"
       // ...
-    ]
-  }
+    ],
+  },
 }
 
 module.exports = nextConfig
