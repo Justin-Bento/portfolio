@@ -2,8 +2,8 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
+/.npm
+.npm.js
 
 # testing
 /coverage
@@ -30,6 +30,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#ENV Files
+.env
 
 # typescript
 *.tsbuildinfo
