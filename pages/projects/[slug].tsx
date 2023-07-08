@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { client } from "@/sanityClient";
 import Head from "next/head";
+import {PortableText} from '@portabletext/react';
 
 export default function ProjectsSlug({post}: any) {
   console.log(post)
