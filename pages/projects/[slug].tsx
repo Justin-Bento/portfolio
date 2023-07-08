@@ -2,7 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { client } from "@/sanityClient";
 
-export default function ProjectsSlug() {
+export default function ProjectsSlug({post}: any) {
+  console.log(post)
   return (
     <>
       <Header />
