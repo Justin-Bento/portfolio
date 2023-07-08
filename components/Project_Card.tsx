@@ -11,7 +11,7 @@ interface Project_Card_Props {
 export default function Project_Card(props: Project_Card_Props) {
   return (
     <>
-      <Link href={props.Link} target="_blank">
+      <Link href={props.Link}>
         <div className="z-10 p-4 transition-all cursor-pointer">
           <div className="p-3 overflow-hidden transition-all border rounded-lg border-primary-200 hover:border-primary-300 hover:bg-primary-100 hover:dark:bg-slate-800/50 dark:border-primary-700">
             <div className="pt-4 sm:px-6">
