@@ -57,12 +57,11 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="lg:order-first lg:row-span-2">
+        <div className="prose lg:order-first lg:row-span-2 wrapper">
           <h1 className="display-small">
             I&#39;m Justin Bento. I live in Toronto Canada, where I create
             expirences unique for the web!
           </h1>
-          <div className="mt-6 body-large space-y-7">
             <p>
               Ever since I can remember, my fascination with technology has been
               a driving force in my life. From dismantling old gadgets to
@@ -100,7 +99,6 @@ export default function About() {
               way.
             </p>
           </div>
-        </div>
         <div className="">
           <ul role="list" className="flex flex-col gap-2">
             <SocialLink href="https://twitter.com/bilentoos" icon={RiTwitterFill}>

@@ -40,10 +40,10 @@ export default function Contact() {
         <meta property="twitter:image" content="/public/website-screenshot.webp" />
       </Head>
       <Header />
-      <main className="my-32 wrapper">
-        <section className="">
-          <h1 className="headline-large">Get In Touch</h1>
-          <p className="mt-1 mb-8 body-large">Have questions or interested in collaborating? Contact me below. Open to potential clients, employers, and creatives. Let&#39;s bring your ideas to life!</p>
+      <main className="wrapper lg:my-16">
+        <section className="mb-8 prose">
+          <h1>Get In Touch</h1>
+          <p>Have questions or interested in collaborating? Contact me below. Open to potential clients, employers, and creatives. Let&#39;s bring your ideas to life!</p>
         </section>
         <form onSubmit={handleSubmit(onSubmit)} method="POST" className="">
           <div className="">
