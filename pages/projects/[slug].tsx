@@ -38,3 +38,23 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+export async function getStaticProps({ params }: any) {
+  const query = `*[_type == "post" && slug.current == $slug] {
+    _id,
+    title,
+    description,
+    'slug': slug.current,
+    mainImage {
+      asset-> {
+        url
+      }
+    },
+    body
+  }
+  `;
+  const options = { slug: params.slug };
+  const post = await client.fetch(query, options);
+  return {
+    props: { post: post[0] },
+  };
+}
