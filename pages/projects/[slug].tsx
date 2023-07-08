@@ -29,12 +29,13 @@ export default function ProjectsSlug({post}: any) {
       </Head>
       <Header />
       <main className="p-1 my-12 md:my-24">
-        <div className="lg:flex lg:items-start">
-          <article className="mx-auto wrapper">
-            <h1 className="font-semibold sm:font-semibold leading-[1.3] display-small sm:display-medium">{post.title}</h1>
-            <p className="mt-2 text-base text-gray-800 md:text-lg">{post.description}</p>
+          <article className="mx-auto prose lg:prose-lg">
+            <h1>{post.title}</h1>
+            <p>{post.description}</p>
+            <section className="">
+              <PortableText value={post.body} />
+            </section>
           </article>
-        </div>
       </main>
       <Footer />
     </>
