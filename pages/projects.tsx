@@ -32,7 +32,7 @@ export default function Projects({ posts }: AllPosts) {
       </Head>
       <Header />
       <main className="my-32 space-y-8">
-        <section className="wrapper">
+        <section className="min-h-0 wrapper">
           <h2 className="display-small">Signature Projects I’ve made.</h2>
           <p className="mt-2 body-large">I’ve worked on tons of projects over the years but these are the ones that have stood out and I’m most proud of. Some are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
         </section>
