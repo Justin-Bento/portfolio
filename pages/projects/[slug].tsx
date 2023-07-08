@@ -28,7 +28,7 @@ export default function ProjectsSlug({post}: any) {
         <meta property="twitter:image" content="/public/website-screenshot.webp" />
       </Head>
       <Header />
-      <main className="p-1 my-12 md:my-24">
+      <main className="p-4 my-12 sm:p-0 md:my-24">
           <article className="mx-auto prose lg:prose-lg">
             <h1>{post.title}</h1>
             <p>{post.description}</p>
