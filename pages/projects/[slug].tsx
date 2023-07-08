@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { client } from "@/sanityClient";
 
 export default function ProjectsSlug() {
   return (
@@ -21,4 +22,19 @@ export default function ProjectsSlug() {
       <Footer />
     </>
   )
+}
+
+export async function getStaticPaths() {
+  const query = `*[_type == "post"]{ 'slug': slug.current }`;
+  const posts = await client.fetch(query);
+  const paths =
+    posts?.map((post: any) => ({
+      params: {
+        slug: post.slug,
+      },
+    })) || [];
+  return {
+    paths,
+    fallback: false,
+  };
 }
