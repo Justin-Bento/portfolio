@@ -57,7 +57,7 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="prose prose-invert lg:order-first lg:row-span-2">
+        <div className="prose dark:prose-invert lg:order-first lg:row-span-2">
           <h1 className="capitalize leading-[1.4]">
             I&#39;m Justin Bento. I live in Toronto Canada, where I create
             expirences unique for the web!

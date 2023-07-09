@@ -41,7 +41,7 @@ export default function Contact() {
       </Head>
       <Header />
       <main className="wrapper lg:my-16">
-        <section className="mb-8 prose max-w-7xl prose-invert">
+        <section className="mb-8 prose max-w-7xl dark:prose-invert">
           <h1>Get In Touch</h1>
           <p>Have questions or interested in collaborating? Contact me below. Open to potential clients, employers, and creatives. Let&#39;s bring your ideas to life!</p>
         </section>

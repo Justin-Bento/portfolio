@@ -32,7 +32,7 @@ export default function index() {
       <div className="isolate">
         <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem] order-3 animate-fade-in">
           <svg
-            className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+            className="relative left-[calc(50%-11rem)] -z-10 max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] h-screen"
             viewBox="0 0 1155 678"
           >
             <path
@@ -55,12 +55,12 @@ export default function index() {
             </defs>
           </svg>
         </div>
-        <main className="mb-32 space-y-32">
+        <main className="p-4 py-4 space-y-32 md:my-16">
           <section className="relative order-1 animate-fade-in">
             <Hero_Section />
             <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]  order-4 animate-fade-in">
               <svg
-                className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+                className="relative left-[calc(50%+3rem)] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] h-screen"
                 viewBox="0 0 1155 678"
               >
                 <path
@@ -93,23 +93,21 @@ export default function index() {
 function Hero_Section() {
   return (
     <>
-      <div className="max-w-2xl p-4 py-16 mx-auto lg:py-24">
-        <div className="sm:mb-8 sm:flex md:justify-center">
-          <Image src="/media/jusitn-bento--linkin.png" width={72} height={72} alt="Avatar" className="bg-gray-500 rounded-full" />
-        </div>
-        <div className="my-4 prose-lg text-start md:text-center">
+      <div className="flex flex-col items-start justify-start mx-auto prose md:prose-lg md:items-center md:justify-center text-start md:text-center place-items-center place-content-center dark:prose-invert">
+        <Image src="/media/jusitn-bento--linkin.png" width={72} height={72} alt="Avatar" className="bg-gray-500 rounded-full" />
+        <div>
           <p>Hey i&#39;m Justin Bento.</p>
-          <h1 className="font-semibold">
+          <h1>
             A Creative Developer Based In Toronto.
           </h1>
-          <p className="text-slate-600">
+          <p>
             Here, all the information about me, my work, and my accomplishments gathered in one place. 
             If you&#39;re interested in collaborating with me on a project or if there&#39;s anything missing, please don&#39;t hesitate to reach out. 
           </p>
-          <div className="flex flex-col items-start justify-start gap-8 mt-10 md:mx-auto md:max-w-xs md:flex-row md:items-center md:justify-center gap-x-6">
+          <div className="flex flex-col items-center justify-center gap-4 mt-8 md:flex-row md:max-w-xs md:mx-auto">
             <Link
               href="/projects"
-              className="w-full decoration-transparent rounded-md bg-primary-600  px-3.5 py-2.5 body-medium font-medium text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+              className="w-full decoration-transparent border border-primary-600 rounded-md bg-primary-600  px-3.5 py-2.5 body-medium font-medium text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
             >
               View Projects
             </Link>
@@ -122,5 +120,3 @@ function Hero_Section() {
     </>
   )
 }
-
-
