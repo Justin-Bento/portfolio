@@ -59,5 +59,6 @@ export const getStaticProps: GetStaticProps<AllPosts> = async () => {
   `);
   return {
     props: { posts: data },
-  };
+    revalidate: 60 // Update data every 60s
+  }
 };
