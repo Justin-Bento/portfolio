@@ -19,7 +19,7 @@ export default function Project_Card(props: Project_Card_Props) {
                 <Image src={props.Media} width={32} height={32} className="object-cover w-8 h-8 rounded-full" alt={props.Headline} />
               </div>
             </div>
-            <div className="px-4 pb-4 space-y-2 prose prose-invert">
+            <div className="px-4 pb-4 space-y-2 prose dark:prose-invert">
               <h2 className="pt-2 pb-0 pl-0 pr-0 mt-4 mb-0 ml-0 mr-0">{props.Headline}</h2>
               <p>{props.Supporting || "Creating technology to empower civilians to explore space on their own terms."}</p>
               <button type="button" className="inline-flex items-center gap-2 py-2 mt-4 text-zinc-700 body-medium dark:text-zinc-200/70">
