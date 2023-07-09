@@ -57,8 +57,8 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="prose lg:order-first lg:row-span-2 wrapper">
-          <h1 className="display-small">
+        <div className="prose prose-invert lg:order-first lg:row-span-2">
+          <h1 className="capitalize leading-[1.4]">
             I&#39;m Justin Bento. I live in Toronto Canada, where I create
             expirences unique for the web!
           </h1>
@@ -89,7 +89,7 @@ export default function About() {
               creativity, and problem-solving prowess, making me an ideal
               candidate for a wide range of IT roles.
             </p>
-            <p className="">
+            <p>
               Fuelled by an insatiable thirst for knowledge, my eagerness to
               learn, passion, and growth mindset serve as the cornerstones of my
               success. I constantly seek opportunities to expand my skills and

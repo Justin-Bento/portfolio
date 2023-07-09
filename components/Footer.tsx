@@ -44,7 +44,7 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-xs leading-5 text-center text-gray-500 dark:text-slate-50">
+          <p className="prose-sm text-gray-600 dark:text-gray-400">
             &copy; {new Date().getFullYear()} Justin Bento, Inc. All rights reserved.
           </p>
         </div>

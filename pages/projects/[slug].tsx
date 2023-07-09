@@ -29,7 +29,7 @@ export default function ProjectsSlug({post}: any) {
       </Head>
       <Header />
       <main className="p-4 my-12 sm:p-0 md:my-24">
-          <article className="mx-auto prose lg:prose-lg">
+          <article className="mx-auto prose prose-invert lg:prose-lg">
             <h1>{post.title}</h1>
             <p>{post.description}</p>
             <section className="">
