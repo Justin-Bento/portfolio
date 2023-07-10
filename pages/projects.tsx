@@ -6,6 +6,7 @@ import Head from "next/head";
 import { client, urlFor } from '../sanityClient';
 import { AllPosts } from '../typings';
 import { GetStaticProps } from "next";
+import project from "@/styles/Project.module.css"
 
 export default function Projects({ posts }: AllPosts) {
   return (
@@ -32,11 +33,11 @@ export default function Projects({ posts }: AllPosts) {
       </Head>
       <Header />
       <main className="my-32 space-y-8">
-        <section className="min-h-0 prose dark:prose-invert wrapper lg:prose-lg">
-          <h1>Signature Projects I’ve made.</h1>
-          <p>I’ve worked on tons of projects over the years but these are the ones that have stood out and I’m most proud of. Some are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
+        <section className={project.container}>
+          <h1 className={project.headline}>Signature Projects I’ve made.</h1>
+          <p className={project.body}>I’ve worked on tons of projects over the years but these are the ones that have stood out and I’m most proud of. Some are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
         </section>
-        <section className="grid grid-cols-1 mx-auto mt-4 lg:grid-cols-2 max-w-7xl">
+        <section className={project.grid_container}>
           {posts.map((data) => {
             return <Project_Card key={data.title.toString().toLowerCase()} Headline={data.title} Supporting={data.description} Link={`/projects/${data.slug.current}`} Media={urlFor(data.mainImage).url()} />
           })}
