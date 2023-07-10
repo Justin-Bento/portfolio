@@ -32,8 +32,8 @@ export default function Projects({ posts }: AllPosts) {
         <meta property="twitter:image" content="/public/website-screenshot.webp" />
       </Head>
       <Header />
-      <main className="my-32 space-y-8">
-        <section className="container">
+      <main className="container">
+        <section>
           <h1 className="headline">Signature Projects I’ve made.</h1>
           <p className="body">I’ve worked on tons of projects over the years but these are the ones that have stood out and I’m most proud of. Some are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
         </section>
