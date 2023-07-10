@@ -27,14 +27,34 @@
 }
 .mediaContainer {
   position: relative;
-  height: 24rem;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; 
 }
 .mainImage {
-  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 1rem;
   background-color: #9ca3af;
-  --transform-rotate: 3deg;
+  transform: rotate(3deg);
+}
+.social {
+  display: flex; 
+flex-direction: column; 
+gap: 0.5rem; 
+}
+.socialLink {
+  display: flex; 
+align-items: center; 
+font-size: 0.875rem;
+line-height: 1.25rem; 
+font-weight: 500; 
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 300ms; 
+}
+.SocialLinkIcon {
+  flex: none; 
+width: 1.25rem; 
+height: 1.25rem; 
 }
 
 @media (min-width: 1024px) {

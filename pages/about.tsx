@@ -100,7 +100,7 @@ export default function About() {
             </p>
           </div>
         <div className="">
-          <ul role="list" className="flex flex-col gap-2">
+          <ul role="list" className={about.social}>
             <SocialLink href="https://twitter.com/bilentoos" icon={RiTwitterFill}>
               Follow on Twitter
             </SocialLink>
@@ -146,9 +146,9 @@ function SocialLink({ className, href, children, icon: Icon }: any) {
     <li className={className}>
       <Link
         href={href}
-        className="flex items-center text-sm font-medium transition text-slate-800 group hover:text-primary-500 dark:text-slate-200 dark:hover:text-primary-500"
+        className={about.socialLink}
       >
-        <Icon className="flex-none w-5 h-5 transition fill-gray-500 group-hover:fill-primary-500" />
+        <Icon className={about.SocialLinkIcon} />
         <span className="ml-3 text-sm">{children}</span>
       </Link>
     </li>
