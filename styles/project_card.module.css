@@ -1,0 +1,47 @@
+.surface {
+  border: 1px solid var(--gray-200);
+  border-radius: 0.25rem;
+  color: var(--gray-950);
+  text-decoration: none;
+  padding: 2rem 1rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.surface:hover {
+  background-color: hsla(216, 16%, 82%, 0.1);
+}
+.mediaContainer {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+}
+.title {
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 1rem 0rem 0rem 0rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gray-950);
+}
+.supporting {
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0rem 1rem 0rem;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: var(--gray-700);
+}
+.links {
+  margin: 0rem 0rem;
+  text-decoration: none  !important;
+  color: var(--gray-950);
+}
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.icons {
+  width: 1rem;
+  height: 1rem;
+}
