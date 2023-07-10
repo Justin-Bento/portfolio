@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import clsx from "clsx";
 import { RiGithubFill, RiInstagramFill, RiLinkedinBoxFill, RiMailFill, RiSoundcloudFill, RiTwitterFill  } from "react-icons/ri";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import about from "@/styles/About.module.css";
 
 export default function About() {
   return (
@@ -45,20 +45,20 @@ export default function About() {
         />
       </Head>
       <Header />
-      <main className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12 gap-12 wrapper my-20">
+      <main className={about.mainGrid}>
         <div className="">
-          <div className="relative lg:w-full h-96">
+          <div className={about.mediaContainer}>
             <Image
               src={"/media/tinywow_PXL_20230514_151905273_24263847.jpg"}
               fill
               alt=""
               sizes="(min-width: 1024px) 32rem, 20rem"
-              className="object-cover bg-gray-400 aspect-square rotate-3 rounded-2xl"
+              className={about.mainImage}
             />
           </div>
         </div>
-        <div className="prose dark:prose-invert lg:order-first lg:row-span-2">
-          <h1 className="capitalize leading-[1.4]">
+        <div className={about.aboutCopy} >
+          <h1>
             I&#39;m Justin Bento. I live in Toronto Canada, where I create
             expirences unique for the web!
           </h1>
@@ -143,7 +143,7 @@ export default function About() {
 
 function SocialLink({ className, href, children, icon: Icon }: any) {
   return (
-    <li className={clsx(className, "flex")}>
+    <li className={className}>
       <Link
         href={href}
         className="flex items-center text-sm font-medium transition text-slate-800 group hover:text-primary-500 dark:text-slate-200 dark:hover:text-primary-500"
