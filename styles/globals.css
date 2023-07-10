@@ -34,3 +34,33 @@ html body {
   background-color: var(--gray-50);
   font-family: "Instrument Sans", sans-serif;
 }
+.container {
+  max-width: 1280px;
+  margin: 0rem auto;
+  padding: 1rem;
+}
+.headline {
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 1rem 0rem 0rem 0rem;
+  font-size: 1.5rem; /* 36px */
+  line-height: 2rem; /* 40px */
+  color: var(--gray-950);
+}
+.body {
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.5rem 0rem 1rem 0rem;
+  font-size: 1.15rem; /* 20px */
+  line-height: 1.7rem; /* 28px */
+  color: var(--gray-700);
+}
+
+@media (min-width: 1024px) { 
+  .headline{
+    font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+  }
+  .body{
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+}
