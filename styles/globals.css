@@ -1,81 +1,36 @@
+:root {
+  --gray-50: #f4f6f7;
+  --gray-100: #e2e6eb;
+  --gray-200: #c9cfd8;
+  --gray-300: #a3aebd;
+  --gray-400: #76859a;
+  --gray-500: #64748b;
+  --gray-600: #4e596c;
+  --gray-700: #444b5a;
+  --gray-800: #3d424d;
+  --gray-900: #363a43;
+  --gray-950: #21242b;
+}
+
 @font-face {
-  font-family: 'Instrument Sans';
+  font-family: "Instrument Sans";
   font-weight: 100 900;
   font-display: block;
   font-style: normal;
-  font-named-instance: 'Regular';
-  src: url('/fonts/InstrumentSans.ttf')format('truetype');
+  font-named-instance: "Regular";
+  src: url("/fonts/InstrumentSans.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Instrument Sans';
+  font-family: "Instrument Sans";
   font-weight: 100 900;
   font-display: block;
   font-style: italic;
-  font-named-instance: 'Italic';
-  src: url('/fonts/InstrumentSans-Italic.ttf')format('truetype');
+  font-named-instance: "Italic";
+  src: url("/fonts/InstrumentSans-Italic.ttf") format("truetype");
 }
-@tailwind base;
-@layer base {
-  html, body {
-    @apply bg-primary-50 dark:bg-slate-900
-  }
+html body {
+  margin: 0rem;
+  padding: 0rem;
+  background-color: var(--gray-50);
+  font-family: "Instrument Sans", sans-serif;
 }
-@tailwind components;
-@layer components {
-  .wrapper {
-    @apply min-h-screen p-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
-  }
-  .display-large {
-    @apply font-sans text-6xl font-extrabold leading-10 tracking-wide text-slate-800 dark:text-slate-50;
-  }
-  .display-medium {
-    @apply font-sans text-5xl font-extrabold tracking-wide text-slate-800 dark:text-slate-50;
-  }
-  .display-small {
-    @apply font-sans text-4xl font-extrabold leading-tight tracking-wide capitalize text-slate-800 dark:text-slate-50;
-  }
-  /* Typography :: display :: End */
-  .headline-large {
-    @apply font-sans text-4xl font-extrabold leading-10 tracking-wide capitalize text-slate-800 dark:text-slate-50;
-  }
-  .headline-medium {
-    @apply font-sans text-3xl font-extrabold leading-10 tracking-wide text-slate-800 dark:text-slate-100;
-  }
-  .headline-small {
-    @apply font-sans text-2xl font-extrabold leading-8 tracking-wide text-slate-800 dark:text-slate-100;
-  }
-  /* Typography :: headline :: End */
-  .title-large {
-    @apply text-[1.375rem] leading-7 tracking-wide font-sans text-slate-700 dark:text-slate-100;
-  }
-  .title-medium {
-    @apply text-base font-medium leading-6 tracking-wide text-slate-700 dark:text-slate-100;
-  }
-  .title-small {
-    @apply text-sm font-medium leading-5 tracking-wide text-slate-700 dark:text-slate-100;
-  }
-  /* Typography :: title :: End */
-  .label-large {
-    @apply text-sm font-medium leading-5 tracking-wide text-slate-700 dark:text-slate-100;
-  }
-  .label-medium {
-    @apply text-xs font-medium leading-4 tracking-wide text-slate-700 dark:text-slate-100;
-  }
-  .label-small {
-    @apply text-[0.688rem] font-medium leading-4 tracking-wide text-slate-700 dark:text-slate-100;
-    
-  }
-  /* Typography :: label :: End */
-  .body-large {
-    @apply text-base font-normal leading-8 tracking-wide text-slate-700 dark:text-slate-200;
-  }
-  .body-medium {
-    @apply text-sm font-normal leading-5 tracking-wide text-slate-700 dark:text-slate-200;
-  }
-  .body-small {
-    @apply text-xs font-normal leading-4 tracking-wide text-slate-700 dark:text-slate-200;
-  }
-  /* Typography :: body :: End */
-}
-
-@tailwind utilities;
