@@ -9,7 +9,7 @@ export default function Appbar() {
   const onClick = () => setIsActive((isActive) => !isActive);
   useEffect(() => {
     const handelResize = () => {
-    if (window.innerWidth >= 640) {
+    if (window.innerWidth >= 1080) {
       setIsActive(true);
     } else {
       setIsActive(false);
