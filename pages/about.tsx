@@ -105,7 +105,11 @@ export default function About() {
             success and what I love about web development is that it is an ever
             evolving discipline. that keeps my brain engaged and hungry.
           </p>
-          <p>Thanks for taking the time to read. &#128522;</p>
+          <p>
+            Thanks for taking the time to read. &#128522; 
+          </p>
+          <caption className={about.caption}>Ps. The colour scheme
+            for this website is based off my guitar.</caption>
         </div>
         <ul role="list" className={about.social}>
           <SocialLinks

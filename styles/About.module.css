@@ -47,7 +47,14 @@
 flex-direction: column; 
 gap: 0.5rem; 
 }
-
+.caption {
+width: 64ch;
+text-align: start;
+opacity: 0.5;
+font-style: italic;
+margin-top: 1rem;
+font-size: 0.875rem;
+}
 
 @media (min-width: 1024px) {
   .aboutCopy {
