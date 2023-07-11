@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Head from "next/head";
+import contact from "@/styles/contact.module.css";
 
 type FormInputs = {
   First_Name: string;
@@ -40,19 +41,19 @@ export default function Contact() {
         <meta property="twitter:image" content="/public/website-screenshot.webp" />
       </Head>
       <Header />
-      <main className="wrapper lg:my-16">
-        <section className="mb-8 prose max-w-7xl dark:prose-invert">
-          <h1>Get In Touch</h1>
-          <p>Have questions or interested in collaborating? Contact me below. Open to potential clients, employers, and creatives. Let&#39;s bring your ideas to life!</p>
+      <main className="container">
+        <section>
+          <h1 className="headline">Get In Touch</h1>
+          <p className="body">Have questions or interested in collaborating? Contact me below. Open to potential clients, employers, and creatives. Let&#39;s bring your ideas to life!</p>
         </section>
         <form onSubmit={handleSubmit(onSubmit)} method="POST" className="">
           <div className="">
-            <div className="flex flex-col gap-4 my-4">
+            <div className={contact.layout}>
               <div>
                 <label
                   htmlFor="first-name"
                   defaultValue="First_Name"
-                  className="block text-sm font-semibold leading-6 text-gray-900 dark:text-slate-50"
+                  className={contact.label}
                 >
                   First name
                 </label>
@@ -62,7 +63,7 @@ export default function Contact() {
                     {...register("First_Name")}
                     id="first-name"
                     autoComplete="given-name"
-                    className="block w-full dark:bg-slate-900 rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 dark:text-slate-50 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600"
+                    className={contact.input}
                   />
                 </div>
               </div>
@@ -70,7 +71,7 @@ export default function Contact() {
                 <label
                   htmlFor="last-name"
                   defaultValue="Last_Name"
-                  className="block text-sm font-semibold leading-6 text-gray-900 dark:text-slate-50 dark:bg-slate-900"
+                  className={contact.label}
                 >
                   Last name
                 </label>
@@ -80,14 +81,14 @@ export default function Contact() {
                     {...register("Last_Name")}
                     id="last-name"
                     autoComplete="family-name"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 dark:text-slate-50  dark:bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600"
+                    className={contact.input}
                   />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-gray-900 dark:text-slate-50 dark:bg-slate-900"
+                  className={contact.label}
                 >
                   Email
                 </label>
@@ -97,7 +98,7 @@ export default function Contact() {
                     id="email"
                     autoComplete="email"
                     {...register("Email", { required: true })}
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 dark:text-slate-50  dark:bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600"
+                    className={contact.input}
                   />
                 </div>
                 {errors.Email && (
@@ -109,7 +110,7 @@ export default function Contact() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-gray-900 dark:text-slate-50 dark:bg-slate-900"
+                  className={contact.label}
                 >
                   Message
                 </label>
@@ -117,7 +118,7 @@ export default function Contact() {
                   <textarea
                     id="message"
                     rows={4}
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-sm leading-6 text-gray-900 dark:text-slate-50  dark:bg-slate-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600"
+                    className={contact.input}
                     {...register("Message", { required: true })}
                   />
                   {errors.Message && (
@@ -132,7 +133,7 @@ export default function Contact() {
               {/* errors will return when field validation fails  */}
               <button
                 type="submit"
-                className="rounded-md bg-primary-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                className={contact.submit}
               >
                 Send message
               </button>
