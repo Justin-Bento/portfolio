@@ -44,7 +44,7 @@ export default function index() {
         />
       </Head>
       <Header />
-      <main className="">
+      <main className="container">
         <div className={`${home.isolate} fadeInAnimation order2`}>
           <div className={home.bgPattern1}>
             <svg className={home.bgPattern2} viewBox="0 0 1155 678">
@@ -82,11 +82,14 @@ export default function index() {
             <div>
               <p>Hi there! I&#39;m Justin Bento. </p>
               <h1 className={home.headline}>
-                A Creative Software Engineer & Designer Based In Toronto.
+                Creative Software Engineer, With Expereince In Multimedia
+                Design.
               </h1>
               <p className={home.body}>
-                Here, all the information about me, my work, and my accomplishments gathered in one place.
-                If you&#39;re interested in collaborating with me on a project or if there&#39;s anything missing, please don&#39;t hesitate to reach out.
+                This website is a creative platform developed by me. Showcasing
+                my skills, knowledge, and expereince. All in one place! So feel
+                free to learn about my joruney, interact with websites I
+                built, and lets collaborate on projects.
               </p>
               <div className={home.hero_actions}>
                 <Link href="/projects" className={home.btnPrimary}>

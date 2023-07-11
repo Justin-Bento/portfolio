@@ -44,7 +44,7 @@ export default function Contact() {
       <main className="container">
         <section>
           <h1 className="headline">Get In Touch</h1>
-          <p className="body">Have questions or interested in collaborating? Contact me below. Open to potential clients, employers, and creatives. Let&#39;s bring your ideas to life!</p>
+          <p className="body">Have questions or interested in collaborating? Contact me below.</p>
         </section>
         <form onSubmit={handleSubmit(onSubmit)} method="POST" className="">
           <div className="">
