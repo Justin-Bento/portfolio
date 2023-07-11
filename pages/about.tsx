@@ -1,9 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { RiGithubFill, RiInstagramFill, RiLinkedinBoxFill, RiMailFill, RiSoundcloudFill, RiTwitterFill  } from "react-icons/ri";
+import {
+  RiGithubFill,
+  RiInstagramFill,
+  RiLinkedinBoxFill,
+  RiMailFill,
+  RiSoundcloudFill,
+  RiTwitterFill,
+} from "react-icons/ri";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SocialLinks from "@/components/SocialLinks";
 import about from "@/styles/About.module.css";
 
 export default function About() {
@@ -57,101 +65,85 @@ export default function About() {
             />
           </div>
         </div>
-        <div className={about.aboutCopy} >
+        <div className={about.aboutCopy}>
           <h1>
-            I&#39;m Justin Bento. I live in Toronto Canada, where I create
-            expirences unique for the web!
+            Hi &#128075;, I&#39;m Justin. A Multimedia Design Graduate learning
+            various technologies.
           </h1>
-            <p>
-              Ever since I can remember, my fascination with technology has been
-              a driving force in my life. From dismantling old gadgets to
-              understand their inner workings, to putting them back together
-              again, I&#39;ve always been captivated by the world of technology. It
-              was during middle school when I took my first computer class that
-              I truly fell in love with this field, and nothing else seemed to
-              capture my interest for a full-time career.
-            </p>
-            <p>
-              Over time, my passion for technology led me to pursue a path in
-              Humber College&#39;s Multimedia Design and Development Course. Here, I
-              gained valuable knowledge in UI/UX design and developed a solid
-              foundation of design and development skills. I have always
-              prioritized strategy and established strong conceptual frameworks
-              for my projects, ensuring that every aspect is thoughtfully
-              crafted. Furthermore, I have always upheld accessibility as a
-              crucial aspect of my work, recognizing the importance of
-              inclusivity in the digital space.
-            </p>
-            <p>
-              What sets me apart from other developers is my unique skillset,
-              which allows me to envision the bigger picture, break things down,
-              and effectively help people. This ability showcases my commitment,
-              creativity, and problem-solving prowess, making me an ideal
-              candidate for a wide range of IT roles.
-            </p>
-            <p>
-              Fuelled by an insatiable thirst for knowledge, my eagerness to
-              learn, passion, and growth mindset serve as the cornerstones of my
-              success. I constantly seek opportunities to expand my skills and
-              stay up-to-date with the latest advancements in the industry. From
-              personal side projects to customizing my Linux setup, I
-              consistently seek feedback and embrace challenges that come my
-              way.
-            </p>
-          </div>
-        <div className="">
-          <ul role="list" className={about.social}>
-            <SocialLink href="https://twitter.com/bilentoos" icon={RiTwitterFill}>
-              Follow on Twitter
-            </SocialLink>
-            <SocialLink
-              href="https://soundcloud.com/bento-box-519166246"
-              target="_blank"
-              icon={RiSoundcloudFill}
-              className="mt-4"
-            >
-              Follow on Soundcloud
-            </SocialLink>
-            <SocialLink
-              href="https://github.com/Justin-Bento"
-              icon={RiGithubFill}
-              className="mt-4"
-            >
-              Follow on GitHub
-            </SocialLink>
-            <SocialLink
-              href="https://www.linkedin.com/in/justin--bento/"
-              icon={RiLinkedinBoxFill}
-              className="mt-4"
-            >
-              Follow on LinkedIn
-            </SocialLink>
-            <SocialLink
-              href="mailto:contact@justin-bento.com"
-              icon={RiMailFill}
-              className="pt-8 mt-4 border-t border-gray-100 dark:border-gray-700/40"
-            >
-              contact@justin-bento.com
-            </SocialLink>
-          </ul>
+          <p>
+            After graduating in the midst of a pandemic, I decided to teach
+            myself how to code. So I can build interactive website concepts into
+            tangible examples.
+          </p>
+          <p>
+            So I researched articles by best places to learn to code. There I
+            stumbled across free resources such as{" "}
+            <Link href="https://www.theodinproject.com/">The Odin Project</Link>
+            , &nbsp;
+            <Link href="https://www.freecodecamp.org/">freeCodeCamp</Link>, and{" "}
+            <Link href="https://pll.harvard.edu/course/cs50-introduction-computer-science">
+              Harvard CS50
+            </Link>
+            . When I graduated, I used these free courses to teach me how to
+            code, understand the mind of a programmer and build my designs.
+          </p>
+          <p>
+            Not only has this exposed me to the world of programming, I learned
+            how to contribute to open source projects giving me real world
+            expereince. So I can get a sample of what it is like to be a
+            Front-End Software Developer.
+          </p>
+          <p>
+            What makes me unique, Is that I have a background in multimedia
+            design and development background which has exposed me to
+            responosive website design, accessiblity and more. While enabling me
+            to, break down complex design into manageable chuncks, plan out
+            things effectivly and translate it back to the code.
+          </p>
+          <p>
+            All in all, my eagerness to learn, and growth mindset serve as my
+            success and what I love about web development is that it is an ever
+            evolving discipline. that keeps my brain engaged and hungry.
+          </p>
+          <p>Thanks for taking the time to read. &#128522;</p>
         </div>
+        <ul role="list" className={about.social}>
+          <SocialLinks
+            href="https://twitter.com/bilentoos"
+            icon={RiTwitterFill}
+          >
+            Follow on Twitter
+          </SocialLinks>
+          <SocialLinks
+            href="https://soundcloud.com/bento-box-519166246"
+            target="_blank"
+            icon={RiSoundcloudFill}
+          >
+            Follow on Soundcloud
+          </SocialLinks>
+          <SocialLinks
+            href="https://github.com/Justin-Bento"
+            icon={RiGithubFill}
+          >
+            Follow on GitHub
+          </SocialLinks>
+          <SocialLinks
+            href="https://www.linkedin.com/in/justin--bento/"
+            icon={RiLinkedinBoxFill}
+          >
+            Follow on LinkedIn
+          </SocialLinks>
+          <SocialLinks
+            href="mailto:contact@justin-bento.com"
+            icon={RiMailFill}
+            className="pt-8 mt-4 border-t border-gray-100 dark:border-gray-700/40"
+          >
+            contact@justin-bento.com
+          </SocialLinks>
+        </ul>
       </main>
       <Footer />
     </>
-  );
-}
-
-function SocialLink({ className, href, children, icon: Icon }: any) {
-  return (
-    <li className={className}>
-      <Link
-        href={href}
-        className={about.socialLink}
-      >
-        <Icon className={about.SocialLinkIcon} />
-        <span className="ml-3 text-sm">{children}</span>
-      </Link>
-    </li>
   );
 }
 
