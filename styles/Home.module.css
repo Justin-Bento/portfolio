@@ -43,16 +43,18 @@
   max-width: 48rem;
   margin: 0rem auto;
   text-align: flex-start;
+  position: relative;
+  z-index: 10;
 }
 .headline {
   margin: 0rem;
   padding: 0rem;
-  font-size: 2.8rem;
+  font-size: clamp(2.5rem, 5vw, 2.8rem);
   line-height: 1.2;
   color: var(--gray-950);
 }
 .body {
-  font-size: 1.2rem; /* 16px */
+  font-size: clamp( 1rem, 5vw, 1.2rem);
   line-height: 1.5; /* 24px */
   letter-spacing: 0.025rem;
   margin: 1.5rem 0rem 2.5rem 0rem;
@@ -87,6 +89,7 @@ img.mainImageLin {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  width: 100%;
 }
 .btnPrimary:hover {
   opacity: 0.8;
@@ -107,6 +110,7 @@ img.mainImageLin {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  width: 100%;
 }
 .btnTransparent:hover {
   opacity: 0.8;
