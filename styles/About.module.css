@@ -1,18 +1,18 @@
 .mainGrid {
   display: grid;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  padding: 1rem;
+  margin: 5rem 0rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 3rem;
   row-gap: 4rem;
-  width: 1280px;
+  max-width: 1280px;
   margin: 0rem auto;
 }
 
 .aboutCopy > h1 {
   margin: 0rem;
   padding: 0rem;
-  font-size: 2.8rem;
+  font-size: 2rem;
   line-height: 1.2;
   color: var(--gray-950);
 }
@@ -58,6 +58,17 @@ height: 1.25rem;
 }
 
 @media (min-width: 1024px) {
+  .aboutCopy {
+    order: -9999; 
+    grid-row: span 2 / span 2; 
+  }
+  .aboutCopy > h1 {
+    margin: 0rem;
+    padding: 0rem;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--gray-950);
+  }
   .mainGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 3rem;
