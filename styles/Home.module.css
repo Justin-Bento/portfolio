@@ -9,6 +9,7 @@
   order: 3;
   filter: blur(64px);
   top: -10rem;
+  opacity: 0.5;
 }
 .bgPattern2 {
   position: relative;
@@ -24,6 +25,8 @@
   order: 4;
   filter: blur(64px);
   top: calc(100%-13rem);
+  opacity: 0.5;
+  z-index: 0;
 }
 .bgPattern4 {
   position: relative;
