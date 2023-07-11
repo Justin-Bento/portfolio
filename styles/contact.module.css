@@ -22,6 +22,7 @@
   line-height: 1.25rem;
   border: transparent;
   font-weight: 600;
+  width: 100%;
   color: var(--primary-50);
   background-color: var(--primary-700);
   transition-property: all;
@@ -39,7 +40,7 @@ color: #B91C1C;
 text-transform: capitalize; 
 }
 .input {
-  width: 100%;
+  width: 93%;
   display: block;
   box-shadow: transparent;
   margin: 0.5rem 0rem 0rem 0rem;
@@ -50,4 +51,14 @@ text-transform: capitalize;
   line-height: 1.5rem;
   color: var(--gray-950);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 1024px) {
+  .submit{
+    width: inherit;
+  }
+  .input {
+    width: 100%;
+
+  }
 }
