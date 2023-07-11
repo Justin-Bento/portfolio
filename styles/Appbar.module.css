@@ -28,7 +28,7 @@
 .grid {
   gap: 1rem;
   display: grid;
-  padding: 1rem;
+  padding: 0rem 0.875rem;
   align-items: center;
   grid-template-columns: repeat(1, 1fr);
   max-width: 80rem;
@@ -46,12 +46,11 @@
 }
 .ListItem {
   margin: 0rem;
-  padding: 0rem;
+  padding: 1rem;
   font-size: 1rem; /* 16px */
   line-height: 1.5rem; /* 24px */
   color: var(--gray-700);
   text-decoration: none;
-
   font-weight: 500;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,7 +65,8 @@
   justify-items: flex-start;
   align-items: center;
   justify-content: flex-start;
-  
+  padding: 0.875rem;
+  border-top: 1px solid var(--gray-200);
 }
 .socialMediaa {
   font-size: 1rem;
@@ -82,18 +82,16 @@
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .MobileMenu {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: flex-end;
-    justify-items: flex-end;
-    align-items: center;
-  }
   .List {
     flex-direction: row;
     justify-content: center;
   }
-
+  .action {
+    gap:0.5rem;
+    justify-items: flex-end;
+    justify-content: flex-end;
+    border-top: none;
+  }
   .icons {
     display: none;
   }

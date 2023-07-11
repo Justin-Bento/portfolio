@@ -1,31 +1,50 @@
 import appbar from "@/styles/Appbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { RiMenuFill, RiExternalLinkFill } from "react-icons/ri";
 
 export default function Appbar() {
+  const [isActive, setIsActive] = useState(true);
+  const onClick = () => setIsActive((isActive) => !isActive);
+  useEffect(() => {
+    const handelResize = () => {
+    if (window.innerWidth >= 640) {
+      setIsActive(true);
+    } else {
+      setIsActive(false);
+    }
+  };
+    window.addEventListener("resize", handelResize);
+  });
   return (
     <>
       <header className={appbar.container}>
         <div className={appbar.grid}>
           <section className={appbar.container1}>
-          <Link href="/" className={appbar.logo}>
-            <Image fill quality={80} src="/justin-bento-logo.svg" alt="" />
-          </Link>
-          <RiMenuFill className={appbar.icons} />
+            <Link href="/" className={appbar.logo}>
+              <Image fill quality={80} src="/justin-bento-logo.svg" alt="" />
+            </Link>
+            <RiMenuFill className={appbar.icons} onClick={onClick} />
           </section>
-          <nav className={appbar.MobileMenu}>
-            <ul className={appbar.List}>
-              <Link href="/" className={appbar.ListItem}>Home</Link>
-              <Link href="/about" className={appbar.ListItem}>About</Link>
-              <Link href="/projects" className={appbar.ListItem}>Projects</Link>
-              <Link href="/contact" className={appbar.ListItem}>Contact</Link>
-            </ul>
-          </nav>
-          <section className={appbar.action && appbar.MobileMenu}>
-            <RiExternalLinkFill />
-            <Link href="https://www.linkedin.com/in/justin--bento/" target="_blank" className={appbar.socialMediaa}>LinkedIn</Link>
-          </section>
+          {
+            isActive ?
+              <>
+                <nav>
+                  <ul className={appbar.List}>
+                    <Link href="/" className={appbar.ListItem}>Home</Link>
+                    <Link href="/about" className={appbar.ListItem}>About</Link>
+                    <Link href="/projects" className={appbar.ListItem}>Projects</Link>
+                    <Link href="/contact" className={appbar.ListItem}>Contact</Link>
+                  </ul>
+                </nav>
+                <section className={appbar.action}>
+                  <RiExternalLinkFill />
+                  <Link href="https://www.linkedin.com/in/justin--bento/" target="_blank" className={appbar.socialMediaa}>LinkedIn</Link>
+                </section>
+              </>
+              : null
+          }
         </div>
       </header>
     </>
