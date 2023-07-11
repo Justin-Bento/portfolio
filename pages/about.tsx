@@ -71,45 +71,50 @@ export default function About() {
             various technologies.
           </h1>
           <p>
-            After graduating in the midst of a pandemic, I decided to teach
-            myself how to code. So I can build interactive website concepts into
-            tangible examples.
+            After graduating amid a pandemic, I decided to re-teach myself how
+            to code. So I can build abstract webpages into interactive digital
+            media.
           </p>
           <p>
-            So I researched articles by best places to learn to code. There I
-            stumbled across free resources such as{" "}
+            So I typed best places to learn web development into google. There I
+            stumbled across free resources such as &nbsp;
             <Link href="https://www.theodinproject.com/">The Odin Project</Link>
             , &nbsp;
-            <Link href="https://www.freecodecamp.org/">freeCodeCamp</Link>, and{" "}
+            <Link href="https://www.freecodecamp.org/">freeCodeCamp</Link>, and
+            &nbsp;
             <Link href="https://pll.harvard.edu/course/cs50-introduction-computer-science">
               Harvard CS50
             </Link>
-            . When I graduated, I used these free courses to teach me how to
-            code, understand the mind of a programmer and build my designs.
+            .&nbsp; To teach myself technical concepts in a logical order,
+            understand the mind of a programmer, code through building webpage
+            designs, and gain experience through open-source projects.
           </p>
           <p>
-            Not only has this exposed me to the world of programming, I learned
-            how to contribute to open source projects giving me real world
-            expereince. So I can get a sample of what it is like to be a
-            Front-End Software Developer.
+            Some technologies I learned along the way include HTML5, (CSS3)
+            Cascading Style Sheet, JavaScript, jQuery, Node.js React.js
+            Express.js and MongoDB. Sprinkled with some object oriented
+            programming principles. Knowing these tools, and guidelines allowed
+            me to build 5 dynamic and interactive websites from an idea.
           </p>
           <p>
-            What makes me unique, Is that I have a background in multimedia
-            design and development background which has exposed me to
-            responosive website design, accessiblity and more. While enabling me
-            to, break down complex design into manageable chuncks, plan out
-            things effectivly and translate it back to the code.
+            What makes me unique, as a website developer, is my education in
+            multimedia design. As this program, emphasize soft skills like
+            teamwork and project management in group assignments. Whilst
+            teaching studens how to plan, orgnize, conceptualize and present
+            their idea to professors and clients.
           </p>
           <p>
-            All in all, my eagerness to learn, and growth mindset serve as my
-            success and what I love about web development is that it is an ever
-            evolving discipline. that keeps my brain engaged and hungry.
+            All in all, I love website development, because it teaches me how to
+            solve complex problems by breaking things down into manageable
+            steps. Whilst providing tangible feedback loop, that makes me eager
+            to learn more.
           </p>
-          <p>
-            Thanks for taking the time to read. &#128522; 
-          </p>
-          <caption className={about.caption}>Ps. The colour scheme
-            for this website is based off my guitar.</caption>
+          <p>Thanks for taking the time to read. &#128522;</p>
+          <caption className={about.caption}>
+          <em>
+            Here is a fun fact: The colour scheme for this website is based off my guitar.
+          </em>
+          </caption>
         </div>
         <ul role="list" className={about.social}>
           <SocialLinks
