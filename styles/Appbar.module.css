@@ -40,7 +40,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   width: 100%;
   gap: 1rem;
 }
@@ -63,9 +63,9 @@
 }
 .action {
   display: flex;
-  justify-items: start;
+  justify-items: flex-start;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   
 }
 .socialMediaa {
@@ -85,8 +85,8 @@
   .MobileMenu {
     display: flex;
     gap: 0.5rem;
-    justify-content: end;
-    justify-items: end;
+    justify-content: flex-end;
+    justify-items: flex-end;
     align-items: center;
   }
   .List {
