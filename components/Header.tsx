@@ -1,39 +1,32 @@
+import appbar from "@/styles/Appbar.module.css";
+import Image from "next/image";
 import Link from "next/link";
-import appbar from "../styles/Appbar.module.css";
-import { RiExternalLinkFill } from "react-icons/ri";
+import { RiMenuFill, RiExternalLinkFill } from "react-icons/ri";
 
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Projects", href: "/projects" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
-];
-
-export default function Header() {
+export default function Appbar() {
   return (
     <>
-      <header className={appbar.header1}>
-        <section className={appbar.header2}>
-          <div className={appbar.header3}>
-            <p>Logo</p>
-            <p>Menu</p>
+      <header className={appbar.container}>
+        <div className={appbar.grid}>
+          <section className={appbar.container1}>
+          <div className={appbar.logo}>
+            <Image fill quality={80} src="/justin-bento-logo.svg" alt="" />
           </div>
-          <div className={appbar.header4}>
-            {navigation.map((items: any) => {
-              return (
-                <>
-                  <Link href={items.href}>{items.name}</Link>
-                </>
-              );
-            })}
-          </div>
-          <div className={appbar.header5}>
-            <Link href="https://www.linkedin.com/in/justin--bento/" target="_blank" className={appbar.header6}>
-              <RiExternalLinkFill />
-              LinkedIn
-            </Link>
-          </div>
-        </section>
+          <RiMenuFill className={appbar.icons} />
+          </section>
+          <nav className={appbar.MobileMenu}>
+            <ul className={appbar.List}>
+              <Link href="/" className={appbar.ListItem}>Home</Link>
+              <Link href="/about" className={appbar.ListItem}>About</Link>
+              <Link href="/projects" className={appbar.ListItem}>Projects</Link>
+              <Link href="/contact" className={appbar.ListItem}>Contact</Link>
+            </ul>
+          </nav>
+          <section className={appbar.action && appbar.MobileMenu}>
+            <RiExternalLinkFill />
+            <Link href="https://www.linkedin.com/in/justin--bento/" target="_blank" className={appbar.socialMediaa}>LinkedIn</Link>
+          </section>
+        </div>
       </header>
     </>
   );
