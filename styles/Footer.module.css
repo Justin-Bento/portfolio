@@ -1,10 +1,11 @@
 .background {
   margin-top: 4rem;
+  padding: 2rem 1rem;
   background-color: var(--gray-100);
 }
 .container {
-  padding: 3rem 1.5rem;
-  max-width: 80rem;
+  max-width: 1280px;
+  margin: 0rem auto;
 }
 .adjust {
   display: flex;
@@ -16,9 +17,10 @@
   margin-top: 2rem;
 }
 .copyrights {
+  text-align: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: #4b5563;
+  color: var(--gray-500);
 }
 .links {
   z-index: 10;
@@ -56,6 +58,9 @@
   .adjust1 {
     margin-top: 0;
     order: 1;
+  }
+  .copyrights {
+    text-align: start;
   }
 }
 @media (min-width: 1024px) {
