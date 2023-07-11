@@ -1,4 +1,16 @@
 :root {
+  --primary-50: #ebfdff;
+  --primary-100: #ccf6ff;
+  --primary-200: #a3eeff;
+  --primary-300: #63defd;
+  --primary-400: #1ac5f4;
+  --primary-500: #00ace0;
+  --primary-600: #0382b5;
+  --primary-700: #0a6b94;
+  --primary-800: #125878;
+  --primary-900: #144a66;
+  --primary-950: #062f46;
+  /*  */
   --gray-50: #f4f6f7;
   --gray-100: #e2e6eb;
   --gray-200: #c9cfd8;
@@ -31,7 +43,7 @@
 html body {
   margin: 0rem;
   padding: 0rem;
-  background-color: var(--gray-50);
+  background-color: hsla(186, 100%, 96%, 0.3);
   font-family: "Instrument Sans", sans-serif;
 }
 .container {
@@ -54,12 +66,12 @@ html body {
   color: var(--gray-700);
 }
 
-@media (min-width: 1024px) { 
-  .headline{
+@media (min-width: 1024px) {
+  .headline {
     font-size: 2.25rem; /* 36px */
-  line-height: 2.5rem; /* 40px */
+    line-height: 2.5rem; /* 40px */
   }
-  .body{
+  .body {
     font-size: 1.25rem; /* 20px */
     line-height: 1.75rem; /* 28px */
   }

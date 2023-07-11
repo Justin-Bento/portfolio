@@ -79,8 +79,8 @@ img.mainImageLin {
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem;
   font-weight: 600;
-  color: var(--gray-50);
-  background-color: var(--gray-950);
+  color: var(--primary-50);
+  background-color: var(--primary-700);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -94,12 +94,12 @@ img.mainImageLin {
   margin-bottom: 0.5rem;
   border-radius: 0.5rem;
   border-width: 1px;
-  border-color: var(--gray-700);
+  border-color: var(--primary-700);
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
-  color: var(--gray-950);
-  background-color: var(--gray-50);
+  color: var(--primary-950);
+  background-color: var(--primary-50);
   text-decoration: none;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
