@@ -54,14 +54,15 @@ html body {
 .headline {
   margin: 0rem 0rem 0rem 0rem;
   padding: 1rem 0rem 0rem 0rem;
-  font-size: 1.5rem; /* 36px */
+  font-size: clamp(1.8rem, 5vw, 2.5rem);  /* 36px */
+  text-transform: capitalize;
   line-height: 2rem; /* 40px */
   color: var(--gray-950);
 }
 .body {
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.5rem 0rem 1rem 0rem;
-  font-size: 1.15rem; /* 20px */
+  font-size: clamp(0.875rem, 5vw, 1rem);  /* 36px */
   line-height: 1.7rem; /* 28px */
   color: var(--gray-700);
 }
