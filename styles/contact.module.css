@@ -32,6 +32,12 @@
   cursor: pointer;
   opacity: 0.8;
 }
+.inputWarning {
+  font-size: 0.75rem;
+line-height: 1rem; 
+color: #B91C1C; 
+text-transform: capitalize; 
+}
 .input {
   width: 100%;
   display: block;
