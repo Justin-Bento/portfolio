@@ -9,9 +9,9 @@ export default function Appbar() {
       <header className={appbar.container}>
         <div className={appbar.grid}>
           <section className={appbar.container1}>
-          <div className={appbar.logo}>
+          <Link href="/" className={appbar.logo}>
             <Image fill quality={80} src="/justin-bento-logo.svg" alt="" />
-          </div>
+          </Link>
           <RiMenuFill className={appbar.icons} />
           </section>
           <nav className={appbar.MobileMenu}>
