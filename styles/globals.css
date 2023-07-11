@@ -66,6 +66,25 @@ html body {
   color: var(--gray-700);
 }
 
+.fadeInAnimation {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.order1  {
+  order: 1
+}
+.order2 {
+  order: 2
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 @media (min-width: 1024px) {
   .headline {
     font-size: 2.25rem; /* 36px */
