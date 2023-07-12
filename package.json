@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.12",
     "@portabletext/react": "^3.0.4",
     "@sanity/cli": "^3.14.1",
     "@sanity/client": "^6.1.6",

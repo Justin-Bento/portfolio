@@ -1,16 +1,13 @@
 .content {
   max-width: clamp(64ch 5% 70ch);
 }
-.pageHeader > * {
+.pageHeadline {
   margin: 0rem;
   padding: 0rem;
+  font-size: clamp(2.2rem, 2.5vw, 3rem);
 }
-.pageHeader h1 {
-  font-size:  clamp(2.2rem, 2.5vw, 3rem);
-}
-.pageHeader p {
-  margin-top: 0.75rem;
-  font-size:  clamp(1.1rem, 2.5vw, 1.5rem);
+.pageSupporting {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   line-height: 1.4;
   letter-spacing: 0.015rem;
 }
@@ -24,26 +21,39 @@
   padding: 0rem;
   color: var(--gray-900);
   margin-top: 1rem;
-}
-.content > h2 {
-  font-size:  1.5rem;
-  font-weight: 500 !important;
   letter-spacing: 0.012rem;
   line-height: 1.5;
 }
-
-.content ul + ol {
-  line-height: 1.5;
+.imageContainer {
+  position: relative;
+  aspect-ratio: 16 / 9; 
+  width: 100%; 
 }
-.content li {
-  list-style-position: inside;
-  margin-top: 0.5rem;
+.imageMedia {
+  object-fit: fill;
+}
+.headline1 {
+  font-size: 3rem;
+  line-height: 1; 
+  font-weight: 700; 
+}
+.headline2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem; 
+  font-weight: 700; 
+}
+.headline3 {
+  font-size: 1.875rem;
+  line-height: 2.25rem; 
+  font-weight: 700; 
+}
+.headline4 {
+  font-size: 1.5rem;
+  line-height: 2rem; 
+  font-weight: 700; 
 }
 .content > p {
-  font-size: 1rem;
-  letter-spacing: 0.012rem;
-  color: var(--gray-900);
-  line-height: 1.5;
+  font-size: clamp(0.875rem, 3vw, 1rem);
 }
 
 /* End of Article Headline & Supporting Text */
