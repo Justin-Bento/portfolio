@@ -30,12 +30,10 @@ export default function ProjectsSlug({post}: any) {
       </Head>
       <Header />
       <main className="container">
-          <article className={`${article.pageHeader}`}>
+          <article className={`${article.content}`}>
             <h1>{post.title}</h1>
             <p>{post.description}</p>
-            <div className={`${article.content}`}>
-              <PortableText value={post.body}  />
-            </div>
+            <PortableText value={post.body}  />
           </article>
       </main>
       <Footer />
