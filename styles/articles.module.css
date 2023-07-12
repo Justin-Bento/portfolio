@@ -1,15 +1,12 @@
 .content {
   max-width: clamp(64ch 5% 70ch);
 }
-.pageHeader > * {
+.pageHeadline {
   margin: 0rem;
   padding: 0rem;
-}
-.pageHeader h1 {
   font-size: clamp(2.2rem, 2.5vw, 3rem);
 }
-.pageHeader p {
-  margin-top: 0.75rem;
+.pageSupporting {
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   line-height: 1.4;
   letter-spacing: 0.015rem;
@@ -27,40 +24,33 @@
   letter-spacing: 0.012rem;
   line-height: 1.5;
 }
-.content > h1 {
-  font-size: clamp(30px, 3vw, 57px);
-  font-weight: 600;
-  letter-spacing: -0.015rem;
+.imageContainer {
+  position: relative;
+  aspect-ratio: 16 / 9; 
+  width: 100%; 
 }
-.content > h2 {
-  font-size: clamp(28px, 3vw, 30px) ;
-  font-weight: 500;
-  text-transform: capitalize;
-  letter-spacing: -0.015rem;
+.imageMedia {
+  object-fit: fill;
 }
-.content > h3 {
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: capitalize;
-  letter-spacing: -0.015rem;
+.headline1 {
+  font-size: 3rem;
+  line-height: 1; 
+  font-weight: 700; 
 }
-.content > h4 {
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: capitalize;
-  letter-spacing: 0rem;
+.headline2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem; 
+  font-weight: 700; 
 }
-.content > h5 {
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: capitalize;
-  letter-spacing: 0rem;
+.headline3 {
+  font-size: 1.875rem;
+  line-height: 2.25rem; 
+  font-weight: 700; 
 }
-.content > h6 {
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: capitalize;
-  letter-spacing: 0rem;
+.headline4 {
+  font-size: 1.5rem;
+  line-height: 2rem; 
+  font-weight: 700; 
 }
 .content > p {
   font-size: clamp(0.875rem, 3vw, 1rem);
