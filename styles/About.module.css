@@ -1,0 +1,75 @@
+.mainGrid {
+  display: grid;
+  padding: 1rem;
+  margin: 5rem 0rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 3rem;
+  row-gap: 4rem;
+  max-width: 1280px;
+  margin: 0rem auto;
+}
+
+.aboutCopy > h1 {
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--gray-950);
+  text-transform: capitalize;
+}
+.aboutCopy > p {
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--gray-700);
+  letter-spacing: 0.025rem;
+  margin-top: 1rem;
+}
+.aboutCopy a {
+  text-decoration: none;
+  color: var(--primary-700);
+}
+.mediaContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; 
+}
+.mainImage {
+  object-fit: cover;
+  border-radius: 1rem;
+  background-color: #9ca3af;
+  transform: rotate(3deg);
+}
+.social {
+  display: flex; 
+flex-direction: column; 
+gap: 0.5rem; 
+}
+.caption {
+width: 64ch;
+text-align: start;
+opacity: 0.5;
+font-style: italic;
+margin-top: 1rem;
+font-size: 0.875rem;
+}
+
+@media (min-width: 1024px) {
+  .aboutCopy {
+    order: -9999; 
+    grid-row: span 2 / span 2; 
+  }
+  .aboutCopy > h1 {
+    margin: 0rem;
+    padding: 0rem;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--gray-950);
+  }
+  .mainGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 3rem;
+  }
+}
