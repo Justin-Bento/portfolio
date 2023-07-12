@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { client } from "@/sanityClient";
 import Head from "next/head";
 import {PortableText} from '@portabletext/react';
+import article from "@/styles/articles.module.css"
 
 export default function ProjectsSlug({post}: any) {
   console.log(post)
@@ -28,13 +29,13 @@ export default function ProjectsSlug({post}: any) {
         <meta property="twitter:image" content="/public/website-screenshot.webp" />
       </Head>
       <Header />
-      <main className="p-4 my-12 sm:p-0 md:my-24">
-          <article className="mx-auto prose dark:prose-invert lg:prose-lg">
+      <main className="container">
+          <article className={`${article.pageHeader}`}>
             <h1>{post.title}</h1>
             <p>{post.description}</p>
-            <section className="">
-              <PortableText value={post.body} />
-            </section>
+            <div className={`${article.content}`}>
+              <PortableText value={post.body}  />
+            </div>
           </article>
       </main>
       <Footer />

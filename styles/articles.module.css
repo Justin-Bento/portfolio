@@ -1,0 +1,49 @@
+.content {
+  max-width: clamp(64ch 5% 70ch);
+}
+.pageHeader > * {
+  margin: 0rem;
+  padding: 0rem;
+}
+.pageHeader h1 {
+  font-size:  clamp(2.2rem, 2.5vw, 3rem);
+}
+.pageHeader p {
+  margin-top: 0.75rem;
+  font-size:  clamp(1.1rem, 2.5vw, 1.5rem);
+  line-height: 1.4;
+  letter-spacing: 0.015rem;
+}
+/* End of Article Headline & Supporting Text */
+.content {
+  margin-top: 3rem;
+  max-width: 70ch;
+}
+.content > * {
+  margin: 0rem;
+  padding: 0rem;
+  color: var(--gray-900);
+  margin-top: 1rem;
+}
+.content > h2 {
+  font-size:  1.5rem;
+  font-weight: 500 !important;
+  letter-spacing: 0.012rem;
+  line-height: 1.5;
+}
+
+.content ul + ol {
+  line-height: 1.5;
+}
+.content li {
+  list-style-position: inside;
+  margin-top: 0.5rem;
+}
+.content > p {
+  font-size: 1rem;
+  letter-spacing: 0.012rem;
+  color: var(--gray-900);
+  line-height: 1.5;
+}
+
+/* End of Article Headline & Supporting Text */
