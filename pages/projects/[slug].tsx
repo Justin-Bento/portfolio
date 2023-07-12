@@ -6,7 +6,6 @@ import {PortableText} from '@portabletext/react';
 import article from "@/styles/articles.module.css"
 
 export default function ProjectsSlug({post}: any) {
-  console.log(post)
   return (
     <>
       <Head>
