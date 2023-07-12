@@ -4,6 +4,7 @@ import { client } from "@/sanityClient";
 import Head from "next/head";
 import {PortableText} from '@portabletext/react';
 import article from "@/styles/articles.module.css"
+import  RichTextComponents  from "@/components/RichTextComponents";
 
 export default function ProjectsSlug({post}: any) {
   return (
@@ -29,11 +30,11 @@ export default function ProjectsSlug({post}: any) {
       </Head>
       <Header />
       <main className="container">
-          <article className={`${article.content}`}>
-            <h1>{post.title}</h1>
-            <p>{post.description}</p>
-            <PortableText value={post.body}  />
-          </article>
+        <article className={`${article.content}`}>
+          <h1 className={article.pageHeadline}>{post.title}</h1>
+          <p  className={article.pageSupporting}>{post.description}</p>
+          <PortableText value={post.body} components={RichTextComponents} />
+        </article>
       </main>
       <Footer />
     </>
