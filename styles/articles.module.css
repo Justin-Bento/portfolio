@@ -1,20 +1,18 @@
 .content {
-  max-width: clamp(64ch 5% 70ch);
-}
-.pageHeadline {
-  margin: 0rem;
-  padding: 0rem;
-  font-size: clamp(2.2rem, 2.5vw, 3rem);
+  margin-top: 3rem;
 }
 .pageSupporting {
-  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.2em, 5vw, 1.5rem);
   line-height: 1.4;
   letter-spacing: 0.015rem;
 }
-/* End of Article Headline & Supporting Text */
-.content {
-  margin-top: 3rem;
-  max-width: 70ch;
+.articleImageContainer {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+.articleImageContainer > img {
+  object-fit: fill;
 }
 .content > * {
   margin: 0rem;
@@ -24,36 +22,42 @@
   letter-spacing: 0.012rem;
   line-height: 1.5;
 }
-.imageContainer {
-  position: relative;
-  aspect-ratio: 16 / 9; 
-  width: 100%; 
+.content > h1 {
+	font-size: 3.25rem; /* 60px */
+  line-height: 1;
 }
-.imageMedia {
-  object-fit: fill;
+.content > h2 {
+	font-size: 2.5rem; /* 48px */
+  line-height: 1;
 }
-.headline1 {
-  font-size: 3rem;
-  line-height: 1; 
-  font-weight: 700; 
+.content > h3 {
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
 }
-.headline2 {
-  font-size: 2.25rem;
-  line-height: 2.5rem; 
-  font-weight: 700; 
+.content > h4 {
+	font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
 }
-.headline3 {
-  font-size: 1.875rem;
-  line-height: 2.25rem; 
-  font-weight: 700; 
+.content > h5 {
+	font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
 }
-.headline4 {
-  font-size: 1.5rem;
-  line-height: 2rem; 
-  font-weight: 700; 
+.content > h6 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+.content > p:first-of-type {
+	font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
 }
 .content > p {
-  font-size: clamp(0.875rem, 3vw, 1rem);
+	font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
 }
+
+/* End of Article Headline & Supporting Text */
+
+
+
 
 /* End of Article Headline & Supporting Text */
