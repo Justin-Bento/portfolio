@@ -6,11 +6,11 @@
   padding: 0rem;
 }
 .pageHeader h1 {
-  font-size:  clamp(2.2rem, 2.5vw, 3rem);
+  font-size: clamp(2.2rem, 2.5vw, 3rem);
 }
 .pageHeader p {
   margin-top: 0.75rem;
-  font-size:  clamp(1.1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   line-height: 1.4;
   letter-spacing: 0.015rem;
 }
@@ -24,26 +24,46 @@
   padding: 0rem;
   color: var(--gray-900);
   margin-top: 1rem;
+  letter-spacing: 0.012rem;
+  line-height: 1.5;
+}
+.content > h1 {
+  font-size: clamp(30px, 3vw, 57px);
+  font-weight: 600;
+  letter-spacing: -0.015rem;
 }
 .content > h2 {
-  font-size:  1.5rem;
-  font-weight: 500 !important;
-  letter-spacing: 0.012rem;
-  line-height: 1.5;
+  font-size: clamp(28px, 3vw, 30px) ;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: -0.015rem;
 }
-
-.content ul + ol {
-  line-height: 1.5;
+.content > h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: -0.015rem;
 }
-.content li {
-  list-style-position: inside;
-  margin-top: 0.5rem;
+.content > h4 {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0rem;
+}
+.content > h5 {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0rem;
+}
+.content > h6 {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0rem;
 }
 .content > p {
-  font-size: 1rem;
-  letter-spacing: 0.012rem;
-  color: var(--gray-900);
-  line-height: 1.5;
+  font-size: clamp(0.875rem, 3vw, 1rem);
 }
 
 /* End of Article Headline & Supporting Text */
