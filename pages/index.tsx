@@ -44,7 +44,7 @@ export default function index() {
         />
       </Head>
       <Header />
-      <main className={`${home.hero} container`}>
+      <main className='container'>
         <div className={`${home.isolate} fadeInAnimation order2`}>
           <div className={home.bgPattern1}>
             <svg className={home.bgPattern2} viewBox="0 0 1155 678">
