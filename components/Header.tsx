@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { RiMenuFill, RiExternalLinkFill } from "react-icons/ri";
 
 export default function Appbar() {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
   const onClick = () => setIsActive((isActive) => !isActive);
   useEffect(() => {
     const handelResize = () => {
@@ -27,26 +27,28 @@ export default function Appbar() {
             </Link>
             <RiMenuFill className={appbar.icons} onClick={onClick} />
           </section>
-          {
-            isActive ?
-              <>
-                <nav>
-                  <ul className={appbar.List}>
-                    <Link href="/" className={appbar.ListItem}>Home</Link>
-                    <Link href="/about" className={appbar.ListItem}>About</Link>
-                    <Link href="/projects" className={appbar.ListItem}>Projects</Link>
-                    <Link href="/contact" className={appbar.ListItem}>Contact</Link>
-                  </ul>
-                </nav>
-                <section className={appbar.action}>
-                  <RiExternalLinkFill />
-                  <Link href="https://www.linkedin.com/in/justin--bento/" target="_blank" className={appbar.socialMediaa}>LinkedIn</Link>
-                </section>
-              </>
-              : null
-          }
+          { isActive ? <HeaderMenu /> : null }
         </div>
       </header>
     </>
   );
+}
+
+function HeaderMenu() {
+  return (
+    <>
+    <nav>
+      <ul className={appbar.List}>
+        <Link href="/" className={appbar.ListItem}>Home</Link>
+        <Link href="/about" className={appbar.ListItem}>About</Link>
+        <Link href="/projects" className={appbar.ListItem}>Projects</Link>
+        <Link href="/contact" className={appbar.ListItem}>Contact</Link>
+      </ul>
+    </nav>
+    <section className={appbar.action}>
+      <RiExternalLinkFill />
+      <Link href="https://www.linkedin.com/in/justin--bento/" target="_blank" className={appbar.socialMediaa}>LinkedIn</Link>
+    </section>
+  </>
+  )
 }
