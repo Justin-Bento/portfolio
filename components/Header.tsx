@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { RiMenuFill, RiExternalLinkFill } from "react-icons/ri";
 
 export default function Appbar() {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
   const onClick = () => setIsActive((isActive) => !isActive);
   useEffect(() => {
     const handelResize = () => {
