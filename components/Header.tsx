@@ -5,7 +5,7 @@ import appbar from "@/styles/Appbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { RiMenuFill, RiExternalLinkFill } from "react-icons/ri";
+import { RiMenuFill, RiExternalLinkFill, RiCloseFill } from "react-icons/ri";
 
 export default function Appbar() {
   const [isActive, setIsActive] = useState(true);
@@ -18,7 +18,7 @@ export default function Appbar() {
             <Link href="/" className={appbar.navbar_logo}>
               <Image fill quality={80} src="/justin-bento-logo.svg" alt="" />
             </Link>
-            <RiMenuFill className={appbar.navbar_icons} onClick={onClick} />
+            {isActive ? <RiMenuFill className={appbar.navbar_icons} onClick={onClick} /> : <RiCloseFill className={appbar.navbar_icons} onClick={onClick}/>}
           </section>
           <section className={isActive ? appbar.navbar_hidden : ''}>
             <nav>
