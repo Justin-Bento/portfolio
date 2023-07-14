@@ -33,6 +33,9 @@
   max-width: 80rem;
   margin: 0rem auto;
 }
+.navbar_hidden {
+  display: none;
+}
 .navbar_list {
   margin: 0rem;
   padding: 0rem;
@@ -60,10 +63,6 @@
   opacity: 0.8;
 }
 .navbar_box_3 {
-  display: flex;
-  justify-items: flex-start;
-  align-items: center;
-  justify-content: flex-start;
   padding: 0.875rem;
   border-top: 1px solid var(--gray-200);
 }
@@ -81,12 +80,16 @@
   .navbar_container {
     grid-template-columns: repeat(3, 1fr);
   }
+  .navbar_hidden {
+    display: flex;
+  }
   .navbar_list {
     flex-direction: row;
     justify-content: center;
   }
   .navbar_box_3 {
     gap:0.5rem;
+    display: flex;
     justify-items: flex-end;
     justify-content: flex-end;
     border-top: none;
