@@ -1,21 +1,21 @@
-.container {
-  padding: 0.5rem;
+.navbar {
+  padding: 1rem;
   position: relative;
   z-index: 20;
   background-color: transparent;
   box-shadow: 0px 2px 10px -3px rgba(0,0,0,0.1);
 }
-.container1 {
+.navbar_box_1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.icons {
+.navbar_icons {
   width: 1.3rem; 
   height: 1.3rem; 
   display: inline-block;
 }
-.logo {
+.navbar_logo {
   margin: 0rem;
   padding: 0rem;
   width: 3rem; 
@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
 }
-.grid {
+.navbar_container {
   gap: 1rem;
   display: grid;
   padding: 0rem 0.875rem;
@@ -33,7 +33,7 @@
   max-width: 80rem;
   margin: 0rem auto;
 }
-.List {
+.navbar_list {
   margin: 0rem;
   padding: 0rem;
   list-style-type: none;
@@ -43,7 +43,7 @@
   width: 100%;
   gap: 1rem;
 }
-.ListItem {
+.navbar_list_item {
   margin: 0rem;
   padding: 1rem;
   font-size: 1rem; /* 16px */
@@ -56,10 +56,10 @@
   transition-duration: 150ms;
   cursor: pointer;
 }
-.ListItem:hover {
+.navbar_list_item:hover {
   opacity: 0.8;
 }
-.action {
+.navbar_box_3 {
   display: flex;
   justify-items: flex-start;
   align-items: center;
@@ -67,7 +67,7 @@
   padding: 0.875rem;
   border-top: 1px solid var(--gray-200);
 }
-.socialMediaa {
+.navbar_social_link {
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--gray-700);
@@ -78,20 +78,20 @@
   display: none;
 }
 @media (min-width: 1080px) {
-  .grid {
+  .navbar_container {
     grid-template-columns: repeat(3, 1fr);
   }
-  .List {
+  .navbar_list {
     flex-direction: row;
     justify-content: center;
   }
-  .action {
+  .navbar_box_3 {
     gap:0.5rem;
     justify-items: flex-end;
     justify-content: flex-end;
     border-top: none;
   }
-  .icons {
+  .navbar_icons {
     display: none;
   }
 }

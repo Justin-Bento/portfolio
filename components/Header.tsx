@@ -19,28 +19,28 @@ export default function Appbar() {
   });
   return (
     <>
-      <header className={appbar.container}>
-        <div className={appbar.grid}>
-          <section className={appbar.container1}>
-            <Link href="/" className={appbar.logo}>
+      <header className={appbar.navbar}>
+        <div className={appbar.navbar_container}>
+          <section className={appbar.navbar_box_1}>
+            <Link href="/" className={appbar.navbar_logo}>
               <Image fill quality={80} src="/justin-bento-logo.svg" alt="" />
             </Link>
-            <RiMenuFill className={appbar.icons} onClick={onClick} />
+            <RiMenuFill className={appbar.navbar_icons} onClick={onClick} />
           </section>
           {
             isActive ?
               <>
                 <nav>
-                  <ul className={appbar.List}>
-                    <Link href="/" className={appbar.ListItem}>Home</Link>
-                    <Link href="/about" className={appbar.ListItem}>About</Link>
-                    <Link href="/projects" className={appbar.ListItem}>Projects</Link>
-                    <Link href="/contact" className={appbar.ListItem}>Contact</Link>
+                  <ul className={appbar.navbar_list}>
+                    <Link href="/" className={appbar.navbar_list_item}>Home</Link>
+                    <Link href="/about" className={appbar.navbar_list_item}>About</Link>
+                    <Link href="/projects" className={appbar.navbar_list_item}>Projects</Link>
+                    <Link href="/contact" className={appbar.navbar_list_item}>Contact</Link>
                   </ul>
                 </nav>
-                <section className={appbar.action}>
+                <section className={appbar.navbar_box_3}>
                   <RiExternalLinkFill />
-                  <Link href="https://www.linkedin.com/in/justin--bento/" target="_blank" className={appbar.socialMediaa}>LinkedIn</Link>
+                  <Link href="https://www.linkedin.com/in/justin--bento/" target="_blank" className={appbar.navbar_social_link}>LinkedIn</Link>
                 </section>
               </>
               : null
