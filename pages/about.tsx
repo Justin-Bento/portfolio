@@ -53,7 +53,7 @@ export default function About() {
         />
       </Head>
       <Header />
-      <main className={about.mainGrid}>
+      <main className={`${about.mainGrid} container`}>
         <div className="">
           <div className={about.mediaContainer}>
             <Image

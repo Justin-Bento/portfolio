@@ -1,5 +1,5 @@
 import { RiFacebookCircleFill, RiInstagramFill, RiTwitterFill, RiGithubFill } from "react-icons/ri"
-import footer from "@/styles/Footer.module.css";
+import style from "@/styles/Footer.module.css";
 
 const navigation = [
   {
@@ -34,18 +34,18 @@ const navigation = [
 // flex justify-center space-x-6 md:order-2
 export default function Footer() {
   return (
-    <footer className={footer.background}>
-      <div className={footer.container}>
-        <div className={footer.adjust}>
+    <footer className={style.footer_background}>
+      <div className={style.footer_container}>
+        <div className={style.footer_adjust}>
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className={footer.links}>
-              <span className={footer.srOnly}>{item.name}</span>
-              <item.icon className={footer.iconSize} aria-hidden="true" />
+            <a key={item.name} href={item.href} className={style.footer_links}>
+              <span className={style.footer_srOnly}>{item.name}</span>
+              <item.icon className={style.footer_iconSize} aria-hidden="true" />
             </a>
           ))}
         </div>
-        <div className={footer.adjust1}>
-          <p className={footer.copyrights}>
+        <div className={style.footer_adjust1}>
+          <p className={style.footer_copyrights}>
             &copy; {new Date().getFullYear()} Justin Bento, Inc. All rights reserved.
           </p>
         </div>

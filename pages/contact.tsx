@@ -129,11 +129,11 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-start mt-8">
+            <div className="">
               {/* errors will return when field validation fails  */}
               <button
                 type="submit"
-                className={contact.submit}
+                className="btn_primary"
               >
                 Send message
               </button>

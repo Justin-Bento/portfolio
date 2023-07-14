@@ -1,6 +1,3 @@
-.hero {
-  min-height: 60vh;
-}
 .isolate {
   isolation: isolate;
 }
@@ -79,41 +76,6 @@ img.mainImageLin {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-.btnPrimary {
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-size: 0.875rem; /* 14px */
-  line-height: 1.25rem;
-  font-weight: 600;
-  color: var(--primary-50);
-  background-color: var(--primary-700);
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  width: 100%;
-}
-.btnPrimary:hover {
-  opacity: 0.8;
-}
-.btnTransparent {
-  padding: 0.625rem 1.25rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  border-radius: 0.5rem;
-  border-width: 1px;
-  border-color: var(--primary-700);
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  color: var(--primary-950);
-  background-color: var(--primary-50);
-  text-decoration: none;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  width: 100%;
 }
 .btnTransparent:hover {
   opacity: 0.8;
