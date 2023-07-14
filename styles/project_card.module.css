@@ -1,4 +1,4 @@
-.surface {
+.project_card_surface {
   overflow: hidden; 
   padding: 2rem; 
   border-radius: 0.5rem; 
@@ -7,15 +7,15 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms; 
 }
-.surface:hover {
+.project_card_surface:hover {
   background-color: hsla(216, 16%, 82%, 0.1);
 }
-.iconSurface {
+.project_card_iconSurface {
   margin: 0rem;
   padding: 0rem;
   padding-top: 0.875rem;
 }
-.iconContainer {
+.project_card_iconContainer {
   display: flex;
   position: relative;
   z-index: 10;
@@ -28,20 +28,20 @@
   border: 1px solid var(--gray-100);
 }
 
-.media {
+.project_card_media {
   object-fit: cover;
   border-radius: 9999px;
   width: 2rem;
   height: 2rem;
 }
-.title {
+.project_card_title {
   margin: 0rem 0rem 0rem 0rem;
   padding: 1rem 0rem 0rem 0rem;
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--gray-950);
 }
-.supporting {
+.project_card_supporting {
   margin: 0rem 0rem 0rem 0rem;
   padding: 0.5rem 0rem 1rem 0rem;
   font-size: clamp(1rem 5vw, 1.2rem);
@@ -49,17 +49,17 @@
   letter-spacing: 0.03em;
   color: var(--gray-700);
 }
-.links {
+.project_card_links {
   margin: 0rem 0rem;
   text-decoration: none !important;
   color: var(--gray-950);
 }
-.actions {
+.project_card_actions {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.icons {
+.project_card_icons {
   width: 1rem;
   height: 1rem;
 }
