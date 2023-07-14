@@ -1,3 +1,6 @@
+
+
+
 import appbar from "@/styles/Appbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +8,7 @@ import { useEffect, useState } from "react";
 import { RiMenuFill, RiExternalLinkFill } from "react-icons/ri";
 
 export default function Appbar() {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
   const onClick = () => setIsActive((isActive) => !isActive);
   return (
     <>
@@ -17,7 +20,7 @@ export default function Appbar() {
             </Link>
             <RiMenuFill className={appbar.navbar_icons} onClick={onClick} />
           </section>
-          <section className="">
+          <section className={isActive ? appbar.navbar_hidden : ''}>
             <nav>
               <ul className={appbar.navbar_list}>
                 <Link href="/" className={appbar.navbar_list_item}>Home</Link>
@@ -27,7 +30,7 @@ export default function Appbar() {
               </ul>
             </nav>
           </section>
-          <section className={appbar.navbar_box_3}>
+          <section className={`${isActive ? appbar.navbar_hidden  : ''} ${appbar.navbar_box_3}`}>
             <RiExternalLinkFill />
             <Link href="https://www.linkedin.com/in/justin--bento/" target="_blank" className={appbar.navbar_social_link}>LinkedIn</Link>
           </section>
@@ -36,3 +39,4 @@ export default function Appbar() {
     </>
   );
 }
+
