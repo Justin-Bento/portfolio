@@ -7,16 +7,6 @@ import { RiMenuFill, RiExternalLinkFill } from "react-icons/ri";
 export default function Appbar() {
   const [isActive, setIsActive] = useState(true);
   const onClick = () => setIsActive((isActive) => !isActive);
-  useEffect(() => {
-    const handelResize = () => {
-    if (window.innerWidth >= 1080) {
-      setIsActive(true);
-    } else {
-      setIsActive(false);
-    }
-  };
-    window.addEventListener("resize", handelResize);
-  });
   return (
     <>
       <header className={appbar.navbar}>
@@ -27,9 +17,6 @@ export default function Appbar() {
             </Link>
             <RiMenuFill className={appbar.navbar_icons} onClick={onClick} />
           </section>
-          {
-            isActive ?
-              <>
                 <nav>
                   <ul className={appbar.navbar_list}>
                     <Link href="/" className={appbar.navbar_list_item}>Home</Link>
@@ -42,9 +29,6 @@ export default function Appbar() {
                   <RiExternalLinkFill />
                   <Link href="https://www.linkedin.com/in/justin--bento/" target="_blank" className={appbar.navbar_social_link}>LinkedIn</Link>
                 </section>
-              </>
-              : null
-          }
         </div>
       </header>
     </>
