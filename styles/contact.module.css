@@ -14,25 +14,6 @@
   text-transform: capitalize;
   background-color: transparent;
 }
-.submit {
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-size: 0.875rem; /* 14px */
-  line-height: 1.25rem;
-  border: transparent;
-  font-weight: 600;
-  width: 100%;
-  color: var(--primary-50);
-  background-color: var(--primary-700);
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-.submit:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
 .inputWarning {
   font-size: 0.75rem;
 line-height: 1rem; 

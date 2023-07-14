@@ -92,10 +92,10 @@ export default function index() {
                 built, and lets collaborate on projects.
               </p>
               <div className={home.hero_actions}>
-                <Link href="/projects" className={home.btnPrimary}>
+                <Link href="/projects" className="btn_primary">
                   View Projects
                 </Link>
-                <Link href="/about" className={home.btnTransparent}>
+                <Link href="/about" className='btn_secondary'>
                   Get To Know Me
                 </Link>
               </div>
