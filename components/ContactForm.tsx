@@ -1,4 +1,7 @@
-import { useForm, SubmitHandler } from "react-hook-form";
+
+import ThankYouPage from "@/layout/ThankYou"
+import { useForm } from "react-hook-form";
+import { useForm as useFormspree } from "@formspree/react";
 import contact from "@/styles/contact.module.css";
 
 type FormInputs = {
@@ -9,15 +12,12 @@ type FormInputs = {
 };
 
 export default function ContactForm() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormInputs>();
-  const onSubmit: SubmitHandler<FormInputs> = (data) => console.log(data);
+  const [serverState, sendToFormspree] = useFormspree(`${process.env.NEXT_PUBLIC_FORM_DATA}`); // replace
+  const { register, handleSubmit, formState: { errors }, } = useForm<FormInputs>();
+  if (serverState.succeeded) { return <ThankYouPage /> }
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} method="POST" className="">
+      <form onSubmit={handleSubmit(sendToFormspree)} method="POST" className="">
         <div className="">
           <div className={contact.layout}>
             <div>
