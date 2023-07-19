@@ -2,8 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import Head from "next/head";
-import ThankYou from "@/layout/ThankYou";
-
 
 export default function Contact() {
 
@@ -31,7 +29,7 @@ export default function Contact() {
       </Head>
       <Header />
       <main className="container">
-        <ThankYou />
+        <ContactForm />
       </main>
       <Footer />
     </>
