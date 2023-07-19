@@ -1,22 +1,10 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { useForm, SubmitHandler } from "react-hook-form";
+import ContactForm from "@/components/ContactForm";
 import Head from "next/head";
-import contact from "@/styles/contact.module.css";
 
-type FormInputs = {
-  First_Name: string;
-  Last_Name: string;
-  Email: string;
-  Message: string;
-};
+
 export default function Contact() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormInputs>();
-  const onSubmit: SubmitHandler<FormInputs> = (data) => console.log(data);
 
   return (
     <>
@@ -46,100 +34,7 @@ export default function Contact() {
           <h1 className="headline">Get In Touch</h1>
           <p className="body">Have questions or interested in collaborating? Contact me below.</p>
         </section>
-        <form onSubmit={handleSubmit(onSubmit)} method="POST" className="">
-          <div className="">
-            <div className={contact.layout}>
-              <div>
-                <label
-                  htmlFor="first-name"
-                  defaultValue="First_Name"
-                  className={contact.label}
-                >
-                  First name
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    {...register("First_Name")}
-                    id="first-name"
-                    autoComplete="given-name"
-                    className={contact.input}
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="last-name"
-                  defaultValue="Last_Name"
-                  className={contact.label}
-                >
-                  Last name
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    {...register("Last_Name")}
-                    id="last-name"
-                    autoComplete="family-name"
-                    className={contact.input}
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="email"
-                  className={contact.label}
-                >
-                  Email
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="email"
-                    id="email"
-                    autoComplete="email"
-                    {...register("Email", { required: true })}
-                    className={contact.input}
-                  />
-                </div>
-                {errors.Email && (
-                  <span className={contact.inputWarning}>
-                    * Email field is required
-                  </span>
-                )}
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="message"
-                  className={contact.label}
-                >
-                  Message
-                </label>
-                <div className="mt-2.5">
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className={contact.input}
-                    {...register("Message", { required: true })}
-                  />
-                  {errors.Message && (
-                    <span className={contact.inputWarning}>
-                      * Message field is required
-                    </span>
-                  )}
-                </div>
-              </div>
-            </div>
-            <div className="">
-              {/* errors will return when field validation fails  */}
-              <button
-                type="submit"
-                className="btn_primary"
-              >
-                Send message
-              </button>
-            </div>
-          </div>
-        </form>
+<ContactForm />
       </main>
       <Footer />
     </>
