@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import Head from "next/head";
+import ThankYou from "@/layout/ThankYou";
 
 
 export default function Contact() {
@@ -30,11 +31,7 @@ export default function Contact() {
       </Head>
       <Header />
       <main className="container">
-        <section>
-          <h1 className="headline">Get In Touch</h1>
-          <p className="body">Have questions or interested in collaborating? Contact me below.</p>
-        </section>
-        <ContactForm />
+        <ThankYou />
       </main>
       <Footer />
     </>

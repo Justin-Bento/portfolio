@@ -1,6 +1,8 @@
 
 import ThankYouPage from "@/layout/ThankYou"
-import { useForm } from "react-hook-form";
+import {
+  useForm
+} from "react-hook-form";
 import { useForm as useFormspree } from "@formspree/react";
 import contact from "@/styles/contact.module.css";
 
@@ -17,6 +19,10 @@ export default function ContactForm() {
   if (serverState.succeeded) { return <ThankYouPage /> }
   return (
     <>
+      <section>
+        <h1 className="headline">Get In Touch</h1>
+        <p className="body">Have questions or interested in collaborating? Contact me below.</p>
+      </section>
       <form onSubmit={handleSubmit(sendToFormspree)} method="POST" className="">
         <div className="">
           <div className={contact.layout}>
