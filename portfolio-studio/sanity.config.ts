@@ -1,6 +1,8 @@
 import {defineConfig} from 'sanity';
 import {deskTool} from 'sanity/desk';
 import {schemaTypes} from './schemas';
+import { codeInput } from '@sanity/code-input';
+
 
 export default defineConfig({
   basePath: '/studio',
@@ -10,7 +12,8 @@ export default defineConfig({
   dataset: 'production',
   // ...
   plugins: [
-    deskTool()
+    deskTool(),
+    codeInput()
     // ...
   ],
   // ...
