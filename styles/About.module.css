@@ -45,7 +45,7 @@ flex-direction: column;
 gap: 0.5rem; 
 }
 .caption {
-width: 64ch;
+  width: 40ch;
 text-align: start;
 opacity: 0.5;
 font-style: italic;
@@ -56,6 +56,7 @@ font-size: 0.875rem;
 @media (min-width: 1024px) {
   .aboutCopy {
     order: -9999; 
+    width: 64ch;
     grid-row: span 2 / span 2; 
   }
   .aboutCopy > h1 {
