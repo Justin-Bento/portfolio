@@ -25,6 +25,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'projectCode',
+      title: 'GitHub Code',
+      type: 'string',
+    }),
+    defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',
