@@ -30,6 +30,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'liveDemo',
+      title: 'Live Demo',
+      type: 'string',
+    }),
+    defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',
