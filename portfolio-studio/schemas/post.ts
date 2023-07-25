@@ -25,6 +25,16 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'projectCode',
+      title: 'GitHub Code',
+      type: 'string',
+    }),
+    defineField({
+      name: 'liveDemo',
+      title: 'Live Demo',
+      type: 'string',
+    }),
+    defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',
@@ -54,22 +64,7 @@ export default defineType({
       title: 'Body',
       type: 'blockContent',
     }),
-    defineField({
-      type: 'code',
-      name: 'myCodeField',
-      title: 'Code with all options',
-      options: {
-        language: 'javascript',
-        languageAlternatives: [
-          {title: 'Javascript', value: 'javascript'},
-          {title: 'HTML', value: 'html'},
-          {title: 'CSS', value: 'css'},
-        ],
-        withFilename: true,
-      },
-    })
   ],
-
   preview: {
     select: {
       title: 'title',
