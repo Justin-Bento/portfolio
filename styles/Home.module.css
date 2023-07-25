@@ -49,7 +49,7 @@
   margin: 0rem;
   padding: 0rem;
   font-size: clamp(2rem, 5vw, 2.8rem);
-  letter-spacing: 0.025rems;
+  letter-spacing: 0.025rem;
   line-height: 1.2;
   color: var(--gray-950);
 }
