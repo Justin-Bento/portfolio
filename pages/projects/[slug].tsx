@@ -6,6 +6,7 @@ import { PortableText } from '@portabletext/react';
 import article from "@/styles/articles.module.css"
 import RichTextComponents from "@/components/RichTextComponents";
 import Link from "next/link";
+import { RiGithubLine, RiComputerLine } from "react-icons/ri";
 
 export default function ProjectsSlug({ post }: any) {
   return (
@@ -35,8 +36,14 @@ export default function ProjectsSlug({ post }: any) {
           <h1 className={article.pageHeadline}>{post.title}</h1>
           <p className={article.pageSupporting}>{post.description}</p>
           <div className={article.content_actions}>
-            <Link href={post.projectCode}>Github Code</Link>
-            <Link href={post.liveDemo}>Live Demo</Link>
+            <Link href={post.liveDemo} target="_blank">
+              <RiComputerLine />
+              Live Demo
+            </Link>
+            <Link href={post.projectCode} target="_blank">
+              <RiGithubLine />
+              Github Code
+            </Link>
           </div>
           <PortableText value={post.body} components={RichTextComponents} />
         </article>
