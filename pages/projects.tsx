@@ -24,7 +24,7 @@ export default function Projects({ posts }: any) {
         {posts.map((post: any) => {
           return (
             <>
-              <div className="overflow-hidden rounded-lg bg-white shadow ring-2 ring-gray-300">
+              <div className="overflow-hidden rounded-lg bg-white/10 shadow ring-2 ring-gray-300">
                 <div className="px-4 py-5 sm:p-8">
                   <span className="mb-6 shadow  relative flex h-8 w-8 shrink-0 overflow-hidden rounded-full">
                     <Image fill src={urlFor(post.mainImage).url()} alt={`Image of ${post.title.toLowerCase()}`} />
