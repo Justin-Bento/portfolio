@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 export default function Projects({ posts }: any) {
   return (
-    <div className="lg:container lg:mx-auto lg:my-32">
+    <div className="lg:container lg:mx-auto lg:my-32 p-4 lg:p-0">
       <span className="">
         <nav className="flex text-sm mb-2 items-center">
           <Button variant="link" className="text-slate-700"><Link href="/">Home</Link></Button>
