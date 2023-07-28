@@ -1,5 +1,4 @@
 import Link from "next/link";
-import socialLinks from "@/styles/socialLinks.module.css";
 
 export default function SocialLinks({ className, href, children, icon: Icon }: any) {
   return (

@@ -4,7 +4,6 @@ import {
   useForm
 } from "react-hook-form";
 import { useForm as useFormspree } from "@formspree/react";
-import contact from "@/styles/contact.module.css";
 
 type FormInputs = {
   firstName: string;

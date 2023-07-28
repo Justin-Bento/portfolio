@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { urlFor } from "@/sanityClient";
-import style from '@/styles/articles.module.css';
 
 const RichTextComponents = {
   types: {

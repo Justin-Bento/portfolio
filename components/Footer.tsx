@@ -1,5 +1,4 @@
 import { RiFacebookCircleFill, RiInstagramFill, RiTwitterFill, RiGithubFill } from "react-icons/ri"
-import style from "@/styles/Footer.module.css";
 
 const navigation = [
   {
