@@ -29,7 +29,7 @@
     @apply text-neutral-600;
   }
   header {
-    @apply ring-1 ring-neutral-200 shadow-sm shadow-neutral-100;
+    @apply ring-1 ring-neutral-200 shadow-lg bg-primary-40 shadow-neutral-100;
   }
   footer {
     @apply bg-primary-100;
