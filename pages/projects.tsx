@@ -2,16 +2,23 @@ import { Button } from '@/components/Button';
 import { client, urlFor } from '../sanityClient';
 import { AllPosts } from '../typings';
 import { GetStaticProps } from "next";
-
+import { useRouter } from 'next/router'
 import React from 'react'
 import { RiCodeBoxLine, RiComputerLine, RiLink } from 'react-icons/ri';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Projects({ posts }: any) {
+  const router = useRouter();
+  const { pid } = router.query
   return (
     <div className="lg:container lg:mx-auto lg:my-32">
       <span className="">
+        <nav className="flex text-sm mb-2 items-center">
+          <Button variant="link" className="text-slate-700"><Link href="/">Home</Link></Button>
+          <span>/</span>
+          <Button variant="link"><Link href="/projects">Projects</Link></Button>
+        </nav>
         <h1 className="block tracking-normal [text-wrap:balance] text-4xl font-extrabold sm:text-5xl text-neutral-950">A Showcase of Creativity</h1>
         <p className="mt-4 tracking-wide text-xl text-neutral-600 max-w-[90ch]">Welcome to my project gallery! Here, you&#39;ll find a collection of my diverse creations, ranging from interactive multimedia to visually captivating designs. Take a moment to browse through my work and experience the art of storytelling through technology</p>
       </span>
