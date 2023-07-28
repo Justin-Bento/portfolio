@@ -1,13 +1,19 @@
 import { Button } from '@/components/Button'
 import ContactForm from '@/components/ContactForm'
+import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 
 export default function Contact() {
   return (
     <>
+      <Head>
+        <title>Justin Bento  - Contact</title>
+        <meta name="title" content={`Justin Bento - Contact`} />
+        <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
+      </Head>
       <div className="lg:container lg:mx-auto grid place-content-center lg:h-screen p-4 lg:p-0">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <section className="lg:col-span-2">
             <nav className="flex text-sm mb-2 items-center">
               <Button variant="link" className="text-slate-700"><Link href="/">Home</Link></Button>

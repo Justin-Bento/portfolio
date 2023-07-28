@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -12,6 +13,11 @@ import {
 export default function about() {
   return (
     <>
+      <Head>
+        <title>Justin Bento  - About</title>
+        <meta name="title" content="Justin Bento - About" />
+        <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
+      </Head>
       <div className="flex-auto h-screen">
         <div className="sm:px-8 mt-16 sm:mt-32">
           <div className="mx-auto w-full lg:container lg:px-0">
