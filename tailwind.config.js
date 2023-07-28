@@ -8,7 +8,11 @@ module.exports = {
     //...
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Satoshi", ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
   plugins: [],
 }
