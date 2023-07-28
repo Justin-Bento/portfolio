@@ -15,6 +15,7 @@ const buttonVariants = cva(
           "border border-input bg-transparent hover:bg-slate-50 hover:text-slate-950",
         secondary:
           "bg-slate-300 text-bg-slate-950 hover:bg-slate-300/80",
+          navLink: " bg-transparent dark:text-slate-50 tracking-wider dark:hover:bg-slate-900 hover:cursor-pointer shadow-none active:ring-1 ring-slate-400 text-slate-960 shadow hover:bg-slate-200/90",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-blue-700 underline-offset-4 hover:underline",
       },
