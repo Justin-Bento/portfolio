@@ -21,7 +21,7 @@ export default function index() {
                 fill
                 quality={80}
                 alt="Avatar"
-                className="rounded-full ring-2 ring-slate-800"
+                className="rounded-full ring-2 ring-primary-800"
               />
             </span>
           </div>

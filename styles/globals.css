@@ -20,12 +20,18 @@
 }
 @layer base {
   html {
-    @apply bg-slate-50 animate-fadeIn;
+    @apply bg-primary-40 animate-fadeIn;
+  }
+  h1, h2, h3,h4,h5,h6 {
+    @apply text-neutral-950;
+  }
+  p {
+    @apply text-neutral-600;
   }
   header {
-    @apply ring-1 ring-slate-200 shadow-sm shadow-slate-100;
+    @apply ring-1 ring-zinc-200 shadow-sm shadow-zinc-100;
   }
   footer {
-    @apply bg-slate-200;
+    @apply bg-primary-100;
   }
 }

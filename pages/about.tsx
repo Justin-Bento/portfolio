@@ -31,7 +31,7 @@ export default function about() {
                         src="/media/london-picture.jpg"
                         alt=""
                         loading="lazy"
-                        className=" ring-2 ring-slate-800 rounded-2xl bg-zinc-200 object-cover dark:bg-zinc-800"
+                        className=" ring-2 ring-primary-800 rounded-2xl bg-netural-200 object-cover dark:bg-netural-800"
                       />
                     </div>
                   </div>
@@ -41,7 +41,7 @@ export default function about() {
                     Hi 👋, I&#39;m Justin. A Multimedia Design Graduate learning
                     various technologies.
                   </h1>
-                  <div className="mt-6 space-y-7 text-base leading-7 tracking-wider text-zinc-600 dark:text-zinc-400">
+                  <div className="mt-6 space-y-7 text-base leading-7 tracking-wider text-netural-600 dark:text-netural-400">
                     <p>
                       After graduating amid a pandemic, I decided to re-teach
                       myself how to code. So I can build abstract webpages into
@@ -86,9 +86,9 @@ export default function about() {
                       <Link
                         href="https://soundcloud.com/bento-box-519166246"
                         target="_blank"
-                        className="group flex text-sm font-medium text-zinc-800 transition hover:text-slate-500 dark:text-zinc-200 dark:hover:text-slate-500"
+                        className="group flex text-sm font-medium text-netural-800 transition hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
                       >
-                        <RiSoundcloudFill className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-slate-500" />
+                        <RiSoundcloudFill className="h-6 w-6 flex-none fill-netural-500 transition group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">
                           Follow on Sound Cloud
                         </span>
@@ -98,9 +98,9 @@ export default function about() {
                       <Link
                         target="_blank"
                         href="https://github.com/Justin-Bento"
-                        className="group flex text-sm font-medium text-zinc-800 transition hover:text-slate-500 dark:text-zinc-200 dark:hover:text-slate-500"
+                        className="group flex text-sm font-medium text-netural-800 transition hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
                       >
-                        <RiInstagramFill className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-slate-500" />
+                        <RiInstagramFill className="h-6 w-6 flex-none fill-netural-500 transition group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">
                           Follow on Instagram
                         </span>
@@ -110,29 +110,29 @@ export default function about() {
                       <Link
                         target="_blank"
                         href="https://github.com/Justin-Bento"
-                        className="group flex text-sm font-medium text-zinc-800 transition hover:text-slate-500 dark:text-zinc-200 dark:hover:text-slate-500"
+                        className="group flex text-sm font-medium text-netural-800 transition hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
                       >
-                        <RiGithubFill className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-slate-500" />
+                        <RiGithubFill className="h-6 w-6 flex-none fill-netural-500 transition group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">Follow on GitHub</span>
                       </Link>
                     </li>
                     <li className="flex items-center">
                       <Link
                         href="https://www.linkedin.com/in/justin--bento/"
-                        className="group flex text-sm font-medium text-zinc-800 transition hover:text-slate-500 dark:text-zinc-200 dark:hover:text-slate-500"
+                        className="group flex text-sm font-medium text-netural-800 transition hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
                       >
-                        <RiLinkedinFill className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-slate-500" />
+                        <RiLinkedinFill className="h-6 w-6 flex-none fill-netural-500 transition group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">
                           Follow on LinkedIn
                         </span>
                       </Link>
                     </li>
-                    <li className="mt-4 border-t border-zinc-100 pt-8 dark:border-zinc-700/40 flex">
+                    <li className="mt-4 border-t border-netural-100 pt-8 dark:border-netural-700/40 flex">
                       <Link
-                        className="group flex text-sm font-medium text-zinc-800 transition hover:text-slate-500 dark:text-zinc-200 dark:hover:text-slate-500"
+                        className="group flex text-sm font-medium text-netural-800 transition hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
                         href="mailto:contact@justin-bento.com"
                       >
-                        <RiMailFill className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-slate-500" />
+                        <RiMailFill className="h-6 w-6 flex-none fill-netural-500 transition group-hover:fill-slate-500" />
                         <span className="ml-4">contact@justin-bento.com</span>
                       </Link>
                     </li>

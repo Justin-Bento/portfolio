@@ -8,14 +8,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-slate-700 text-slate-50 hover:bg-slate-700/90",
+        default: "bg-primary-600 text-slate-50 hover:bg-primary-700/90",
         destructive:
           "bg-red-500 text-red-50 hover:bg-red-500/90",
         outline:
-          "border border-input bg-transparent hover:bg-slate-50 hover:text-slate-950",
+          "border border-input bg-transparent hover:bg-primary-50 hover:text-slate-950",
         secondary:
-          "bg-slate-300 text-bg-slate-950 hover:bg-slate-300/80",
-          navLink: " bg-transparent dark:text-slate-50 tracking-wider dark:hover:bg-slate-900 hover:cursor-pointer shadow-none active:ring-1 ring-slate-400 text-slate-960 shadow hover:bg-slate-200/90",
+          "bg-primary-200/50 text-bg-primary-950 hover:bg-primary-300/80",
+          navLink: " bg-transparent dark:text-slate-50 tracking-wider dark:hover:bg-primary-900 hover:cursor-pointer shadow-none active:ring-1 ring-slate-400 text-slate-960 shadow hover:bg-primary-200/30",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-blue-700 underline-offset-4 hover:underline",
       },
