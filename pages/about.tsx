@@ -18,14 +18,14 @@ export default function about() {
         <meta name="title" content="Justin Bento - About" />
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
-      <div className="flex-auto h-screen">
+      <div className="flex-auto h-screen p-4 lg:p-0">
         <div className="sm:px-8 mt-16 sm:mt-32">
           <div className="mx-auto w-full lg:container lg:px-0">
             <div className="relative">
               <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
                 <div className="lg:pl-20">
                   <div className="px-2.5 lg:max-w-none">
-                    <div className="aspect-video relative h-96 rotate-3">
+                    <div className="aspect-square w-full lg:aspect-video relative h-96 rotate-3">
                       <Image
                         fill
                         src="/media/london-picture.jpg"
