@@ -20,7 +20,7 @@ export default function Contact() {
               <span>/</span>
               <Button variant="link"><Link href="/contact">Contact us</Link></Button>
             </nav>
-            <h1 className="block tracking-normal mt-4 [text-wrap:balance] text-3xl sm:text-4xl font-extrabold capitalize text-neutral-950">Let&#39;s work together!</h1>
+            <h1 className="block tracking-normal [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl text-neutral-950 capitalize">Let&#39;s work together!</h1>
             <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl text-neutral-600 max-w-[90ch]">I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as possible. Looking forward to starting a creative conversation together!</p>
           </section>
           <div className="border-2 overflow-hidden rounded-lg">
