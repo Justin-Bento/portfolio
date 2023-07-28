@@ -9,8 +9,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Projects({ posts }: any) {
-  const router = useRouter();
-  const { pid } = router.query
   return (
     <div className="lg:container lg:mx-auto lg:my-32">
       <span className="">
