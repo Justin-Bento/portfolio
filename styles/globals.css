@@ -22,6 +22,9 @@
   html {
     @apply bg-slate-50;
   }
+  header {
+    @apply ring-1 ring-slate-200 shadow-sm shadow-slate-100;
+  }
   footer {
     @apply bg-slate-200;
   }
