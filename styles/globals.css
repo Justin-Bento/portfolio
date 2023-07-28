@@ -20,7 +20,7 @@
 }
 @layer base {
   html {
-    @apply bg-slate-50;
+    @apply bg-slate-50 animate-fadeIn;
   }
   header {
     @apply ring-1 ring-slate-200 shadow-sm shadow-slate-100;
