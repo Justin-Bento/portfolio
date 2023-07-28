@@ -17,8 +17,8 @@ export default function Projects({ posts }: any) {
           <span>/</span>
           <Button variant="link"><Link href="/projects">Projects</Link></Button>
         </nav>
-        <h1 className="block tracking-normal [text-wrap:balance] text-4xl font-extrabold sm:text-5xl text-neutral-950">A Showcase of Creativity</h1>
-        <p className="mt-4 tracking-wide text-xl text-neutral-600 max-w-[90ch]">Welcome to my project gallery! Here, you&#39;ll find a collection of my diverse creations, ranging from interactive multimedia to visually captivating designs. Take a moment to browse through my work and experience the art of storytelling through technology</p>
+        <h1 className="block tracking-normal [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl text-neutral-950">A Showcase of Creativity</h1>
+        <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl text-neutral-600 max-w-[90ch]">Welcome to my project gallery! Here, you&#39;ll find a collection of my diverse creations, ranging from interactive multimedia to visually captivating designs. Take a moment to browse through my work and experience the art of storytelling through technology</p>
       </span>
       <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
         {posts.map((post: any) => {
@@ -29,7 +29,7 @@ export default function Projects({ posts }: any) {
                   <span className="mb-6 shadow  relative flex h-8 w-8 shrink-0 overflow-hidden rounded-full">
                     <Image fill src={urlFor(post.mainImage).url()} alt={`Image of ${post.title.toLowerCase()}`} />
                   </span>
-                  <h2 className="font-display text-2xl font-semibold text-neutral-950">{post.title}</h2>
+                  <h2 className="font-display text-xl md:text-2xl font-semibold text-neutral-950">{post.title}</h2>
                   <p className=" my-2 text-base text-neutral-600 tracking-wide line-clamp-2">{post.description}</p>
                   <div className="flex items-center gap-4">
                     <Link href={`/projects/${post.slug.current}`} >
