@@ -18,3 +18,8 @@
   font-named-instance: "Italic";
   src: url("/fonts/Satoshi-VariableItalic.ttf") format("truetype");
 }
+@layer base {
+  html {
+    @apply bg-slate-50;
+  }
+}
