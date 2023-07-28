@@ -12,7 +12,7 @@ export default function Header() {
       <div className="grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
         <div className="flex justify-between items-center gap-1">
           <Link href="/" aria-label="link-to-home">
-            <Logo className="fill-primary-700 dark:fill-primary-50 hover:opacity-80" />
+            <Logo className="fill-netural-700 dark:fill-netural-50 hover:opacity-80" />
           </Link>
           {mobileMenuOpen ? (
             <Button
