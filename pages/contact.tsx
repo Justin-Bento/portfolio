@@ -18,7 +18,7 @@ export default function Contact() {
             <nav className="flex text-sm mb-2 items-center">
               <Button variant="link" className="text-slate-700"><Link href="/">Home</Link></Button>
               <span>/</span>
-              <Button variant="link"><Link href="/contact">Contact us</Link></Button>
+              <Button variant="link" className="text-primary-700"><Link href="/contact">Contact us</Link></Button>
             </nav>
             <h1 className="block tracking-normal [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl text-neutral-950 capitalize">Let&#39;s work together!</h1>
             <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl text-neutral-600 max-w-[90ch]">I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as possible. Looking forward to starting a creative conversation together!</p>
