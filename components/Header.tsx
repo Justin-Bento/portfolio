@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="p-4 lg:p-4">
       <div className="grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center gap-1">
           <Link href="/" aria-label="link-to-home">
             <Logo className="fill-primary-700 dark:fill-primary-50 hover:opacity-80" />
           </Link>
@@ -67,11 +67,11 @@ export default function Header() {
         >
           <Link
             target="_blank"
-            href="https://www.linkedin.com/in/farah-hakimpour-0b41911b8/"
+            href="https://www.linkedin.com/in/justin--bento/"
           >
             <Button
               variant="secondary"
-              className="flex gap-1.5 w-full lg:w-auto"
+              className="gap-1.5 w-full lg:w-auto"
               aria-label="external-link-to-linkedin"
             >
               <RiExternalLinkLine />
