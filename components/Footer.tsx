@@ -1,50 +1,21 @@
-import { RiFacebookCircleFill, RiInstagramFill, RiTwitterFill, RiGithubFill } from "react-icons/ri"
+import React from 'react'
+import { footer_navigation } from "@/lib/data";
+import Link from 'next/link';
 
-const navigation = [
-  {
-    name: 'Facebook',
-    href: '#',
-    icon: (props: any) => (
-      <RiFacebookCircleFill {...props} />
-      ),
-    },
-    {
-      name: 'Instagram',
-      href: '#',
-      icon: (props: any) => (
-      <RiInstagramFill {...props} />
-      ),
-    },
-    {
-      name: 'Twitter',
-      href: '#',
-      icon: (props: any) => (
-      <RiTwitterFill {...props} />
-      ),
-    },
-    {
-      name: 'GitHub',
-      href: '#',
-      icon: (props: any) => (
-      <RiGithubFill {...props} />
-    ),
-  },
-]
-// flex justify-center space-x-6 md:order-2
 export default function Footer() {
   return (
-    <footer className={style.footer_background}>
-      <div className={style.footer_container}>
-        <div className={style.footer_adjust}>
-          {navigation.map((item) => (
-            <a key={item.name} href={item.href} className={style.footer_links}>
-              <span className={style.footer_srOnly}>{item.name}</span>
-              <item.icon className={style.footer_iconSize} aria-hidden="true" />
-            </a>
+    <footer>
+      <div className="px-6 py-12 lg:px-0 lg:mx-auto lg:container md:flex md:items-center md:justify-between">
+        <div className="flex justify-center space-x-6 md:order-2">
+          {footer_navigation.map((item: any) => (
+            <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
+              <span className="sr-only">{item.name}</span>
+              <item.icon className="w-6 h-6" aria-hidden="true" />
+            </Link>
           ))}
         </div>
-        <div className={style.footer_adjust1}>
-          <p className={style.footer_copyrights}>
+        <div className="mt-8 md:order-1 md:mt-0">
+          <p className="text-sm leading-7 tracking-wider ">
             &copy; {new Date().getFullYear()} Justin Bento, Inc. All rights reserved.
           </p>
         </div>
