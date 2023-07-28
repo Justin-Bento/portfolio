@@ -12,6 +12,15 @@ module.exports = {
       fontFamily: {
         sans: ["Satoshi", ...defaultTheme.fontFamily.sans],
       },
+      animation: {
+        'fadeIn': 'fadeIn 1s linear',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      },
     },
   },
   plugins: [
