@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 import { RiMailFill, RiMapPin2Fill } from 'react-icons/ri'
+import { footer_navigation } from '@/lib/data'
 
 export default function Contact() {
   return (
@@ -39,7 +40,18 @@ export default function Contact() {
                 contact@justinbento.com
               </Button>
               <hr className="my-6 border" />
-              <h2 className="text-base font-semibold font-display text-neutral-950">Social&#39;s Comming Soon</h2>
+              <h2 className="text-base font-semibold font-display text-neutral-950">Social&#39;s</h2>
+              <p className="mt-2 text-base text-neutral-600">Prefer doing things in person? We don’t but we have to list our addresses here for legal reasons.</p>
+              <div className="flex items-center gap-2 mt-4">
+                {footer_navigation.map((item: any) => (
+                  <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
+                    <span className="sr-only">{item.name}</span>
+                    <Button variant="outline" size="icon">
+                      <item.icon className="w-6 h-6" aria-hidden="true" />
+                    </Button>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
           <section className="">
