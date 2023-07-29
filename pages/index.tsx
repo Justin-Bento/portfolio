@@ -20,6 +20,7 @@ export default function index() {
               <Image
                 src="/media/jusitn-bento--linkin.png"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 quality={80}
                 alt="Avatar"
                 className="rounded-full ring-2 ring-primary-800"
@@ -28,8 +29,8 @@ export default function index() {
           </div>
           <p className="text-sm lg:text-base capitalize font-semibold text-slate-800 my-4 tracking-[0.015rem]">Hey there I&#39;m Justin!</p>
           <h1 className="font-display text-4xl font-extrabold leading-normal tracking-[0.015rem] text-neutral-950 sm:text-5xl">From Designs to Dynamic Websites: Join Me On My Multimedia Journey!</h1>
-          <p className="mt-6 text-base lg:text-lg text-neutral-600 leading-relaxed tracking-wide">I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge in accessibility design with the power of code to craft engaging websites that everyone can enjoy. Join me on this journey of creativity and interactivity.</p>
-          <span className="flex flex-col lg:flex-row gap-4 my-8 lg:justify-center">
+          <p className="mt-6 text-base leading-relaxed tracking-wide lg:text-lg text-neutral-600">I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge in accessibility design with the power of code to craft engaging websites that everyone can enjoy. Join me on this journey of creativity and interactivity.</p>
+          <span className="flex flex-col gap-4 my-8 lg:flex-row lg:justify-center">
             <Link href="/projects"><Button className="w-full lg:w-auto">Explore My Portfolio</Button></Link>
             <Link href="/contact"><Button variant="outline" className="w-full lg:w-auto">Let&#39;s Collaborate</Button></Link>
           </span>
@@ -40,8 +41,8 @@ export default function index() {
 }
 function BackgroundPattern() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1440" height="560" className=" absolute inset-0 -z-10 h-full w-full opacity-30 blur-3xl rotate-3" preserveAspectRatio="none" viewBox="0 0 1440 560">
-      <g clip-path="url(&quot;#SvgjsClipPath1083&quot;)" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1440" height="560" className="absolute inset-0 w-full h-full -z-10 opacity-30 blur-3xl rotate-3" preserveAspectRatio="none" viewBox="0 0 1440 560">
+      <g>
         <circle r="37.68" cx="27.69" cy="559.87" fill="#3997a1"></circle>
         <circle r="54.375" cx="1157.82" cy="301.1" fill="#3997a1"></circle>
         <circle r="49.095" cx="118.57" cy="478.95" fill="#3997a1"></circle>
