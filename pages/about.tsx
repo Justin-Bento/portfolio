@@ -19,19 +19,19 @@ export default function about() {
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
       <div className="flex-auto h-screen p-4 lg:p-0">
-        <div className="sm:px-8 mt-16 sm:mt-32">
-          <div className="mx-auto w-full lg:container lg:px-0">
+        <div className="mt-16 sm:px-8 sm:mt-32">
+          <div className="w-full mx-auto lg:container lg:px-0">
             <div className="relative">
               <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
                 <div className="lg:pl-20">
                   <div className="px-2.5 lg:max-w-none">
-                    <div className="aspect-square w-full lg:aspect-video relative h-96 rotate-3">
+                    <div className="relative w-full aspect-square lg:aspect-video h-96 rotate-3">
                       <Image
                         fill
-                        src="/media/london-picture.jpg"
+                        src="/media/london-picture.png"
                         alt=""
                         loading="lazy"
-                        className=" ring-2 ring-primary-800 rounded-2xl bg-netural-200 object-cover dark:bg-netural-800"
+                        className="object-cover  ring-2 ring-primary-800 rounded-2xl bg-netural-200 dark:bg-netural-800"
                       />
                     </div>
                   </div>
@@ -41,7 +41,7 @@ export default function about() {
                     Hi 👋, I&#39;m Justin. A Multimedia Design Graduate learning
                     various technologies.
                   </h1>
-                  <div className="mt-6 space-y-7 text-base leading-7 tracking-wider text-netural-600 dark:text-netural-400">
+                  <div className="mt-6 text-base leading-7 tracking-wider space-y-7 text-netural-600 dark:text-netural-400">
                     <p>
                       After graduating amid a pandemic, I decided to re-teach
                       myself how to code. So I can build abstract webpages into
@@ -80,15 +80,15 @@ export default function about() {
                     <p>Thanks for taking the time to read. 😊</p>
                   </div>
                 </div>
-                <div className="lg:pl-20 w-full">
+                <div className="w-full lg:pl-20">
                   <ul role="list" className="flex flex-col gap-4">
                     <li className="flex">
                       <Link
                         href="https://soundcloud.com/bento-box-519166246"
                         target="_blank"
-                        className="group flex text-sm font-medium text-netural-800 transition hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
+                        className="flex text-sm font-medium transition group text-netural-800 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
                       >
-                        <RiSoundcloudFill className="h-6 w-6 flex-none fill-netural-500 transition group-hover:fill-slate-500" />
+                        <RiSoundcloudFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">
                           Follow on Sound Cloud
                         </span>
@@ -98,9 +98,9 @@ export default function about() {
                       <Link
                         target="_blank"
                         href="https://github.com/Justin-Bento"
-                        className="group flex text-sm font-medium text-netural-800 transition hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
+                        className="flex text-sm font-medium transition group text-netural-800 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
                       >
-                        <RiInstagramFill className="h-6 w-6 flex-none fill-netural-500 transition group-hover:fill-slate-500" />
+                        <RiInstagramFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">
                           Follow on Instagram
                         </span>
@@ -110,29 +110,29 @@ export default function about() {
                       <Link
                         target="_blank"
                         href="https://github.com/Justin-Bento"
-                        className="group flex text-sm font-medium text-netural-800 transition hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
+                        className="flex text-sm font-medium transition group text-netural-800 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
                       >
-                        <RiGithubFill className="h-6 w-6 flex-none fill-netural-500 transition group-hover:fill-slate-500" />
+                        <RiGithubFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">Follow on GitHub</span>
                       </Link>
                     </li>
                     <li className="flex items-center">
                       <Link
                         href="https://www.linkedin.com/in/justin--bento/"
-                        className="group flex text-sm font-medium text-netural-800 transition hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
+                        className="flex text-sm font-medium transition group text-netural-800 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
                       >
-                        <RiLinkedinFill className="h-6 w-6 flex-none fill-netural-500 transition group-hover:fill-slate-500" />
+                        <RiLinkedinFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">
                           Follow on LinkedIn
                         </span>
                       </Link>
                     </li>
-                    <li className="mt-4 border-t border-netural-100 pt-8 dark:border-netural-700/40 flex">
+                    <li className="flex pt-8 mt-4 border-t border-netural-100 dark:border-netural-700/40">
                       <Link
-                        className="group flex text-sm font-medium text-netural-800 transition hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
+                        className="flex text-sm font-medium transition group text-netural-800 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
                         href="mailto:contact@justin-bento.com"
                       >
-                        <RiMailFill className="h-6 w-6 flex-none fill-netural-500 transition group-hover:fill-slate-500" />
+                        <RiMailFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
                         <span className="ml-4">contact@justin-bento.com</span>
                       </Link>
                     </li>
