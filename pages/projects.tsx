@@ -1,49 +1,63 @@
-import Project_Card from "@/components/Project_Card";
-import { projects } from "@/lib/data";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Head from "next/head";
+import { Button } from '@/components/Button';
 import { client, urlFor } from '../sanityClient';
 import { AllPosts } from '../typings';
 import { GetStaticProps } from "next";
-import project from "@/styles/Project.module.css"
+import React from 'react'
+import { RiCodeBoxLine, RiComputerLine, RiLink } from 'react-icons/ri';
+import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head';
 
-export default function Projects({ posts }: AllPosts) {
+export default function Projects({ posts }: any) {
   return (
     <>
       <Head>
-        <title>Justin Bento — Projects</title>
-        <meta name="title" content="Justin Bento — Projects" />
-        <meta name="keywords" content="Full-Stack, website design website developer" />
-        <meta name="description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="/public/website-screenshot.webp" />
-        {/* <!-- Open Graph / Facebook --> */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://justin-bento.com/" />
-        <meta property="og:title" content="Justin Bento — Projects" />
-        <meta property="og:description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
-        <meta property="og:image" content="/public/website-screenshot.webp" />
-        {/* <!-- Twitter --> */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://justin-bento.com/" />
-        <meta property="twitter:title" content="Justin Bento — Projects" />
-        <meta property="twitter:description" content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries." />
-        <meta property="twitter:image" content="/public/website-screenshot.webp" />
+        <title>Justin Bento  - Projects</title>
+        <meta name="title" content="Justin Bento - Projects" />
+        <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
-      <Header />
-      <main className="container">
-        <section className={project.pageInfo}>
-          <h1 className="headline">Signature Projects I’ve made.</h1>
-          <p className="body">If you see something that piques your interest, check out the code or leave a like.</p>
-        </section>
-        <section className={project.grid_container}>
-          {posts.map((data) => {
-            return <Project_Card key={data.title.toString().toLowerCase()} Headline={data.title} Supporting={data.description} Link={`/projects/${data.slug.current}`} Media={urlFor(data.mainImage).url()} />
+      <div className="p-4 lg:container lg:mx-auto lg:my-32 lg:p-0">
+        <span className="">
+          <nav className="flex items-center mb-2 text-sm">
+            <Button variant="link" className="text-neutral-700"><Link href="/">Home</Link></Button>
+            <span>/</span>
+            <Button variant="link" className="text-primary-600"><Link href="/projects">Projects</Link></Button>
+          </nav>
+          <h1 className="block tracking-normal [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl ">A Showcase of Creativity</h1>
+          <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl  max-w-[90ch]">Welcome to my project gallery! Here, you&#39;ll find a collection of my diverse creations, ranging from interactive multimedia to visually captivating designs. Take a moment to browse through my work and experience the art of storytelling through technology</p>
+        </span>
+        <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+          {posts.map((post: any) => {
+            return (
+              <>
+                <div key={post._id} className="overflow-hidden rounded-lg shadow bg-white/10 ring-2 ring-gray-300">
+                  <div className="px-4 py-5 sm:p-8">
+                    <span className="relative flex w-8 h-8 mb-6 overflow-hidden rounded-full shadow shrink-0">
+                      <Image fill src={urlFor(post.mainImage).url()} alt={`Image of ${post.title.toLowerCase()}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                    </span>
+                    <h2 className="text-xl font-semibold font-display md:text-2xl">{post.title}</h2>
+                    <p className="my-2 text-base tracking-wide line-clamp-2">{post.description}</p>
+                    <div className="flex items-center gap-4">
+                      <Link href={`/projects/${post.slug.current}`} >
+                        <Button variant="outline" size="sm" className='flex items-center gap-1 mt-4'>
+                          <RiComputerLine />
+                          View Project
+                        </Button>
+                      </Link>
+                      <Link href={post.liveDemo} target="_blank">
+                        <Button variant="outline" size="sm" className='flex items-center gap-1 mt-4'>
+                          <RiCodeBoxLine />
+                          View Code
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )
           })}
-        </section>
-      </main>
-      <Footer />
+        </div>
+      </div>
     </>
   )
 }
@@ -54,6 +68,8 @@ export const getStaticProps: GetStaticProps<AllPosts> = async () => {
       _id, 
       title, 
       description, 
+      projectCode,
+    liveDemo,
       slug,   
       mainImage
     }

@@ -1,42 +1,85 @@
-
-
-
-import appbar from "@/styles/Appbar.module.css";
-import Image from "next/image";
+import React, { useState } from "react";
+import { Logo }from "@/components/Logo";
+import { Button } from "@/components/Button";
+import { RiMenuLine, RiExternalLinkLine, RiCloseLine } from "react-icons/ri";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { RiMenuFill, RiExternalLinkFill, RiCloseFill } from "react-icons/ri";
 
-export default function Appbar() {
-  const [isActive, setIsActive] = useState(true);
-  const onClick = () => setIsActive((isActive) => !isActive);
+export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
+  const onClick = () => setMobileMenuOpen((mobileMenuOpen) => !mobileMenuOpen);
   return (
-    <>
-      <header className={appbar.navbar}>
-        <div className={appbar.navbar_container}>
-          <section className={appbar.navbar_box_1}>
-            <Link href="/" className={appbar.navbar_logo}>
-              <Image fill quality={80} src="/justin-bento-logo.svg" alt="" />
-            </Link>
-            {isActive ? <RiMenuFill className={appbar.navbar_icons} onClick={onClick} /> : <RiCloseFill className={appbar.navbar_icons} onClick={onClick}/>}
-          </section>
-          <section className={isActive ? appbar.navbar_hidden : ''}>
-            <nav>
-              <ul className={appbar.navbar_list}>
-                <Link href="/" className={appbar.navbar_list_item}>Home</Link>
-                <Link href="/about" className={appbar.navbar_list_item}>About</Link>
-                <Link href="/projects" className={appbar.navbar_list_item}>Projects</Link>
-                <Link href="/contact" className={appbar.navbar_list_item}>Contact</Link>
-              </ul>
-            </nav>
-          </section>
-          <section className={`${isActive ? appbar.navbar_hidden  : ''} ${appbar.navbar_box_3}`}>
-            <RiExternalLinkFill />
-            <Link href="https://www.linkedin.com/in/justin--bento/" target="_blank" className={appbar.navbar_social_link}>LinkedIn</Link>
-          </section>
+    <header className="p-4 lg:p-4 sticky top-0 z-10">
+      <div className="grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
+        <div className="flex justify-between items-center gap-1">
+          <Link href="/" aria-label="link-to-home">
+            <Logo className="fill-netural-700 dark:fill-netural-50 hover:opacity-80" />
+          </Link>
+          {mobileMenuOpen ? (
+            <Button
+              variant="outline"
+              size="icon"
+              className="lg:hidden"
+              onClick={onClick}
+              aria-label="nav-button-open"
+            >
+              <RiMenuLine />
+            </Button>
+          ) : (
+            <Button
+              variant="outline"
+              size="icon"
+              className="lg:hidden"
+              onClick={onClick}
+              aria-label="nav-button-close"
+            >
+              <RiCloseLine />
+            </Button>
+          )}
         </div>
-      </header>
-    </>
+        <div className={`${mobileMenuOpen ? "hidden lg:flex" : ""}`}>
+          <nav className="flex flex-col justify-start w-full gap-6 lg:justify-center lg:flex-row">
+            <Link href="/">
+              <Button variant="navLink" size="lg" className="w-full" aria-label="navigation-link-home">
+                Home
+              </Button>
+            </Link>
+            <Link href="/about">
+              <Button variant="navLink" size="lg" className="w-full" aria-label="navigation-link-about">
+                About
+              </Button>
+            </Link>
+            <Link href="/projects">
+              <Button variant="navLink" size="lg" className="w-full" aria-label="navigation-link-projects">
+                Projects
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button variant="navLink" size="lg" className="w-full" aria-label="navigation-link-contact">
+                Contact
+              </Button>
+            </Link>
+          </nav>
+        </div>
+        <div
+          className={`${
+            mobileMenuOpen ? "hidden" : ""
+          } lg:flex lg:items-center md:justify-end`}
+        >
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/justin--bento/"
+          >
+            <Button
+              variant="secondary"
+              className="gap-1.5 w-full lg:w-auto"
+              aria-label="external-link-to-linkedin"
+            >
+              <RiExternalLinkLine />
+              LinkedIn
+            </Button>
+          </Link>
+        </div>
+      </div>
+    </header>
   );
 }
-

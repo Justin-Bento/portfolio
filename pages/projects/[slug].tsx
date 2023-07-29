@@ -1,57 +1,37 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { client } from "@/sanityClient";
-import Head from "next/head";
+import { Button } from '@/components/Button';
+import RichTextComponents from '@/components/RichTextComponents';
+import { client } from '@/sanityClient';
 import { PortableText } from '@portabletext/react';
-import article from "@/styles/articles.module.css"
-import RichTextComponents from "@/components/RichTextComponents";
-import Link from "next/link";
-import { RiGithubLine, RiComputerLine } from "react-icons/ri";
+import Head from 'next/head';
+import Link from 'next/link';
+import React from 'react'
 
-export default function ProjectsSlug({ post }: any) {
+export default function DynamicProjectPage({ post }: any) {
   return (
     <>
       <Head>
-        <title>Justin Bento — {post.title}</title>
-        <meta name="keywords" content="Full-Stack, website design website developer" />
-        <meta name="description" content={`${post.description}`} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="/public/website-screenshot.webp" />
-        {/* <!-- Open Graph / Facebook --> */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://justin-bento.com/" />
-        <meta property="og:title" content={`Justin Bento — ${post.title}`} />
-        <meta property="og:description" content={`${post.description}`} />
-        <meta property="og:image" content="/public/website-screenshot.webp" />
-        {/* <!-- Twitter --> */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://justin-bento.com/" />
-        <meta property="twitter:title" content={`Justin Bento — ${post.title}`} />
-        <meta property="twitter:description" content={`${post.description}`} />
-        <meta property="twitter:image" content="/public/website-screenshot.webp" />
+        <title>Justin Bento  - {post.title}</title>
+        <meta name="title" content={`Justin Bento - Projects - ${post.title}`} />
+        <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
-      <Header />
-      <main className="container">
-        <article className={`${article.content}`}>
-          <h1 className={article.pageHeadline}>{post.title}</h1>
-          <p className={article.pageSupporting}>{post.description}</p>
-          <div className={article.content_actions}>
-            <Link href={post.liveDemo} target="_blank">
-              <RiComputerLine />
-              Live Demo
-            </Link>
-            <Link href={post.projectCode} target="_blank">
-              <RiGithubLine />
-              Github Code
-            </Link>
-          </div>
+      <main className="md:container md:mx-auto border-0 lg:max-w-[100ch] lg:my-32 p-4 lg:p-0">
+        <nav className="flex items-center mb-2 text-sm">
+          <Button variant="link" className="text-slate-700"><Link href="/">Home</Link></Button>
+          <span>/</span>
+          <Button variant="link" className="text-slate-700"><Link href="/projects">Projects</Link></Button>
+          <span>/</span>
+          <Button variant="link" className="text-primary-600"><Link href={`/${post.title}`}>{post.title}</Link></Button>
+        </nav>
+        <h1 className="block tracking-normal [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl">{post.title}</h1>
+        <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl max-w-[90ch]">{post.description}</p>
+        <div className="max-w-full prose prose-p:leading-7 prose-p:text-lg prose-ul:text-lg prose-li:text-lg prose-p:tracking-wide prose-headings:font-bold prose-img:block">
           <PortableText value={post.body} components={RichTextComponents} />
-        </article>
+        </div>
       </main>
-      <Footer />
     </>
   )
 }
+
 
 export async function getStaticPaths() {
   const query = `*[_type == "post"]{ 'slug': slug.current }`;

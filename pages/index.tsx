@@ -1,110 +1,62 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import home from "../styles/Home.module.css";
+import { Button } from '@/components/Button'
+import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
 
 export default function index() {
   return (
     <>
       <Head>
-        <title>Justin Bento — Portfolio</title>
-        <meta name="title" content="Justin Bento — Portfolio" />
-        <meta
-          name="keywords"
-          content="Full-Stack, website design website developer"
-        />
-        <meta
-          name="description"
-          content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="/public/website-screenshot.webp" />
-        {/* <!-- Open Graph / Facebook --> */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://justin-bento.com/" />
-        <meta property="og:title" content="Justin Bento — Portfolio" />
-        <meta
-          property="og:description"
-          content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries."
-        />
-        <meta property="og:image" content="/public/website-screenshot.webp" />
-        {/* <!-- Twitter --> */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://justin-bento.com/" />
-        <meta property="twitter:title" content="Justin Bento — Portfolio" />
-        <meta
-          property="twitter:description"
-          content="Explore my portfolio website showcasing my latest full-stack development work, featuring creative solutions for various clients and industries."
-        />
-        <meta
-          property="twitter:image"
-          content="/public/website-screenshot.webp"
-        />
+        <title>Justin Bento  - Portfolio</title>
+        <meta name="title" content="Justin Bento  - Portfolio" />
+        <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
-      <Header />
-      <main className='container'>
-        <div className={`${home.isolate} fadeInAnimation order2`}>
-          <div className={home.bgPattern1}>
-            <svg className={home.bgPattern2} viewBox="0 0 1155 678">
-              <path
-                fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)"
-                fillOpacity=".3"
-                d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
-              />
-              <defs>
-                <linearGradient
-                  id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533"
-                  x1="1155.49"
-                  x2="-78.208"
-                  y1=".177"
-                  y2="474.645"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#0382b5" />
-                  <stop offset={1} stopColor="#0382b5" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          {/* End of Background Pattern */}
-          <div className={home.hero}>
-            <div className={home.mainImage}>
+      <BackgroundPattern />
+      <div aria-label="home-page" className="p-4 lg:p-0 lg:container h-screen grid place-content-center lg:text-center [text-wrap:balance] mx-auto">
+        <div className="lg:max-w-[80ch]">
+          <div className="flex justify-start lg:justify-center">
+            <span className="relative w-16 h-16 mb-6 ">
               <Image
                 src="/media/jusitn-bento--linkin.png"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 quality={80}
                 alt="Avatar"
-                className={home.mainImageLin}
+                className="rounded-full ring-2 ring-primary-800"
               />
-            </div>
-            <div>
-              <p>Hi there! I&#39;m Justin Bento. </p>
-              <h1 className={home.headline}>
-                Creative Software Engineer, With Expereince In Multimedia
-                Design.
-              </h1>
-              <p className={home.body}>
-                This website is a creative platform developed by me. Showcasing
-                my skills, knowledge, and expereince. All in one place! So feel
-                free to learn about my joruney, interact with websites I
-                built, and lets collaborate on projects.
-              </p>
-              <div className={home.hero_actions}>
-                <Link href="/projects" className="btn_primary">
-                  View Projects
-                </Link>
-                <Link href="/about" className='btn_secondary'>
-                  Get To Know Me
-                </Link>
-              </div>
-            </div>
+            </span>
           </div>
-          {/* End of hero section */}
+          <p className="text-sm lg:text-base capitalize font-semibold text-slate-800 my-4 tracking-[0.015rem]">Hey there I&#39;m Justin!</p>
+          <h1 className="font-display text-4xl font-extrabold leading-normal tracking-[0.015rem] text-neutral-950 sm:text-5xl">From Designs to Dynamic Websites: Join Me On My Multimedia Journey!</h1>
+          <p className="mt-6 text-base leading-relaxed tracking-wide lg:text-lg text-neutral-600">I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge in accessibility design with the power of code to craft engaging websites that everyone can enjoy. Join me on this journey of creativity and interactivity.</p>
+          <span className="flex flex-col gap-4 my-8 lg:flex-row lg:justify-center">
+            <Link href="/projects"><Button className="w-full lg:w-auto">Explore My Portfolio</Button></Link>
+            <Link href="/contact"><Button variant="outline" className="w-full lg:w-auto">Let&#39;s Collaborate</Button></Link>
+          </span>
         </div>
-      </main>
-      <Footer />
+      </div>
     </>
-  );
+  )
+}
+function BackgroundPattern() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1440" height="560" className="absolute inset-0 w-full h-full -z-10 opacity-30 blur-3xl rotate-3" preserveAspectRatio="none" viewBox="0 0 1440 560">
+      <g>
+        <circle r="37.68" cx="27.69" cy="559.87" fill="#3997a1"></circle>
+        <circle r="54.375" cx="1157.82" cy="301.1" fill="#3997a1"></circle>
+        <circle r="49.095" cx="118.57" cy="478.95" fill="#3997a1"></circle>
+        <circle r="47.185" cx="855.46" cy="393.61" fill="#3997a1"></circle>
+        <circle r="52.19" cx="757.34" cy="80.44" fill="#3997a1"></circle>
+        <circle r="19.915" cx="1339.78" cy="479.78" fill="#3997a1"></circle>
+        <circle r="38.625" cx="1212.62" cy="548.11" fill="#3997a1"></circle>
+        <circle r="41.635" cx="1147.41" cy="187.11" fill="#3997a1"></circle>
+      </g>
+      <defs>
+        <clipPath id="SvgjsClipPath1083">
+          <rect width="1440" height="560" x="0" y="0"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  )
 }
