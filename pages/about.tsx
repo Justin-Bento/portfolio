@@ -18,8 +18,8 @@ export default function about() {
         <meta name="title" content="Justin Bento - About" />
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
-      <div className="flex-auto h-screen p-4 lg:p-0">
-        <div className="mt-16 sm:px-8 sm:mt-32">
+      <div className="flex-auto p-4 lg:p-0">
+        <div className="sm:px-8 sm:my-32">
           <div className="w-full mx-auto lg:container lg:px-0">
             <div className="relative">
               <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -31,7 +31,8 @@ export default function about() {
                         src="/media/london-picture.png"
                         alt=""
                         loading="lazy"
-                        className="object-cover  ring-2 ring-primary-800 rounded-2xl bg-netural-200 dark:bg-netural-800"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover ring-2 ring-primary-800 rounded-2xl bg-netural-200 dark:bg-netural-800"
                       />
                     </div>
                   </div>
