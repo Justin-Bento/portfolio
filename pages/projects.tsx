@@ -16,9 +16,9 @@ export default function Projects({ posts }: any) {
         <meta name="title" content="Justin Bento - Projects" />
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
-      <div className="lg:container lg:mx-auto lg:my-32 p-4 lg:p-0">
+      <div className="p-4 lg:container lg:mx-auto lg:my-32 lg:p-0">
         <span className="">
-          <nav className="flex text-sm mb-2 items-center">
+          <nav className="flex items-center mb-2 text-sm">
             <Button variant="link" className="text-neutral-700"><Link href="/">Home</Link></Button>
             <span>/</span>
             <Button variant="link" className="text-primary-600"><Link href="/projects">Projects</Link></Button>
@@ -30,22 +30,22 @@ export default function Projects({ posts }: any) {
           {posts.map((post: any) => {
             return (
               <>
-                <div className="overflow-hidden rounded-lg bg-white/10 shadow ring-2 ring-gray-300">
+                <div key={post._id} className="overflow-hidden rounded-lg shadow bg-white/10 ring-2 ring-gray-300">
                   <div className="px-4 py-5 sm:p-8">
-                    <span className="mb-6 shadow  relative flex h-8 w-8 shrink-0 overflow-hidden rounded-full">
-                      <Image fill src={urlFor(post.mainImage).url()} alt={`Image of ${post.title.toLowerCase()}`} />
+                    <span className="relative flex w-8 h-8 mb-6 overflow-hidden rounded-full shadow shrink-0">
+                      <Image fill src={urlFor(post.mainImage).url()} alt={`Image of ${post.title.toLowerCase()}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                     </span>
-                    <h2 className="font-display text-xl md:text-2xl font-semibold">{post.title}</h2>
-                    <p className=" my-2 text-base tracking-wide line-clamp-2">{post.description}</p>
+                    <h2 className="text-xl font-semibold font-display md:text-2xl">{post.title}</h2>
+                    <p className="my-2 text-base tracking-wide line-clamp-2">{post.description}</p>
                     <div className="flex items-center gap-4">
                       <Link href={`/projects/${post.slug.current}`} >
-                        <Button variant="outline" size="sm" className='mt-4 flex items-center gap-1'>
+                        <Button variant="outline" size="sm" className='flex items-center gap-1 mt-4'>
                           <RiComputerLine />
                           View Project
                         </Button>
                       </Link>
                       <Link href={post.liveDemo} target="_blank">
-                        <Button variant="outline" size="sm" className='mt-4 flex items-center gap-1'>
+                        <Button variant="outline" size="sm" className='flex items-center gap-1 mt-4'>
                           <RiCodeBoxLine />
                           View Code
                         </Button>
