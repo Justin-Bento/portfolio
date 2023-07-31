@@ -38,7 +38,7 @@ export default function about() {
                   </div>
                 </div>
                 <div className="lg:order-first lg:row-span-2 lg:max-w-prose">
-                  <h1 className="block capitalize tracking-normal [text-wrap:balance] text-3xl sm:text-4xl md:leading-[3.7rem] font-extrabold md:text-5xl text-neutral-950">
+                  <h1 className="block capitalize tracking-normal [text-wrap:balance] text-3xl sm:text-4xl md:leading-[3.7rem] font-extrabold md:text-5xl ">
                     Hi 👋, I&#39;m Justin. A Multimedia Design Graduate learning
                     various technologies.
                   </h1>

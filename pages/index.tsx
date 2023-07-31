@@ -27,9 +27,9 @@ export default function index() {
               />
             </span>
           </div>
-          <p className="text-sm lg:text-base capitalize font-semibold text-slate-800 my-4 tracking-[0.015rem]">Hey there I&#39;m Justin!</p>
-          <h1 className="font-display text-4xl font-extrabold leading-normal tracking-[0.015rem] text-neutral-950 sm:text-5xl">From Designs to Dynamic Websites: Join Me On My Multimedia Journey!</h1>
-          <p className="mt-6 text-base leading-relaxed tracking-wide lg:text-lg text-neutral-600">I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge in accessibility design with the power of code to craft engaging websites that everyone can enjoy. Join me on this journey of creativity and interactivity.</p>
+          <p className="text-sm lg:text-base capitalize font-semibold  my-4 tracking-[0.015rem]">Hey there I&#39;m Justin!</p>
+          <h1 className="font-display text-4xl font-extrabold leading-normal tracking-[0.015rem] sm:text-5xl">From Designs to Dynamic Websites: Join Me On My Multimedia Journey!</h1>
+          <p className="mt-6 text-base leading-relaxed tracking-wide lg:text-lg">I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge in accessibility design with the power of code to craft engaging websites that everyone can enjoy. Join me on this journey of creativity and interactivity.</p>
           <span className="flex flex-col gap-4 my-8 lg:flex-row lg:justify-center">
             <Link href="/projects"><Button className="w-full lg:w-auto">Explore My Portfolio</Button></Link>
             <Link href="/contact"><Button variant="outline" className="w-full lg:w-auto">Let&#39;s Collaborate</Button></Link>
