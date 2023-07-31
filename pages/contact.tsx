@@ -25,23 +25,23 @@ export default function Contact() {
             <h1 className="block tracking-wide [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl  capitalize">Let&#39;s work together!</h1>
             <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl max-w-[90ch]">I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as possible. Looking forward to starting a creative conversation together!</p>
           </section>
-          <div className="overflow-hidden border-2 rounded-lg">
+          <div className="overflow-hidden border rounded-lg dark:border-slate-700">
             <div className="px-4 py-5 sm:p-6">
-              <h2 className="text-base font-semibold tracking-wide capitalize font-display">Our offices</h2>
-              <p className="mt-2 text-base ">Prefer doing things in person? We don’t but we have to list our addresses here for legal reasons.</p>
-              <Button variant="ghost" className="inline-flex items-center gap-2 mt-2">
+              <h2 className="text-base font-semibold tracking-wider capitalize font-display dark:text-slate-300">Our offices</h2>
+              <p className="mt-2 text-base tracking-wider dark:text-slate-300">Prefer doing things in person? We don’t but we have to list our addresses here for legal reasons.</p>
+              <Button variant="ghost" className="inline-flex items-center gap-2 mt-2 dark:text-slate-300">
                 <RiMapPin2Fill />
                 Toronto Ontario
               </Button>
-              <hr className="my-6 border" />
-              <h2 className="text-base font-semibold tracking-wide capitalize font-display">Email Me</h2>
-              <Button variant="ghost" className="inline-flex items-center gap-2 mt-2 normal-case">
+              <hr className="my-6 border dark:border-slate-600" />
+              <h2 className="text-base font-semibold tracking-wider capitalize font-display dark:text-slate-300">Email Me</h2>
+              <Button variant="ghost" className="inline-flex items-center gap-2 mt-2 normal-case dark:text-slate-300">
                 <RiMailFill />
                 contact@justinbento.com
               </Button>
-              <hr className="my-6 border" />
-              <h2 className="text-base font-semibold tracking-wide capitalize font-display">Social&#39;s</h2>
-              <p className="mt-2 text-base ">Prefer doing things in person? We don’t but we have to list our addresses here for legal reasons.</p>
+              <hr className="my-6 border dark:border-slate-600" />
+              <h2 className="text-base font-semibold tracking-wider capitalize font-display dark:text-slate-300">Social&#39;s</h2>
+              <p className="mt-2 text-base tracking-wider dark:text-slate-300">Prefer doing things in person? We don’t but we have to list our addresses here for legal reasons.</p>
               <div className="flex items-center gap-2 mt-4">
                 {footer_navigation.map((item: any) => (
                   <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
