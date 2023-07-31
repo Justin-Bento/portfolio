@@ -10,7 +10,7 @@ export default function Footer() {
           {footer_navigation.map((item: any) => (
             <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
               <span className="sr-only">{item.name}</span>
-              <item.icon className="w-6 h-6" aria-hidden="true" />
+              <item.icon className="w-6 h-6 dark:fill-primary-100/80" aria-hidden="true" />
             </Link>
           ))}
         </div>
