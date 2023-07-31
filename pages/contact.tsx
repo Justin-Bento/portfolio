@@ -18,30 +18,30 @@ export default function Contact() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <section className="lg:col-span-2">
             <nav className="flex items-center mb-2 text-sm">
-              <Button variant="link" className="text-slate-700"><Link href="/">Home</Link></Button>
-              <span>/</span>
-              <Button variant="link" className="text-primary-700"><Link href="/contact">Contact us</Link></Button>
+              <Button variant="link" className="text-slate-700 dark:text-slate-300"><Link href="/">Home</Link></Button>
+              <span className="dark:text-slate-300">/</span>
+              <Button variant="link" className="text-primary-600 dark:text-primary-400"><Link href="/contact">Contact us</Link></Button>
             </nav>
-            <h1 className="block tracking-normal [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl text-neutral-950 capitalize">Let&#39;s work together!</h1>
-            <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl text-neutral-600 max-w-[90ch]">I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as possible. Looking forward to starting a creative conversation together!</p>
+            <h1 className="block tracking-wide [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl  capitalize">Let&#39;s work together!</h1>
+            <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl max-w-[90ch]">I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as possible. Looking forward to starting a creative conversation together!</p>
           </section>
           <div className="overflow-hidden border-2 rounded-lg">
             <div className="px-4 py-5 sm:p-6">
-              <h2 className="text-base font-semibold font-display text-neutral-950">Our offices</h2>
-              <p className="mt-2 text-base text-neutral-600">Prefer doing things in person? We don’t but we have to list our addresses here for legal reasons.</p>
-              <Button variant="ghost" className="inline-flex items-center gap-2">
+              <h2 className="text-base font-semibold tracking-wide capitalize font-display">Our offices</h2>
+              <p className="mt-2 text-base ">Prefer doing things in person? We don’t but we have to list our addresses here for legal reasons.</p>
+              <Button variant="ghost" className="inline-flex items-center gap-2 mt-2">
                 <RiMapPin2Fill />
                 Toronto Ontario
               </Button>
               <hr className="my-6 border" />
-              <h2 className="text-base font-semibold font-display text-neutral-950">Email Me</h2>
-              <Button variant="ghost" className="inline-flex items-center gap-2 normal-case">
+              <h2 className="text-base font-semibold tracking-wide capitalize font-display">Email Me</h2>
+              <Button variant="ghost" className="inline-flex items-center gap-2 mt-2 normal-case">
                 <RiMailFill />
                 contact@justinbento.com
               </Button>
               <hr className="my-6 border" />
-              <h2 className="text-base font-semibold font-display text-neutral-950">Social&#39;s</h2>
-              <p className="mt-2 text-base text-neutral-600">Prefer doing things in person? We don’t but we have to list our addresses here for legal reasons.</p>
+              <h2 className="text-base font-semibold tracking-wide capitalize font-display">Social&#39;s</h2>
+              <p className="mt-2 text-base ">Prefer doing things in person? We don’t but we have to list our addresses here for legal reasons.</p>
               <div className="flex items-center gap-2 mt-4">
                 {footer_navigation.map((item: any) => (
                   <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
