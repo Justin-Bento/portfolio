@@ -87,7 +87,7 @@ export default function about() {
                       <Link
                         href="https://soundcloud.com/bento-box-519166246"
                         target="_blank"
-                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:hover:text-primary-40 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
+                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
                       >
                         <RiSoundcloudFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">
@@ -99,7 +99,7 @@ export default function about() {
                       <Link
                         target="_blank"
                         href="https://github.com/Justin-Bento"
-                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:hover:text-primary-40 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
+                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
                       >
                         <RiInstagramFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">
@@ -111,7 +111,7 @@ export default function about() {
                       <Link
                         target="_blank"
                         href="https://github.com/Justin-Bento"
-                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:hover:text-primary-40 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
+                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
                       >
                         <RiGithubFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">Follow on GitHub</span>
@@ -120,7 +120,7 @@ export default function about() {
                     <li className="flex items-center">
                       <Link
                         href="https://www.linkedin.com/in/justin--bento/"
-                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:hover:text-primary-40 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
+                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
                       >
                         <RiLinkedinFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">
@@ -130,7 +130,7 @@ export default function about() {
                     </li>
                     <li className="flex pt-8 mt-4 border-t border-netural-100 dark:border-netural-700/40">
                       <Link
-                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:hover:text-primary-40 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-500"
+                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
                         href="mailto:contact@justin-bento.com"
                       >
                         <RiMailFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
