@@ -19,9 +19,9 @@ export default function Projects({ posts }: any) {
       <div className="p-4 lg:container lg:mx-auto lg:my-32 lg:p-0">
         <span className="">
           <nav className="flex items-center mb-2 text-sm">
-            <Button variant="link" className="text-neutral-700"><Link href="/">Home</Link></Button>
-            <span>/</span>
-            <Button variant="link" className="text-primary-600"><Link href="/projects">Projects</Link></Button>
+            <Button variant="link" className="text-neutral-700 dark:text-neutral-300"><Link href="/">Home</Link></Button>
+            <span className="dark:text-neutral-300">/</span>
+            <Button variant="link" className="text-primary-600 dark:text-primary-400"><Link href="/projects">Projects</Link></Button>
           </nav>
           <h1 className="block tracking-normal [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl ">A Showcase of Creativity</h1>
           <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl  max-w-[90ch]">Welcome to my project gallery! Here, you&#39;ll find a collection of my diverse creations, ranging from interactive multimedia to visually captivating designs. Take a moment to browse through my work and experience the art of storytelling through technology</p>
