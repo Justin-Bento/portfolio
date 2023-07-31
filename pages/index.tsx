@@ -41,7 +41,7 @@ export default function index() {
 }
 function BackgroundPattern() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1440" height="560" className="absolute inset-0 w-full h-full -z-10 opacity-30 blur-3xl rotate-3" preserveAspectRatio="none" viewBox="0 0 1440 560">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1440" height="560" className="absolute inset-0 w-full h-full -z-10 opacity-30 dark:opacity-40 blur-3xl rotate-3" preserveAspectRatio="none" viewBox="0 0 1440 560">
       <g>
         <circle r="37.68" cx="27.69" cy="559.87" fill="#3997a1"></circle>
         <circle r="54.375" cx="1157.82" cy="301.1" fill="#3997a1"></circle>
