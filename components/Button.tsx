@@ -12,7 +12,7 @@ const buttonVariants = cva(
         destructive:
           "bg-red-500 text-red-50 hover:bg-red-500/90",
         outline:
-          "border border-input bg-transparent hover:bg-primary-50 hover:text-slate-950",
+          "border border-input bg-transparent hover:bg-primary-50 hover:text-slate-950 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:hover:text-primary-40 dark:text-primary-40",
         secondary:
           "bg-primary-200/50 text-bg-primary-950 hover:bg-primary-300/80",
           navLink: " bg-transparent dark:text-slate-50 tracking-wider dark:hover:bg-primary-900 hover:cursor-pointer shadow-none active:ring-1 ring-slate-400 text-slate-960 shadow hover:bg-primary-200/30",
