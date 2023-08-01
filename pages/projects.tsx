@@ -30,7 +30,7 @@ export default function Projects({ posts }: any) {
           {posts.map((post: any) => {
             return (
               <>
-                <div key={post._id} className="overflow-hidden rounded-lg shadow bg-white/10 dark:bg-primary-950/5 dark:ring-slate-500 ring-2 ring-gray-300">
+                <div key={post._id} className="overflow-hidden rounded-lg shadow bg-white/10 dark:bg-primary-950/5 dark:ring-primary-800/40 ring-2 ring-gray-300">
                   <div className="px-4 py-5 sm:p-8">
                     <span className="relative flex w-8 h-8 mb-6 overflow-hidden rounded-full shadow shrink-0">
                       <Image fill src={urlFor(post.mainImage).url()} alt={`Image of ${post.title.toLowerCase()}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
