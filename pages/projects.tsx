@@ -16,7 +16,7 @@ export default function Projects({ posts }: any) {
         <meta name="title" content="Justin Bento - Projects" />
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
-      <div className="p-4 lg:container lg:mx-auto lg:my-32 lg:p-0">
+      <div className="p-4 lg:container lg:mx-auto py-10 lg:my-32 lg:p-0">
         <span className="">
           <nav className="flex items-center mb-2 text-sm">
             <Button variant="link" className="text-slate-700 dark:text-slate-300"><Link href="/">Home</Link></Button>

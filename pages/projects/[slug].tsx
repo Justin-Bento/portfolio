@@ -14,7 +14,7 @@ export default function DynamicProjectPage({ post }: any) {
         <meta name="title" content={`Justin Bento - Projects - ${post.title}`} />
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
-      <main className="md:container md:mx-auto border-0 lg:max-w-[100ch] lg:my-32 p-4 lg:p-0">
+      <main className="md:container py-16 lg:py-0 md:mx-auto border-0 lg:max-w-[100ch] lg:my-32 p-4 lg:p-0">
         <nav className="flex items-center mb-2 text-sm">
           <Button variant="link" className="tracking-wider text-slate-700 dark:text-slate-300"><Link href="/">Home</Link></Button>
           <span className="dark:text-slate-300">/</span>

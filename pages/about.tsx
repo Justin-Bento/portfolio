@@ -19,7 +19,7 @@ export default function about() {
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
       <div className="flex-auto p-4 lg:p-0">
-        <div className="sm:px-8 sm:my-32">
+        <div className="sm:px-8 sm:my-32 py-16 lg:py-0">
           <div className="w-full mx-auto lg:container lg:px-0">
             <div className="relative">
               <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">

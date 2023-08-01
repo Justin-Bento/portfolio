@@ -13,7 +13,7 @@ export default function index() {
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
       <BackgroundPattern />
-      <div aria-label="home-page" className="p-4 lg:p-0 lg:container h-screen grid place-content-center lg:text-center [text-wrap:balance] mx-auto">
+      <div aria-label="home-page" className="p-4 lg:p-0 lg:container py-16 lg:h-screen grid place-content-center lg:text-center [text-wrap:balance] mx-auto">
         <div className="lg:max-w-[80ch]">
           <div className="flex justify-start lg:justify-center">
             <span className="relative w-16 h-16 mb-6 ">
