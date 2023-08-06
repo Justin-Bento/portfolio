@@ -5,7 +5,7 @@ import { RiGithubFill,  RiLinkedinBoxFill,   RiPinterestFill, RiSoundcloudFill }
 export const footer_navigation = [
   {
     name: 'SoundCloud',
-    href: 'https://github.com/Justin-Bento',
+    href: 'https://soundcloud.com/bento-box-519166246',
     icon: (props:any) => <RiSoundcloudFill {...props} />
   },
   {
@@ -20,7 +20,7 @@ export const footer_navigation = [
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/farah-hakimpour-0b41911b8/',
+    href: 'https://www.linkedin.com/in/justin--bento/',
     icon: (props:any) => <RiLinkedinBoxFill {...props} />
   },
 ]
