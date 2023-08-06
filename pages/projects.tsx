@@ -16,7 +16,7 @@ export default function Projects({ posts }: any) {
         <meta name="title" content="Justin Bento - Projects" />
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
-      <div className="p-4 lg:container lg:mx-auto lg:my-32 lg:p-0">
+      <div className="p-4 lg:container lg:mx-auto py-10 lg:my-32 lg:p-0">
         <span className="">
           <nav className="flex items-center mb-2 text-sm">
             <Button variant="link" className="text-slate-700 dark:text-slate-300"><Link href="/">Home</Link></Button>
@@ -30,7 +30,7 @@ export default function Projects({ posts }: any) {
           {posts.map((post: any) => {
             return (
               <>
-                <div key={post._id} className="overflow-hidden rounded-lg shadow bg-white/10 dark:bg-primary-950/5 dark:ring-slate-500 ring-2 ring-gray-300">
+                <div key={post._id} className="overflow-hidden rounded-lg shadow bg-white/10 dark:bg-primary-950/5 dark:ring-primary-800/40 ring-2 ring-gray-300">
                   <div className="px-4 py-5 sm:p-8">
                     <span className="relative flex w-8 h-8 mb-6 overflow-hidden rounded-full shadow shrink-0">
                       <Image fill src={urlFor(post.mainImage).url()} alt={`Image of ${post.title.toLowerCase()}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
