@@ -14,9 +14,12 @@ export default function about() {
   return (
     <>
       <Head>
-        <title>Justin Bento  - About</title>
+        <title>Justin Bento - About</title>
         <meta name="title" content="Justin Bento - About" />
-        <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
+        <meta
+          name="description"
+          content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. "
+        />
       </Head>
       <div className="flex-auto p-4 lg:p-0">
         <div className="py-16 sm:px-8 sm:my-32 lg:py-0">
@@ -39,45 +42,60 @@ export default function about() {
                 </div>
                 <div className="lg:order-first lg:row-span-2 lg:max-w-prose [text-wrap:balance] text-netural-600 dark:text-netural-400">
                   <h1 className="block capitalize tracking-normal text-3xl sm:text-4xl md:leading-[3.7rem] font-extrabold md:text-5xl ">
-                    Hi! 👋 I&#39;m Justin, a graduate in Multimedia Design, currently exploring various technologies.
+                    Hi! 👋 I&#39;m Justin, a graduate in Multimedia Design,
+                    currently exploring various technologies.
                   </h1>
                   <div className="mt-6 text-base leading-7 tracking-wider space-y-7">
                     <p>
-                      After graduating amid a pandemic, I decided to re-teach
-                      myself how to code. So I can build abstract webpages into
-                      interactive digital media.
+                      After graduating in the middle of a pandemic, I decided to
+                      start my coding journey. My goal is to create interactive
+                      digital media by crafting webpages with unique designs.
                     </p>
                     <p>
-                      So I typed best places to learn web development into google.
-                      There I stumbled across free resources such as The Odin
-                      Project, freeCodeCamp, and Harvard CS50. To teach myself
-                      technical concepts in a logical order, understand the mind
-                      of a programmer, code through building webpage designs, and
-                      gain experience through open-source projects.
+                      To start this exciting journey, I searched the best places
+                      to learn web development on Google. After this search I
+                      found resources, such as The Odin Project, freeCodeCamp,
+                      and Harvard CS50 and Developer Roadmaps. Using these tools
+                      provided me with a clear path to learning technical
+                      concepts in a logical order. Through these platforms, I
+                      also gained insights into the mindset of a programmer,
+                      honed my coding skills by building webpage designs, and
+                      even contributed to open-source projects.
                     </p>
                     <p>
-                      Some technologies I learned along the way include HTML5,
-                      (CSS3) Cascading Style Sheet, JavaScript, jQuery, Node.js
-                      React.js Express.js and MongoDB. Sprinkled with some object
-                      oriented programming principles. Knowing these tools, and
-                      guidelines allowed me to build 5 dynamic and interactive
-                      websites from an idea.
+                      Along the way, I utilized various technologies, including
+                      HTML5, CSS3 (Cascading Style Sheet), JavaScript, jQuery,
+                      Node.js, React.js, Express.js, MongoDB, and Ruby On Rails.
+                      I also dived into object-oriented programming principles,
+                      which added depth to my skillset. Armed with this
+                      knowledge and experience, I proudly developed five dynamic
+                      and interactive websites.
                     </p>
                     <p>
-                      What makes me unique, as a website developer, is my
-                      education in multimedia design. As this program, emphasize
-                      soft skills like teamwork and project management in group
-                      assignments. Whilst teaching studens how to plan, orgnize,
-                      conceptualize and present their idea to professors and
-                      clients.
+                      What sets me apart as a website developer is my background
+                      in multimedia design. This unique blend of skills allows
+                      me to approach web development from a creative
+                      perspective, bringing a touch of artistry to my work.
+                      Additionally, my education emphasized crucial soft skills
+                      like teamwork and project management through engaging
+                      group assignments. This has not only strengthened my
+                      collaborative abilities but also taught me how to
+                      effectively plan, organize, and present ideas to clients.
                     </p>
                     <p>
-                      All in all, I love website development, because it teaches
-                      me how to solve complex problems by breaking things down
-                      into manageable steps. Whilst providing tangible feedback
-                      loop, that makes me eager to learn more.
+                      I find tremendous joy in website development because it
+                      challenges me to solve complex problems by breaking them
+                      down into manageable steps. The constant feedback loop
+                      keeps me eager to learn and explore new possibilities in
+                      this ever-evolving field.
                     </p>
-                    <p>Thanks for taking the time to read. 😊</p>
+                    <p>
+                      If you&#39;re curious to see what I&#39;ve been working on, check
+                      out my portfolio, where I showcase some of my projects and
+                      their impact. I look forward to starting a creative
+                      conversation with you! 
+                    </p>
+                    <p>Thanks for taking the time to learn about my journey. 😊</p>
                   </div>
                 </div>
                 <div className="w-full lg:pl-20">
@@ -113,7 +131,9 @@ export default function about() {
                         className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
                       >
                         <RiGithubFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
-                        <span className="ml-4 capitalize">Follow on GitHub</span>
+                        <span className="ml-4 capitalize">
+                          Follow on GitHub
+                        </span>
                       </Link>
                     </li>
                     <li className="flex items-center">
