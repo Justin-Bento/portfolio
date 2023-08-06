@@ -7,6 +7,7 @@ import {
   RiInstagramFill,
   RiLinkedinFill,
   RiMailFill,
+  RiPinterestFill,
   RiSoundcloudFill,
 } from "react-icons/ri";
 
@@ -98,12 +99,12 @@ export default function about() {
                     <li className="flex items-center">
                       <Link
                         target="_blank"
-                        href="https://github.com/Justin-Bento"
+                        href="https://www.pinterest.ca/bentoajustin/"
                         className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
                       >
-                        <RiInstagramFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
+                        <RiPinterestFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
                         <span className="ml-4 capitalize">
-                          Follow on Instagram
+                          Follow on Pintrest
                         </span>
                       </Link>
                     </li>
