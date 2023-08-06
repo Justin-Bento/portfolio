@@ -37,12 +37,11 @@ export default function about() {
                     </div>
                   </div>
                 </div>
-                <div className="lg:order-first lg:row-span-2 lg:max-w-prose">
-                  <h1 className="block capitalize tracking-normal [text-wrap:balance] text-3xl sm:text-4xl md:leading-[3.7rem] font-extrabold md:text-5xl ">
-                    Hi 👋, I&#39;m Justin. A Multimedia Design Graduate learning
-                    various technologies.
+                <div className="lg:order-first lg:row-span-2 lg:max-w-prose [text-wrap:balance] text-netural-600 dark:text-netural-400">
+                  <h1 className="block capitalize tracking-normal text-3xl sm:text-4xl md:leading-[3.7rem] font-extrabold md:text-5xl ">
+                    Hi! 👋 I&#39;m Justin, a graduate in Multimedia Design, currently exploring various technologies.
                   </h1>
-                  <div className="mt-6 text-base leading-7 tracking-wider space-y-7 text-netural-600 dark:text-netural-400">
+                  <div className="mt-6 text-base leading-7 tracking-wider space-y-7">
                     <p>
                       After graduating amid a pandemic, I decided to re-teach
                       myself how to code. So I can build abstract webpages into
