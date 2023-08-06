@@ -27,8 +27,8 @@ export default function Contact() {
           </section>
           <div className="overflow-hidden border rounded-lg dark:border-slate-700">
             <div className="px-4 py-5 sm:p-6">
-              <h2 className="text-base font-semibold tracking-wider capitalize font-display dark:text-slate-300">Our offices</h2>
-              <p className="mt-2 text-base tracking-wider dark:text-slate-300">Prefer doing things in person? I don’t but I have to list our addresses here for legal reasons.</p>
+              <h2 className="text-base font-semibold tracking-wider capitalize font-display dark:text-slate-300">My Office</h2>
+              <p className="mt-2 text-base tracking-wider dark:text-slate-300">I have to list my location for legal reasons.</p>
               <Button variant="ghost" className="inline-flex items-center gap-2 mt-2 dark:text-slate-300">
                 <RiMapPin2Fill />
                 Toronto Ontario
