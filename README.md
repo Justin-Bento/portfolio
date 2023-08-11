@@ -28,3 +28,9 @@ React Hook Forms: Enhanced performance by isolating component re-renders.
 Node.js: Served as the backend runtime environment.
 MongoDB: Provided a document-based NoSQL database for data storage.
 Sanity: Managed structured content using APIs as a Content Management System.
+
+## My Vision
+
+While my personal website is primarily my creative outlet, it also serves a purpose. I aim to showcase my expertise in Full Stack Development and impress potential employers in the tech field. What sets my portfolio apart is its straightforward and efficient design.
+
+Feel free to explore my projects and learn more about my journey in Full Stack Development. Thank you for visiting!
