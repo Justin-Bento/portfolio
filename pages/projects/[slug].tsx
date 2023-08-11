@@ -23,7 +23,7 @@ export default function DynamicProjectPage({ post }: any) {
           <Button variant="link" className="tracking-wider text-primary-600 dark:text-primary-400"><Link href={`/${post.title}`}>{post.title}</Link></Button>
         </nav>
         <h1 className="block tracking-normal [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl">{post.title}</h1>
-        <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl max-w-[90ch]">{post.description}</p>
+        <p className="mt-4 mb-8 tracking-wide text-base sm:text-lg lg:text-xl max-w-[90ch]">{post.description}</p>
         <div className="max-w-full space-y-8 prose-p:leading-7 dark:prose-invert prose-p:text-lg prose-ul:text-lg prose-li:text-lg prose-p:tracking-wide prose-headings:font-bold prose-img:block">
           <PortableText value={post.body} components={RichTextComponents} />
         </div>
