@@ -1,29 +1,36 @@
 # Justin Bento's Personal Website.
 
-Hi 👋, I'm Justin Bento. A Full Stack JavaScript Developer based in Toronto, Ontario and welcome to my portfolio. 👨‍💻 All of my projects are available on this website or my GitHub.
+Here, I showcase all my design and development projects from my education, freelance work, and self-study. This website serves as my creative outlet.
 
-## Project Description
+## Who Am I? 🧑‍💻
 
-Welcome to my personal website. Here is where I upload and share all my design and development projects during my education, freelance and self-study. My motivation for building this website is transforming it into a creative outlet for me. 
+I'm Justin Bento, a Full Stack JavaScript Developer hailing from Toronto, Ontario. This is my digital playground, where I share the results of my educational journey, freelance endeavors, and self-driven learning. Consider this website my artistic workshop. 🎨
 
-Some challenges I faced when building this website include:
+## Challenges I Overcame 🚀
 
-* Personal branding and content creation.
-* Learning how to connect the Sanity Content Management System.
-* Familiarizing myself with animation with JavaScript and tailwind
+Building this website was a journey with its share of challenges. Some of the obstacles I faced include:
 
-Core Technologies
+* Establishing my personal brand and creating engaging content.
+* Learning how to integrate the Sanity Content Management System.
+* Exploring animations using JavaScript and tailwind.
+* Learning how to register Darkmode with CSS. 
 
-| Technology | Description | Usage |
-| --- | --- | --- |
-| HTML | HyperText Markup Language | Content structure |
-| Tailwind CSS | Cascading Style Sheets | Visual design |
-| JavaScript | High-level programming language | Interactive functionality |
-| React | JavaScript library for building user interfaces | UI components |
-| React Icons | Manage structured content like text, images, and other media with APIs | Icon Library |
-| React Hook Forms | isolate component re-renders which leads to better performance on your page | Form Management |
-| Node.js | JavaScript runtime environment | Backend server |
-| MongoDB | Document-based NoSQL database | Data storage |
-| Sanity | Manage structured content like text, images, and other media with APIs | Contnet Management System |
+## Technologies Used 🛠️
 
-While this is mainly to be a creative outlet for me. My goal is to show off my knowledge in Full Stack Development and surprise requiters within the field of tech. How my portfolio stands out from the crowd is by being straightforward and efficient.
+I utilized a variety of technologies to create this website:
+
+HTML: Used for structuring content.
+Tailwind CSS: Employed for visual design.
+JavaScript: Implemented for interactive features.
+React: Utilized to build user interfaces.
+React Icons: Managed structured content such as text and images with APIs.
+React Hook Forms: Enhanced performance by isolating component re-renders.
+Node.js: Served as the backend runtime environment.
+MongoDB: Provided a document-based NoSQL database for data storage.
+Sanity: Managed structured content using APIs as a Content Management System.
+
+## My Vision 🌌
+
+While my personal website is primarily my creative outlet, it also serves a purpose. I aim to showcase my expertise in Full Stack Development and impress potential employers in the tech field. What sets my portfolio apart is its straightforward and efficient design.
+
+Feel free to explore my projects and learn more about my journey in Full Stack Development. Thank you for visiting!
