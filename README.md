@@ -14,3 +14,17 @@ Building this website was a journey with its share of challenges. Some of the ob
 * Learning how to integrate the Sanity Content Management System.
 * Exploring animations using JavaScript and tailwind.
 * Learning how to register Darkmode with CSS. 
+
+## Technologies Used
+
+I utilized a variety of technologies to create this website:
+
+HTML: Used for structuring content.
+Tailwind CSS: Employed for visual design.
+JavaScript: Implemented for interactive features.
+React: Utilized to build user interfaces.
+React Icons: Managed structured content such as text and images with APIs.
+React Hook Forms: Enhanced performance by isolating component re-renders.
+Node.js: Served as the backend runtime environment.
+MongoDB: Provided a document-based NoSQL database for data storage.
+Sanity: Managed structured content using APIs as a Content Management System.
