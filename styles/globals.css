@@ -28,6 +28,9 @@
   label, p {
     @apply tracking-wide text-slate-600 dark:text-slate-300;
   }
+  ul, li {
+    @apply tracking-wide text-slate-600 dark:text-slate-300;
+  }
   header {
     @apply border-b shadow-sm bg-primary-40 dark:bg-primary-960 dark:border-primary-960 dark:shadow-primary-700/40;
   }
