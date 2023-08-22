@@ -10,7 +10,6 @@ const RichTextComponents = {
             <Image
               fill
               src={urlFor(value).url()}
-              quality={40}
               alt=""
               loading="lazy"
               className="block object-center object-fit rounded-xl"
