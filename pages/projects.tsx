@@ -44,7 +44,7 @@ export default function Projects({ posts }: any) {
                           View Project
                         </Button>
                       </Link>
-                      <Link href={post.liveDemo} target="_blank">
+                      <Link href={post.projectCode} target="_blank">
                         <Button variant="outline" size="sm" className='flex items-center gap-1 mt-4 '>
                           <RiCodeBoxLine />
                           View Code
