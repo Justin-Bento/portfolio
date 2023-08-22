@@ -6,7 +6,7 @@ const RichTextComponents = {
     image: ({ value }: any) => {
       return (
         <>
-          <div className="relative w-full mb-4 aspect-[4/3]">
+          <div className="relative w-full aspect-[4/3]">
             <Image
               fill
               src={urlFor(value).url()}
