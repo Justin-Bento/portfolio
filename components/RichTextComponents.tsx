@@ -12,7 +12,7 @@ const RichTextComponents = {
               src={urlFor(value).url()}
               alt=""
               loading="lazy"
-              className="block object-center object-fit rounded-xl"
+              className="block object-cover object-center rounded-xl"
             />
           </div>
         </>
