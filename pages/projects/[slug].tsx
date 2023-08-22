@@ -22,8 +22,8 @@ export default function DynamicProjectPage({ post }: any) {
           <span className="dark:text-slate-300">/</span>
           <Button variant="link" className="tracking-wider text-primary-600 dark:text-primary-400"><Link href={`/${post.title}`}>{post.title}</Link></Button>
         </nav>
-        <h1 className="block tracking-normal [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl">{post.title}</h1>
-        <div className="prose prose-slate dark:prose-invert">
+        <div className="prose prose-slate dark:prose-invert [text-wrap:balance]">
+          <h1>{post.title}</h1>
           <PortableText value={post.body} components={RichTextComponents} />
         </div>
       </main>
