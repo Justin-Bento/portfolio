@@ -23,7 +23,6 @@ export default function DynamicProjectPage({ post }: any) {
           <Button variant="link" className="tracking-wider text-primary-600 dark:text-primary-400"><Link href={`/${post.title}`}>{post.title}</Link></Button>
         </nav>
         <article className="prose prose-slate md:prose-md lg:prose-lg xl:prose-xl dark:prose-invert [text-wrap:balance]">
-          <h1>{post.title}</h1>
           <PortableText value={post.body} components={RichTextComponents} />
         </article>
       </main>
@@ -49,7 +48,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: any) {
   const query = `*[_type == "post" && slug.current == $slug] {
     _id,
-    title,
     description,
     projectCode,
     liveDemo,
