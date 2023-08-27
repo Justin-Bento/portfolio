@@ -1,9 +1,7 @@
-import { Button } from '@/components/Button';
 import RichTextComponents from '@/components/RichTextComponents';
 import { client } from '@/sanityClient';
 import { PortableText } from '@portabletext/react';
 import Head from 'next/head';
-import Link from 'next/link';
 import React from 'react'
 
 export default function DynamicProjectPage({ post }: any) {
