@@ -15,13 +15,6 @@ export default function DynamicProjectPage({ post }: any) {
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
       <main className="md:container py-16 lg:py-0 md:mx-auto border-0 lg:max-w-[100ch] lg:my-32 p-4 lg:p-0">
-        <nav className="flex items-center mb-2 text-sm">
-          <Button variant="link" className="tracking-wider text-slate-700 dark:text-slate-300"><Link href="/">Home</Link></Button>
-          <span className="dark:text-slate-300">/</span>
-          <Button variant="link" className="tracking-wider text-slate-700 dark:text-slate-300"><Link href="/projects">Projects</Link></Button>
-          <span className="dark:text-slate-300">/</span>
-          <Button variant="link" className="tracking-wider text-primary-600 dark:text-primary-400"><Link href={`/${post.title}`}>{post.title}</Link></Button>
-        </nav>
         <article className="prose prose-slate md:prose-md lg:prose-lg xl:prose-xl dark:prose-invert [text-wrap:balance]">
           <PortableText value={post.body} components={RichTextComponents} />
         </article>
