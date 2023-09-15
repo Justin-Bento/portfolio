@@ -33,12 +33,13 @@ export async function getStaticPaths() {
     })) || [];
   return {
     paths,
-    fallback: false,
+    fallback: 'blocking',
   };
 }
 export async function getStaticProps({ params }: any) {
   const query = `*[_type == "post" && slug.current == $slug] {
     _id,
+    title,
     description,
     projectCode,
     liveDemo,
