@@ -48,6 +48,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: any) {
   const query = `*[_type == "post" && slug.current == $slug] {
     _id,
+    title,
     description,
     projectCode,
     liveDemo,
