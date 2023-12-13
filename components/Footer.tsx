@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer>
-      <div className="px-6 py-12 lg:px-0 lg:mx-auto lg:container md:flex md:items-center md:justify-between">
+      <div className="px-4 py-10 lg:py-12 md:px-4 lg:mx-auto lg:container md:flex md:items-center md:justify-between">
         <div className="flex justify-start space-x-6 lg:justify-center md:order-2">
           {footer_navigation.map((item: any) => (
             <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
