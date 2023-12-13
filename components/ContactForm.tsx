@@ -76,7 +76,7 @@ export default function ContactForm() {
                 />
               </div>
               {errors.Email && (
-                <span className="text-xs font-normal tracking-wider text-red-800 capitalize">
+                <span className="text-xs font-normal tracking-wider text-red-800 dark:text-red-400 capitalize">
                   * Email field is required
                 </span>
               )}
@@ -96,7 +96,7 @@ export default function ContactForm() {
                   {...register("Message", { required: true })}
                 />
                 {errors.Message && (
-                  <span className="text-xs font-normal tracking-wider text-red-800 capitalize">
+                  <span className="text-xs font-normal tracking-wider text-red-800 dark:text-red-400 capitalize">
                     * Message field is required
                   </span>
                 )}
@@ -108,7 +108,7 @@ export default function ContactForm() {
             <Button
               type="submit"
               variant="secondary"
-              className="gap-1"
+              className="gap-2.5"
             >
               <RiSendPlane2Line />
               Send message
