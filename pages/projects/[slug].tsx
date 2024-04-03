@@ -16,6 +16,7 @@ export default function DynamicProjectPage({ post }: any) {
         <article className="prose prose-slate md:prose-md lg:prose-lg xl:prose-xl dark:prose-invert [text-wrap:balance]">
           <PortableText value={post.body} components={RichTextComponents} />
         </article>
+        <a href="/projects">View other projects</a>
       </main>
     </>
   )
