@@ -2,6 +2,7 @@ import RichTextComponents from '@/components/RichTextComponents';
 import { client } from '@/sanityClient';
 import { PortableText } from '@portabletext/react';
 import Head from 'next/head';
+import Link from 'next/link';
 import React from 'react'
 
 export default function DynamicProjectPage({ post }: any) {
@@ -16,7 +17,7 @@ export default function DynamicProjectPage({ post }: any) {
         <article className="prose prose-slate md:prose-md lg:prose-lg xl:prose-xl dark:prose-invert [text-wrap:balance]">
           <PortableText value={post.body} components={RichTextComponents} />
         </article>
-        <a href="/projects">View other projects</a>
+        <Link href="/projects">View other projects</Link>
       </main>
     </>
   )
