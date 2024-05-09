@@ -24,8 +24,10 @@ export default function Projects({ posts }: any) {
             <Button variant="link" className="text-primary-600 dark:text-primary-400"><Link href="/projects">Projects</Link></Button>
           </nav>
           <h1 className="block tracking-normal [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl ">A Showcase of Creativity</h1>
-          <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl  max-w-[90ch]">Welcome to my gallery! On this page, you'll find a collection of my projects throughout my career as a website       developer. If you have any questions or would like to discuss a potential project or collaboration, don't hesitate to reach out to me.</p>
-        </span>
+          <p className="mt-4 tracking-wide text-base sm:text-lg lg:text-xl  max-w-[90ch]">
+            Welcome to my gallery! On this page&#44; you&#39;ll find a collection of my projects throughout my career as a website developer&#46; If you
+            have any questions or would like to discuss a potential project or collaboration&#44; don&#39;t hesitate to reach out to me&#46;
+          </p>        </span>
         <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
           {posts.map((post: any) => {
             return (
