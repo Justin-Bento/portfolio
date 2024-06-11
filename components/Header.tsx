@@ -67,7 +67,7 @@ export default function Header() {
         >
           <Link
             target="_blank"
-            href="https://www.linkedin.com/in/justin--bento/"
+            href="https://github.com/Justin-Bento"
           >
             <Button
               variant="secondary"
@@ -75,7 +75,7 @@ export default function Header() {
               aria-label="external-link-to-linkedin"
             >
               <RiExternalLinkLine />
-              LinkedIn
+              Github
             </Button>
           </Link>
         </div>
