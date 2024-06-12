@@ -38,7 +38,7 @@ export default function index() {
             From Designs to Dynamic Websites: Join Me On My Coding Adventure!
           </h1>
           <p className="mt-6 text-base leading-relaxed tracking-wide lg:text-lg">
-            I'm a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge of accessibility
+            I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge of accessibility
             design with the power of code to create engaging websites that everyone can enjoy. Join me on this journey of creativity and
             interactivity!
           </p>
