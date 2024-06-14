@@ -45,19 +45,41 @@ export default defineType({
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
           {
-            title: 'URL',
             name: 'link',
             type: 'object',
+            title: 'External link',
             fields: [
               {
-                title: 'URL',
                 name: 'href',
                 type: 'url',
+                title: 'URL'
               },
-            ],
+              {
+                title: 'Open in new tab',
+                name: 'blank',
+                description: 'When a user clicks the links. It will send them to the url in a new tab.',
+                type: 'boolean'
+              }
+            ]
           },
-        ],
-      },
+          {
+            name: 'internalLink',
+            type: 'object',
+            title: 'Internal link',
+            fields: [
+              {
+                name: 'reference',
+                type: 'reference',
+                title: 'Reference',
+                to: [
+                  { type: 'post' },
+                  // other types you may want to link to
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }),
     // You can add additional types here. Note that you can't use
     // primitive types such as 'string' and 'number' in the same array
