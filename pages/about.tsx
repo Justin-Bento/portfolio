@@ -1,14 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import {
-  RiGithubFill,
-  RiLinkedinFill,
-  RiMailFill,
-  RiPinterestFill,
-  RiSoundcloudFill,
-} from "react-icons/ri";
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import { RiGithubFill, RiLinkedinFill, RiMailFill, RiPinterestFill, RiSoundcloudFill } from 'react-icons/ri';
 
 export default function about() {
   return (
@@ -42,60 +36,45 @@ export default function about() {
                 </div>
                 <div className="lg:order-first lg:row-span-2 lg:max-w-prose [text-wrap:balance] text-netural-600 dark:text-netural-400">
                   <h1 className="block capitalize tracking-normal text-3xl sm:text-4xl md:leading-[3.7rem] font-extrabold md:text-5xl ">
-                    Hi! 👋 I&#39;m Justin, a graduate in Multimedia Design,
-                    currently exploring various technologies.
+                    Hi! 👋 I&#39;m Justin, A website developer with a focus on building accessible websites using Modern Frontend-End
+                    Technologies.
                   </h1>
                   <div className="mt-6 text-base leading-7 tracking-wider space-y-7">
                     <p>
-                      After graduating in the middle of a pandemic, I decided to
-                      start my coding journey. My goal is to create interactive
-                      digital media by crafting webpages with unique designs.
+                      My journey in web development began at Humber College. During my time at Humber, I studied Multi-Media Design and
+                      Development. This course allowed me to immerse myself in interactive digital media production, covering topics from
+                      web design, mobile interface design, front-end development, user testing, interface design, digital storytelling, and
+                      more.
                     </p>
                     <p>
-                      To start this exciting journey, I searched the best places
-                      to learn web development on Google. After this search I
-                      found resources, such as The Odin Project, freeCodeCamp,
-                      and Harvard CS50 and Developer Roadmaps. Using these tools
-                      provided me with a clear path to learning technical
-                      concepts in a logical order. Through these platforms, I
-                      also gained insights into the mindset of a programmer,
-                      honed my coding skills by building webpage designs, and
-                      even contributed to open-source projects.
+                      Upon graduating during the COVID-19 pandemic, I took a step back to reflect on my career path. Exploring various roles
+                      and opportunities allowed me to contemplate my passion. It was in late 2022 that I decided to dive deeper into website
+                      development, aiming to leverage my digital media skills to develop interactive websites and apps.
                     </p>
                     <p>
-                      Along the way, I utilized various technologies, including
-                      HTML5, CSS3 (Cascading Style Sheet), JavaScript, jQuery,
-                      Node.js, React.js, Express.js, MongoDB, and Ruby On Rails.
-                      I also dived into object-oriented programming principles,
-                      which added depth to my skillset. Armed with this
-                      knowledge and experience, I proudly developed five dynamic
-                      and interactive websites.
+                      I discovered my preference for development over design. Design was not engaging for me, and trying to do both was
+                      overwhelming as a new developer. While my education covered development principles, I lacked foundational programming
+                      knowledge. Turning to The Odin Project, I spent a year improving my website development skills. This journey provided
+                      invaluable programming insights and helped me hone my coding abilities by teaching me webpage construction and getting
+                      involved in contributions to open-source projects. It was a challenging but rewarding process that boosted my
+                      capabilities and engagement.
                     </p>
                     <p>
-                      What sets me apart as a website developer is my background
-                      in multimedia design. This unique blend of skills allows
-                      me to approach web development from a creative
-                      perspective, bringing a touch of artistry to my work.
-                      Additionally, my education emphasized crucial soft skills
-                      like teamwork and project management through engaging
-                      group assignments. This has not only strengthened my
-                      collaborative abilities but also taught me how to
-                      effectively plan, organize, and present ideas to clients.
+                      In September 2023, my dedication paid off when I landed a position as a website developer at Humber College. This
+                      marked a significant milestone in my career, as all my hard work had paid off. During my time at Humber, I used my
+                      technical skills and improved my interpersonal skills. Over nine months, my department provided a collaborative
+                      environment where I worked on communication skills, project management abilities, and comfort with cross-functional
+                      teams, among other things.
                     </p>
                     <p>
-                      I find tremendous joy in website development because it
-                      challenges me to solve complex problems by breaking them
-                      down into manageable steps. The constant feedback loop
-                      keeps me eager to learn and explore new possibilities in
-                      this ever-evolving field.
+                      I found deep satisfaction in website development. Each project brought a fresh challenge and fed that itch of
+                      continuous learning, inspiring me to explore new possibilities in this ever-evolving field.
                     </p>
                     <p>
-                      If you&#39;re curious to see what I&#39;ve been working on, check
-                      out my portfolio, where I showcase some of my projects and
-                      their impact. I look forward to starting a creative
-                      conversation with you! 
+                      If you were curious about my work, I encouraged you to take a moment to explore my portfolio or my GitHub. I looked
+                      forward to connecting with you and discussing how we could bring your creative ideas to life!
                     </p>
-                    <p>Thanks for taking the time to learn about my journey. 😊</p>
+                    <p>Thank you for visiting and learning about my journey. 😊</p>
                   </div>
                 </div>
                 <div className="w-full lg:pl-20">
@@ -107,9 +86,7 @@ export default function about() {
                         className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
                       >
                         <RiSoundcloudFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
-                        <span className="ml-4 capitalize">
-                          Follow on Sound Cloud
-                        </span>
+                        <span className="ml-4 capitalize">Follow on Sound Cloud</span>
                       </Link>
                     </li>
                     <li className="flex items-center">
@@ -119,9 +96,7 @@ export default function about() {
                         className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
                       >
                         <RiPinterestFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
-                        <span className="ml-4 capitalize">
-                          Follow on Pintrest
-                        </span>
+                        <span className="ml-4 capitalize">Follow on Pintrest</span>
                       </Link>
                     </li>
                     <li className="flex items-center">
@@ -131,9 +106,7 @@ export default function about() {
                         className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
                       >
                         <RiGithubFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
-                        <span className="ml-4 capitalize">
-                          Follow on GitHub
-                        </span>
+                        <span className="ml-4 capitalize">Follow on GitHub</span>
                       </Link>
                     </li>
                     <li className="flex items-center">
@@ -142,9 +115,7 @@ export default function about() {
                         className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
                       >
                         <RiLinkedinFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
-                        <span className="ml-4 capitalize">
-                          Follow on LinkedIn
-                        </span>
+                        <span className="ml-4 capitalize">Follow on LinkedIn</span>
                       </Link>
                     </li>
                     <li className="flex pt-8 mt-4 border-t border-netural-100 dark:border-netural-700/40">
