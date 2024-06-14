@@ -41,8 +41,8 @@ export default function about() {
                   </h1>
                   <div className="mt-6 text-base leading-7 tracking-wider space-y-7">
                     <p>
-                      My journey in web development began at Humber College. During my time at Humber, I studied Multi-Media Design and
-                      Development. This course allowed me to immerse myself in interactive digital media production, covering topics from
+                      My journey in web development began at Humber College. During my time at Humber, I studied <a href="https://mediaarts.humber.ca/programs/multimedia-design-and-development.html" target="_blank" rel="noopener noreferrer">Multi-Media Design and
+                      Development</a>. This course allowed me to immerse myself in interactive digital media production, covering topics from
                       web design, mobile interface design, front-end development, user testing, interface design, digital storytelling, and
                       more.
                     </p>
@@ -54,7 +54,7 @@ export default function about() {
                     <p>
                       I discovered my preference for development over design. Design was not engaging for me, and trying to do both was
                       overwhelming as a new developer. While my education covered development principles, I lacked foundational programming
-                      knowledge. Turning to The Odin Project, I spent a year improving my website development skills. This journey provided
+                      knowledge. Turning to <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">The Odin Project</a> , I spent a year improving my website development skills. This journey provided
                       invaluable programming insights and helped me hone my coding abilities by teaching me webpage construction and getting
                       involved in contributions to open-source projects. It was a challenging but rewarding process that boosted my
                       capabilities and engagement.
@@ -71,7 +71,7 @@ export default function about() {
                       continuous learning, inspiring me to explore new possibilities in this ever-evolving field.
                     </p>
                     <p>
-                      If you were curious about my work, I encouraged you to take a moment to explore my portfolio or my GitHub. I looked
+                      If you were curious about my work, I encouraged you to take a moment to explore my portfolio or my <a href="https://github.com/Justin-Bento" target="_blank" rel="noopener noreferrer">GitHub</a>. I looked
                       forward to connecting with you and discussing how we could bring your creative ideas to life!
                     </p>
                     <p>Thank you for visiting and learning about my journey. 😊</p>
