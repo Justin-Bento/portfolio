@@ -36,7 +36,7 @@ export default function about() {
                 </div>
                 <div className="lg:order-first lg:row-span-2 text-black prose-a:text-emerald-800">
                   <h1 className="text-5xl font-extrabold tracking-tight">
-                    Hi! 👋 I&#39;m Justin, a Website Developer focused on building <a className=' underline' target='_blank' href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Accessible Websites</a> using React or Ruby on Rails.
+                    Hi! 👋 I&#39;m Justin, a Website Developer focused on building <a className=' underline' target='_blank' rel="noreferrer" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Accessible Websites</a> using React or Ruby on Rails.
                   </h1>
                   <div className="mt-6 prose xl:prose-lg w-full">
                     <p>
