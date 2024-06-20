@@ -18,7 +18,7 @@ export default function index() {
       <BackgroundPattern />
       <div
         aria-label="home-page"
-        className="grid place-content-center [height:100dvh] [text-wrap:balance]"
+        className="grid place-content-center [height:100dvh]"
       >
         <div className="lg:max-w-[80ch]">
           <div className="flex justify-start lg:justify-center">
