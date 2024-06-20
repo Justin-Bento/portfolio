@@ -14,7 +14,7 @@ export default function Contact() {
         <meta name="title" content={`Justin Bento - Contact`} />
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
-      <div className="grid place-content-center [height:100dvh] p-6 lg:container lg:mx-auto">
+      <div className="grid place-content-center [min-height:100dvh] p-6 lg:container lg:mx-auto">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <section className="lg:col-span-2">
             <nav className="flex items-center mb-2 text-sm">
