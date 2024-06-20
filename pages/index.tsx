@@ -33,15 +33,17 @@ export default function index() {
               />
             </span>
           </div>
-          <p className="text-sm lg:text-base capitalize font-semibold  my-4 tracking-[0.015rem]">Hey there I&#39;m Justin!</p>
-          <h1 className="font-display text-4xl font-extrabold leading-normal tracking-[0.015rem] sm:text-5xl">
-            From Designs to Dynamic Websites: Join Me On My Coding Adventure!
-          </h1>
-          <p className="mt-6 text-base leading-relaxed tracking-wide lg:text-lg">
-            I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge of accessibility
-            design with the power of code to create engaging websites that everyone can enjoy. Join me on this journey of creativity and
-            interactivity!
-          </p>
+          <div className="[text-wrap:balance] text-center space-y-4 text-black">
+            <p className="prose-sm mx-auto lg:prose opacity-90">Hey there I&#39;m Justin!</p>
+            <h1 className="prose mx-auto text-5xl font-extrabold tracking-tight">
+              From Designs to Dynamic Websites: Join Me On My Coding Adventure!
+            </h1>
+            <p className="prose mx-auto lg:prose-lg opacity-90">
+              I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge of accessibility
+              design with the power of code to create engaging websites that everyone can enjoy. Join me on this journey of creativity and
+              interactivity!
+            </p>
+          </div>
           <span className="flex flex-col gap-4 my-8 lg:flex-row lg:justify-center">
             <Link href="/projects">
               <Button className="w-full lg:w-auto">Explore My Portfolio</Button>
