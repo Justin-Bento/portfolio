@@ -16,7 +16,7 @@ export default function index() {
         />
       </Head>
       <BackgroundPattern />
-      <div aria-label="home-page" className="grid place-content-center [min-height:100dvh] p-6">
+      <div aria-label="home-page" className="grid place-content-center wrapper">
         <div className="lg:max-w-[80ch]">
           <div className="flex justify-start md:justify-center">
             <span className="relative w-16 h-16 mb-6 ">

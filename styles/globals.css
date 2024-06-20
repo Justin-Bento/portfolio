@@ -38,4 +38,7 @@
   footer {
     @apply bg-primary-100 dark:bg-primary-950/40;
   }
+  .wrapper {
+    @apply container mx-auto [min-height:100dvh] p-6
+  }
 }

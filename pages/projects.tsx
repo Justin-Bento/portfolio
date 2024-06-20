@@ -19,7 +19,7 @@ export default function Projects({ posts }: any) {
           content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. "
         />
       </Head>
-      <div className="p-6 grid place-content-center [min-height:100dvh] my-14">
+      <div className="wrapper">
         <span className="">
           <nav className="flex items-center mb-2 text-sm">
             <Button variant="link" className="text-slate-700 dark:text-slate-300">

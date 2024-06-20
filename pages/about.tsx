@@ -15,9 +15,9 @@ export default function about() {
           content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. "
         />
       </Head>
-      <div className="flex-auto [min-height:100dvh] p-4 lg:p-0">
-        <div className="py-16 sm:px-8 sm:my-32 lg:py-0">
-          <div className="w-full mx-auto lg:container lg:px-0">
+      <div className="flex-auto wrapper">
+        <div className="py-16 sm:my-32 lg:py-0">
+          <div className="w-full lg:px-0">
             <div className="relative">
               <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
                 <div className="lg:pl-20">

@@ -9,7 +9,7 @@ export default function Header() {
   const onClick = () => setMobileMenuOpen((mobileMenuOpen) => !mobileMenuOpen);
   return (
     <header className="sticky top-0 z-10  py-4">
-      <div className="grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
+      <div className="container mx-auto px-6 grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
         <div className="flex items-center justify-between gap-1">
           <Link href="/" aria-label="link-to-home">
             <Logo className="fill-netural-700 dark:fill-primary-50 hover:opacity-80" />
