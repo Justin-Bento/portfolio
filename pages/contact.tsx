@@ -14,7 +14,7 @@ export default function Contact() {
         <meta name="title" content={`Justin Bento - Contact`} />
         <meta name="description" content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. " />
       </Head>
-      <div className="grid place-content-center [height:100dvh] p-6">
+      <div className="grid place-content-center [height:100dvh] p-6 lg:container lg:mx-auto">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <section className="lg:col-span-2">
             <nav className="flex items-center mb-2 text-sm">
@@ -22,25 +22,25 @@ export default function Contact() {
               <span className="dark:text-slate-300">/</span>
               <Button variant="link" className="text-primary-600 dark:text-primary-400"><Link href="/contact">Contact us</Link></Button>
             </nav>
-            <h1 className="block tracking-wide [text-wrap:balance] text-3xl sm:text-4xl font-extrabold md:text-5xl  capitalize">Let&#39;s work together!</h1>
-            <p className="mt-4  text-base sm:text-lg max-w-[90ch]">I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as possible. Looking forward to starting a creative conversation together!</p>
+            <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight capitalize">Let&#39;s work together!</h1>
+            <p className="mt-4 prose lg:prose-lg max-w-full">I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as possible. Looking forward to starting a creative conversation together!</p>
           </section>
           <div className="overflow-hidden border rounded-lg dark:border-slate-700">
             <div className="px-4 py-5 sm:p-6">
-              <h2 className="text-base font-semibold tracking-wider capitalize font-display dark:text-slate-300">My Office</h2>
-              <p className="mt-2 text-base tracking-wider dark:text-slate-300">I have to list my location for legal reasons.</p>
+              <h2 className="text-base font-semibold capitalize font-display dark:text-slate-300">My Office</h2>
+              <p className="mt-2 text-base dark:text-slate-300">I have to list my location for legal reasons.</p>
               <Button variant="ghost" className="inline-flex items-center gap-2 mt-2 dark:text-slate-300">
                 <RiMapPin2Fill />
                 Toronto Ontario
               </Button>
               <hr className="my-6 border dark:border-slate-600" />
-              <h2 className="text-base font-semibold tracking-wider capitalize font-display dark:text-slate-300">Email Me</h2>
+              <h2 className="text-base font-semibold capitalize font-display dark:text-slate-300">Email Me</h2>
               <Button variant="ghost" className="inline-flex items-center gap-2 mt-2 normal-case dark:text-slate-300">
                 <RiMailFill />
                 contact@justinbento.com
               </Button>
               <hr className="my-6 border dark:border-slate-600" />
-              <h2 className="text-base font-semibold tracking-wider capitalize font-display dark:text-slate-300">Social&#39;s</h2>
+              <h2 className="text-base font-semibold capitalize font-display dark:text-slate-300">Social&#39;s</h2>
               <div className="flex items-center gap-2 mt-4">
                 {footer_navigation.map((item: any) => (
                   <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
