@@ -56,8 +56,8 @@ export default function Projects({ posts }: any) {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     </span>
-                    <h2 className="text-xl font-semibold tracking-wide font-display md:text-2xl dark:text-slate-300">{post.title}</h2>
-                    <p className="my-2 text-base tracking-wide line-clamp-2 dark:text-slate-400">{post.description}</p>
+                    <h2 className="text-xl font-semibold tracking-wide font-display md:text-2xl dark:text-primary-40">{post.title}</h2>
+                    <p className="my-2 text-base tracking-wide line-clamp-2 dark:text-slate-200">{post.description}</p>
                     <div className="flex items-center gap-4">
                       <Link href={`/projects/${post.slug.current}`}>
                         <Button variant="outline" size="sm" className="flex items-center gap-1 mt-4 ">
