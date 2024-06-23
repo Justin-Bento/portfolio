@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-sm leading-7 tracking-wider ">
-            &copy; {new Date().getFullYear()} Justin Bento, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} Built and designed by Justin Bento.
           </p>
         </div>
       </div>
