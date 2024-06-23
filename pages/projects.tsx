@@ -45,7 +45,7 @@ export default function Projects({ posts }: any) {
               <>
                 <div
                   key={post._id}
-                  className="overflow-hidden rounded-lg shadow bg-white/10 dark:bg-primary-950/5 dark:ring-primary-800/40 ring-2 ring-gray-300"
+                  className="overflow-hidden rounded-lg shadow bg-white/10 dark:bg-primary-950/5 dark:ring-primary-100/80 ring-2 ring-primary-100"
                 >
                   <div className="px-4 py-5 sm:p-8">
                     <span className="relative flex w-8 h-8 mb-6 overflow-hidden rounded-full shadow shrink-0">
