@@ -11,7 +11,7 @@ export default function Error404() {
       <div className="">
         <p className="text-base font-semibold text-slate-600 dark:text-primary-400">404</p>
         <h1 className="mt-4 text-3xl font-extrabold tracking-tight capitalize text-slate-900 dark:text-slate-200 sm:text-5xl">Oops! we couldn&#39;t find you&#39;re page.</h1>
-        <p className="mt-6 text-base lg:text-xl lg:max-w-[64ch] lg:mx-auto tracking-wide leading-7 dark:text-slate-400 text-slate-600">It seems like the page you&#39;re searching for is on its own creative journey right now. While we get everything back in order, why not explore some of my other imaginative projects? Click below to embark on a new adventure within my portfolio.</p>
+        <p className="mt-6 text-base lg:text-xl lg:max-w-[64ch] lg:mx-auto tracking-wide leading-7 dark:text-primary-40 text-slate-600">It seems like the page you&#39;re searching for is on its own creative journey right now. While we get everything back in order, why not explore some of my other imaginative projects? Click below to embark on a new adventure within my portfolio.</p>
         <div className="flex items-center justify-start mt-10 gap-x-6">
           <Button variant="secondary">
             <Link href="/">Go To Home Page</Link>
