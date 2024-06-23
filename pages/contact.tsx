@@ -23,7 +23,7 @@ export default function Contact() {
               <Button variant="link" className="text-primary-600 dark:text-primary-400"><Link href="/contact">Contact us</Link></Button>
             </nav>
             <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight capitalize">Let&#39;s work together!</h1>
-            <p className="mt-4 prose lg:prose-lg max-w-full">I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as possible. Looking forward to starting a creative conversation together!</p>
+            <p className="mt-4 prose lg:prose-lg max-w-full dark:text-primary-40">I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as possible. Looking forward to starting a creative conversation together!</p>
           </section>
           <div className="overflow-hidden border rounded-lg dark:border-slate-700">
             <div className="px-4 py-5 sm:p-6">

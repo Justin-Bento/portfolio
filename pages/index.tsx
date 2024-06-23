@@ -31,11 +31,11 @@ export default function index() {
             </span>
           </div>
           <div className="[text-wrap:balance] md:text-center space-y-4 text-black">
-            <p className="prose-sm mx-auto lg:prose opacity-90">Hey there I&#39;m Justin!</p>
-            <h1 className="prose mx-auto text-5xl font-extrabold tracking-tight">
+            <p className="prose-sm mx-auto lg:prose opacity-90 dark:text-primary-40">Hey there I&#39;m Justin!</p>
+            <h1 className="prose mx-auto text-5xl font-extrabold tracking-tight dark:text-primary-40">
               From Designs to Dynamic Websites: Join Me On My Coding Adventure!
             </h1>
-            <p className="prose mx-auto lg:prose-lg opacity-90">
+            <p className="prose mx-auto lg:prose-lg opacity-90 dark:text-primary-40/80">
               I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge of
               accessibility design with the power of code to create engaging websites that everyone can enjoy. Join me on this journey of
               creativity and interactivity!
