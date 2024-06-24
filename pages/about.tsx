@@ -16,7 +16,7 @@ export default function about() {
         />
       </Head>
       <div className="flex-auto place-content-center max-w-7xl mx-auto [min-height:100dvh;]">
-        <div className="py-16 sm:my-32 lg:py-0">
+        <div className="py-16 sm:px-8">
           <div className="w-full lg:px-0">
             <div className="relative">
               <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
