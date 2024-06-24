@@ -25,7 +25,7 @@ export default function Contact() {
             <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight capitalize dark:text-primary-40">Let&#39;s work together!</h1>
             <p className="mt-4 prose lg:prose-lg max-w-full dark:text-primary-40">I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as possible. Looking forward to starting a creative conversation together!</p>
           </section>
-          <div className="overflow-hidden border rounded-lg dark:border-slate-50">
+          <div className="overflow-hidden ring-1 ring-gray-500 dark:ring-gray-50 rounded-lg">
             <div className="px-4 py-5 sm:p-6 ">
               <h2 className="text-base font-semibold capitalize font-display dark:text-primary-40">My Office</h2>
               <p className="mt-2 text-base dark:text-primary-40">I have to list my location for legal reasons.</p>
@@ -33,13 +33,13 @@ export default function Contact() {
                 <RiMapPin2Fill />
                 Toronto Ontario
               </Button>
-              <hr className="my-6 border dark:border-primary-100" />
+              <hr className="my-6 border-1 border-gray-500 dark:border-gray-50" />
               <h2 className="text-base font-semibold capitalize font-display ">Email Me</h2>
               <Button variant="ghost" className="inline-flex items-center gap-2 mt-2 normal-case ">
                 <RiMailFill />
                 contact@justinbento.com
               </Button>
-              <hr className="my-6 border dark:border-primary-100" />
+              <hr className="my-6 border-1 border-gray-500 dark:border-gray-50" />
               <h2 className="text-base font-semibold capitalize font-display ">Social&#39;s</h2>
               <div className="flex items-center gap-2 mt-4">
                 {footer_navigation.map((item: any) => (
