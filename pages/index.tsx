@@ -63,7 +63,7 @@ function BackgroundPattern() {
       version="1.1"
       width="1440"
       height="560"
-      className="absolute inset-0 w-full h-full -z-10 opacity-30 dark:opacity-40 blur-3xl rotate-3"
+      className="absolute inset-0 w-full h-full -z-10 opacity-30 dark:opacity-40 blur-3xl"
       preserveAspectRatio="none"
       viewBox="0 0 1440 560"
     >
