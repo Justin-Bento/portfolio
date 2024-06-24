@@ -19,7 +19,7 @@ export default function Projects({ posts }: any) {
           content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. "
         />
       </Head>
-      <div className="wrapper">
+      <div className="grid place-content-center max-w-7xl mx-auto [min-height:100dvh;] py-16">
         <span className="">
           <nav className="flex items-center mb-2 text-sm">
             <Button variant="link" className="text-slate-700 dark:text-slate-300">

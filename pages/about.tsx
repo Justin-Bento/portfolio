@@ -15,7 +15,7 @@ export default function about() {
           content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. "
         />
       </Head>
-      <div className="flex-auto wrapper">
+      <div className="flex-auto place-content-center max-w-7xl mx-auto [min-height:100dvh;]">
         <div className="py-16 sm:my-32 lg:py-0">
           <div className="w-full lg:px-0">
             <div className="relative">
