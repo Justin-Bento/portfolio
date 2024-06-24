@@ -16,7 +16,7 @@ export default function index() {
         />
       </Head>
       <BackgroundPattern />
-      <div aria-label="home-page" className="grid place-content-center [min-height:100dvh;]">
+      <div aria-label="home-page" className="grid place-content-center [min-height:100dvh;] mt-4 p-6">
         <div className="lg:max-w-[80ch]">
           <div className="flex justify-start md:justify-center">
             <span className="relative w-16 h-16 mb-6 ">
@@ -32,7 +32,7 @@ export default function index() {
           </div>
           <div className="[text-wrap:balance] md:text-center space-y-4 text-black">
             <p className="prose-sm mx-auto lg:prose opacity-90 dark:text-primary-40">Hey there I&#39;m Justin!</p>
-            <h1 className="prose mx-auto text-5xl font-extrabold tracking-tight dark:text-primary-40">
+            <h1 className="prose mx-auto text-4xl md:text-5xl font-extrabold tracking-tight dark:text-primary-40">
               From Designs to Dynamic Websites: Join Me On My Coding Adventure!
             </h1>
             <p className="prose mx-auto lg:prose-lg opacity-90 dark:text-primary-40/80">
