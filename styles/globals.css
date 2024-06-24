@@ -35,9 +35,6 @@
     @apply border-b shadow-sm bg-primary-40 dark:bg-primary-960 dark:border-primary-960 dark:shadow-primary-700/40;
   }
   
-  footer {
-    @apply bg-primary-100 dark:bg-primary-950/40;
-  }
   .wrapper {
     @apply container mx-auto [min-height:100dvh] p-6
   }
