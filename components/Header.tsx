@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { Logo }from "@/components/Logo";
-import { Button } from "@/components/Button";
-import { RiMenuLine, RiExternalLinkLine, RiCloseLine } from "react-icons/ri";
-import Link from "next/link";
+import React, { useState } from 'react';
+import { Logo } from '@/components/Logo';
+import { Button } from '@/components/Button';
+import { RiMenuLine, RiExternalLinkLine, RiCloseLine } from 'react-icons/ri';
+import Link from 'next/link';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
   const onClick = () => setMobileMenuOpen((mobileMenuOpen) => !mobileMenuOpen);
   return (
-    <header className="sticky top-0 z-10  py-4">
+    <header className="sticky top-0 z-10  py-4 shadow-sm dark:shadow-gray-400">
       <div className="container mx-auto px-6 grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
         <div className="flex items-center justify-between gap-1">
           <Link href="/" aria-label="link-to-home">
@@ -36,7 +36,7 @@ export default function Header() {
             </Button>
           )}
         </div>
-        <div className={`${mobileMenuOpen ? "hidden lg:flex" : ""}`}>
+        <div className={`${mobileMenuOpen ? 'hidden lg:flex' : ''}`}>
           <nav className="flex flex-col justify-start w-full gap-6 lg:justify-center lg:flex-row">
             <Link href="/">
               <Button variant="navLink" className="w-full" aria-label="navigation-link-home">
@@ -60,20 +60,9 @@ export default function Header() {
             </Link>
           </nav>
         </div>
-        <div
-          className={`${
-            mobileMenuOpen ? "hidden" : ""
-          } lg:flex lg:items-center md:justify-end`}
-        >
-          <Link
-            target="_blank"
-            href="https://github.com/Justin-Bento"
-          >
-            <Button
-              variant="secondary"
-              className="gap-1.5 w-full lg:w-auto"
-              aria-label="external-link-to-linkedin"
-            >
+        <div className={`${mobileMenuOpen ? 'hidden' : ''} lg:flex lg:items-center md:justify-end`}>
+          <Link target="_blank" href="https://github.com/Justin-Bento">
+            <Button variant="secondary" className="gap-1.5 w-full lg:w-auto" aria-label="external-link-to-linkedin">
               <RiExternalLinkLine />
               Github
             </Button>

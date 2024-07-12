@@ -29,7 +29,7 @@ export default function about() {
                         alt=""
                         loading="lazy"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-cover ring-2 ring-primary-800 rounded-2xl bg-netural-200 dark:bg-netural-800"
+                        className="object-cover ring-2 ring-primary-800 dark:ring-gray-500 rounded-2xl bg-netural-200 dark:bg-netural-800"
                       />
                     </div>
                   </div>
