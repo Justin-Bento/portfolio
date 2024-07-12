@@ -3,39 +3,46 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Satoshi";
+  font-family: 'Switzer';
   font-weight: 100 900;
   font-display: block;
   font-style: normal;
-  font-named-instance: "Regular";
-  src: url("/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-named-instance: 'Regular';
+  src: url('/fonts/switzer/Switzer-Variable.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Satoshi Italic";
+  font-family: 'Switzer Italic';
   font-weight: 100 900;
   font-display: block;
   font-style: italic;
-  font-named-instance: "Italic";
-  src: url("/fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-named-instance: 'Italic';
+  src: url('/fonts/switzer/Switzer-VariableItalic.ttf') format('truetype');
 }
 @layer base {
   html {
     @apply bg-primary-40 dark:bg-primary-960 animate-fadeIn;
   }
-  h1, h2, h3,h4,h5,h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply tracking-wide text-primary-950 dark:text-primary-40;
   }
-  label, p {
+  label,
+  p {
     @apply tracking-wide text-slate-600 dark:text-slate-300;
   }
-  ul, li {
+  ul,
+  li {
     @apply tracking-wide text-slate-600 dark:text-slate-300;
   }
   header {
     @apply border-b shadow-sm bg-primary-40 dark:bg-primary-960 dark:border-primary-960 dark:shadow-primary-700/40;
   }
-  
+
   .wrapper {
-    @apply container mx-auto [min-height:100dvh] p-6
+    @apply container mx-auto [min-height:100dvh] p-6;
   }
 }
