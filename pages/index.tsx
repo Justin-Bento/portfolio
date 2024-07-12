@@ -17,7 +17,7 @@ export default function index() {
       </Head>
       <BackgroundPattern />
       <div aria-label="home-page" className="grid place-content-center [min-height:100dvh;] py-16 px-8">
-        <div className="lg:max-w-[80ch]">
+        <div className="lg:max-w-5xl lg:mx-auto">
           <div className="flex justify-start md:justify-center">
             <span className="relative w-16 h-16 mb-6 ">
               <Image
@@ -31,11 +31,11 @@ export default function index() {
             </span>
           </div>
           <div className="[text-wrap:balance] md:text-center space-y-4 text-black">
-            <p className="prose-sm mx-auto lg:prose opacity-90 dark:text-primary-40">Hey there I&#39;m Justin!</p>
-            <h1 className="prose mx-auto text-4xl lg:text-5xl font-extrabold tracking-tight dark:text-primary-40">
+            <p className="text-sm lg:text-base mx-auto lg:prose opacity-90 dark:text-primary-40">Hey there I&#39;m Justin!</p>
+            <h1 className="scroll-m-20 text-4xl font-extrabold tracking-base lg:text-5xl dark:text-primary-40">
               From Designs to Dynamic Websites: Join Me On My Coding Adventure!
             </h1>
-            <p className="prose mx-auto xl:prose-lg opacity-90 dark:text-primary-40/80">
+            <p className="text-base leading-7 md:text-lg opacity-90 dark:text-primary-40/80">
               I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge of
               accessibility design with the power of code to create engaging websites that everyone can enjoy. Join me on this journey of
               creativity and interactivity!
