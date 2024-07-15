@@ -71,3 +71,12 @@ You should see the Sanity Studio interface where you can manage your project's c
 > Note: Ensure that your .env file is correctly configured with your Sanity project ID and dataset to avoid any issues with content display.
 
 > Note: Changing the project ID and dataset will cause the articles related to the original project to not display, as they are linked to the original project configuration.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+## License
+
+None 
