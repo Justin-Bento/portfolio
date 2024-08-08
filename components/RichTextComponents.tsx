@@ -21,30 +21,38 @@ const RichTextComponents = {
   },
   list: {
     bullet: ({ children }: any) => {
-      return <ul>{children}</ul>;
+      return <ul className="my-6 ml-6 space-y-6 list-disc  [&>li]:mt-2">{children}</ul>;
     },
     number: ({ children }: any) => {
-      return <ol>{children}</ol>;
+      return <ol className="my-6 ml-6 space-y-6 list-decimal [&>li]:mt-2">{children}</ol>;
     },
   },
   block: {
     // Ex. 1: customizing common block types
     h1: ({ children }: any) => {
-      return <h1 className="">{children}</h1>;
+      return <h1 className="text-5xl font-extrabold dark:text-white">{children}</h1>;
     },
     h2: ({ children }: any) => {
-      return <h2 className="pb-2 text-3xl font-extrabold tracking-wide transition-colors scroll-m-20 first:mt-0">{children}</h2>;
+      return <h2 className="text-4xl font-bold dark:text-white">{children}</h2>;
     },
     h3: ({ children }: any) => {
-      return <h3 className="text-2xl font-bold tracking-normal scroll-m-20">{children}</h3>;
+      return <h3 className="text-3xl font-bold dark:text-white">{children}</h3>;
     },
     h4: ({ children }: any) => {
-      return <h4 className="block text-xl font-semibold tracking-wide scroll-m-20">{children}</h4>;
+      return <h4 className="text-2xl font-bold dark:text-white">{children}</h4>;
+    },
+    h5: ({ children }: any) => {
+      return <h4 className="text-xl font-bold dark:text-white">{children}</h4>;
+    },
+    h6: ({ children }: any) => {
+      return <h4 className="text-lg font-bold dark:text-white">{children}</h4>;
     },
     p: ({ children }: any) => {
-      return <p className="">{children}</p>;
+      return <p className="leading-7 text-base dark:text-white">{children}</p>;
     },
-    
+    blockquote: ({ children }: any) => {
+      return <blockquote className="mt-6 border-l-2 pl-6 italic dark:text-white">{children}</blockquote>;
+    },
   },
 };
 
