@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 
 export default function Projects({ posts }: any) {
   return (
@@ -19,7 +20,7 @@ export default function Projects({ posts }: any) {
           content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. "
         />
       </Head>
-      <div className="grid place-content-center max-w-7xl mx-auto [min-height:100dvh;] py-16 sm:px-8">
+      <div className="grid place-content-center container mx-auto [min-height:100dvh;] py-16 sm:px-8">
         <span className="">
           <nav className="flex items-center mb-2 text-sm">
             <Button variant="link" className="text-slate-700 dark:text-slate-300">
@@ -41,39 +42,34 @@ export default function Projects({ posts }: any) {
           {posts.map((post: any) => {
             return (
               <>
-                <div
-                  key={post._id}
-                  className="overflow-hidden rounded-lg ring-1 ring-gray-500 dark:ring-gray-50 bg-white/10 dark:bg-primary-950/5"
-                >
-                  <div className="px-4 py-5 sm:p-8">
-                    <span className="relative flex w-8 h-8 mb-6 overflow-hidden rounded-full shadow shrink-0">
-                      <Image
-                        fill
-                        src={urlFor(post.mainImage).url()}
-                        alt={`Image of ${post.title.toLowerCase()}`}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      />
-                    </span>
-                    <h2 className="text-xl font-semibold tracking-wide font-display md:text-2xl dark:text-primary-40">
-                      {post.title}
-                    </h2>
-                    <p className="my-2 text-base tracking-wide line-clamp-2 dark:text-slate-200">{post.description}</p>
-                    <div className="flex items-center gap-4">
-                      <Link href={`/projects/${post.slug.current}`}>
-                        <Button variant="outline" size="sm" className="flex items-center gap-1 mt-4 ">
-                          <RiComputerLine />
-                          View Project
-                        </Button>
-                      </Link>
-                      <Link href={post.projectCode} target="_blank">
-                        <Button variant="outline" size="sm" className="flex items-center gap-1 mt-4 ">
-                          <RiCodeBoxLine />
-                          View Code
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+                <Card key={post._id} className="ring-1 ring-black space-y-4 pt-6">
+                  <CardHeader className="relative flex w-8 h-8 overflow-hidden rounded-full shadow shrink-0 mx-6">
+                    <Image
+                      fill
+                      src={urlFor(post.mainImage).url()}
+                      alt={`Image of ${post.title.toLowerCase()}`}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </CardHeader>
+                  <CardContent className="space-y-2">
+                    <h2 className="text-xl font-bold">{post.title}</h2>
+                    <p className="leading-7 tracking-wide">{post.description}</p>
+                  </CardContent>
+                  <CardFooter className="flex items-center gap-4">
+                    <Link href={`/projects/${post.slug.current}`}>
+                      <Button variant="outline" size="sm" className="flex items-center gap-1">
+                        <RiComputerLine />
+                        View Project
+                      </Button>
+                    </Link>
+                    <Link href={post.projectCode} target="_blank">
+                      <Button variant="outline" size="sm" className="flex items-center gap-1">
+                        <RiCodeBoxLine />
+                        View Code
+                      </Button>
+                    </Link>
+                  </CardFooter>
+                </Card>
               </>
             );
           })}
