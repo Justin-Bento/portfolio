@@ -39,22 +39,22 @@ export default function Header() {
         <div className={`${mobileMenuOpen ? "hidden lg:flex" : ""}`}>
           <nav className="flex flex-col justify-start w-full gap-6 lg:justify-center lg:flex-row">
             <Link href="/">
-              <Button variant="navLink" className="w-full" aria-label="navigation-link-home">
+              <Button variant="nav_link" className="w-full" aria-label="navigation-link-home">
                 Home
               </Button>
             </Link>
             <Link href="/about">
-              <Button variant="navLink" className="w-full" aria-label="navigation-link-about">
+              <Button variant="nav_link" className="w-full" aria-label="navigation-link-about">
                 About
               </Button>
             </Link>
             <Link href="/projects">
-              <Button variant="navLink" className="w-full" aria-label="navigation-link-projects">
+              <Button variant="nav_link" className="w-full" aria-label="navigation-link-projects">
                 Projects
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="navLink" className="w-full" aria-label="navigation-link-contact">
+              <Button variant="nav_link" className="w-full" aria-label="navigation-link-contact">
                 Contact
               </Button>
             </Link>
