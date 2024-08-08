@@ -38,7 +38,7 @@ export default function Contact() {
               possible. Looking forward to starting a creative conversation together!
             </p>
           </section>
-          <div className="overflow-hidden ring-1 ring-gray-500 dark:ring-gray-50 rounded-lg">
+          <div className="overflow-hidden ring-1 ring-black dark:ring-gray-50 rounded-lg">
             <div className="px-4 py-5 sm:p-6 ">
               <h2 className="text-base font-semibold capitalize font-display dark:text-primary-40">My Office</h2>
               <p className="mt-2 text-base dark:text-primary-40">I have to list my location for legal reasons.</p>
@@ -46,13 +46,13 @@ export default function Contact() {
                 <RiMapPin2Fill />
                 Toronto Ontario
               </Button>
-              <hr className="my-6 border-1 border-gray-500 dark:border-gray-50" />
+              <hr className="my-6 border-1 border-black dark:border-gray-50" />
               <h2 className="text-base font-semibold capitalize font-display ">Email Me</h2>
               <Button variant="ghost" className="inline-flex items-center gap-2 mt-2 normal-case ">
                 <RiMailFill />
                 contact@justinbento.com
               </Button>
-              <hr className="my-6 border-1 border-gray-500 dark:border-gray-50" />
+              <hr className="my-6 border-1 border-black dark:border-gray-50" />
               <h2 className="text-base font-semibold capitalize font-display ">Social&#39;s</h2>
               <div className="flex items-center gap-2 mt-4">
                 {footer_navigation.map((item: any) => (
