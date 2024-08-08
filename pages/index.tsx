@@ -21,7 +21,7 @@ export default function index() {
           <div className="flex justify-start md:justify-center">
             <span className="relative w-16 h-16 mb-6 ">
               <Image
-                src="/media/jusitn-bento--linkin.png"
+                src="/media/justin-bento--linkedin.png"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 quality={80}
@@ -31,12 +31,12 @@ export default function index() {
             </span>
           </div>
           <div className="text-balance space-y-4">
-            <p className="text-base leading-7 tracking-wide capitalize dark:text-white">Hey there I'm Justin!</p>
+            <p className="text-base leading-7 tracking-wide capitalize dark:text-white">Hey there I&#39;m Justin!</p>
             <h1 className="text-5xl text-pretty font-extrabold tracking-tight dark:text-white">
               From Designs to Dynamic Websites: Join Me On My Coding Adventure!
             </h1>
             <p className="text-base leading-7 tracking-wide lg:text-lg max-w-3xl mx-auto dark:text-white">
-              I'm a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my
+              I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my
               knowledge of accessibility design with the power of code to create engaging websites that everyone can
               enjoy. Join me on this journey of creativity and interactivity!
             </p>
@@ -78,7 +78,7 @@ function BackgroundPattern() {
         <circle r="41.635" cx="1147.41" cy="187.11" fill="#3997a1"></circle>
       </g>
       <defs>
-        <clipPath id="SvgjsClipPath1083">
+        <clipPath id="svgClipPath1083">
           <rect width="1440" height="560" x="0" y="0"></rect>
         </clipPath>
       </defs>
