@@ -79,7 +79,7 @@ export default function ContactForm() {
             {errors.Message && <span className="text-sm text-red-500">* Message field is required</span>}
           </div>
           <div data-form="user-message" className="sm:col-span-2">
-            <Button type="submit" className="flex items-center gap-2">
+            <Button type="submit" variant="secondary" className="flex items-center gap-2">
               <RiSendPlane2Line className="size-4" />
               Send Message
             </Button>
