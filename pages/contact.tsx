@@ -5,6 +5,14 @@ import React from "react";
 import { RiMailFill, RiMapPin2Fill } from "react-icons/ri";
 import { footer_navigation } from "@/lib/data";
 import { Button } from "@/components/ui/button";
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+  BreadcrumbPage,
+} from "@/components/ui/breadcrumb";
 
 export default function Contact() {
   return (
@@ -20,15 +28,21 @@ export default function Contact() {
       <main className=" my-16 flex items-center [min-height:100dvh;]">
         <section className="container mx-auto">
           <div id="heading" className="space-y-4 col-span-2">
-            <nav className="flex items-center mb-2 text-sm">
-              <Button variant="link" className="text-black dark:text-white">
-                <Link href="/">Home</Link>
-              </Button>
-              <span className="dark:text-primary-40">/</span>
-              <Button variant="link" className="text-primary dark:text-accent">
-                <Link href="/contact">Contact us</Link>
-              </Button>
-            </nav>
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/" className="font-medium text-black">
+                    Home
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/Projects" className="font-medium text-primary">
+                    Contact
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
             <h1 className="text-5xl font-extrabold tracking-tight capitalize dark:text-white">
               Let&#39;s work together!
             </h1>

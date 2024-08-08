@@ -8,6 +8,14 @@ import Link from "next/link";
 import Head from "next/head";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+  BreadcrumbPage,
+} from "@/components/ui/breadcrumb";
 
 export default function Projects({ posts }: any) {
   return (
@@ -22,15 +30,21 @@ export default function Projects({ posts }: any) {
       </Head>
       <div className="grid place-content-center container mx-auto [min-height:100dvh;] py-16 sm:px-8">
         <span className="">
-          <nav className="flex items-center mb-2 text-sm">
-            <Button variant="link" className="text-black dark:text-white">
-              <Link href="/">Home</Link>
-            </Button>
-            <span className="dark:text-slate-300">/</span>
-            <Button variant="link" className="text-primary dark:text-white">
-              <Link href="/projects">Projects</Link>
-            </Button>
-          </nav>
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/" className="font-medium text-black">
+                  Home
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/Projects" className="font-medium text-primary">
+                  Projects
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
           <h1 className="text-4xl lg:text-5xl capitalize tracking-tight font-extrabold dark:text-white">
             A Showcase of Creativity
           </h1>
