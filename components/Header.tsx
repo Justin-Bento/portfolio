@@ -8,7 +8,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
   const onClick = () => setMobileMenuOpen((mobileMenuOpen) => !mobileMenuOpen);
   return (
-    <header className="sticky top-0 z-10  py-4 shadow-sm dark:shadow-gray-400">
+    <header className="sticky top-0 z-10  py-4 shadow bg-white shadow-gray-300 dark:shadow-gray-400">
       <div className="container mx-auto px-6 grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
         <div className="flex items-center justify-between gap-1">
           <Link href="/" aria-label="link-to-home">
