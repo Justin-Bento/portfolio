@@ -21,22 +21,13 @@ const config = {
     },
     extend: {
       colors: {
-        primary: {
-          40: "#f4f9f9",
-          50: "#f1fafa",
-          100: "#dbf1f2",
-          200: "#aedfe2",
-          300: "#8bcfd5",
-          400: "#54b3bc",
-          500: "#3997a1",
-          600: "#327b88",
-          700: "#2e6570",
-          800: "#2d545d",
-          900: "#294750",
-          950: "#172e35",
-          960: "#141819",
-        },
+        black: "#040606",
+        white: "#fafcfc",
+        primary: "#2e6570",
+        secondary: "#83C6C6",
+        accent: "#6edede",
       },
+
       fontFamily: {
         sans: ["Switzer", ...defaultTheme.fontFamily.sans],
       },

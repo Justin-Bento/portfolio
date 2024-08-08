@@ -1,8 +1,9 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import { RiGithubFill, RiLinkedinFill, RiMailFill, RiPinterestFill, RiSoundcloudFill } from 'react-icons/ri';
+import { Button } from "@/components/ui/button";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { RiGithubFill, RiLinkedinFill, RiMailFill, RiPinterestFill, RiSoundcloudFill } from "react-icons/ri";
 
 export default function about() {
   return (
@@ -15,8 +16,8 @@ export default function about() {
           content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. "
         />
       </Head>
-      <div className="flex-auto place-content-center max-w-7xl mx-auto [min-height:100dvh;]">
-        <div className="py-16 sm:px-8">
+      <div className="flex-auto place-content-center container mx-auto [min-height:100dvh;]">
+        <div className="py-16 sm:px-4">
           <div className="w-full lg:px-0">
             <div className="relative">
               <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -29,81 +30,87 @@ export default function about() {
                         alt=""
                         loading="lazy"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-cover ring-2 ring-primary-800 dark:ring-gray-500 rounded-2xl bg-netural-200 dark:bg-netural-800"
+                        className="object-cover ring ring-black dark:ring-white rounded-2xl"
                       />
                     </div>
                   </div>
                 </div>
                 <div className="lg:order-first lg:row-span-2 text-black prose-a:text-emerald-800">
-                  <h1 className="scroll-m-20 text-4xl font-extrabold tracking-wide lg:text-5xl text-balance">
-                    Hi! 👋 I&#39;m Justin, a Website Developer focused on building{' '}
-                    <a
-                      className="underline dark:text-primary-400"
+                  <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-pretty">
+                    Hi! 👋 I&#39;m Justin, a Website Developer focused on building{" "}
+                    <Link
+                      className="underline text-primary"
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
                     >
                       Accessible Websites
-                    </a>{' '}
+                    </Link>{" "}
                     using React or Ruby on Rails.
                   </h1>
-                  <div className="mt-6 prose xl:prose-lg w-full">
+                  <div className="mt-6 leading-7 tracking-wide space-y-6">
                     <p>
-                      My journey in web development began at Humber College. During my time at Humber, I studied{' '}
-                      <a
+                      My journey in web development began at Humber College. During my time at Humber, I studied{" "}
+                      <Link
                         href="https://mediaarts.humber.ca/programs/multimedia-design-and-development.html"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="underline dark:text-primary-400"
+                        className="underline text-primary"
                       >
                         Multi-Media Design and Development
-                      </a>
-                      . This course allowed me to immerse myself in interactive digital media production, covering topics from web design,
-                      mobile interface design, front-end development, user testing, interface design, digital storytelling, and more.
+                      </Link>
+                      . This course allowed me to immerse myself in interactive digital media production, covering
+                      topics from web design, mobile interface design, front-end development, user testing, interface
+                      design, digital storytelling, and more.
                     </p>
                     <p>
-                      Upon graduating during the COVID-19 pandemic, I took a step back to reflect on my career path. Exploring various roles
-                      and opportunities allowed me to contemplate my passion. It was in late 2022 that I decided to dive deeper into website
-                      development, aiming to leverage my digital media skills to develop interactive websites and apps.
+                      Upon graduating during the COVID-19 pandemic, I took a step back to reflect on my career path.
+                      Exploring various roles and opportunities allowed me to contemplate my passion. It was in late
+                      2022 that I decided to dive deeper into website development, aiming to leverage my digital media
+                      skills to develop interactive websites and apps.
                     </p>
                     <p>
-                      I discovered my preference for development over design. Design was not engaging for me, and trying to do both was
-                      overwhelming as a new developer. While my education covered development principles, I lacked foundational programming
-                      knowledge. Turning to{' '}
-                      <a
+                      I discovered my preference for development over design. Design was not engaging for me, and trying
+                      to do both was overwhelming as a new developer. While my education covered development principles,
+                      I lacked foundational programming knowledge. Turning to{" "}
+                      <Link
                         href="https://www.theodinproject.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="underline dark:text-primary-400"
+                        className="underline text-primary"
                       >
                         The Odin Project
-                      </a>
-                      , I spent a year improving my development skills. This journey provided me invaluable insights and helped me hone my
-                      coding abilities by teaching me webpage construction and getting involved in contributions to open-source projects. It
-                      was a challenging but rewarding process that boosted my capabilities and engagement.
+                      </Link>
+                      , I spent a year improving my development skills. This journey provided me invaluable insights and
+                      helped me hone my coding abilities by teaching me webpage construction and getting involved in
+                      contributions to open-source projects. It was a challenging but rewarding process that boosted my
+                      capabilities and engagement.
                     </p>
                     <p>
-                      In September 2023, my dedication paid off when I landed a position as a website developer at Humber College. This
-                      marked a significant milestone in my career, as all my hard work had paid off. During my time at Humber, I used my
-                      technical skills and improved my interpersonal skills. Over nine months, my department provided a collaborative
-                      environment where I worked on communication skills, project management abilities, and comfort with cross-functional
-                      teams, among other things.
+                      In September 2023, my dedication paid off when I landed a position as a website developer at
+                      Humber College. This marked a significant milestone in my career, as all my hard work had paid
+                      off. During my time at Humber, I used my technical skills and improved my interpersonal skills.
+                      Over nine months, my department provided a collaborative environment where I worked on
+                      communication skills, project management abilities, and comfort with cross-functional teams, among
+                      other things.
                     </p>
                     <p>
-                      I found deep satisfaction in website development. Each project brought a fresh challenge and fed that itch of
-                      continuous learning, inspiring me to explore new possibilities in this ever-evolving field.
+                      I found deep satisfaction in website development. Each project brought a fresh challenge and fed
+                      that itch of continuous learning, inspiring me to explore new possibilities in this ever-evolving
+                      field.
                     </p>
                     <p>
-                      If you were curious about my work, I encouraged you to take a moment to explore my portfolio or my{' '}
-                      <a
+                      If you were curious about my work, I encouraged you to take a moment to explore my portfolio or my{" "}
+                      <Link
                         href="https://github.com/Justin-Bento"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="underline dark:text-primary-400"
+                        className="underline text-primary"
                       >
                         GitHub
-                      </a>
-                      . I looked forward to connecting with you and discussing how we could bring your creative ideas to life!
+                      </Link>
+                      . I looked forward to connecting with you and discussing how we could bring your creative ideas to
+                      life!
                     </p>
                     <p>Thank you for visiting and learning about my journey. 😊</p>
                   </div>
@@ -111,51 +118,43 @@ export default function about() {
                 <div className="w-full lg:pl-20">
                   <ul role="list" className="flex flex-col gap-4">
                     <li className="flex">
-                      <Link
-                        href="https://soundcloud.com/bento-box-519166246"
-                        target="_blank"
-                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
-                      >
-                        <RiSoundcloudFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
-                        <span className="ml-4 capitalize">Follow on Sound Cloud</span>
+                      <Link href="https://soundcloud.com/bento-box-519166246" target="_blank">
+                        <Button variant="ghost">
+                          <RiSoundcloudFill className="w-6 h-6" />
+                          <span className="ml-4 capitalize">Follow on Sound Cloud</span>
+                        </Button>
                       </Link>
                     </li>
                     <li className="flex items-center">
-                      <Link
-                        target="_blank"
-                        href="https://www.pinterest.ca/bentoajustin/"
-                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
-                      >
-                        <RiPinterestFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
-                        <span className="ml-4 capitalize">Follow on Pintrest</span>
+                      <Link target="_blank" href="https://www.pinterest.ca/bentoajustin/">
+                        <Button variant="ghost">
+                          <RiPinterestFill className="w-6 h-6" />
+                          <span className="ml-4 capitalize">Follow on Pintrest</span>
+                        </Button>
                       </Link>
                     </li>
                     <li className="flex items-center">
-                      <Link
-                        target="_blank"
-                        href="https://github.com/Justin-Bento"
-                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
-                      >
-                        <RiGithubFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
-                        <span className="ml-4 capitalize">Follow on GitHub</span>
+                      <Link target="_blank" href="https://github.com/Justin-Bento">
+                        <Button variant="ghost">
+                          <RiGithubFill className="w-6 h-6" />
+                          <span className="ml-4 capitalize">Follow on GitHub</span>
+                        </Button>
                       </Link>
                     </li>
                     <li className="flex items-center">
-                      <Link
-                        href="https://www.linkedin.com/in/justin--bento/"
-                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
-                      >
-                        <RiLinkedinFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
-                        <span className="ml-4 capitalize">Follow on LinkedIn</span>
+                      <Link href="https://www.linkedin.com/in/justin--bento/">
+                        <Button variant="ghost">
+                          <RiLinkedinFill className="w-6 h-6" />
+                          <span className="ml-4 capitalize">Follow on LinkedIn</span>
+                        </Button>
                       </Link>
                     </li>
-                    <li className="flex pt-8 mt-4 border-t border-netural-100 dark:border-netural-700/40">
-                      <Link
-                        className="flex text-sm font-medium transition group text-netural-800 dark:border-primary-900 dark:hover:bg-primary-900/50 dark:text-primary-40 hover:text-primary-500 dark:text-netural-200 dark:hover:text-slate-200"
-                        href="mailto:contact@justin-bento.com"
-                      >
-                        <RiMailFill className="flex-none w-6 h-6 transition fill-netural-500 group-hover:fill-slate-500" />
-                        <span className="ml-4">contact@justin-bento.com</span>
+                    <li className="flex pt-8 mt-4 border-t border-black dark:border-white/40">
+                      <Link href="mailto:contact@justin-bento.com">
+                        <Button variant="ghost">
+                          <RiMailFill className="w-6 h-6" />
+                          <span className="ml-4">contact@justin-bento.com</span>
+                        </Button>
                       </Link>
                     </li>
                   </ul>

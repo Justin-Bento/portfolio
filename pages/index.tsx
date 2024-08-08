@@ -26,7 +26,7 @@ export default function index() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 quality={80}
                 alt="Avatar"
-                className="rounded-full ring-2 ring-primary-800"
+                className="rounded-full ring-2 ring-black"
               />
             </span>
           </div>
@@ -43,9 +43,7 @@ export default function index() {
           </div>
           <div className="flex items-center justify-center gap-4 mt-8">
             <Link href="/projects">
-              <Button variant="primary" className="ring-1 ring-primary-800">
-                Explore My Portfolio
-              </Button>
+              <Button>Explore My Portfolio</Button>
             </Link>
             <Link href="/contact">
               <Button variant="outline" className="ring-1 ring-black hover:underline">

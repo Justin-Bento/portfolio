@@ -8,17 +8,17 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
   const onClick = () => setMobileMenuOpen((mobileMenuOpen) => !mobileMenuOpen);
   return (
-    <header className="sticky top-0 z-10  py-4 shadow bg-white shadow-gray-300 dark:shadow-gray-400">
+    <header className="sticky top-0 z-10  py-4 shadow bg-white dark:shadow-white/40">
       <div className="container mx-auto px-6 grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
         <div className="flex items-center justify-between gap-1">
           <Link href="/" aria-label="link-to-home">
-            <Logo className="fill-netural-700 dark:fill-primary-50 hover:opacity-80" />
+            <Logo className="fill-black dark:fill-white hover:opacity-80" />
           </Link>
           {mobileMenuOpen ? (
             <Button
               variant="outline"
               size="icon"
-              className="lg:hidden dark:text-primary-100"
+              className="lg:hidden dark:text-white"
               onClick={onClick}
               aria-label="nav-button-open"
             >
@@ -28,7 +28,7 @@ export default function Header() {
             <Button
               variant="outline"
               size="icon"
-              className="lg:hidden dark:text-primary-100"
+              className="lg:hidden dark:text-white"
               onClick={onClick}
               aria-label="nav-button-close"
             >
