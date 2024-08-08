@@ -1,8 +1,8 @@
-import { Button } from '@/components/Button';
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { Button } from "@/components/ui/button";
 
 export default function index() {
   return (
@@ -31,19 +31,23 @@ export default function index() {
             </span>
           </div>
           <div className="[text-wrap:balance] md:text-center space-y-4 text-black">
-            <p className="text-sm lg:text-base mx-auto lg:prose opacity-90 dark:text-primary-40">Hey there I&#39;m Justin!</p>
+            <p className="text-sm lg:text-base mx-auto lg:prose opacity-90 dark:text-primary-40">
+              Hey there I&#39;m Justin!
+            </p>
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-base lg:text-5xl dark:text-primary-40">
               From Designs to Dynamic Websites: Join Me On My Coding Adventure!
             </h1>
             <p className="text-base leading-7 md:text-lg opacity-90 dark:text-primary-40/80">
-              I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my knowledge of
-              accessibility design with the power of code to create engaging websites that everyone can enjoy. Join me on this journey of
-              creativity and interactivity!
+              I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my
+              knowledge of accessibility design with the power of code to create engaging websites that everyone can
+              enjoy. Join me on this journey of creativity and interactivity!
             </p>
           </div>
           <span className="flex flex-col gap-4 my-8 md:flex-row md:justify-center">
             <Link href="/projects">
-              <Button className="w-full lg:w-auto">Explore My Portfolio</Button>
+              <Button variant="primary" className="w-full lg:w-auto">
+                Explore My Portfolio
+              </Button>
             </Link>
             <Link href="/contact">
               <Button variant="outline" className="w-full lg:w-auto">

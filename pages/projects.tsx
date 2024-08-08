@@ -1,12 +1,12 @@
-import { Button } from '@/components/Button';
-import { client, urlFor } from '../sanityClient';
-import { AllPosts } from '../typings';
-import { GetStaticProps } from 'next';
-import React from 'react';
-import { RiCodeBoxLine, RiComputerLine, RiLink } from 'react-icons/ri';
-import Image from 'next/image';
-import Link from 'next/link';
-import Head from 'next/head';
+import { client, urlFor } from "../sanityClient";
+import { AllPosts } from "../typings";
+import { GetStaticProps } from "next";
+import React from "react";
+import { RiCodeBoxLine, RiComputerLine, RiLink } from "react-icons/ri";
+import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
+import { Button } from "@/components/ui/button";
 
 export default function Projects({ posts }: any) {
   return (
@@ -32,9 +32,9 @@ export default function Projects({ posts }: any) {
           </nav>
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">A Showcase of Creativity</h1>
           <p className="leading-7 lg:text-lg tracking-wide mt-4 dark:text-primary-40">
-            Welcome to my gallery! On this page&#44; you&#39;ll find a collection of my projects throughout my career as a website
-            developer&#46; If you have any questions or would like to discuss a potential project or collaboration&#44; don&#39;t hesitate
-            to reach out to me&#46;
+            Welcome to my gallery! On this page&#44; you&#39;ll find a collection of my projects throughout my career as
+            a website developer&#46; If you have any questions or would like to discuss a potential project or
+            collaboration&#44; don&#39;t hesitate to reach out to me&#46;
           </p>
         </span>
         <div className="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
@@ -54,7 +54,9 @@ export default function Projects({ posts }: any) {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     </span>
-                    <h2 className="text-xl font-semibold tracking-wide font-display md:text-2xl dark:text-primary-40">{post.title}</h2>
+                    <h2 className="text-xl font-semibold tracking-wide font-display md:text-2xl dark:text-primary-40">
+                      {post.title}
+                    </h2>
                     <p className="my-2 text-base tracking-wide line-clamp-2 dark:text-slate-200">{post.description}</p>
                     <div className="flex items-center gap-4">
                       <Link href={`/projects/${post.slug.current}`}>
@@ -95,6 +97,6 @@ export const getStaticProps: GetStaticProps<AllPosts> = async () => {
   `);
   return {
     props: { posts: data },
-    revalidate: 60 // Update data every 60s
+    revalidate: 60, // Update data every 60s
   };
 };

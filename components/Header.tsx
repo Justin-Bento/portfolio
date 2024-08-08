@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Logo } from '@/components/Logo';
-import { Button } from '@/components/Button';
-import { RiMenuLine, RiExternalLinkLine, RiCloseLine } from 'react-icons/ri';
-import Link from 'next/link';
+import React, { useState } from "react";
+import { Logo } from "@/components/Logo";
+import { Button } from "@/components/ui/button";
+import { RiMenuLine, RiExternalLinkLine, RiCloseLine } from "react-icons/ri";
+import Link from "next/link";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
@@ -36,7 +36,7 @@ export default function Header() {
             </Button>
           )}
         </div>
-        <div className={`${mobileMenuOpen ? 'hidden lg:flex' : ''}`}>
+        <div className={`${mobileMenuOpen ? "hidden lg:flex" : ""}`}>
           <nav className="flex flex-col justify-start w-full gap-6 lg:justify-center lg:flex-row">
             <Link href="/">
               <Button variant="navLink" className="w-full" aria-label="navigation-link-home">
@@ -60,7 +60,7 @@ export default function Header() {
             </Link>
           </nav>
         </div>
-        <div className={`${mobileMenuOpen ? 'hidden' : ''} lg:flex lg:items-center md:justify-end`}>
+        <div className={`${mobileMenuOpen ? "hidden" : ""} lg:flex lg:items-center md:justify-end`}>
           <Link target="_blank" href="https://github.com/Justin-Bento">
             <Button variant="secondary" className="gap-1.5 w-full lg:w-auto" aria-label="external-link-to-linkedin">
               <RiExternalLinkLine />
