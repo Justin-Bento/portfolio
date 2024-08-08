@@ -1,10 +1,10 @@
-import { Button } from '@/components/Button';
-import ContactForm from '@/components/ContactForm';
-import Head from 'next/head';
-import Link from 'next/link';
-import React from 'react';
-import { RiMailFill, RiMapPin2Fill } from 'react-icons/ri';
-import { footer_navigation } from '@/lib/data';
+import ContactForm from "@/components/ContactForm";
+import Head from "next/head";
+import Link from "next/link";
+import React from "react";
+import { RiMailFill, RiMapPin2Fill } from "react-icons/ri";
+import { footer_navigation } from "@/lib/data";
+import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
@@ -33,9 +33,9 @@ export default function Contact() {
               Let&#39;s work together!
             </h1>
             <p className="text-base leading-7 md:text-lg opacity-90 dark:text-primary-40 mt-4">
-              I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just want to say hello,
-              feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as possible. Looking forward to starting
-              a creative conversation together!
+              I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just
+              want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon as
+              possible. Looking forward to starting a creative conversation together!
             </p>
           </section>
           <div className="overflow-hidden ring-1 ring-gray-500 dark:ring-gray-50 rounded-lg">

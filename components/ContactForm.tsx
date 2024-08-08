@@ -1,8 +1,8 @@
-import ThankYouPage from '@/layout/ThankYou';
-import { useForm } from 'react-hook-form';
-import { useForm as useFormspree } from '@formspree/react';
-import { Button } from './Button';
-import { RiSendPlane2Line } from 'react-icons/ri';
+import ThankYouPage from "@/layout/ThankYou";
+import { useForm } from "react-hook-form";
+import { useForm as useFormspree } from "@formspree/react";
+import { RiSendPlane2Line } from "react-icons/ri";
+import { Button } from "@/components/ui/button";
 
 type FormInputs = {
   firstName: string;
@@ -17,7 +17,7 @@ export default function ContactForm() {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors },
   } = useForm<FormInputs>();
   // If the form submission is successful, redirect to the ThankYouPage
   if (serverState.succeeded) {
@@ -26,17 +26,17 @@ export default function ContactForm() {
   // Define styles for input elements, text areas, labels, and error messages
   let styles = {
     input:
-      'flex w-full h-10 px-3 py-2 text-sm border rounded-md ring-1 ring-gray-500 dark:ring-gray-50 dark:text-neutral-50 border-input dark:bg-primary-950/10 dark:caret-primary-50 bg-white/10 dark:carrot-primary-50 dark:focus-visible:border-primary-40 dark:border-primary-40 file:border-0 file:bg-transparent file:text-sm file:font-medium dark:placeholder:text-primary-40 placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-2 focus-visible:border-primary-300 focus-visible:border-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+      "flex w-full h-10 px-3 py-2 text-sm border rounded-md ring-1 ring-gray-500 dark:ring-gray-50 dark:text-neutral-50 border-input dark:bg-primary-950/10 dark:caret-primary-50 bg-white/10 dark:carrot-primary-50 dark:focus-visible:border-primary-40 dark:border-primary-40 file:border-0 file:bg-transparent file:text-sm file:font-medium dark:placeholder:text-primary-40 placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-2 focus-visible:border-primary-300 focus-visible:border-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
     textArea:
-      'flex w-full h-10 px-3 py-2 text-sm min-h-[80px] border dark:text-neutral-50 ring-1 ring-gray-500 dark:ring-gray-50 rounded-md border-input dark:bg-primary-950/10 dark:caret-primary-50 bg-white/10 dark:carrot-primary-50 dark:focus-visible:border-primary-40 dark:border-primary-40 file:border-0 file:bg-transparent file:text-sm file:font-medium dark:placeholder:text-primary-40 placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-2 focus-visible:border-primary-300 focus-visible:border-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
-    lables: 'prose-sm font-bold capitalize',
-    errrorMessages: 'text-xs font-normal tracking-wider text-red-800 dark:text-red-400 capitalize'
+      "flex w-full h-10 px-3 py-2 text-sm min-h-[80px] border dark:text-neutral-50 ring-1 ring-gray-500 dark:ring-gray-50 rounded-md border-input dark:bg-primary-950/10 dark:caret-primary-50 bg-white/10 dark:carrot-primary-50 dark:focus-visible:border-primary-40 dark:border-primary-40 file:border-0 file:bg-transparent file:text-sm file:font-medium dark:placeholder:text-primary-40 placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-2 focus-visible:border-primary-300 focus-visible:border-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+    lables: "prose-sm font-bold capitalize",
+    errrorMessages: "text-xs font-normal tracking-wider text-red-800 dark:text-red-400 capitalize",
   };
   return (
     <>
       <form onSubmit={handleSubmit(sendToFormspree)} method="POST" className="">
         <div className="lg:max-w-3xl">
-            {/* Grid layout with two columns for better responsiveness */}
+          {/* Grid layout with two columns for better responsiveness */}
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {/* First Name input */}
             <div>
@@ -46,7 +46,7 @@ export default function ContactForm() {
               <div className="mt-2.5">
                 <input
                   type="text"
-                  {...register('firstName')}
+                  {...register("firstName")}
                   id="first-name"
                   autoComplete="given-name"
                   className={styles.input}
@@ -61,7 +61,7 @@ export default function ContactForm() {
               <div className="mt-2.5">
                 <input
                   type="text"
-                  {...register('lastName')}
+                  {...register("lastName")}
                   id="last-name"
                   autoComplete="family-name"
                   className={styles.input}
@@ -78,7 +78,7 @@ export default function ContactForm() {
                   type="email"
                   id="email"
                   autoComplete="email"
-                  {...register('Email', { required: true })}
+                  {...register("Email", { required: true })}
                   className={styles.input}
                 />
               </div>
@@ -95,9 +95,9 @@ export default function ContactForm() {
                   id="message"
                   rows={4}
                   className={styles.textArea}
-                  {...register('Message', { required: true })}
+                  {...register("Message", { required: true })}
                 />
-              {/* Display error message if message field is required and not filled */}
+                {/* Display error message if message field is required and not filled */}
                 {errors.Message && <span className={styles.errrorMessages}>* Message field is required</span>}
               </div>
             </div>
