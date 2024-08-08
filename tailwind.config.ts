@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 const config = {
   darkMode: ["class"],
@@ -19,15 +20,18 @@ const config = {
         "2xl": "1400px",
       },
     },
+    colors: {
+      black: "#040606",
+      white: "#fafcfc",
+      primary: "#2e6570",
+      secondary: "#83C6C6",
+      accent: "#6edede",
+      gray: colors.gray,
+      red: colors.red,
+      transparent: "transparent",
+      current: "currentColor",
+    },
     extend: {
-      colors: {
-        black: "#040606",
-        white: "#fafcfc",
-        primary: "#2e6570",
-        secondary: "#83C6C6",
-        accent: "#6edede",
-      },
-
       fontFamily: {
         sans: ["Switzer", ...defaultTheme.fontFamily.sans],
       },
