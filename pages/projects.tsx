@@ -27,12 +27,14 @@ export default function Projects({ posts }: any) {
               <Link href="/">Home</Link>
             </Button>
             <span className="dark:text-slate-300">/</span>
-            <Button variant="link" className="text-black dark:text-white">
+            <Button variant="link" className="text-primary dark:text-white">
               <Link href="/projects">Projects</Link>
             </Button>
           </nav>
-          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">A Showcase of Creativity</h1>
-          <p className="leading-7 lg:text-lg tracking-wide mt-4 dark:text-white">
+          <h1 className="text-4xl lg:text-5xl capitalize tracking-tight font-extrabold dark:text-white">
+            A Showcase of Creativity
+          </h1>
+          <p className="leading-7 lg:text-lg text-balance max-w-5xl mt-4 dark:text-white">
             Welcome to my gallery! On this page&#44; you&#39;ll find a collection of my projects throughout my career as
             a website developer&#46; If you have any questions or would like to discuss a potential project or
             collaboration&#44; don&#39;t hesitate to reach out to me&#46;

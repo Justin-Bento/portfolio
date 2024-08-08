@@ -29,7 +29,7 @@ export default function ContactForm() {
   return (
     <>
       <form onSubmit={handleSubmit(sendToFormspree)} method="POST" className="w-full h-auto ">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="flex flex-col gap-6">
           <div data-form="last-name" className="">
             <Label htmlFor="first-name" defaultValue="First_Name">
               First Name
@@ -67,6 +67,7 @@ export default function ContactForm() {
               placeholder="eg: jamesSmith@example.com"
               className="ring-1 ring-black mt-1.5"
             />
+            {errors.Email && <span className="text-sm text-red-500">* Message field is required</span>}
           </div>
           <div data-form="user-message" className="sm:col-span-2">
             <Label htmlFor="message">Your Message</Label>
