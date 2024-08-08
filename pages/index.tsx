@@ -16,8 +16,8 @@ export default function index() {
         />
       </Head>
       <BackgroundPattern />
-      <div aria-label="home-page" className="grid place-content-center [min-height:100dvh;] py-16 px-8">
-        <div className="lg:max-w-5xl lg:mx-auto">
+      <main className="grid place-content-center [min-height:100dvh;] py-16 px-8">
+        <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-start md:justify-center">
             <span className="relative w-16 h-16 mb-6 ">
               <Image
@@ -30,33 +30,31 @@ export default function index() {
               />
             </span>
           </div>
-          <div className="[text-wrap:balance] md:text-center space-y-4 text-black">
-            <p className="text-sm lg:text-base mx-auto lg:prose opacity-90 dark:text-primary-40">
-              Hey there I&#39;m Justin!
-            </p>
-            <h1 className="scroll-m-20 text-4xl font-extrabold tracking-base lg:text-5xl dark:text-primary-40">
+          <div className="text-balance space-y-4">
+            <p className="text-base leading-7 tracking-wide capitalize dark:text-white">Hey there I'm Justin!</p>
+            <h1 className="text-5xl text-pretty font-extrabold tracking-tight dark:text-white">
               From Designs to Dynamic Websites: Join Me On My Coding Adventure!
             </h1>
-            <p className="text-base leading-7 md:text-lg opacity-90 dark:text-primary-40/80">
-              I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my
+            <p className="text-base leading-7 tracking-wide lg:text-lg max-w-3xl mx-auto dark:text-white">
+              I'm a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my
               knowledge of accessibility design with the power of code to create engaging websites that everyone can
               enjoy. Join me on this journey of creativity and interactivity!
             </p>
           </div>
-          <span className="flex flex-col gap-4 my-8 md:flex-row md:justify-center">
+          <div className="flex items-center justify-center gap-4 mt-8">
             <Link href="/projects">
-              <Button variant="primary" className="w-full lg:w-auto">
+              <Button variant="primary" className="ring-1 ring-primary-800">
                 Explore My Portfolio
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" className="w-full lg:w-auto">
+              <Button variant="outline" className="ring-1 ring-black hover:underline">
                 Let&#39;s Collaborate
               </Button>
             </Link>
-          </span>
+          </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }
