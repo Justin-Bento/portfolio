@@ -4,7 +4,13 @@ import { client } from "@/sanityClient";
 import { PortableText } from "@portabletext/react";
 import Head from "next/head";
 import Link from "next/link";
-import React from "react";
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 export default function DynamicProjectPage({ post }: any) {
   return (
@@ -18,6 +24,36 @@ export default function DynamicProjectPage({ post }: any) {
         />
       </Head>
       <main className="md:container py-16 lg:py-0 md:mx-auto border-0 lg:max-w-[100ch] lg:my-32 p-4 lg:p-0">
+        <section className="mb-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/" className="font-medium text-black dark:text-white">
+                  Home
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/Projects" className="font-medium text-black dark:text-white">
+                  Projects
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/projects" className="font-medium text-primary">
+                  {post.title}
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </section>
+        <section className="space-y-4 mb-6 [text-wrap: balance;]">
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl dark:text-white">
+            {post.title}
+          </h1>
+          <p className="leading-7 lg:text-lg tracking-wide text-black dark:text-white">{post.description}</p>
+          <hr className="border border-b border-black" />
+        </section>
         <article className="space-y-6 [text-wrap:balance]">
           <PortableText value={post.body} components={RichTextComponents} />
         </article>
