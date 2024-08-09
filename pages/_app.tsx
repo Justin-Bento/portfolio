@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import Script from "next/script";
 import Appbar from "@/components/Header";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -21,7 +22,15 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </Script>
       <Appbar />
-      <Component {...pageProps} />
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <Component {...pageProps} />
+      </ThemeProvider>
+
       <Footer />
     </>
   );
