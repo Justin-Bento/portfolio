@@ -30,7 +30,7 @@ const RichTextComponents = {
   block: {
     // Ex. 1: customizing common block types
     h1: ({ children }: any) => {
-      return <h1 className="text-5xl font-extrabold dark:text-white">{children}</h1>;
+      return <h1 className="text-5xl font-bold dark:text-white">{children}</h1>;
     },
     h2: ({ children }: any) => {
       return <h2 className="text-4xl font-bold dark:text-white">{children}</h2>;
