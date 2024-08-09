@@ -11,7 +11,6 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbSeparator,
-  BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
 
 export default function Contact() {
