@@ -17,7 +17,10 @@ export default function DynamicProjectPage({ post }: any) {
     <>
       <Head>
         <title>Justin Bento - {post.title}</title>
-        <meta name="title" content={`Justin Bento - Projects - ${post.title}`} />
+        <meta
+          name="title"
+          content={`Justin Bento - Projects - ${post.title}`}
+        />
         <meta
           name="description"
           content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. "
@@ -28,19 +31,28 @@ export default function DynamicProjectPage({ post }: any) {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/" className="font-medium text-black dark:text-white">
+                <BreadcrumbLink
+                  href="/"
+                  className="font-medium text-black dark:text-white"
+                >
                   Home
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/Projects" className="font-medium text-black dark:text-white">
+                <BreadcrumbLink
+                  href="/Projects"
+                  className="font-medium text-black dark:text-white"
+                >
                   Projects
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/projects" className="font-medium text-primary">
+                <BreadcrumbLink
+                  href="/projects"
+                  className="font-medium text-primary dark:text-accent"
+                >
                   {post.title}
                 </BreadcrumbLink>
               </BreadcrumbItem>
@@ -51,8 +63,10 @@ export default function DynamicProjectPage({ post }: any) {
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl dark:text-white">
             {post.title}
           </h1>
-          <p className="leading-7 lg:text-lg tracking-wide text-black dark:text-white">{post.description}</p>
-          <hr className="border border-b border-black" />
+          <p className="leading-7 lg:text-lg tracking-wide text-black dark:text-white">
+            {post.description}
+          </p>
+          <hr className="border border-b border-black dark:border-white" />
         </section>
         <article className="space-y-6 [text-wrap:balance]">
           <PortableText value={post.body} components={RichTextComponents} />
