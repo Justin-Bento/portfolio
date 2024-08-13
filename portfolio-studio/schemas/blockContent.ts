@@ -1,4 +1,13 @@
 import {defineType, defineArrayMember} from 'sanity'
+import {
+  AiOutlineBold,
+  AiOutlineCode,
+  AiOutlineHighlight,
+  AiOutlineItalic,
+  AiOutlineMenuUnfold,
+  AiOutlineUnderline,
+} from 'react-icons/ai'
+import {Bold, Icon, Underline} from 'lucide-react'
 
 /**
  * This is the schema definition for the rich text fields used for
@@ -30,17 +39,22 @@ export default defineType({
         {title: 'H4', value: 'h4'},
         {title: 'H5', value: 'h5'},
         {title: 'H6', value: 'h5'},
-        {title: 'Quote', value: 'blockquote'},
-        {title: 'Code', value: 'code'},
       ],
-      lists: [{title: 'Bullet', value: 'bullet'}],
+      lists: [
+        {title: 'Bullet', value: 'bullet'},
+        {title: 'Numbered', value: 'number'},
+      ],
       // Marks let you mark up inline text in the block editor.
       marks: {
         // Decorators usually describe a single property – e.g. a typographic
         // preference or highlighting by editors.
         decorators: [
-          {title: 'Strong', value: 'strong'},
-          {title: 'Emphasis', value: 'em'},
+          {title: 'Strong', value: 'strong', icon: AiOutlineBold},
+          {title: 'Underline', value: 'underline', icon: AiOutlineUnderline},
+          {title: 'Emphasis', value: 'em', icon: AiOutlineItalic},
+          {title: 'Code', value: 'code', icon: AiOutlineCode},
+          {title: 'Highlight', value: 'highlight', icon: AiOutlineHighlight},
+          {title: 'Quote', value: 'blockquote', icon: AiOutlineMenuUnfold},
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
@@ -52,34 +66,19 @@ export default defineType({
               {
                 name: 'href',
                 type: 'url',
-                title: 'URL'
+                title: 'URL',
               },
               {
                 title: 'Open in new tab',
                 name: 'blank',
-                description: 'When a user clicks the links. It will send them to the url in a new tab.',
-                type: 'boolean'
-              }
-            ]
+                description:
+                  'When a user clicks the links. It will send them to the url in a new tab.',
+                type: 'boolean',
+              },
+            ],
           },
-          {
-            name: 'internalLink',
-            type: 'object',
-            title: 'Internal link',
-            fields: [
-              {
-                name: 'reference',
-                type: 'reference',
-                title: 'Reference',
-                to: [
-                  { type: 'post' },
-                  // other types you may want to link to
-                ]
-              }
-            ]
-          }
-        ]
-      }
+        ],
+      },
     }),
     // You can add additional types here. Note that you can't use
     // primitive types such as 'string' and 'number' in the same array
