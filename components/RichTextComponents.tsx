@@ -37,7 +37,8 @@ const RichTextComponents = {
     },
     h3: ({ children }: any) => {
       return <h3 className="text-3xl font-bold dark:text-white">{children}</h3>;
-    },
+    },         
+
     h4: ({ children }: any) => {
       return <h4 className="text-2xl font-bold dark:text-white">{children}</h4>;
     },
