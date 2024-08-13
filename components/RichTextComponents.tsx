@@ -54,6 +54,9 @@ const RichTextComponents = {
     blockquote: ({ children }: any) => {
       return <blockquote className="mt-6 border-l-2 pl-6 italic dark:text-white">{children}</blockquote>;
     },
+    mark: ({ children }: any) => {
+      return <mark className="selection:bg-accent">{children}</mark>;
+    },
     code: ({ children }: any) => {
       return (
         <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
