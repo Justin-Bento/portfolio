@@ -7,7 +7,6 @@ import {
   AiOutlineMenuUnfold,
   AiOutlineUnderline,
 } from 'react-icons/ai'
-import {Bold, Icon, Underline} from 'lucide-react'
 
 /**
  * This is the schema definition for the rich text fields used for
