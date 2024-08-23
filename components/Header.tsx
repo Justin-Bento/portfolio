@@ -69,6 +69,15 @@ export default function Header() {
                 Projects
               </Button>
             </Link>
+            <Link href="/testimonials">
+              <Button
+                variant="link"
+                aria-label="navigation-link-projects"
+                className="w-full"
+              >
+                Testimonials
+              </Button>
+            </Link>
             <Link href="/contact">
               <Button
                 variant="link"
