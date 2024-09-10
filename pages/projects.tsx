@@ -89,7 +89,7 @@ export default function Projects({ posts }: any) {
                     <p className="leading-7 line-clamp-2">{post.description}</p>
                   </CardContent>
                   <CardFooter className="flex items-center gap-4">
-                    <Link href={post.liveDemo} target="_blank">
+                    <Link href={post.liveDemo}>
                       <Button
                         variant="outline"
                         size="sm"
@@ -99,7 +99,7 @@ export default function Projects({ posts }: any) {
                         View Project
                       </Button>
                     </Link>
-                    <Link href={post.projectCode} target="_blank">
+                    <Link href={post.projectCode}>
                       <Button
                         variant="outline"
                         size="sm"
