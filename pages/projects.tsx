@@ -89,7 +89,7 @@ export default function Projects({ posts }: any) {
                     <p className="leading-7 line-clamp-2">{post.description}</p>
                   </CardContent>
                   <CardFooter className="flex items-center gap-4">
-                    <Link href={`/projects/${post.slug.current}`}>
+                    <Link href={post.liveDemo} target="_blank">
                       <Button
                         variant="outline"
                         size="sm"
@@ -128,7 +128,6 @@ export const getStaticProps: GetStaticProps<AllPosts> = async () => {
       description, 
       projectCode,
     liveDemo,
-      slug,   
       mainImage
     }
   `);
