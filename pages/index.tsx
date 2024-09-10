@@ -17,7 +17,7 @@ export default function index() {
       </Head>
       <BackgroundPattern />
       <main className="grid place-content-center [min-height:100dvh;] py-16 px-8">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto md:text-center">
           <div className="flex justify-start md:justify-center">
             <span className="relative w-16 h-16 mb-6 ">
               <Image
@@ -34,7 +34,7 @@ export default function index() {
             <p className="text-base leading-7 tracking-wide capitalize dark:text-white">
               Hey there I&#39;m Justin!
             </p>
-            <h1 className="text-5xl text-pretty font-extrabold tracking-tight dark:text-white">
+            <h1 className="text-4xl md:text-5xl text-pretty font-extrabold tracking-tight dark:text-white">
               From Designs to Dynamic Websites: Join Me On My Coding Adventure!
             </h1>
             <p className="text-base leading-7 tracking-wide lg:text-lg max-w-3xl mx-auto dark:text-white">
@@ -45,7 +45,7 @@ export default function index() {
               creativity and interactivity!
             </p>
           </div>
-          <div className="flex items-center justify-center gap-4 mt-8">
+          <div className="flex items-center justify-start md:justify-center gap-4 mt-8">
             <Link href="/projects">
               <Button variant="primary" className="dark:text-white">
                 Explore My Portfolio
