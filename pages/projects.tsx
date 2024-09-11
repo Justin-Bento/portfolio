@@ -72,7 +72,7 @@ export default function Projects({ posts }: any) {
               <>
                 <Card
                   key={post._id}
-                  className="bg-white ring-1 ring-black dark:ring-white space-y-4 pt-6"
+                  className="bg-white dark:bg-black ring-1 ring-black dark:ring-white space-y-4 pt-6"
                 >
                   <CardHeader className="relative flex w-8 h-8 overflow-hidden rounded-full shadow shrink-0 mx-6">
                     <Image
