@@ -13,7 +13,7 @@ export default function Footer() {
               href={item.href}
               className="transition-all hover:opacity-80"
               target="_blank"
-              aria-label="external-link-to-social-media"
+              aria-label={item.ariaLabel}
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="w-6 h-6 fill-white dark:fill-white/80" aria-hidden="true" />
