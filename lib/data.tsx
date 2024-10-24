@@ -1,7 +1,13 @@
 import { IconType } from "react-icons";
 import { RiGithubFill, RiLinkedinBoxFill, RiPinterestFill, RiSoundcloudFill } from "react-icons/ri";
 
-export const footer_navigation = [
+export interface FooterNavProps {
+  name: string;
+  href: string;
+  ariaLabel: string;
+  icon: JSX.ElementType; // IconType here defines the icon as a component, not JSX
+}
+export const footer_navigation: FooterNavProps[] = [
   {
     name: "SoundCloud",
     href: "https://soundcloud.com/bento-box-519166246",
