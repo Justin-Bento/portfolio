@@ -17,7 +17,7 @@ export default function about() {
   return (
     <>
       <Header />
-      <div className="flex-auto place-content-center container mx-auto [min-height:100dvh;] ">
+      <div className="flex-auto place-content-center container mx-auto [min-height:100dvh;] px-6">
         <div className="py-16 sm:px-4">
           <div className="w-full lg:px-0">
             <div className="relative">
