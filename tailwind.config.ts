@@ -26,7 +26,6 @@ const config: Config = {
       fontFamily: {
         sans: ["Switzer", ...defaultTheme.fontFamily.sans],
       },
-      colors: {},
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -36,7 +35,7 @@ const config: Config = {
   },
   plugins: [
     animate,
-    //...
+    // ...
   ],
 };
 export default config;
