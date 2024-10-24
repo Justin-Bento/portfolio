@@ -6,18 +6,17 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { RiGithubFill, RiLinkedinFill, RiMailFill, RiPinterestFill, RiSoundcloudFill } from "react-icons/ri";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Justin Bento - About",
+  description:
+    "Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding.",
+};
 
 export default function about() {
   return (
     <>
-      <Head>
-        <title>Justin Bento - About</title>
-        <meta name="title" content="Justin Bento - About" />
-        <meta
-          name="description"
-          content="Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding. "
-        />
-      </Head>
       <Header />
       <div className="flex-auto place-content-center container mx-auto [min-height:100dvh;] ">
         <div className="py-16 sm:px-4">
