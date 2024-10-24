@@ -1,9 +1,10 @@
-import ContactForm from "@/components/ContactForm";
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import type { Metadata } from "next";
 import { RiMailFill, RiMapPin2Fill } from "react-icons/ri";
 import { footer_navigation } from "@/lib/data";
 import { Button } from "@/components/ui/button";
+import ContactForm from "@/components/ContactForm";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -13,6 +14,19 @@ import {
 } from "@/components/ui/breadcrumb";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Justin Bento - Contact",
+  description:
+    "Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding.",
+};
+
+export interface IconProps {
+  name: string;
+  href: string;
+  ariaLabel: string;
+  icon: JSX.ElementType; // IconType here defines the icon as a component, not JSX
+}
 
 export default function Contact() {
   return (
@@ -63,7 +77,7 @@ export default function Contact() {
                 <hr className="my-6 border-1 border-black dark:border-gray-50" />
                 <h2 className="text-base font-semibold capitalize font-display ">Social&#39;s</h2>
                 <div className="flex items-center gap-2 mt-4">
-                  {footer_navigation.map((item: any) => (
+                  {footer_navigation.map((item: IconProps) => (
                     <Link
                       key={item.name}
                       href={item.href}
