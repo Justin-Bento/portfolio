@@ -1,5 +1,4 @@
 import ContactForm from "@/components/ContactForm";
-import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { RiMailFill, RiMapPin2Fill } from "react-icons/ri";
