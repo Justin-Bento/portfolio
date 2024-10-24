@@ -46,7 +46,9 @@ export default function index() {
           </div>
           <div className="flex items-center justify-start md:justify-center gap-4 mt-8">
             <Link href="/projects">
-              <Button className="text-white">Explore My Portfolio</Button>
+              <Button variant="primary" className="text-white">
+                Explore My Portfolio
+              </Button>
             </Link>
             <Link href="/contact">
               <Button variant="outline" className="ring-1 ring-black hover:underline">
