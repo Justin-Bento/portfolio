@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -41,7 +40,7 @@ export default function about() {
                   <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-pretty dark:text-white">
                     Hi! 👋 I&#39;m Justin, a Website Developer focused on building{" "}
                     <Link
-                      className="underline text-primary dark:text-accent dark:text-accent"
+                      className="underline text-primary dark:text-accent"
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
