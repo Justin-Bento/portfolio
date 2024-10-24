@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import BackgroundPattern from "@/components/BackgroundPattern";
+import Footer from "@/components/Footer";
 
 // import { Button } from "@/components/ui/button";
 
@@ -56,6 +57,7 @@ export default function index() {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 }
