@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
@@ -36,61 +37,33 @@ export default function Header() {
             </Button>
           )}
         </div>
-        <div
-          className={`${
-            mobileMenuOpen ? "hidden lg:flex lg:items-center" : ""
-          }`}
-        >
+        <div className={`${mobileMenuOpen ? "hidden lg:flex lg:items-center" : ""}`}>
           <nav className="flex flex-col justify-start w-full gap-6 lg:justify-center lg:flex-row">
             <Link href="/">
-              <Button
-                variant="link"
-                aria-label="navigation-link-home"
-                className="w-full"
-              >
+              <Button variant="link" aria-label="navigation-link-home" className="w-full">
                 Home
               </Button>
             </Link>
             <Link href="/about">
-              <Button
-                variant="link"
-                aria-label="navigation-link-about"
-                className="w-full"
-              >
+              <Button variant="link" aria-label="navigation-link-about" className="w-full">
                 About
               </Button>
             </Link>
             <Link href="/projects">
-              <Button
-                variant="link"
-                aria-label="navigation-link-projects"
-                className="w-full"
-              >
+              <Button variant="link" aria-label="navigation-link-projects" className="w-full">
                 Projects
               </Button>
             </Link>
             <Link href="/contact">
-              <Button
-                variant="link"
-                aria-label="navigation-link-contact"
-                className="w-full"
-              >
+              <Button variant="link" aria-label="navigation-link-contact" className="w-full">
                 Contact
               </Button>
             </Link>
           </nav>
         </div>
-        <div
-          className={`${
-            mobileMenuOpen ? "hidden" : ""
-          } lg:flex lg:items-center md:justify-end`}
-        >
+        <div className={`${mobileMenuOpen ? "hidden" : ""} lg:flex lg:items-center md:justify-end`}>
           <Link target="_blank" href="https://github.com/Justin-Bento">
-            <Button
-              variant="secondary"
-              className="gap-1.5 w-full lg:w-auto"
-              aria-label="external-link-to-linkedin"
-            >
+            <Button variant="secondary" className="gap-1.5 w-full lg:w-auto" aria-label="external-link-to-linkedin">
               <RiExternalLinkLine />
               Github
             </Button>
