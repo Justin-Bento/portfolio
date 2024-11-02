@@ -18,7 +18,7 @@ const config: Config = {
       primary: "#2e6570",
       secondary: "#83C6C6",
       accent: "#6edede",
-      gray: colors.gray,
+      gray: colors.zinc,
       red: colors.red,
       transparent: "transparent",
       current: "currentColor",
