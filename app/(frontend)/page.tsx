@@ -47,32 +47,42 @@ export default function Home() {
             </ul>
           </div>
         </Card>
-        <Card className="bg-[#fff] px-4 py-5 sm:p-6 ring-1 ring-black/5 shadow-none col-span-12 space-y-5">
-          <h1 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
-            Hi my name is,
-          </h1>
-          <h1 className="text-6xl font-bold text-zinc-950 dark:text-white">Justin Bento</h1>
-          <p className="text-6xl font-bold text-black/50 dark:text-white">I build things for the web.</p>
+        <Card className="bg-[#fff] ring-1 ring-black/5 shadow-none col-span-12 space-y-5">
+          <div className="px-4 py-5 sm:p-6">
+            <h1 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
+              Hi my name is,
+            </h1>
+            <h1 className="text-6xl font-bold text-zinc-950 dark:text-white">Justin Bento</h1>
+            <p className="text-6xl font-bold text-black/50 dark:text-white">I build things for the web.</p>
+          </div>
         </Card>
-        <Card className="bg-[#fff] px-4 py-5 sm:p-6 ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
-          <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
-            About Me
-          </h2>
+        <Card className="bg-[#fff] ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
+          <div className="px-4 py-5 sm:p-6">
+            <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
+              About Me
+            </h2>
+          </div>
         </Card>
-        <Card className="bg-[#fff] px-4 py-5 sm:p-6 ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
-          <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
-            Some Things I&#39;ve built.
-          </h2>
+        <Card className="bg-[#fff] ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
+          <div className="px-4 py-5 sm:p-6">
+            <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
+              Some Things I&#39;ve built.
+            </h2>
+          </div>
         </Card>
-        <Card className="bg-[#fff] px-4 py-5 sm:p-6 ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
-          <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
-            Where I&#39;ve worked
-          </h2>
+        <Card className="bg-[#fff] ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
+          <div className="px-4 py-5 sm:p-6">
+            <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
+              Where I&#39;ve worked
+            </h2>
+          </div>
         </Card>
-        <Card className="bg-[#fff] px-4 py-5 sm:p-6 ring-1 ring-black/5 shadow-none col-span-12">
-          <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
-            Footer
-          </h2>
+        <Card className="bg-[#fff] ring-1 ring-black/5 shadow-none col-span-12">
+          <div className="px-4 py-5 sm:p-6">
+            <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
+              Footer
+            </h2>
+          </div>
         </Card>
       </main>
     </>
