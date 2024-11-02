@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <main className="grid grid-cols-1 md:grid-cols-12 p-8 gap-6 max-h-dvh bg-[#fafafa]">
-        <Card className="ring-1 ring-black/5 shadow-none col-span-12">
+        <Card className="col-span-12">
           <div className="px-4 py-5 sm:p-6">
             <div className="flex items-center">
               <span className="flex flex-1 items-center gap-4 justify-start">
@@ -58,28 +58,28 @@ export default function Home() {
             <p className="text-6xl font-bold text-black/50 dark:text-white">I build things for the web.</p>
           </div>
         </Card>
-        <Card className="ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
+        <Card className="col-span-12 lg:col-span-4">
           <div className="px-4 py-5 sm:p-6">
             <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
               About Me
             </h2>
           </div>
         </Card>
-        <Card className="ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
+        <Card className="col-span-12 lg:col-span-4">
           <div className="px-4 py-5 sm:p-6">
             <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
               Some Things I&#39;ve built.
             </h2>
           </div>
         </Card>
-        <Card className="ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
+        <Card className=" col-span-12 lg:col-span-4">
           <div className="px-4 py-5 sm:p-6">
             <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
               Where I&#39;ve worked
             </h2>
           </div>
         </Card>
-        <Card className="ring-1 ring-black/5 shadow-none col-span-12">
+        <Card className="col-span-12">
           <div className="px-4 py-5 sm:p-6">
             <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
               Footer
