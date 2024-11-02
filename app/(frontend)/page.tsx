@@ -1,10 +1,6 @@
-import { Logo } from "@/components/Logo";
 import { Card } from "@/components/ui/card";
-import Link from "next/link";
 
 export default function Home() {
-  const navLinks = ["Home", "Projects", "About", "Contact"];
-
   return (
     <>
       <main className="grid grid-cols-1 md:grid-cols-12 gap-6 p-8 max-h-dvh bg-white">
