@@ -29,9 +29,17 @@ export default function Home() {
           </div>
         </Card>
         {/* About Me Card */}
-        <Card className="col-span-12 lg:col-span-4 h-[25vh]">
-          <div className="px-4 py-5 sm:p-6">
+        <Card className="col-span-12 lg:col-span-4 h-[25vh] flex flex-col items-start justify-center">
+          <div className=" px-4 py-5 sm:p-6 space-y-3">
             <h2 className="text-lg font-semibold tracking-[-0.015em] text-zinc-950 dark:text-white">About Me</h2>
+            <p className="text-sm leading-5 line-clamp-4">
+              Hello! My name is Justin and I enjoy creating things that live on the internet. My interest in web
+              development started back in 2019 when I decided to try editing custom Wix themes — turns out hacking
+              together a custom reblog button taught me a lot about HTML & CSS!
+            </p>
+            <Link href="/about" className="text-sm flex items-center justify-start">
+              Read More <span className="text-base">&rarr;</span>
+            </Link>
           </div>
         </Card>
         {/* Projects Card */}
