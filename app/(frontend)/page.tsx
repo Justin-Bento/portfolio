@@ -31,11 +31,11 @@ export default function Home() {
           </div>
         </Card>
         {/* Main Hero Section */}
-        <Card className="col-span-12 min-h-[50dvh] flex items-center justify-center">
-          <div className="space-y-5 px-4 py-5 sm:p-6 text-center">
-            <h1 className="text-lg font-semibold tracking-[-0.015em] text-zinc-950 dark:text-white">Hi, my name is</h1>
-            <h1 className="text-5xl font-bold text-zinc-950 dark:text-white">Justin Bento</h1>
-            <p className="text-3xl font-bold text-zinc-500 dark:text-white">I build things for the web.</p>
+        <Card className="col-span-12 h-[50dvh] flex items-center justify-center">
+          <div className="space-y-4 w-11/12 mx-auto">
+            <p className="scroll-m-20 font-bold text-md">Hi, my name is</p>
+            <h1 className="scroll-m-20 font-extrabold text-6xl">Justin Bento</h1>
+            <p className="scroll-m-20 font-extrabold text-6xl opacity-70">I build things for the web.</p>
           </div>
         </Card>
         {/* About Me Card */}
