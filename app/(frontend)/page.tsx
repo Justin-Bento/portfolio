@@ -60,12 +60,6 @@ export default function Home() {
             </h2>
           </div>
         </Card>
-        {/* Footer Card */}
-        <Card className="col-span-12">
-          <div className="px-4 py-5 sm:p-6">
-            <h2 className="text-lg font-semibold tracking-[-0.015em] text-zinc-950 dark:text-white">Footer</h2>
-          </div>
-        </Card>
       </main>
     </>
   );
