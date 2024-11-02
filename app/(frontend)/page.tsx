@@ -43,19 +43,35 @@ export default function Home() {
           </div>
         </Card>
         {/* Projects Card */}
-        <Card className="col-span-12 lg:col-span-4 h-[25vh]">
-          <div className="px-4 py-5 sm:p-6">
+        <Card className="col-span-12 lg:col-span-4 h-[25vh]  flex flex-col items-start justify-center">
+          <div className="px-4 py-5 sm:p-6 space-y-3">
             <h2 className="text-lg font-semibold tracking-[-0.015em] text-zinc-950 dark:text-white">
               Some Things I've Built
             </h2>
+            <p className="text-sm leading-5 line-clamp-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nisi earum error ut! Delectus, itaque
+              rem. Odio architecto eligendi expedita vitae, commodi a provident deleniti, maxime labore aspernatur,
+              delectus numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil.
+            </p>
+            <Link href="/about" className="text-sm flex items-center justify-start">
+              Read More <span className="text-base">&rarr;</span>
+            </Link>
           </div>
         </Card>
         {/* Work Experience Card */}
         <Card className="col-span-12 lg:col-span-4 h-[25vh]">
-          <div className="px-4 py-5 sm:p-6">
+          <div className="px-4 py-5 sm:p-6 space-y-3">
             <h2 className="text-lg font-semibold tracking-[-0.015em] text-zinc-950 dark:text-white">
               Where I've Worked
             </h2>
+            <p className="text-sm leading-5 line-clamp-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nisi earum error ut! Delectus, itaque
+              rem. Odio architecto eligendi expedita vitae, commodi a provident deleniti, maxime labore aspernatur,
+              delectus numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil.
+            </p>
+            <Link href="/about" className="text-sm flex items-center justify-start">
+              Read More <span className="text-base">&rarr;</span>
+            </Link>
           </div>
         </Card>
       </main>
