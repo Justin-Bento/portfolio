@@ -49,7 +49,7 @@ export default function Home() {
             </div>
           </div>
         </Card>
-        <Card className="ring-1 ring-black/5 shadow-none col-span-12 space-y-5">
+        <Card className=" col-span-12 space-y-5">
           <div className="px-4 py-5 sm:p-6">
             <h1 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
               Hi my name is,
