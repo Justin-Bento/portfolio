@@ -10,29 +10,29 @@ export default function Home() {
           </p>
         </Card>
         <Card className="bg-[#fff] px-4 py-5 sm:p-6 ring-1 ring-black/5 shadow-none col-span-12">
-          <p className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
+          <h1 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
             Hero Content
-          </p>
+          </h1>
         </Card>
         <Card className="bg-[#fff] px-4 py-5 sm:p-6 ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
-          <p className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
+          <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
             About Me
-          </p>
+          </h2>
         </Card>
         <Card className="bg-[#fff] px-4 py-5 sm:p-6 ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
-          <p className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
+          <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
             Some Things I&#39;ve built.
-          </p>
+          </h2>
         </Card>
         <Card className="bg-[#fff] px-4 py-5 sm:p-6 ring-1 ring-black/5 shadow-none col-span-12 lg:col-span-4">
-          <p className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
+          <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
             Where I&#39;ve worked
-          </p>
+          </h2>
         </Card>
         <Card className="bg-[#fff] px-4 py-5 sm:p-6 ring-1 ring-black/5 shadow-none col-span-12">
-          <p className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
+          <h2 className="text-lg/7 font-semibold tracking-[-0.015em] text-zinc-950 sm:text-base/7 dark:text-white">
             Footer
-          </p>
+          </h2>
         </Card>
       </main>
     </>
