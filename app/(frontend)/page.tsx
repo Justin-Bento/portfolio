@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { RiGithubLine, RiLinkedinBoxLine, RiSoundcloudLine, RiTwitterLine } from "react-icons/ri";
@@ -13,6 +14,10 @@ export default function Home() {
             <h1 className="scroll-m-20 font-extrabold text-6xl">Justin Bento</h1>
             <p className="scroll-m-20 font-extrabold text-6xl opacity-70">I build things for the web.</p>
             <div className="flex items-center gap-4">
+              <Link href="/contact">
+                <Button variant="secondary">Let&#39;s Connect</Button>
+              </Link>
+              <span className="block">|</span>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/Justin-Bento">
                 <RiGithubLine className="text-2xl" />
               </a>
