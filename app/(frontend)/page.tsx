@@ -13,29 +13,31 @@ export default function Home() {
             <h1 className="scroll-m-20 font-extrabold text-6xl">Justin Bento</h1>
             <p className="scroll-m-20 font-extrabold text-6xl opacity-70">I build things for the web.</p>
             <div className="flex items-center gap-4">
-              <Link target="_blank" rel="noopener noreferrer" href="https://github.com/Justin-Bento">
-                <RiGithubLine className="size-6" />
-              </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://github.com/Justin-Bento">
-                <RiLinkedinBoxLine className="size-6" />
-              </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://github.com/Justin-Bento">
-                <RiTwitterLine className="size-6" />
-              </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://github.com/Justin-Bento">
-                <RiSoundcloudLine className="size-6" />
-              </Link>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Justin-Bento">
+                <RiGithubLine className="text-2xl" />
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/justin-bento">
+                <RiLinkedinBoxLine className="text-2xl" />
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Justin-Bento">
+                <RiTwitterLine className="text-2xl" />
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/fretfuze">
+                <RiSoundcloudLine className="text-2xl" />
+              </a>
             </div>
           </div>
         </Card>
         {/* About Me Card */}
         <Card className="col-span-12 lg:col-span-4 h-[25vh] flex flex-col items-start justify-center">
-          <div className=" px-4 py-5 sm:p-6 space-y-3">
+          <div className="px-4 py-5 sm:p-6 space-y-3">
             <h2 className="text-lg font-semibold tracking-[-0.015em] text-zinc-950 dark:text-white">About Me</h2>
             <p className="text-sm leading-5 line-clamp-4">
-              Hello! My name is Justin and I enjoy creating things that live on the internet. My interest in web
-              development started back in 2019 when I decided to try editing custom Wix themes — turns out hacking
-              together a custom reblog button taught me a lot about HTML & CSS!
+              Hello! My name is Justin, and I have a passion for creating things that live on the internet. My journey
+              into web development began back in 2019 when I started experimenting with custom HTML, and CSS themes.
+              What began as a casual interest in tweaking designs quickly turned into a fascination with the power of
+              code. As I learned to manipulate HTML and CSS through computer classes, I realized that these tools
+              allowed me to bring my ideas to life in ways I hadn&#39;t imagined.
             </p>
             <Link href="/about" className="text-sm flex items-center justify-start">
               Read More <span className="text-base">&rarr;</span>
@@ -43,33 +45,37 @@ export default function Home() {
           </div>
         </Card>
         {/* Projects Card */}
-        <Card className="col-span-12 lg:col-span-4 h-[25vh]  flex flex-col items-start justify-center">
+        <Card className="col-span-12 lg:col-span-4 h-[25vh] flex flex-col items-start justify-center">
           <div className="px-4 py-5 sm:p-6 space-y-3">
             <h2 className="text-lg font-semibold tracking-[-0.015em] text-zinc-950 dark:text-white">
-              Some Things I've Built
+              Some Things I&#39;ve Built
             </h2>
             <p className="text-sm leading-5 line-clamp-4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nisi earum error ut! Delectus, itaque
-              rem. Odio architecto eligendi expedita vitae, commodi a provident deleniti, maxime labore aspernatur,
-              delectus numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil.
+              I love building interactive projects for the web because it allows me to bring ideas to life in ways that
+              are both functional and engaging. Over the years, I&#39;ve had the opportunity to work on a wide range of
+              projects, from personal blogs to complex web applications and even simple games. Each project, no matter
+              how small or large, has been a chance to learn something new, refine my skills, and deepen my
+              understanding of core principles. I believe that the fundamentals are the foundation of great development,
+              so I regularly revisit the basics to sharpen my skills and ensure my code is both clean and efficient.
             </p>
-            <Link href="/about" className="text-sm flex items-center justify-start">
+            <Link href="/projects" className="text-sm flex items-center justify-start">
               Read More <span className="text-base">&rarr;</span>
             </Link>
           </div>
         </Card>
         {/* Work Experience Card */}
-        <Card className="col-span-12 lg:col-span-4 h-[25vh]">
+        <Card className="col-span-12 lg:col-span-4 h-[25vh] flex flex-col items-start justify-center">
           <div className="px-4 py-5 sm:p-6 space-y-3">
             <h2 className="text-lg font-semibold tracking-[-0.015em] text-zinc-950 dark:text-white">
-              Where I've Worked
+              Where I&#39;ve Worked
             </h2>
             <p className="text-sm leading-5 line-clamp-4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam nisi earum error ut! Delectus, itaque
-              rem. Odio architecto eligendi expedita vitae, commodi a provident deleniti, maxime labore aspernatur,
-              delectus numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil.
+              After graduating during the pandemic, I found myself at a crossroads, exploring various career paths to
+              find the right fit. It was a challenging time, filled with uncertainty, but it ultimately led me to the
+              world of web development. I quickly realized that it was something I genuinely enjoyed and felt driven to
+              pursue.
             </p>
-            <Link href="/about" className="text-sm flex items-center justify-start">
+            <Link href="/experience" className="text-sm flex items-center justify-start">
               Read More <span className="text-base">&rarr;</span>
             </Link>
           </div>
