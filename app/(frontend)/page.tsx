@@ -6,7 +6,7 @@ import { RiGithubLine, RiLinkedinBoxLine, RiSoundcloudLine, RiTwitterLine } from
 export default function Home() {
   return (
     <>
-      <main className="grid grid-cols-1 md:grid-cols-12 gap-6 p-8 max-h-dvh bg-white">
+      <main className="grid grid-cols-1 md:grid-cols-12 gap-6 p-8 max-h-dvh bg-gray-50">
         {/* Main Hero Section */}
         <Card className="col-span-12 h-[65dvh] flex items-center justify-center">
           <div className="space-y-4 w-11/12 mx-auto">
