@@ -33,3 +33,10 @@ export const footer_navigation: FooterNavProps[] = [
     icon: (props: IconType) => <RiLinkedinBoxFill {...props} />,
   },
 ];
+
+export interface IconProps {
+  name: string;
+  href: string;
+  ariaLabel: string;
+  icon: JSX.ElementType; // IconType here defines the icon as a component, not JSX
+}

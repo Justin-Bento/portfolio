@@ -15,7 +15,7 @@ export default function Page() {
         {/* Full-width Card */}
         <Card className="col-span-12 bg-secondary/10 border-transparent">
           <div className="min-h-[37vh] flex items-center w-11/12 mx-auto ">
-            <div className="">
+            <div className="space-y-3">
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem>
@@ -31,7 +31,7 @@ export default function Page() {
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
-              <h2 className="text-lg font-semibold tracking-wide leading-normal mb-1">
+              <h2 className="text-3xl lg:text-5xl font-extrabold capitalize dark:text-white">
                 Hello, allow me to introduce myself.
               </h2>
               <p className="text-balance text-black opacity-70 line-clamp-2">
@@ -46,8 +46,8 @@ export default function Page() {
         {/* 7-column Card (left-aligned) */}
         <Card className="col-span-12 md:col-span-7">
           <div className="min-h-[37vh] flex items-center w-11/12 mx-auto">
-            <div className="">
-              <h2 className="text-lg font-semibold tracking-wide leading-normal mb-1">
+            <div className="space-y-2">
+              <h2 className="text-xl capitalize font-semibold tracking-wide leading-normal">
                 Hello, this is a summary of my development background
               </h2>
               <p className="text-balance text-black opacity-70 line-clamp-2">
@@ -62,8 +62,8 @@ export default function Page() {
         {/* 5-column Card (right-aligned) */}
         <Card className="col-span-12 md:col-span-5">
           <div className="min-h-[37vh] flex items-center w-11/12 mx-auto">
-            <div className="">
-              <h2 className="text-lg font-semibold tracking-wide leading-normal mb-1">
+            <div className="space-y-2">
+              <h2 className="text-xl capitalize font-semibold tracking-wide leading-normal">
                 Hello, this is a summary of my design background!
               </h2>
               <p className="text-balance text-black opacity-70 line-clamp-2">
@@ -78,8 +78,8 @@ export default function Page() {
         {/* 5-column Card (left-aligned) */}
         <Card className="col-span-12 md:col-span-5">
           <div className="min-h-[37vh] flex items-center w-11/12 mx-auto">
-            <div className="">
-              <h2 className="text-lg font-semibold tracking-wide leading-normal mb-1">
+            <div className="space-y-2">
+              <h2 className="text-xl capitalize font-semibold tracking-wide leading-normal">
                 Hello, this is the About page!
               </h2>
               <p className="text-balance text-black opacity-70 line-clamp-2">
@@ -94,8 +94,8 @@ export default function Page() {
         {/* 7-column Card (right-aligned) */}
         <Card className="col-span-12 md:col-span-7">
           <div className="min-h-[37vh] flex items-center w-11/12 mx-auto">
-            <div className="">
-              <h2 className="text-lg font-semibold tracking-wide leading-normal mb-1">
+            <div className="space-y-2">
+              <h2 className="text-xl capitalize font-semibold tracking-wide leading-normal">
                 Hello, this is a summary me as a person!
               </h2>
               <p className="text-balance text-black opacity-70 line-clamp-2">
