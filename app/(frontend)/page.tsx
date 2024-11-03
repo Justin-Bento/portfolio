@@ -21,16 +21,16 @@ export default function Home() {
               </Link>
               <span className="block">|</span>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/Justin-Bento">
-                <RiGithubLine className="text-2xl" />
+                <RiGithubLine className="text-2xl hover:fill-primary" />
               </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/justin-bento">
-                <RiLinkedinBoxLine className="text-2xl" />
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/justinbento/">
+                <RiLinkedinBoxLine className="text-2xl hover:fill-primary" />
               </a>
               <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Justin-Bento">
-                <RiTwitterLine className="text-2xl" />
+                <RiTwitterLine className="text-2xl hover:fill-primary" />
               </a>
               <a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/fretfuze">
-                <RiSoundcloudLine className="text-2xl" />
+                <RiSoundcloudLine className="text-2xl hover:fill-primary" />
               </a>
             </div>
           </div>
