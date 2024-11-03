@@ -10,7 +10,7 @@ export default function Page() {
           <div className="min-h-[37vh] flex items-center w-11/12 mx-auto">
             <div className="">
               <h2 className="text-lg font-semibold tracking-wide leading-normal mb-1">
-                Hello, this is the About page!
+                Hello, allow me to introduce myself.
               </h2>
               <p className="text-balance text-black opacity-70 line-clamp-2">
                 You are inside a Bento Grid, a layout inspired by the traditional Japanese bento box, where items are
@@ -26,7 +26,7 @@ export default function Page() {
           <div className="min-h-[37vh] flex items-center w-11/12 mx-auto">
             <div className="">
               <h2 className="text-lg font-semibold tracking-wide leading-normal mb-1">
-                Hello, this is the About page!
+                Hello, this is a summary of my development background
               </h2>
               <p className="text-balance text-black opacity-70 line-clamp-2">
                 You are inside a Bento Grid, a layout inspired by the traditional Japanese bento box, where items are
@@ -42,7 +42,7 @@ export default function Page() {
           <div className="min-h-[37vh] flex items-center w-11/12 mx-auto">
             <div className="">
               <h2 className="text-lg font-semibold tracking-wide leading-normal mb-1">
-                Hello, this is the About page!
+                Hello, this is a summary of my design background!
               </h2>
               <p className="text-balance text-black opacity-70 line-clamp-2">
                 You are inside a Bento Grid, a layout inspired by the traditional Japanese bento box, where items are
@@ -74,7 +74,7 @@ export default function Page() {
           <div className="min-h-[37vh] flex items-center w-11/12 mx-auto">
             <div className="">
               <h2 className="text-lg font-semibold tracking-wide leading-normal mb-1">
-                Hello, this is the About page!
+                Hello, this is a summary me as a person!
               </h2>
               <p className="text-balance text-black opacity-70 line-clamp-2">
                 You are inside a Bento Grid, a layout inspired by the traditional Japanese bento box, where items are
