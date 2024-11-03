@@ -13,8 +13,8 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      black: "#040606",
-      white: "#fafcfc",
+      black: colors.zinc[950],
+      white: colors.zinc[50],
       primary: "#2e6570",
       secondary: "#83C6C6",
       accent: "#6edede",
