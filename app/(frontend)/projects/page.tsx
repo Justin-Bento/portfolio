@@ -31,7 +31,7 @@ export default async function Page() {
   return (
     <>
       <main className="grid grid-cols-1 md:grid-cols-12 gap-8 p-8">
-        <section className="bg-primary/10 col-span-12 p-8 rounded-lg">
+        <section className="bg-primary/10 col-span-12 p-8 rounded-lg min-h-[37vh] flex items-center">
           <div className="p-6 space-y-2">
             <Breadcrumb>
               <BreadcrumbList>
