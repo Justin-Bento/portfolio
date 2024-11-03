@@ -6,16 +6,16 @@ import { RiGithubLine, RiLinkedinBoxLine, RiSoundcloudLine, RiTwitterLine } from
 export default function Home() {
   return (
     <>
-      <main className="grid grid-cols-1 md:grid-cols-12 gap-6 p-8 max-h-dvh ">
+      <main className="grid grid-cols-1 md:grid-cols-12 p-4 lg:gap-6 lg:p-8 max-h-dvh ">
         {/* Main Hero Section */}
         <Card className="col-span-12 h-[65dvh] flex items-center justify-center">
           <div className="space-y-4 w-11/12 mx-auto">
             <p className="scroll-m-20 font-bold text-md">Hi, my name is</p>
-            <h1 className="scroll-m-20 font-extrabold text-6xl">Justin Bento</h1>
-            <p className="scroll-m-20 font-extrabold text-6xl opacity-70">I build things for the web.</p>
+            <h1 className="scroll-m-20 font-extrabold text-3xl lg:text-6xl">Justin Bento</h1>
+            <p className="scroll-m-20 font-extrabold text-3xl lg:text-6xl opacity-70">I build things for the web.</p>
             <div className="flex items-center gap-4">
               <Link href="/contact">
-                <Button variant="secondary" className="bg-gray-200 hover:bg-gray-200/70">
+                <Button variant="secondary" size="sm" className="bg-gray-200 hover:bg-gray-200/70">
                   Let&#39;s Connect
                 </Button>
               </Link>
