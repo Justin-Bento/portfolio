@@ -6,8 +6,8 @@ export default function Page() {
     <>
       <main className="grid grid-cols-1 md:grid-cols-12 gap-6 p-8">
         {/* Full-width Card */}
-        <Card className="col-span-12">
-          <div className="min-h-[37vh] flex items-center w-11/12 mx-auto">
+        <Card className="col-span-12 bg-secondary/10 border-transparent">
+          <div className="min-h-[37vh] flex items-center w-11/12 mx-auto ">
             <div className="">
               <h2 className="text-lg font-semibold tracking-wide leading-normal mb-1">
                 Hello, allow me to introduce myself.
