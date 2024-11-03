@@ -1,3 +1,10 @@
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 import { Card } from "@/components/ui/card";
 import React from "react";
 
@@ -9,6 +16,21 @@ export default function Page() {
         <Card className="col-span-12 bg-secondary/10 border-transparent">
           <div className="min-h-[37vh] flex items-center w-11/12 mx-auto ">
             <div className="">
+              <Breadcrumb>
+                <BreadcrumbList>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink href="/" className="font-medium text-black/50 dark:text-white">
+                      Home
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  <BreadcrumbSeparator />
+                  <BreadcrumbItem>
+                    <BreadcrumbLink href="/about" className="font-medium text-black">
+                      About
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                </BreadcrumbList>
+              </Breadcrumb>
               <h2 className="text-lg font-semibold tracking-wide leading-normal mb-1">
                 Hello, allow me to introduce myself.
               </h2>
