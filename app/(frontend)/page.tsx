@@ -36,8 +36,8 @@ export default function Home() {
           </div>
         </Card>
         {/* About Me Card */}
-        <Card className="col-span-12 lg:col-span-4 h-[25vh] flex flex-col items-start justify-center">
-          <div className="px-4 py-5 sm:p-6 space-y-3">
+        <Link href="/about" className="col-span-12 lg:col-span-4 h-[25vh] flex flex-col items-start justify-center">
+          <Card className="px-4 py-5 sm:p-6 space-y-3">
             <h2 className="text-md/7 font-semibold text-zinc-950 dark:text-white">About Me</h2>
             <p className="text-base/6 text-gray-700 sm:text-sm/6 dark:text-gray-400 line-clamp-4">
               Hello! My name is Justin, and I have a passion for creating things that live on the internet. My journey
@@ -49,11 +49,11 @@ export default function Home() {
             <Link href="/about" className="text-gray-700 text-sm gap-1 flex items-center justify-start">
               Read More <span className="text-base block">&rarr;</span>
             </Link>
-          </div>
-        </Card>
+          </Card>
+        </Link>
         {/* Projects Card */}
-        <Card className="col-span-12 lg:col-span-4 h-[25vh] flex flex-col items-start justify-center">
-          <div className="px-4 py-5 sm:p-6 space-y-3">
+        <Link href="/projects" className="col-span-12 lg:col-span-4 h-[25vh] flex flex-col items-start justify-center">
+          <Card className="px-4 py-5 sm:p-6 space-y-3">
             <h2 className="text-md/7 font-semibold text-zinc-950 dark:text-white">Some Things I&#39;ve Built</h2>
             <p className="text-base/6 text-gray-700 sm:text-sm/6 dark:text-gray-400 line-clamp-4">
               I love building interactive projects for the web because it allows me to bring ideas to life in ways that
@@ -66,11 +66,14 @@ export default function Home() {
             <Link href="/projects" className="text-gray-700 text-sm gap-1 flex items-center justify-start">
               Read More <span className="text-base block">&rarr;</span>
             </Link>
-          </div>
-        </Card>
+          </Card>
+        </Link>
         {/* Work Experience Card */}
-        <Card className="col-span-12 lg:col-span-4 h-[25vh] flex flex-col items-start justify-center">
-          <div className="px-4 py-5 sm:p-6 space-y-3">
+        <Link
+          href="/experience"
+          className="col-span-12 lg:col-span-4 h-[25vh] flex flex-col items-start justify-center"
+        >
+          <Card className="px-4 py-5 sm:p-6 space-y-3">
             <h2 className="text-md/7 font-semibold text-zinc-950 dark:text-white">Where I&#39;ve Worked</h2>
             <p className="text-base/6 text-gray-700 sm:text-sm/6 dark:text-gray-400 line-clamp-4">
               After graduating during the pandemic, I found myself at a crossroads, exploring various career paths to
@@ -81,8 +84,8 @@ export default function Home() {
             <Link href="/experience" className="text-gray-700 text-sm gap-1 flex items-center justify-start">
               Read More <span className="text-base block">&rarr;</span>
             </Link>
-          </div>
-        </Card>
+          </Card>
+        </Link>
       </main>
     </>
   );
