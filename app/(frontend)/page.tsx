@@ -15,7 +15,9 @@ export default function Home() {
             <p className="scroll-m-20 font-extrabold text-6xl opacity-70">I build things for the web.</p>
             <div className="flex items-center gap-4">
               <Link href="/contact">
-                <Button variant="secondary">Let&#39;s Connect</Button>
+                <Button variant="secondary" className="bg-gray-200 hover:bg-gray-200/70">
+                  Let&#39;s Connect
+                </Button>
               </Link>
               <span className="block">|</span>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/Justin-Bento">
