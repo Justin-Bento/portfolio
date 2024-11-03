@@ -30,7 +30,7 @@ export default async function Page() {
   const posts = await client.fetch(POSTS_QUERY, {}, options);
   return (
     <>
-      <main className="grid grid-cols-1 md:grid-cols-12 gap-8 p-8">
+      <main className="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 lg:gap-6 lg:p-8">
         <section className="bg-primary/10 col-span-12 p-8 rounded-lg min-h-[37vh] flex items-center">
           <div className="p-6 space-y-2">
             <Breadcrumb>
@@ -57,7 +57,7 @@ export default async function Page() {
           </div>
         </section>
         {posts.map((post: PostArticle) => (
-          <Card key={post._id} className="col-span-6 p-6">
+          <Card key={post._id} className="col-span-12 md:col-span-6 p-6">
             <div className="relative w-10 h-10 mb-4">
               <Image
                 fill
