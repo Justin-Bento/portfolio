@@ -12,10 +12,13 @@ import Link from "next/link";
 import { footer_navigation, IconProps } from "@/lib/data";
 import { RiMailLine, RiMapPin2Line } from "react-icons/ri";
 import ContactForm from "@/components/ContactForm";
+import Navigation from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function page() {
   return (
     <>
+      <Navigation />
       <main className="grid grid-cols-1 md:grid-cols-12 gap-4  p-4 lg:p-8">
         <Card className="min-h-[50dvh] flex items-center justify-center col-span-12 bg-[#c6afb1]/50 border-transparent">
           <div className="px-4 py-5 sm:p-6 space-y-2">
@@ -86,6 +89,7 @@ export default function page() {
           </div>
         </Card>
       </main>
+      <Footer />
     </>
   );
 }
