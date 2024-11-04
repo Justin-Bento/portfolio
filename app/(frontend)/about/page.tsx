@@ -7,10 +7,13 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Card } from "@/components/ui/card";
 import React from "react";
+import Navigation from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Page() {
   return (
     <>
+      <Navigation />
       <main className="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 lg:gap-6 lg:p-8">
         {/* Full-width Card */}
         <Card className="col-span-12 bg-secondary/10 border-transparent">
@@ -107,6 +110,7 @@ export default function Page() {
           </div>
         </Card>
       </main>
+      <Footer />
     </>
   );
 }
