@@ -20,7 +20,7 @@ export default function page() {
     <>
       <Navigation />
       <main className="grid grid-cols-1 md:grid-cols-12 gap-4  p-4 lg:p-8 3xl:container 3xl:mx-auto">
-        <Card className="min-h-[50dvh] flex items-center justify-center col-span-12 bg-[#c6afb1]/50 border-transparent">
+        <Card className="min-h-[65svh] flex items-center justify-center col-span-12 bg-[#c6afb1]/50 border-transparent">
           <div className="px-4 py-5 sm:p-6 space-y-2">
             <Breadcrumb>
               <BreadcrumbList>

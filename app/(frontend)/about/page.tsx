@@ -17,7 +17,7 @@ export default function Page() {
       <main className="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 lg:gap-6 lg:p-8 3xl:container 3xl:mx-auto">
         {/* Full-width Card */}
         <Card className="col-span-12 bg-secondary/10 border-transparent">
-          <div className="min-h-[37vh] flex items-center w-11/12 mx-auto ">
+          <div className="min-h-[65svh] flex items-center w-11/12 mx-auto ">
             <div className="space-y-3">
               <Breadcrumb>
                 <BreadcrumbList>

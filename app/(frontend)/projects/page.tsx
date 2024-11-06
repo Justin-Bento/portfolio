@@ -34,7 +34,7 @@ export default async function Page() {
     <>
       <Navigation />
       <main className="grid grid-cols-1 md:grid-cols-12 gap-4 p-4 lg:gap-6 lg:p-8 3xl:container 3xl:mx-auto">
-        <section className="bg-[#aba388]/30 col-span-12 p-8 rounded-lg min-h-[37vh] flex items-center">
+        <section className="bg-[#aba388]/30 col-span-12 p-8 rounded-lg min-h-[65svh] flex items-center">
           <div className="p-6 space-y-2">
             <Breadcrumb>
               <BreadcrumbList>
