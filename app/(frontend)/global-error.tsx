@@ -8,7 +8,7 @@ import { RiMailLine } from "react-icons/ri";
 export default function Error404() {
   const router = useRouter();
   return (
-    <div className="grid h-screen px-6 py-24 place-items-center sm:py-32 lg:px-8 [min-height:100dvh]">
+    <div className="grid h-screen px-6 py-24 place-items-center sm:py-32 lg:px-8 [min-height:100dvh] 3xl:container 3xl:mx-auto">
       <div className="">
         <p className="text-base font-semibold text-black dark:text-white">404</p>
         <h1 className="mt-4 text-3xl font-extrabold tracking-tight capitalize text-black dark:text-white sm:text-5xl">
