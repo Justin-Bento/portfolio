@@ -31,6 +31,12 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      screens: {
+        "2xl": "1536px",
+        // => @media (min-width: 1536px) { ... }
+        "3xl": "1600px",
+        // => @media (min-width: 1600px) { ... }
+      },
     },
   },
   plugins: [
