@@ -13,7 +13,7 @@ export interface FooterNavProps {
 export default function Footer() {
   return (
     <footer className="bg-gray-200 dark:bg-transparent dark:border-t dark:border-primary-100">
-      <div className="container mx-auto lg:px-8 py-16 md:flex md:items-center md:justify-between">
+      <div className="container mx-auto px-8 py-16 md:flex md:items-center md:justify-between">
         <div className="flex justify-start space-x-6 lg:justify-center md:order-2">
           {footer_navigation.map((item: FooterNavProps) => (
             <Link
