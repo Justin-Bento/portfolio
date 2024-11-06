@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <main className="grid grid-cols-1 md:grid-cols-12 p-4 lg:gap-6 lg:p-8 max-h-dvh 3xl:container 3xl:mx-auto">
+      <main className="grid grid-cols-1 md:grid-cols-12 p-4 lg:gap-6 lg:p-8 min-h-dvh 3xl:container 3xl:mx-auto">
         {/* Main Hero Section */}
         <Card className="col-span-12 h-[65dvh] flex items-center justify-center">
           <div className="space-y-4 w-11/12 mx-auto">
