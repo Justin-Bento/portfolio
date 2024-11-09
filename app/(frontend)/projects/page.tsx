@@ -33,36 +33,46 @@ export default async function Page() {
   return (
     <>
       <Navigation />
-      <main className="p-4 lg:gap-6 lg:p-8 3xl:container 3xl:mx-auto">
-        <section className="grid grid-cols-1 md:grid-cols-12 gap-4">
-          <Card className="min-h-[65svh] xl:min-h-[36rem] bg-[#aba388]/20 col-span-12 p-8 rounded-lg flex items-center">
-            <div className="p-6 space-y-2">
+      <main className="p-4 3xl:container lg:gap-6 lg:p-8 3xl:mx-auto">
+        <section className="grid grid-cols-1 gap-4 md:grid-cols-12">
+          <Card className="col-span-12 flex min-h-[65svh] items-center rounded-lg bg-[#aba388]/20 p-8 xl:min-h-[36rem]">
+            <div className="space-y-2 p-6">
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem>
-                    <BreadcrumbLink href="/" className="font-medium text-black/50 dark:text-white">
+                    <BreadcrumbLink
+                      href="/"
+                      className="font-medium text-black/50 dark:text-white"
+                    >
                       Home
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator />
                   <BreadcrumbItem>
-                    <BreadcrumbLink href="/Projects" className="font-medium text-black">
+                    <BreadcrumbLink
+                      href="/Projects"
+                      className="font-medium text-black"
+                    >
                       Projects
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
-              <h1 className="text-4xl lg:text-5xl font-bold dark:text-white">A Showcase of Creativity.</h1>
-              <p className="leading-7 lg:text-lg text-balance max-w-5xl mt-4 dark:text-white">
-                Welcome to my gallery! On this page&#44; you&#39;ll find a collection of my projects throughout my
-                career as a website developer&#46; If you have any questions or would like to discuss a potential
-                project or collaboration&#44; don&#39;t hesitate to reach out to me&#46;
+              <h1 className="text-4xl font-bold lg:text-5xl dark:text-white">
+                A Showcase of Creativity.
+              </h1>
+              <p className="mt-4 max-w-5xl text-balance leading-7 lg:text-lg dark:text-white">
+                Welcome to my gallery! On this page&#44; you&#39;ll find a
+                collection of my projects throughout my career as a website
+                developer&#46; If you have any questions or would like to
+                discuss a potential project or collaboration&#44; don&#39;t
+                hesitate to reach out to me&#46;
               </p>
             </div>
           </Card>
           {posts.map((post: PostArticle) => (
-            <Card key={post._id} className="col-span-12 md:col-span-6 p-6">
-              <div className="relative w-10 h-10 mb-4">
+            <Card key={post._id} className="col-span-12 p-6 md:col-span-6">
+              <div className="relative mb-4 h-10 w-10">
                 <Image
                   fill
                   src={urlFor(post.mainImage).url()}
@@ -71,11 +81,13 @@ export default async function Page() {
                   className="rounded-full"
                 />
               </div>
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white my-2">{post.title}</h2>
-              <p className="text-base font-medium text-gray-500 dark:text-gray-300 leading-relaxed">
+              <h2 className="my-2 text-2xl font-bold text-gray-900 dark:text-white">
+                {post.title}
+              </h2>
+              <p className="text-base font-medium leading-relaxed text-gray-500 dark:text-gray-300">
                 {post.description}
               </p>
-              <span className="block space-x-4 mt-4">
+              <span className="mt-4 block space-x-4">
                 <Link href={post.projectCode}>
                   <Button variant="secondary" size="sm">
                     <RiGithubLine />

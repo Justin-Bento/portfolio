@@ -19,53 +19,75 @@ export default function page() {
   return (
     <>
       <Navigation />
-      <main className="p-4 lg:p-8 3xl:container 3xl:mx-auto">
-        <section className="grid grid-cols-1 md:grid-cols-12 gap-4">
-          <Card className="min-h-[65svh] xl:min-h-[36rem] flex items-center justify-center col-span-12 bg-[#c6afb1]/20 border-transparent">
-            <div className="px-4 py-5 sm:p-6 space-y-2">
+      <main className="p-4 3xl:container lg:p-8 3xl:mx-auto">
+        <section className="grid grid-cols-1 gap-4 md:grid-cols-12">
+          <Card className="col-span-12 flex min-h-[65svh] items-center justify-center border-transparent bg-[#c6afb1]/20 xl:min-h-[36rem]">
+            <div className="space-y-2 px-4 py-5 sm:p-6">
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem>
-                    <BreadcrumbLink href="/" className="font-medium text-black dark:text-white">
+                    <BreadcrumbLink
+                      href="/"
+                      className="font-medium text-black dark:text-white"
+                    >
                       Home
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator />
                   <BreadcrumbItem>
-                    <BreadcrumbLink href="/Projects" className="font-medium text-primary dark:text-accent">
+                    <BreadcrumbLink
+                      href="/Projects"
+                      className="font-medium text-primary dark:text-accent"
+                    >
                       Contact
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
-              <h1 className="text-3xl lg:text-5xl font-extrabold tracking-tight capitalize dark:text-white">
+              <h1 className="text-3xl font-extrabold capitalize tracking-tight lg:text-5xl dark:text-white">
                 Let&#39;s work together!
               </h1>
-              <p className="text-sm/5 md:text-base/7 w-8/12 text-balance">
-                I&#39;d love to hear from you! Whether you have a project in mind, a collaboration opportunity, or just
-                want to say hello, feel free to reach out. Fill in the form below, and I&#39;ll get back to you as soon
-                as possible. Looking forward to starting a creative conversation!
+              <p className="w-8/12 text-balance text-sm/5 md:text-base/7">
+                I&#39;d love to hear from you! Whether you have a project in
+                mind, a collaboration opportunity, or just want to say hello,
+                feel free to reach out. Fill in the form below, and I&#39;ll get
+                back to you as soon as possible. Looking forward to starting a
+                creative conversation!
               </p>
             </div>
           </Card>
-          <Card className="min-h-[20dvh] col-span-12 md:col-span-6">
-            <div className="px-4 py-5 sm:p-6 grid lg:grid-cols-1 gap-16 my-16">
+          <Card className="col-span-12 min-h-[20dvh] md:col-span-6">
+            <div className="my-16 grid gap-16 px-4 py-5 sm:p-6 lg:grid-cols-1">
               <div id="contact-information" className="overflow-hidden">
-                <h2 className="text-base font-semibold capitalize font-display dark:text-primary-40">My Office</h2>
-                <p className="mt-2 text-base dark:text-primary-40">I have to list my location for legal reasons.</p>
-                <Button variant="ghost" className="inline-flex items-center gap-2 mt-2 ">
+                <h2 className="font-display dark:text-primary-40 text-base font-semibold capitalize">
+                  My Office
+                </h2>
+                <p className="dark:text-primary-40 mt-2 text-base">
+                  I have to list my location for legal reasons.
+                </p>
+                <Button
+                  variant="ghost"
+                  className="mt-2 inline-flex items-center gap-2"
+                >
                   <RiMapPin2Line />
                   Toronto Ontario
                 </Button>
-                <hr className="my-6 border-1 border-black/20 dark:border-gray-50" />
-                <h2 className="text-base font-semibold capitalize font-display ">Email Me</h2>
-                <Button variant="ghost" className="inline-flex items-center gap-2 mt-2 normal-case ">
+                <hr className="border-1 my-6 border-black/20 dark:border-gray-50" />
+                <h2 className="font-display text-base font-semibold capitalize">
+                  Email Me
+                </h2>
+                <Button
+                  variant="ghost"
+                  className="mt-2 inline-flex items-center gap-2 normal-case"
+                >
                   <RiMailLine />
                   contact@justinbento.com
                 </Button>
-                <hr className="my-6 border-1 border-black/20 dark:border-gray-50" />
-                <h2 className="text-base font-semibold capitalize font-display ">Social&#39;s</h2>
-                <div className="flex items-center gap-2 mt-4">
+                <hr className="border-1 my-6 border-black/20 dark:border-gray-50" />
+                <h2 className="font-display text-base font-semibold capitalize">
+                  Social&#39;s
+                </h2>
+                <div className="mt-4 flex items-center gap-2">
                   {footer_navigation.map((item: IconProps) => (
                     <Link
                       key={item.name}
@@ -75,8 +97,12 @@ export default function page() {
                       aria-label="external-link-to-social-media"
                     >
                       <span className="sr-only">{item.name}</span>
-                      <Button variant="outline" size="icon" className="border-primary-50">
-                        <item.icon className="w-6 h-6" aria-hidden="true" />
+                      <Button
+                        variant="outline"
+                        size="icon"
+                        className="border-primary-50"
+                      >
+                        <item.icon className="h-6 w-6" aria-hidden="true" />
                       </Button>
                     </Link>
                   ))}
@@ -84,7 +110,7 @@ export default function page() {
               </div>
             </div>
           </Card>
-          <Card className="min-h-[20dvh] col-span-12 md:col-span-6">
+          <Card className="col-span-12 min-h-[20dvh] md:col-span-6">
             <div className="px-4 py-5 sm:p-6">
               <ContactForm />
             </div>
