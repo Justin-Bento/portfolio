@@ -23,7 +23,7 @@ export default function ContactForm() {
             id="firstName"
             autoComplete="family-name"
             placeholder="eg: john, james, smith"
-            className="ring-1 ring-black dark:ring-white/70"
+            className="ring-1 ring-black/50 dark:ring-white/70"
           />
           <ValidationError prefix="firstName" field="firstName" errors={state.errors} />
         </fieldset>
@@ -37,7 +37,7 @@ export default function ContactForm() {
             id="lastName"
             autoComplete="lastName"
             placeholder="eg: doe, maine..."
-            className="ring-1 ring-black dark:ring-white/70"
+            className="ring-1 ring-black/50 dark:ring-white/70"
           />
           <ValidationError prefix="lastName" field="lastName" errors={state.errors} />
           {/* This is the end Of Lats Name Input  */}
@@ -51,7 +51,7 @@ export default function ContactForm() {
             id="email"
             autoComplete="family-name"
             placeholder="eg: smith-doe@example.com"
-            className="ring-1 ring-black dark:ring-white/70"
+            className="ring-1 ring-black/50 dark:ring-white/70"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
           {/* This is the end Of Email Input  */}
@@ -60,7 +60,7 @@ export default function ContactForm() {
           <Label htmlFor="userMessage" defaultValue="userMessage">
             Your Message
           </Label>
-          <Textarea id="userMessage" name="userMessage" className="ring-1 ring-black dark:ring-white/70 my-1.5" />
+          <Textarea id="userMessage" name="userMessage" className="ring-1 ring-black/50 dark:ring-white/70 my-1.5" />
           <ValidationError prefix="userMessage" field="userMessage" errors={state.errors} />
         </fieldset>
         <fieldset className="space-y-3">
