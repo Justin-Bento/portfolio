@@ -9,6 +9,19 @@ import { Card } from "@/components/ui/card";
 import React from "react";
 import Navigation from "@/components/Header";
 import Footer from "@/components/Footer";
+import {
+  RiArtboardLine,
+  RiCss3Line,
+  RiGameLine,
+  RiHtml5Line,
+  RiJavascriptLine,
+  RiMusicLine,
+  RiPantoneLine,
+  RiPencilRulerLine,
+  RiPlantLine,
+  RiReactjsLine,
+  RiTailwindCssLine,
+} from "react-icons/ri";
 
 export default function Page() {
   return (
@@ -69,6 +82,13 @@ export default function Page() {
                   this grid is like a carefully placed item within a bento box,
                   designed to create harmony and balance.
                 </p>
+                <span className="mt-4 inline-flex items-center gap-4">
+                  <RiHtml5Line className="size-7" />
+                  <RiCss3Line className="size-7" />
+                  <RiJavascriptLine className="size-7" />
+                  <RiTailwindCssLine className="size-7" />
+                  <RiReactjsLine className="size-7" />
+                </span>
               </div>
             </div>
           </Card>
@@ -87,6 +107,11 @@ export default function Page() {
                   this grid is like a carefully placed item within a bento box,
                   designed to create harmony and balance.
                 </p>
+                <span className="mt-4 inline-flex items-center gap-4">
+                  <RiPencilRulerLine className="size-7" />
+                  <RiArtboardLine className="size-7" />
+                  <RiPantoneLine className="size-7" />
+                </span>
               </div>
             </div>
           </Card>
@@ -105,6 +130,11 @@ export default function Page() {
                   this grid is like a carefully placed item within a bento box,
                   designed to create harmony and balance.
                 </p>
+                <span className="mt-4 inline-flex items-center gap-4">
+                  <RiPencilRulerLine className="size-7" />
+                  <RiArtboardLine className="size-7" />
+                  <RiPantoneLine className="size-7" />
+                </span>
               </div>
             </div>
           </Card>
@@ -123,6 +153,11 @@ export default function Page() {
                   this grid is like a carefully placed item within a bento box,
                   designed to create harmony and balance.
                 </p>
+                <span className="mt-4 inline-flex items-center gap-4">
+                  <RiMusicLine className="size-7" />
+                  <RiGameLine className="size-7" />
+                  <RiPlantLine className="size-7" />
+                </span>
               </div>
             </div>
           </Card>
