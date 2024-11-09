@@ -143,10 +143,10 @@ export default function Home() {
                 driven to pursue.
               </p>
               <Link
-                href="/experience"
+                href="/projects"
                 className="flex items-center justify-start gap-1 text-sm text-gray-700"
               >
-                Read More <span className="block text-base">&rarr;</span>
+                Coming Soon <span className="block text-base">&rarr;</span>
               </Link>
             </Card>
           </Link>
