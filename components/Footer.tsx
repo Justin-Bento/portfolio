@@ -12,9 +12,9 @@ export interface FooterNavProps {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-200 dark:bg-transparent dark:border-t dark:border-primary-100">
-      <div className="container mx-auto px-8 py-16 md:flex md:items-center md:justify-between">
-        <div className="flex justify-start space-x-6 lg:justify-center md:order-2">
+    <footer className="dark:border-primary-100 bg-gray-200 dark:border-t dark:bg-transparent">
+      <div className="px-8 py-16 md:flex md:items-center md:justify-between">
+        <div className="flex justify-start space-x-6 md:order-2 lg:justify-center">
           {footer_navigation.map((item: FooterNavProps) => (
             <Link
               key={item.name}
@@ -25,13 +25,17 @@ export default function Footer() {
             >
               <span className="sr-only">{item.name}</span>
               {/* Properly rendering the icon component */}
-              <item.icon className="w-6 h-6 fill-black dark:fill-white/80" aria-hidden="true" />
+              <item.icon
+                className="h-6 w-6 fill-black dark:fill-white/80"
+                aria-hidden="true"
+              />
             </Link>
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-sm text-black leading-7 dark:text-white">
-            &copy; {new Date().getFullYear()} Built and designed by Justin Bento.
+          <p className="text-sm leading-7 text-black dark:text-white">
+            &copy; {new Date().getFullYear()} Built and designed by Justin
+            Bento.
           </p>
         </div>
       </div>
