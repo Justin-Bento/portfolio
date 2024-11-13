@@ -70,95 +70,87 @@ export default function Page() {
 
           {/* 7-column Card (left-aligned) */}
           <Card className="col-span-12 md:col-span-7">
-            <div className="mx-auto flex min-h-[37vh] w-11/12 items-center">
-              <div className="space-y-2">
-                <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-                  Hello, this is a summary of my development background
-                </h2>
-                <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                  You are inside a Bento Grid, a layout inspired by the
-                  traditional Japanese bento box, where items are arranged in a
-                  clean, organized, and visually pleasing way. Each section in
-                  this grid is like a carefully placed item within a bento box,
-                  designed to create harmony and balance.
-                </p>
-                <span className="mt-4 inline-flex items-center gap-4">
-                  <RiHtml5Line className="size-7" />
-                  <RiCss3Line className="size-7" />
-                  <RiJavascriptLine className="size-7" />
-                  <RiTailwindCssLine className="size-7" />
-                  <RiReactjsLine className="size-7" />
-                </span>
-              </div>
+            <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
+              <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
+                Hello, this is a summary of my development background
+              </h2>
+              <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
+                You are inside a Bento Grid, a layout inspired by the
+                traditional Japanese bento box, where items are arranged in a
+                clean, organized, and visually pleasing way. Each section in
+                this grid is like a carefully placed item within a bento box,
+                designed to create harmony and balance.
+              </p>
+              <span className="mt-4 inline-flex items-center gap-4">
+                <RiHtml5Line className="size-7" />
+                <RiCss3Line className="size-7" />
+                <RiJavascriptLine className="size-7" />
+                <RiTailwindCssLine className="size-7" />
+                <RiReactjsLine className="size-7" />
+              </span>
             </div>
           </Card>
 
           {/* 5-column Card (right-aligned) */}
           <Card className="col-span-12 md:col-span-5">
-            <div className="mx-auto flex min-h-[37vh] w-11/12 items-center">
-              <div className="space-y-2">
-                <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-                  Hello, this is a summary of my design background!
-                </h2>
-                <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                  You are inside a Bento Grid, a layout inspired by the
-                  traditional Japanese bento box, where items are arranged in a
-                  clean, organized, and visually pleasing way. Each section in
-                  this grid is like a carefully placed item within a bento box,
-                  designed to create harmony and balance.
-                </p>
-                <span className="mt-4 inline-flex items-center gap-4">
-                  <RiPencilRulerLine className="size-7" />
-                  <RiArtboardLine className="size-7" />
-                  <RiPantoneLine className="size-7" />
-                </span>
-              </div>
+            <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
+              <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
+                Hello, this is a summary of my design background!
+              </h2>
+              <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
+                You are inside a Bento Grid, a layout inspired by the
+                traditional Japanese bento box, where items are arranged in a
+                clean, organized, and visually pleasing way. Each section in
+                this grid is like a carefully placed item within a bento box,
+                designed to create harmony and balance.
+              </p>
+              <span className="mt-4 inline-flex items-center gap-4">
+                <RiPencilRulerLine className="size-7" />
+                <RiArtboardLine className="size-7" />
+                <RiPantoneLine className="size-7" />
+              </span>
             </div>
           </Card>
 
           {/* 5-column Card (left-aligned) */}
           <Card className="col-span-12 md:col-span-5">
-            <div className="mx-auto flex min-h-[37vh] w-11/12 items-center">
-              <div className="space-y-2">
-                <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-                  Hello, this is the About page!
-                </h2>
-                <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                  You are inside a Bento Grid, a layout inspired by the
-                  traditional Japanese bento box, where items are arranged in a
-                  clean, organized, and visually pleasing way. Each section in
-                  this grid is like a carefully placed item within a bento box,
-                  designed to create harmony and balance.
-                </p>
-                <span className="mt-4 inline-flex items-center gap-4">
-                  <RiPencilRulerLine className="size-7" />
-                  <RiArtboardLine className="size-7" />
-                  <RiPantoneLine className="size-7" />
-                </span>
-              </div>
+            <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
+              <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
+                Hello, this is the About page!
+              </h2>
+              <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
+                You are inside a Bento Grid, a layout inspired by the
+                traditional Japanese bento box, where items are arranged in a
+                clean, organized, and visually pleasing way. Each section in
+                this grid is like a carefully placed item within a bento box,
+                designed to create harmony and balance.
+              </p>
+              <span className="mt-4 inline-flex items-center gap-4">
+                <RiPencilRulerLine className="size-7" />
+                <RiArtboardLine className="size-7" />
+                <RiPantoneLine className="size-7" />
+              </span>
             </div>
           </Card>
 
           {/* 7-column Card (right-aligned) */}
           <Card className="col-span-12 md:col-span-7">
-            <div className="mx-auto flex min-h-[37vh] w-11/12 items-center">
-              <div className="space-y-2">
-                <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-                  Hello, this is a summary me as a person!
-                </h2>
-                <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                  You are inside a Bento Grid, a layout inspired by the
-                  traditional Japanese bento box, where items are arranged in a
-                  clean, organized, and visually pleasing way. Each section in
-                  this grid is like a carefully placed item within a bento box,
-                  designed to create harmony and balance.
-                </p>
-                <span className="mt-4 inline-flex items-center gap-4">
-                  <RiMusicLine className="size-7" />
-                  <RiGameLine className="size-7" />
-                  <RiPlantLine className="size-7" />
-                </span>
-              </div>
+            <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
+              <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
+                Hello, this is a summary me as a person!
+              </h2>
+              <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
+                You are inside a Bento Grid, a layout inspired by the
+                traditional Japanese bento box, where items are arranged in a
+                clean, organized, and visually pleasing way. Each section in
+                this grid is like a carefully placed item within a bento box,
+                designed to create harmony and balance.
+              </p>
+              <span className="mt-4 inline-flex items-center gap-4">
+                <RiMusicLine className="size-7" />
+                <RiGameLine className="size-7" />
+                <RiPlantLine className="size-7" />
+              </span>
             </div>
           </Card>
         </section>
