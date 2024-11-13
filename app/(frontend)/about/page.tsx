@@ -57,7 +57,7 @@ export default function Page() {
                 <h2 className="text-3xl font-extrabold capitalize lg:text-5xl dark:text-white">
                   Hello, allow me to introduce myself.
                 </h2>
-                <p className="line-clamp-2 text-balance text-black opacity-70">
+                <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
                   You are inside a Bento Grid, a layout inspired by the
                   traditional Japanese bento box, where items are arranged in a
                   clean, organized, and visually pleasing way. Each section in
@@ -75,7 +75,7 @@ export default function Page() {
                 <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                   Hello, this is a summary of my development background
                 </h2>
-                <p className="line-clamp-2 text-balance text-black opacity-70">
+                <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
                   You are inside a Bento Grid, a layout inspired by the
                   traditional Japanese bento box, where items are arranged in a
                   clean, organized, and visually pleasing way. Each section in
@@ -100,7 +100,7 @@ export default function Page() {
                 <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                   Hello, this is a summary of my design background!
                 </h2>
-                <p className="line-clamp-2 text-balance text-black opacity-70">
+                <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
                   You are inside a Bento Grid, a layout inspired by the
                   traditional Japanese bento box, where items are arranged in a
                   clean, organized, and visually pleasing way. Each section in
@@ -123,7 +123,7 @@ export default function Page() {
                 <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                   Hello, this is the About page!
                 </h2>
-                <p className="line-clamp-2 text-balance text-black opacity-70">
+                <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
                   You are inside a Bento Grid, a layout inspired by the
                   traditional Japanese bento box, where items are arranged in a
                   clean, organized, and visually pleasing way. Each section in
@@ -146,7 +146,7 @@ export default function Page() {
                 <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                   Hello, this is a summary me as a person!
                 </h2>
-                <p className="line-clamp-2 text-balance text-black opacity-70">
+                <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
                   You are inside a Bento Grid, a layout inspired by the
                   traditional Japanese bento box, where items are arranged in a
                   clean, organized, and visually pleasing way. Each section in
