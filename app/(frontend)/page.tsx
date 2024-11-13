@@ -37,34 +37,34 @@ export default function Home() {
                   </Button>
                 </Link>
                 <span className="block">|</span>
-                <a
+                <Link
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/Justin-Bento"
                 >
                   <RiGithubLine className="text-2xl hover:fill-primary" />
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://www.linkedin.com/in/justinbento/"
                 >
                   <RiLinkedinBoxLine className="text-2xl hover:fill-primary" />
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://twitter.com/Justin-Bento"
                 >
                   <RiTwitterLine className="text-2xl hover:fill-primary" />
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://soundcloud.com/fretfuze"
                 >
                   <RiSoundcloudLine className="text-2xl hover:fill-primary" />
-                </a>
+                </Link>
               </div>
             </div>
           </Card>
