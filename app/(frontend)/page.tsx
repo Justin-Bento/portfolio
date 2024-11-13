@@ -73,7 +73,7 @@ export default function Home() {
             href="/about"
             className="col-span-12 flex flex-col items-start justify-center lg:col-span-4"
           >
-            <Card className="h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+            <Card className="group h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
               <h2 className="text-md/7 text-zinc-950 font-semibold dark:text-white">
                 About Me
               </h2>
@@ -89,7 +89,7 @@ export default function Home() {
               </p>
               <Link
                 href="/about"
-                className="flex items-center justify-start gap-1 text-sm text-gray-700"
+                className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400"
               >
                 Read More <span className="block text-base">&rarr;</span>
               </Link>
@@ -100,7 +100,7 @@ export default function Home() {
             href="/projects"
             className="col-span-12 flex flex-col items-start justify-center lg:col-span-4"
           >
-            <Card className="h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+            <Card className="group h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
               <h2 className="text-md/7 text-zinc-950 font-semibold dark:text-white">
                 Some Things I&#39;ve Built
               </h2>
@@ -119,7 +119,7 @@ export default function Home() {
               </p>
               <Link
                 href="/projects"
-                className="flex items-center justify-start gap-1 text-sm text-gray-700"
+                className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400"
               >
                 Read More <span className="block text-base">&rarr;</span>
               </Link>
@@ -130,7 +130,7 @@ export default function Home() {
             href="/experience"
             className="col-span-12 flex flex-col items-start justify-center lg:col-span-4"
           >
-            <Card className="h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+            <Card className="group h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
               <h2 className="text-md/7 text-zinc-950 font-semibold dark:text-white">
                 Where I&#39;ve Worked
               </h2>
@@ -144,7 +144,7 @@ export default function Home() {
               </p>
               <Link
                 href="/projects"
-                className="flex items-center justify-start gap-1 text-sm text-gray-700"
+                className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400"
               >
                 Coming Soon <span className="block text-base">&rarr;</span>
               </Link>
