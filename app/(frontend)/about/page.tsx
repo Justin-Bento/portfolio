@@ -47,7 +47,7 @@ export default function Page() {
                     <BreadcrumbItem>
                       <BreadcrumbLink
                         href="/about"
-                        className="font-medium text-black"
+                        className="font-medium text-black underline dark:text-white"
                       >
                         About
                       </BreadcrumbLink>

@@ -37,7 +37,7 @@ export default function page() {
                   <BreadcrumbItem>
                     <BreadcrumbLink
                       href="/Projects"
-                      className="font-medium text-primary dark:text-accent"
+                      className="font-medium text-primary underline dark:text-white"
                     >
                       Contact
                     </BreadcrumbLink>

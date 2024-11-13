@@ -51,7 +51,7 @@ export default async function Page() {
                   <BreadcrumbItem>
                     <BreadcrumbLink
                       href="/Projects"
-                      className="font-medium text-black"
+                      className="font-medium text-black underline dark:text-white"
                     >
                       Projects
                     </BreadcrumbLink>
