@@ -67,7 +67,6 @@ export default function Page() {
               </div>
             </div>
           </Card>
-
           {/* 7-column Card (left-aligned) */}
           <Card className="col-span-12 md:col-span-7">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
@@ -75,11 +74,12 @@ export default function Page() {
                 How I Became a Web Developer?
               </h2>
               <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                You are inside a Bento Grid, a layout inspired by the
-                traditional Japanese bento box, where items are arranged in a
-                clean, organized, and visually pleasing way. Each section in
-                this grid is like a carefully placed item within a bento box,
-                designed to create harmony and balance.
+                I graduated from Humber's Multimedia Design and Development
+                program, where I gained hands-on experience in creating
+                interactive digital media. From web coding to user interface
+                (UI) design and front-end development, I built a solid
+                foundation in crafting engaging and user-friendly online
+                experiences.
               </p>
               <span className="mt-4 inline-flex items-center gap-4">
                 <RiHtml5Line className="size-7" />
@@ -90,7 +90,6 @@ export default function Page() {
               </span>
             </div>
           </Card>
-
           {/* 5-column Card (right-aligned) */}
           <Card className="col-span-12 md:col-span-5">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
@@ -98,11 +97,10 @@ export default function Page() {
                 How I Approach Design and Creativity!
               </h2>
               <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                You are inside a Bento Grid, a layout inspired by the
-                traditional Japanese bento box, where items are arranged in a
-                clean, organized, and visually pleasing way. Each section in
-                this grid is like a carefully placed item within a bento box,
-                designed to create harmony and balance.
+                During my time in Humber's Multimedia Design and Development
+                program, I learned how to bring ideas to life through by
+                creating interactive digital experiences, and build a strong
+                foundation in creative and functional thinking.
               </p>
               <span className="mt-4 inline-flex items-center gap-4">
                 <RiPencilRulerLine className="size-7" />
@@ -111,7 +109,6 @@ export default function Page() {
               </span>
             </div>
           </Card>
-
           {/* 5-column Card (left-aligned) */}
           <Card className="col-span-12 md:col-span-5">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
@@ -119,11 +116,10 @@ export default function Page() {
                 The Human Behind the Code!
               </h2>
               <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                You are inside a Bento Grid, a layout inspired by the
-                traditional Japanese bento box, where items are arranged in a
-                clean, organized, and visually pleasing way. Each section in
-                this grid is like a carefully placed item within a bento box,
-                designed to create harmony and balance.
+                Justin Bento was born in Toronto but spent much of his childhood
+                in the Caribbean. Growing up with a blend of multiple cultures
+                and experiences shaped his ability to see the world from
+                different perspectives, fostering creativity and adaptability
               </p>
               <span className="mt-4 inline-flex items-center gap-4">
                 <RiPencilRulerLine className="size-7" />
@@ -132,7 +128,6 @@ export default function Page() {
               </span>
             </div>
           </Card>
-
           {/* 7-column Card (right-aligned) */}
           <Card className="col-span-12 md:col-span-7">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
@@ -140,11 +135,11 @@ export default function Page() {
                 About Me: Beyond the Keyboard!
               </h2>
               <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                You are inside a Bento Grid, a layout inspired by the
-                traditional Japanese bento box, where items are arranged in a
-                clean, organized, and visually pleasing way. Each section in
-                this grid is like a carefully placed item within a bento box,
-                designed to create harmony and balance.
+                Outside of coding, I enjoy playing guitar and creating music.
+                Music gives me a chance to step away from the screen and express
+                myself in a completely different way. It&#39;s not just a way to
+                relax but also a creative outlet that keeps my mind sharp and my
+                ideas flowing.
               </p>
               <span className="mt-4 inline-flex items-center gap-4">
                 <RiMusicLine className="size-7" />
