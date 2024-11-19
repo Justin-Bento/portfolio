@@ -24,7 +24,7 @@ export default function Home() {
                 Justin Bento
               </h1>
               <p className="scroll-m-20 text-3xl font-extrabold opacity-70 lg:text-6xl">
-                I build things for the web.
+                I bring ideas to life one pixel at a time.
               </p>
               <div className="flex items-center gap-4">
                 <Link href="/contact">
