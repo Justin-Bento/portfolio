@@ -79,9 +79,9 @@ export default function Home() {
             </div>
           </Card>
           {/* About Me Card */}
-          <div className="col-span-12 lg:col-span-4">
+          <div className="group col-span-12 lg:col-span-4">
             <Link href="/about">
-              <Card className="group flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+              <Card className="flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 transition-all group-hover:bg-accent/30 sm:p-6 xl:h-64">
                 <h2 className="text-md/7 font-semibold text-gray-950 dark:text-white">
                   About Me
                 </h2>
@@ -103,9 +103,9 @@ export default function Home() {
             </Link>
           </div>
           {/* Projects Card */}
-          <div className="col-span-12 lg:col-span-4">
+          <div className="group col-span-12 lg:col-span-4">
             <Link href="/projects">
-              <Card className="group flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+              <Card className="flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 transition-all group-hover:bg-[#aba388]/30 sm:p-6 xl:h-64">
                 <h2 className="text-md/7 font-semibold text-gray-950 dark:text-white">
                   Some Things I&#39;ve Built
                 </h2>
@@ -129,9 +129,9 @@ export default function Home() {
             </Link>
           </div>
           {/* Work Experience Card */}
-          <div className="col-span-12 lg:col-span-4">
+          <div className="group col-span-12 lg:col-span-4">
             <Link href="/experience">
-              <Card className="group flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+              <Card className="flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 transition-all group-hover:bg-secondary/30 sm:p-6 xl:h-64">
                 <h2 className="text-md/7 font-semibold text-gray-950 dark:text-white">
                   Where I&#39;ve Worked
                 </h2>
