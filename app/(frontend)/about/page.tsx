@@ -55,14 +55,14 @@ export default function Page() {
                   </BreadcrumbList>
                 </Breadcrumb>
                 <h2 className="text-3xl font-extrabold capitalize lg:text-5xl dark:text-white">
-                  Hello, allow me to introduce myself.
+                  A Little About Me.
                 </h2>
                 <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                  You are inside a Bento Grid, a layout inspired by the
-                  traditional Japanese bento box, where items are arranged in a
-                  clean, organized, and visually pleasing way. Each section in
-                  this grid is like a carefully placed item within a bento box,
-                  designed to create harmony and balance.
+                  Justin Bento is a Toronto-born website developer with a unique
+                  blend of experiences that shape the way I approach my work. I
+                  am passionate about creating and maintaining websites that
+                  leverage modern tools tools like JavaScript, React, Node.js,
+                  and PostgreSQL.
                 </p>
               </div>
             </div>
