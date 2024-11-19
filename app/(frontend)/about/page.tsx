@@ -72,7 +72,7 @@ export default function Page() {
           <Card className="col-span-12 md:col-span-7">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-                Hello, this is a summary of my development background
+                How I Became a Web Developer?
               </h2>
               <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
                 You are inside a Bento Grid, a layout inspired by the
@@ -95,7 +95,7 @@ export default function Page() {
           <Card className="col-span-12 md:col-span-5">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-                Hello, this is a summary of my design background!
+                How I Approach Design and Creativity!
               </h2>
               <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
                 You are inside a Bento Grid, a layout inspired by the
@@ -116,7 +116,7 @@ export default function Page() {
           <Card className="col-span-12 md:col-span-5">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-                Hello, this is the About page!
+                The Human Behind the Code!
               </h2>
               <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
                 You are inside a Bento Grid, a layout inspired by the
@@ -137,7 +137,7 @@ export default function Page() {
           <Card className="col-span-12 md:col-span-7">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-                Hello, this is a summary me as a person!
+                About Me: Beyond the Keyboard!
               </h2>
               <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
                 You are inside a Bento Grid, a layout inspired by the
