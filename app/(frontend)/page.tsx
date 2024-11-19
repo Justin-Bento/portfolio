@@ -131,7 +131,7 @@ export default function Home() {
           {/* Work Experience Card */}
           <div className="group col-span-12 lg:col-span-4">
             <Link href="/experience">
-              <Card className="flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 transition-all group-hover:bg-secondary/30 sm:p-6 xl:h-64">
+              <Card className="flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 transition-all group-hover:bg-[#c6afb1]/30 sm:p-6 xl:h-64">
                 <h2 className="text-md/7 font-semibold text-gray-950 dark:text-white">
                   Where I&#39;ve Worked
                 </h2>
