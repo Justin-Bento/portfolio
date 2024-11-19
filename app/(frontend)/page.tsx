@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <main className="min-h-dvh 3xl:container lg:p-8 3xl:mx-auto">
+      <main className="min-h-dvh p-4 3xl:container lg:p-8 3xl:mx-auto">
         <section className="grid grid-cols-1 gap-6 md:grid-cols-12">
           {/* Main Hero Section */}
           <Card className="col-span-12 flex min-h-[65svh] items-center justify-center lg:min-h-[50rem]">
