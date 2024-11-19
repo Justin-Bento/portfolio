@@ -17,67 +17,69 @@ export default function Home() {
       <main className="min-h-dvh p-4 3xl:container lg:p-8 3xl:mx-auto">
         <section className="grid grid-cols-1 gap-6 md:grid-cols-12">
           {/* Main Hero Section */}
-          <Card className="col-span-12 flex min-h-[65svh] items-center justify-center lg:min-h-[50rem]">
-            <div className="mx-auto w-11/12 space-y-4">
-              <p className="text-md scroll-m-20 font-bold">Hi, my name is</p>
-              <h1 className="scroll-m-20 text-3xl font-extrabold lg:text-6xl">
-                Justin Bento
-              </h1>
-              <p className="scroll-m-20 text-3xl font-extrabold opacity-70 lg:text-6xl">
-                I bring ideas to life one pixel at a time.
-              </p>
-              <ul className="flex list-none items-center gap-4">
-                <li className="">
-                  <Link href="/contact">
-                    <Button
-                      variant="secondary"
-                      size="sm"
-                      className="bg-gray-200 hover:bg-gray-200/70"
+          <div className="group col-span-12">
+            <Card className="flex min-h-[65svh] items-center justify-center lg:min-h-[50rem]">
+              <div className="mx-auto w-10/12 space-y-4">
+                <p className="text-md scroll-m-20 font-bold">Hi, my name is</p>
+                <h1 className="scroll-m-20 text-3xl font-extrabold lg:text-6xl">
+                  Justin Bento
+                </h1>
+                <p className="text-3xl font-extrabold opacity-70 lg:text-6xl">
+                  I bring ideas to life one pixel at a time.
+                </p>
+                <ul className="flex list-none items-center gap-4">
+                  <li className="">
+                    <Link href="/contact">
+                      <Button
+                        variant="secondary"
+                        size="sm"
+                        className="bg-gray-200 hover:bg-gray-200/70"
+                      >
+                        Let&#39;s Connect
+                      </Button>
+                    </Link>
+                  </li>
+                  <li className="">|</li>
+                  <li className="">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/Justin-Bento"
                     >
-                      Let&#39;s Connect
-                    </Button>
-                  </Link>
-                </li>
-                <li className="">|</li>
-                <li className="">
-                  <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/Justin-Bento"
-                  >
-                    <RiGithubLine className="text-2xl hover:fill-primary" />
-                  </Link>
-                </li>
-                <li className="">
-                  <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.linkedin.com/in/justinbento/"
-                  >
-                    <RiLinkedinBoxLine className="text-2xl hover:fill-primary" />
-                  </Link>
-                </li>
-                <li className="">
-                  <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://twitter.com/Justin-Bento"
-                  >
-                    <RiTwitterLine className="text-2xl hover:fill-primary" />
-                  </Link>
-                </li>
-                <li className="">
-                  <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://soundcloud.com/fretfuze"
-                  >
-                    <RiSoundcloudLine className="text-2xl hover:fill-primary" />
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </Card>
+                      <RiGithubLine className="text-2xl hover:fill-primary" />
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.linkedin.com/in/justinbento/"
+                    >
+                      <RiLinkedinBoxLine className="text-2xl hover:fill-primary" />
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://twitter.com/Justin-Bento"
+                    >
+                      <RiTwitterLine className="text-2xl hover:fill-primary" />
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://soundcloud.com/fretfuze"
+                    >
+                      <RiSoundcloudLine className="text-2xl hover:fill-primary" />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </Card>
+          </div>
           {/* About Me Card */}
           <div className="group col-span-12 lg:col-span-4">
             <Link href="/about">
