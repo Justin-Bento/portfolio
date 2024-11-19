@@ -74,7 +74,7 @@ export default function Page() {
                 How I Became a Web Developer?
               </h2>
               <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                I graduated from Humber's Multimedia Design and Development
+                I graduated from Humber&#39;s Multimedia Design and Development
                 program, where I gained hands-on experience in creating
                 interactive digital media. From web coding to user interface
                 (UI) design and front-end development, I built a solid
@@ -97,7 +97,7 @@ export default function Page() {
                 How I Approach Design and Creativity!
               </h2>
               <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                During my time in Humber's Multimedia Design and Development
+                During my time in Humber&#39;s Multimedia Design and Development
                 program, I learned how to bring ideas to life through by
                 creating interactive digital experiences, and build a strong
                 foundation in creative and functional thinking.
