@@ -30,7 +30,7 @@ export default function Page() {
       <main className="p-4 3xl:container lg:gap-6 lg:p-8 3xl:mx-auto">
         <section className="grid grid-cols-1 gap-4 md:grid-cols-12">
           {/* Full-width Card */}
-          <Card className="col-span-12 border-transparent bg-secondary/10">
+          <Card className="col-span-12 border-transparent bg-accent/30">
             <div className="mx-auto flex min-h-[65svh] w-11/12 items-center xl:min-h-[36rem]">
               <div className="space-y-3">
                 <Breadcrumb>
@@ -58,7 +58,7 @@ export default function Page() {
                   Building with Purpose.
                 </h2>
                 <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
-                  As you know my mame is Justin Bento. My job is to write
+                  As you know my name is Justin Bento. My job is to write
                   maintainable code and turn ideas into tools that work, look
                   great and are pleasant to use. I build with purpose so every
                   project I work on is a step forward for myself and the teams I

@@ -21,39 +21,40 @@ export default function page() {
       <Navigation />
       <main className="p-4 3xl:container lg:p-8 3xl:mx-auto">
         <section className="grid grid-cols-1 gap-4 md:grid-cols-12">
-          <Card className="col-span-12 flex min-h-[65svh] items-center justify-center border-transparent bg-[#c6afb1]/20 xl:min-h-[36rem]">
-            <div className="space-y-2 px-4 py-5 sm:p-6">
-              <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink
-                      href="/"
-                      className="font-medium text-black dark:text-white"
-                    >
-                      Home
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbLink
-                      href="/Projects"
-                      className="font-medium text-primary underline dark:text-white"
-                    >
-                      Contact
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-              <h1 className="text-3xl font-extrabold capitalize tracking-tight lg:text-5xl dark:text-white">
-                Let&#39;s work together!
-              </h1>
-              <p className="w-8/12 text-balance text-sm/5 md:text-base/7">
-                I&#39;d love to hear from you! Whether you have a project in
-                mind, a collaboration opportunity, or just want to say hello,
-                feel free to reach out. Fill in the form below, and I&#39;ll get
-                back to you as soon as possible. Looking forward to starting a
-                creative conversation!
-              </p>
+          <Card className="col-span-12 border-transparent bg-[#c6afb1]/30">
+            <div className="mx-auto flex min-h-[65svh] w-11/12 items-center xl:min-h-[36rem]">
+              <div className="space-y-3">
+                <Breadcrumb>
+                  <BreadcrumbList>
+                    <BreadcrumbItem>
+                      <BreadcrumbLink
+                        href="/"
+                        className="font-medium text-black dark:text-white"
+                      >
+                        Home
+                      </BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                      <BreadcrumbLink
+                        href="/Projects"
+                        className="font-medium text-primary underline dark:text-white"
+                      >
+                        Contact
+                      </BreadcrumbLink>
+                    </BreadcrumbItem>
+                  </BreadcrumbList>
+                </Breadcrumb>
+                <h1 className="text-3xl font-extrabold capitalize tracking-tight lg:text-5xl dark:text-white">
+                  Let&#39;s work together!
+                </h1>
+                <p className="w-8/12 text-sm/5 md:text-base/7">
+                  I&#39;d love to hear from you! Whether you have a project in
+                  mind, a collaboration opportunity, or just want to say hello,
+                  feel free to reach out. Fill in the form below, and I&#39;ll
+                  get back to you as soon as possible.
+                </p>
+              </div>
             </div>
           </Card>
           <Card className="col-span-12 min-h-[20dvh] md:col-span-6">

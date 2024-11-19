@@ -35,7 +35,7 @@ export default async function Page() {
       <Navigation />
       <main className="p-4 3xl:container lg:gap-6 lg:p-8 3xl:mx-auto">
         <section className="grid grid-cols-1 gap-4 md:grid-cols-12">
-          <Card className="col-span-12 flex min-h-[65svh] items-center rounded-lg bg-[#aba388]/20 p-8 xl:min-h-[36rem]">
+          <Card className="col-span-12 flex min-h-[65svh] items-center rounded-lg border-transparent bg-[#aba388]/30 p-8 xl:min-h-[36rem]">
             <div className="space-y-2 p-6">
               <Breadcrumb>
                 <BreadcrumbList>
