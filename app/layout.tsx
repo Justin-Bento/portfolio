@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleAnalytics />
-      <body className={`antialiased`}>{children}</body>
+      <body className={`bg-white antialiased dark:bg-black`}>{children}</body>
     </html>
   );
 }

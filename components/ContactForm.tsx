@@ -5,9 +5,12 @@ import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import ThankYou from "@/layout/ThankYou";
+import { RiSendPlane2Line } from "react-icons/ri";
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm(`${process.env.NEXT_PUBLIC_FORMSPREE_ID}`);
+  const [state, handleSubmit] = useForm(
+    `${process.env.NEXT_PUBLIC_FORMSPREE_ID}`,
+  );
   if (state.succeeded) {
     return <ThankYou />;
   }
@@ -23,9 +26,13 @@ export default function ContactForm() {
             id="firstName"
             autoComplete="family-name"
             placeholder="eg: john, james, smith"
-            className="ring-1 ring-black dark:ring-white/70"
+            className="ring-1 ring-black/50 dark:ring-white/70"
           />
-          <ValidationError prefix="firstName" field="firstName" errors={state.errors} />
+          <ValidationError
+            prefix="firstName"
+            field="firstName"
+            errors={state.errors}
+          />
         </fieldset>
         {/* This is the end Of First Name Input  */}
         <fieldset className="space-y-3">
@@ -37,9 +44,13 @@ export default function ContactForm() {
             id="lastName"
             autoComplete="lastName"
             placeholder="eg: doe, maine..."
-            className="ring-1 ring-black dark:ring-white/70"
+            className="ring-1 ring-black/50 dark:ring-white/70"
           />
-          <ValidationError prefix="lastName" field="lastName" errors={state.errors} />
+          <ValidationError
+            prefix="lastName"
+            field="lastName"
+            errors={state.errors}
+          />
           {/* This is the end Of Lats Name Input  */}
         </fieldset>
         <fieldset className="space-y-3">
@@ -51,7 +62,7 @@ export default function ContactForm() {
             id="email"
             autoComplete="family-name"
             placeholder="eg: smith-doe@example.com"
-            className="ring-1 ring-black dark:ring-white/70"
+            className="ring-1 ring-black/50 dark:ring-white/70"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
           {/* This is the end Of Email Input  */}
@@ -60,12 +71,21 @@ export default function ContactForm() {
           <Label htmlFor="userMessage" defaultValue="userMessage">
             Your Message
           </Label>
-          <Textarea id="userMessage" name="userMessage" className="ring-1 ring-black dark:ring-white/70 my-1.5" />
-          <ValidationError prefix="userMessage" field="userMessage" errors={state.errors} />
+          <Textarea
+            id="userMessage"
+            name="userMessage"
+            className="my-1.5 ring-1 ring-black/50 dark:ring-white/70"
+          />
+          <ValidationError
+            prefix="userMessage"
+            field="userMessage"
+            errors={state.errors}
+          />
         </fieldset>
         <fieldset className="space-y-3">
           <Button type="submit" disabled={state.submitting}>
             Submit
+            <RiSendPlane2Line />
           </Button>
           <ValidationError errors={state.errors} />
         </fieldset>

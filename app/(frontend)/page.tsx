@@ -1,62 +1,156 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import type { Metadata } from "next";
-import Header from "@/components/Header";
-import BackgroundPattern from "@/components/BackgroundPattern";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Link from "next/link";
+import {
+  RiGithubLine,
+  RiLinkedinBoxLine,
+  RiSoundcloudLine,
+  RiTwitterLine,
+} from "react-icons/ri";
+import Navigation from "@/components/Header";
+import Footer from "@/components/Footer";
 
-// import { Button } from "@/components/ui/button";
-
-export const metadata: Metadata = {
-  title: "Justin Bento - Portfolio",
-  description:
-    "Join me on an journey from multimedia design to web development. Explore interactive digital media with a passion for coding.",
-};
-export default function index() {
+export default function Home() {
   return (
     <>
-      <Header />
-      <BackgroundPattern />
-      <main className="grid place-content-center [min-height:100dvh;] py-16 px-8">
-        <div className="max-w-4xl mx-auto md:text-center">
-          <div className="flex justify-start md:justify-center">
-            <span className="relative w-16 h-16 mb-6 ">
-              <Image
-                src="/media/justin-bento--linkedin.png"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                quality={80}
-                alt="Avatar"
-                className="rounded-full ring-2 ring-black"
-              />
-            </span>
-          </div>
-          <div className="text-balance space-y-4">
-            <p className="text-base leading-7 tracking-wide capitalize dark:text-white">Hey there I&#39;m Justin!</p>
-            <h1 className="text-4xl md:text-5xl text-pretty font-extrabold tracking-tight dark:text-white">
-              From Designs to Dynamic Websites: Join Me On My Coding Adventure!
-            </h1>
-            <p className="text-base leading-7 tracking-wide lg:text-lg max-w-3xl mx-auto dark:text-white">
-              I&#39;m a Multimedia Designer venturing into the field of Front-End Development. My goal is to blend my
-              knowledge of accessibility design with the power of code to create engaging websites that everyone can
-              enjoy. Join me on this journey of creativity and interactivity!
-            </p>
-          </div>
-          <div className="flex items-center justify-start md:justify-center gap-4 mt-8">
-            <Link href="/projects">
-              <Button variant="primary" className="text-white">
-                Explore My Portfolio
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button variant="outline" className="ring-1 ring-black hover:underline">
-                Let&#39;s Collaborate
-              </Button>
-            </Link>
-          </div>
-        </div>
+      <Navigation />
+      <main className="min-h-dvh 3xl:container lg:p-8 3xl:mx-auto">
+        <section className="grid grid-cols-1 gap-6 md:grid-cols-12">
+          {/* Main Hero Section */}
+          <Card className="col-span-12 flex min-h-[65svh] items-center justify-center lg:min-h-[50rem]">
+            <div className="mx-auto w-11/12 space-y-4">
+              <p className="text-md scroll-m-20 font-bold">Hi, my name is</p>
+              <h1 className="scroll-m-20 text-3xl font-extrabold lg:text-6xl">
+                Justin Bento
+              </h1>
+              <p className="scroll-m-20 text-3xl font-extrabold opacity-70 lg:text-6xl">
+                I bring ideas to life one pixel at a time.
+              </p>
+              <div className="flex items-center gap-4">
+                <Link href="/contact">
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    className="bg-gray-200 hover:bg-gray-200/70"
+                  >
+                    Let&#39;s Connect
+                  </Button>
+                </Link>
+                <span className="block">|</span>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Justin-Bento"
+                >
+                  <RiGithubLine className="text-2xl hover:fill-primary" />
+                </Link>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/justinbento/"
+                >
+                  <RiLinkedinBoxLine className="text-2xl hover:fill-primary" />
+                </Link>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/Justin-Bento"
+                >
+                  <RiTwitterLine className="text-2xl hover:fill-primary" />
+                </Link>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://soundcloud.com/fretfuze"
+                >
+                  <RiSoundcloudLine className="text-2xl hover:fill-primary" />
+                </Link>
+              </div>
+            </div>
+          </Card>
+          {/* About Me Card */}
+          <Link
+            href="/about"
+            className="col-span-12 flex flex-col items-start justify-center lg:col-span-4"
+          >
+            <Card className="group h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+              <h2 className="text-md/7 text-zinc-950 font-semibold dark:text-white">
+                About Me
+              </h2>
+              <p className="line-clamp-4 text-base/6 text-gray-700 sm:text-sm/6 dark:text-gray-400">
+                Hello! My name is Justin, and I have a passion for creating
+                things that live on the internet. My journey into web
+                development began back in 2019 when I started experimenting with
+                custom HTML, and CSS themes. What began as a casual interest in
+                tweaking designs quickly turned into a fascination with the
+                power of code. As I learned to manipulate HTML and CSS through
+                computer classes, I realized that these tools allowed me to
+                bring my ideas to life in ways I hadn&#39;t imagined.
+              </p>
+              <Link
+                href="/about"
+                className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400"
+              >
+                Read More <span className="block text-base">&rarr;</span>
+              </Link>
+            </Card>
+          </Link>
+          {/* Projects Card */}
+          <Link
+            href="/projects"
+            className="col-span-12 flex flex-col items-start justify-center lg:col-span-4"
+          >
+            <Card className="group h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+              <h2 className="text-md/7 text-zinc-950 font-semibold dark:text-white">
+                Some Things I&#39;ve Built
+              </h2>
+              <p className="line-clamp-4 text-base/6 text-gray-700 sm:text-sm/6 dark:text-gray-400">
+                I love building interactive projects for the web because it
+                allows me to bring ideas to life in ways that are both
+                functional and engaging. Over the years, I&#39;ve had the
+                opportunity to work on a wide range of projects, from personal
+                blogs to complex web applications and even simple games. Each
+                project, no matter how small or large, has been a chance to
+                learn something new, refine my skills, and deepen my
+                understanding of core principles. I believe that the
+                fundamentals are the foundation of great development, so I
+                regularly revisit the basics to sharpen my skills and ensure my
+                code is both clean and efficient.
+              </p>
+              <Link
+                href="/projects"
+                className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400"
+              >
+                Read More <span className="block text-base">&rarr;</span>
+              </Link>
+            </Card>
+          </Link>
+          {/* Work Experience Card */}
+          <Link
+            href="/experience"
+            className="col-span-12 flex flex-col items-start justify-center lg:col-span-4"
+          >
+            <Card className="group h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+              <h2 className="text-md/7 text-zinc-950 font-semibold dark:text-white">
+                Where I&#39;ve Worked
+              </h2>
+              <p className="line-clamp-4 text-base/6 text-gray-700 sm:text-sm/6 dark:text-gray-400">
+                After graduating during the pandemic, I found myself at a
+                crossroads, exploring various career paths to find the right
+                fit. It was a challenging time, filled with uncertainty, but it
+                ultimately led me to the world of web development. I quickly
+                realized that it was something I genuinely enjoyed and felt
+                driven to pursue.
+              </p>
+              <Link
+                href="/projects"
+                className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400"
+              >
+                Coming Soon <span className="block text-base">&rarr;</span>
+              </Link>
+            </Card>
+          </Link>
+        </section>
       </main>
       <Footer />
     </>

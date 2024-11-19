@@ -4,7 +4,6 @@ import colors from "tailwindcss/colors";
 import animate from "tailwindcss-animate";
 
 const config: Config = {
-  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,12 +12,12 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      black: "#040606",
-      white: "#fafcfc",
+      black: colors.zinc[950],
+      white: colors.zinc[50],
       primary: "#2e6570",
       secondary: "#83C6C6",
       accent: "#6edede",
-      gray: colors.gray,
+      gray: colors.zinc,
       red: colors.red,
       transparent: "transparent",
       current: "currentColor",
@@ -31,6 +30,12 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      screens: {
+        "2xl": "1536px",
+        // => @media (min-width: 1536px) { ... }
+        "3xl": "1600px",
+        // => @media (min-width: 1600px) { ... }
       },
     },
   },
