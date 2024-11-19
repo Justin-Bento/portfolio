@@ -26,46 +26,56 @@ export default function Home() {
               <p className="scroll-m-20 text-3xl font-extrabold opacity-70 lg:text-6xl">
                 I bring ideas to life one pixel at a time.
               </p>
-              <div className="flex items-center gap-4">
-                <Link href="/contact">
-                  <Button
-                    variant="secondary"
-                    size="sm"
-                    className="bg-gray-200 hover:bg-gray-200/70"
+              <ul className="flex list-none items-center gap-4">
+                <li className="">
+                  <Link href="/contact">
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      className="bg-gray-200 hover:bg-gray-200/70"
+                    >
+                      Let&#39;s Connect
+                    </Button>
+                  </Link>
+                </li>
+                <li className="">|</li>
+                <li className="">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Justin-Bento"
                   >
-                    Let&#39;s Connect
-                  </Button>
-                </Link>
-                <span className="block">|</span>
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/Justin-Bento"
-                >
-                  <RiGithubLine className="text-2xl hover:fill-primary" />
-                </Link>
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.linkedin.com/in/justinbento/"
-                >
-                  <RiLinkedinBoxLine className="text-2xl hover:fill-primary" />
-                </Link>
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://twitter.com/Justin-Bento"
-                >
-                  <RiTwitterLine className="text-2xl hover:fill-primary" />
-                </Link>
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://soundcloud.com/fretfuze"
-                >
-                  <RiSoundcloudLine className="text-2xl hover:fill-primary" />
-                </Link>
-              </div>
+                    <RiGithubLine className="text-2xl hover:fill-primary" />
+                  </Link>
+                </li>
+                <li className="">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/justinbento/"
+                  >
+                    <RiLinkedinBoxLine className="text-2xl hover:fill-primary" />
+                  </Link>
+                </li>
+                <li className="">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://twitter.com/Justin-Bento"
+                  >
+                    <RiTwitterLine className="text-2xl hover:fill-primary" />
+                  </Link>
+                </li>
+                <li className="">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://soundcloud.com/fretfuze"
+                  >
+                    <RiSoundcloudLine className="text-2xl hover:fill-primary" />
+                  </Link>
+                </li>
+              </ul>
             </div>
           </Card>
           {/* About Me Card */}
