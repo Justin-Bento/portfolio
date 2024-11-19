@@ -40,43 +40,24 @@ export default function Header() {
         <div
           className={`${mobileMenuOpen ? "hidden lg:flex lg:items-center" : ""}`}
         >
-          <nav className="flex w-full flex-col justify-start gap-6 lg:flex-row lg:justify-center">
-            <Link href="/">
-              <Button
-                variant="link"
-                aria-label="navigation-link-home"
-                className="w-full text-black hover:opacity-70"
-              >
-                Home
-              </Button>
-            </Link>
-            <Link href="/about">
-              <Button
-                variant="link"
-                aria-label="navigation-link-about"
-                className="w-full text-black hover:opacity-70"
-              >
-                About
-              </Button>
-            </Link>
-            <Link href="/projects">
-              <Button
-                variant="link"
-                aria-label="navigation-link-projects"
-                className="w-full text-black hover:opacity-70"
-              >
-                Projects
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button
-                variant="link"
-                aria-label="navigation-link-contact"
-                className="w-full text-black hover:opacity-70"
-              >
-                Contact
-              </Button>
-            </Link>
+          <nav className="flex w-full items-center justify-center">
+            <ul className="flex list-none items-center gap-4">
+              {navigation.map((item, index) => (
+                <li key={index} className="hover:opacity-70">
+                  <Link
+                    href={`/${item.length === 4 ? "" : item.toLowerCase()}`}
+                  >
+                    <Button
+                      variant="link"
+                      aria-label={`Go to ${item}`}
+                      className="capitalize"
+                    >
+                      {item}
+                    </Button>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </nav>
         </div>
         <div
@@ -96,3 +77,10 @@ export default function Header() {
     </header>
   );
 }
+const navigation = [
+  "home",
+  "about",
+  "projects",
+  "contact",
+  //..
+];
