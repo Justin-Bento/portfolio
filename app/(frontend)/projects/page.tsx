@@ -59,14 +59,13 @@ export default async function Page() {
                 </BreadcrumbList>
               </Breadcrumb>
               <h1 className="text-4xl font-bold lg:text-5xl dark:text-white">
-                A Showcase of Creativity.
+                Building Ideas, One Project at a Time.
               </h1>
               <p className="mt-4 max-w-5xl text-balance leading-7 lg:text-lg dark:text-white">
-                Welcome to my gallery! On this page&#44; you&#39;ll find a
-                collection of my projects throughout my career as a website
-                developer&#46; If you have any questions or would like to
-                discuss a potential project or collaboration&#44; don&#39;t
-                hesitate to reach out to me&#46;
+                Welcome to my portfolio—a showcase of projects that highlight my
+                growth as a developer. Each piece reflects a blend of
+                problem-solving, technical expertise, and a passion for
+                delivering effective solutions.
               </p>
             </div>
           </Card>
