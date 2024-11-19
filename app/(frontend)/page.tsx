@@ -79,87 +79,76 @@ export default function Home() {
             </div>
           </Card>
           {/* About Me Card */}
-          <Link
-            href="/about"
-            className="col-span-12 flex flex-col items-start justify-center lg:col-span-4"
-          >
-            <Card className="group h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
-              <h2 className="text-md/7 text-zinc-950 font-semibold dark:text-white">
-                About Me
-              </h2>
-              <p className="line-clamp-4 text-base/6 text-gray-700 sm:text-sm/6 dark:text-gray-400">
-                Hello! My name is Justin, and I have a passion for creating
-                things that live on the internet. My journey into web
-                development began back in 2019 when I started experimenting with
-                custom HTML, and CSS themes. What began as a casual interest in
-                tweaking designs quickly turned into a fascination with the
-                power of code. As I learned to manipulate HTML and CSS through
-                computer classes, I realized that these tools allowed me to
-                bring my ideas to life in ways I hadn&#39;t imagined.
-              </p>
-              <Link
-                href="/about"
-                className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400"
-              >
-                Read More <span className="block text-base">&rarr;</span>
-              </Link>
-            </Card>
-          </Link>
+          <div className="col-span-12 lg:col-span-4">
+            <Link href="/about">
+              <Card className="group flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+                <h2 className="text-md/7 font-semibold text-gray-950 dark:text-white">
+                  About Me
+                </h2>
+                <p className="line-clamp-4 text-base text-gray-700 sm:text-sm/6 dark:text-gray-400">
+                  Hello! My name is Justin, and I have a passion for creating
+                  things that live on the internet. My journey into web
+                  development began back in 2019 when I started experimenting
+                  with custom HTML, and CSS themes. What began as a casual
+                  interest in tweaking designs quickly turned into a fascination
+                  with the power of code. As I learned to manipulate HTML and
+                  CSS through computer classes, I realized that these tools
+                  allowed me to bring my ideas to life in ways I hadn&#39;t
+                  imagined.
+                </p>
+                <p className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400">
+                  Read More <span className="block text-base">&rarr;</span>
+                </p>
+              </Card>
+            </Link>
+          </div>
           {/* Projects Card */}
-          <Link
-            href="/projects"
-            className="col-span-12 flex flex-col items-start justify-center lg:col-span-4"
-          >
-            <Card className="group h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
-              <h2 className="text-md/7 text-zinc-950 font-semibold dark:text-white">
-                Some Things I&#39;ve Built
-              </h2>
-              <p className="line-clamp-4 text-base/6 text-gray-700 sm:text-sm/6 dark:text-gray-400">
-                I love building interactive projects for the web because it
-                allows me to bring ideas to life in ways that are both
-                functional and engaging. Over the years, I&#39;ve had the
-                opportunity to work on a wide range of projects, from personal
-                blogs to complex web applications and even simple games. Each
-                project, no matter how small or large, has been a chance to
-                learn something new, refine my skills, and deepen my
-                understanding of core principles. I believe that the
-                fundamentals are the foundation of great development, so I
-                regularly revisit the basics to sharpen my skills and ensure my
-                code is both clean and efficient.
-              </p>
-              <Link
-                href="/projects"
-                className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400"
-              >
-                Read More <span className="block text-base">&rarr;</span>
-              </Link>
-            </Card>
-          </Link>
+          <div className="col-span-12 lg:col-span-4">
+            <Link href="/projects">
+              <Card className="group flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+                <h2 className="text-md/7 font-semibold text-gray-950 dark:text-white">
+                  Some Things I&#39;ve Built
+                </h2>
+                <p className="line-clamp-4 text-base text-gray-700 sm:text-sm/6 dark:text-gray-400">
+                  I love building interactive projects for the web because it
+                  allows me to bring ideas to life in ways that are both
+                  functional and engaging. Over the years, I&#39;ve had the
+                  opportunity to work on a wide range of projects, from personal
+                  blogs to complex web applications and even simple games. Each
+                  project, no matter how small or large, has been a chance to
+                  learn something new, refine my skills, and deepen my
+                  understanding of core principles. I believe that the
+                  fundamentals are the foundation of great development, so I
+                  regularly revisit the basics to sharpen my skills and ensure
+                  my code is both clean and efficient.
+                </p>
+                <p className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400">
+                  Read More <span className="block text-base">&rarr;</span>
+                </p>
+              </Card>
+            </Link>
+          </div>
           {/* Work Experience Card */}
-          <Link
-            href="/experience"
-            className="col-span-12 flex flex-col items-start justify-center lg:col-span-4"
-          >
-            <Card className="group h-[25vh] space-y-3 px-4 py-5 sm:p-6 xl:h-64">
-              <h2 className="text-md/7 text-zinc-950 font-semibold dark:text-white">
-                Where I&#39;ve Worked
-              </h2>
-              <p className="line-clamp-4 text-base/6 text-gray-700 sm:text-sm/6 dark:text-gray-400">
-                After graduating during the pandemic, I found myself at a
-                crossroads, exploring various career paths to find the right
-                fit. It was a challenging time, filled with uncertainty, but it
-                ultimately led me to the world of web development. I quickly
-                realized that it was something I genuinely enjoyed and felt
-                driven to pursue.
-              </p>
-              <Link
-                href="/projects"
-                className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400"
-              >
-                Coming Soon <span className="block text-base">&rarr;</span>
-              </Link>
-            </Card>
-          </Link>
+          <div className="col-span-12 lg:col-span-4">
+            <Link href="/experience">
+              <Card className="group flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 sm:p-6 xl:h-64">
+                <h2 className="text-md/7 font-semibold text-gray-950 dark:text-white">
+                  Where I&#39;ve Worked
+                </h2>
+                <p className="line-clamp-4 text-base text-gray-700 sm:text-sm/6 dark:text-gray-400">
+                  After graduating during the pandemic, I found myself at a
+                  crossroads, exploring various career paths to find the right
+                  fit. It was a challenging time, filled with uncertainty, but
+                  it ultimately led me to the world of web development. I
+                  quickly realized that it was something I genuinely enjoyed and
+                  felt driven to pursue.
+                </p>
+                <p className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400">
+                  Read More <span className="block text-base">&rarr;</span>
+                </p>
+              </Card>
+            </Link>
+          </div>
         </section>
       </main>
       <Footer />
