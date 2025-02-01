@@ -1,8 +1,8 @@
-# Welcome To My Portfolio 
+# Personal Website 
 
-I value simplicity, functionality, and intuitive design in every project. With a focus on web development and an interest in both frontend and backend, I’m continuously refining my skills and experimenting with new tools, like Next.js, React Native, TypeScript and more. This portfolio showcases a selection of my work, highlighting both personal and professional projects. Iniside this project you’ll find my experiences as a developer, documenting the skills and problem-solving approaches I've learned along the way.
+This GitHub repository holds the code for my personal website. It's purpose is to be a visual representation of my work, while focusing on the impact and design rather than the underlying technologies. 
 
-
-
-
+- Project Start Date: Friday 10th February 2023
+- Project End Date:  Tuesday 19th November 2024
+- Project Link: [Node Path Getting Hired Building Your Personal Website](https://www.theodinproject.com/lessons/node-path-getting-hired-building-your-personal-website)
 
