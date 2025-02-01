@@ -18,6 +18,11 @@ This GitHub repository holds the code for my personal website. It's purpose is t
    -  Installed shadcn/ui for custom components.
 -  Setup Sanity Content Management System.
    - Update projects with their dynamic reloading.
-   - CRUD operations with their project. 
+   - CRUD operations with their project.  
    - hosted everything underneath /studio 
- - 
+ - Deployed project with vercel
+
+## Technologies
+
+- Front-end: HTML, CSS, TailwindCSS, JavaScript, TypeScript, React.js, 
+- Back-end: Node.js, Sanity, Next.js, prettier, eslint
