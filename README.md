@@ -59,3 +59,7 @@ To run this project, you will need to add the following environment variables to
 
 - ``NEXT_PUBLIC_SANITY_KEY`` 
 - ``NEXT_PUBLIC_SANITY_DATASET``
+
+## Lessons Learned  
+  
+When building this project, things can get as complicated as you want them, and I made it too complicated for my level as a developer. I dove into concepts that were beyond my skillets at the time, thinking I could figure it out along the way. As a result, I ended up spending hours troubleshooting issues that I probably could have avoided with simpler solutions. Looking back, I realize I was trying to prove to myself that I could handle more complex tasks, but sometimes scaling back and focusing on the basics would have saved me more time and frustration in the long run.
