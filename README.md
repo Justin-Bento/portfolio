@@ -52,3 +52,10 @@ Start the server
 ```bash  
 npm run dev
 ```
+
+## Environment Variables  
+  
+To run this project, you will need to add the following environment variables to your .env file  
+
+- ``NEXT_PUBLIC_SANITY_KEY`` 
+- ``NEXT_PUBLIC_SANITY_DATASET``
