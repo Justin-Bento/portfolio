@@ -26,3 +26,29 @@ This GitHub repository holds the code for my personal website. It's purpose is t
 
 - Front-end: HTML, CSS, TailwindCSS, JavaScript, TypeScript, React.js, 
 - Back-end: Node.js, Sanity, Next.js, prettier, eslint
+
+## Run Locally  
+  
+Clone the project  
+  
+```bash  
+git clone git@github.com:Justin-Bento/portfolio.git
+```  
+  
+Go to the project directory  
+  
+```bash  
+cd /path/to/project/portfolio  
+```  
+  
+Install dependencies  
+  
+```bash  
+npm install  
+```  
+  
+Start the server  
+  
+```bash  
+npm run dev
+```
