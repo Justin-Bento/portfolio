@@ -62,7 +62,7 @@ To run this project, you will need to add the following environment variables to
 
 ## Lessons Learned  
   
-When building this project, things can get as complicated as you want them, and I made it too complicated for my level as a developer. I dove into concepts that were beyond my skillets at the time, thinking I could figure it out along the way. As a result, I ended up spending hours troubleshooting issues that I probably could have avoided with simpler solutions. Looking back, I realize I was trying to prove to myself that I could handle more complex tasks, but sometimes scaling back and focusing on the basics would have saved me more time and frustration in the long run.
+When building this project, things got complicated due too my need to prove that I'm an experienced developer. When in reality I was just an overconfident beginner protecting my own ego. This over-confidence was a double edge sword it made me dive into concepts that were beyond my skillets at the time, and thinking I could figure it out along the way. As a result, I ended up spending hours and sometime days troubleshooting issues that I probably could have avoided with simpler solutions. Looking back, I realize I was trying to prove to myself that I could handle complex tasks, but looking back I realized that scaling back and focusing on things step-by-step would have less frustrating overall while helping me learn these topics one at a time.
 
 ## Acknowledgements
 
