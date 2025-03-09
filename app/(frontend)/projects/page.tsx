@@ -1,4 +1,4 @@
-import { client } from "@/sanity/lib/client";
+import { sanityFetch } from "@/sanity/lib/live";
 import { POSTS_QUERY } from "@/sanity/lib/queries";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
@@ -16,8 +16,6 @@ import Link from "next/link";
 import Navigation from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const options = { next: { revalidate: 60 } };
-
 type PostArticle = {
   _id: string;
   slug: { current: string };
@@ -29,7 +27,7 @@ type PostArticle = {
 };
 
 export default async function Page() {
-  const posts = await client.fetch(POSTS_QUERY, {}, options);
+  const { data: posts } = await sanityFetch({ query: POSTS_QUERY });
   return (
     <>
       <Navigation />
