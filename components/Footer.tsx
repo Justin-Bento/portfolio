@@ -20,7 +20,7 @@ export default function Footer() {
             {footer_navigation.map((item: FooterNavProps) => (
               <li className="">
                 <Link
-                  key={item.name}
+                  key={item.name.toString().toLowerCase()}
                   href={item.href}
                   className="transition-all hover:opacity-80"
                   target="_blank"
