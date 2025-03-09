@@ -61,12 +61,18 @@ export default function Header() {
           <div
             className={`${mobileMenuOpen ? "block" : "hidden"} lg:block lg:flex lg:items-center lg:justify-end`}
           >
-            <Button variant="secondary">
-              <CardDescription className="inline-flex flex-row-reverse items-center gap-2">
-                <RiExternalLinkLine />
-                Github
-              </CardDescription>
-            </Button>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Justin-Bento"
+            >
+              <Button variant="secondary" className="group hover:underline">
+                <CardDescription className="inline-flex flex-row-reverse items-center gap-2">
+                  <RiExternalLinkLine className="hover:underline" />
+                  Github
+                </CardDescription>
+              </Button>
+            </Link>
           </div>
         </CardContent>
       </Card>
