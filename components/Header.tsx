@@ -18,7 +18,9 @@ export default function Header() {
         <CardContent className="grid grid-cols-1 items-center gap-4 lg:grid-cols-3">
           {/* Logo and Mobile Menu Toggle */}
           <div className="flex w-full items-center justify-between">
-            <Logo className="dark:fill-white" />
+            <Link href="/">
+              <Logo className="hover:cursor-pointer hover:opacity-70 dark:fill-white" />
+            </Link>
             <Button
               variant="outline"
               size="icon"
