@@ -70,7 +70,7 @@ export default async function Page() {
             </div>
           </Card>
           {posts.map((post: PostArticle) => (
-            <Card key={post._id} className="col-span-12 p-6 md:col-span-6">
+            <Card key={post._id} className="col-span-12 p-6 lg:col-span-6">
               <div className="relative mb-4 h-10 w-10">
                 <Image
                   fill
@@ -83,7 +83,7 @@ export default async function Page() {
               <h2 className="my-2 text-2xl font-bold text-gray-900 dark:text-white">
                 {post.title}
               </h2>
-              <p className="text-base font-medium leading-relaxed text-gray-500 dark:text-gray-300">
+              <p className="text-balance text-base font-medium leading-relaxed text-gray-500 dark:text-gray-300">
                 {post.description}
               </p>
               <span className="mt-4 block space-x-4">

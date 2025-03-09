@@ -68,7 +68,7 @@ export default function Page() {
             </div>
           </Card>
           {/* 7-column Card (left-aligned) */}
-          <Card className="col-span-12 md:col-span-7">
+          <Card className="col-span-12 lg:col-span-7">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                 How I Became a Web Developer?
@@ -91,7 +91,7 @@ export default function Page() {
             </div>
           </Card>
           {/* 5-column Card (right-aligned) */}
-          <Card className="col-span-12 md:col-span-5">
+          <Card className="col-span-12 lg:col-span-5">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                 How I Approach Design and Creativity!
@@ -111,7 +111,7 @@ export default function Page() {
             </div>
           </Card>
           {/* 5-column Card (left-aligned) */}
-          <Card className="col-span-12 md:col-span-5">
+          <Card className="col-span-12 lg:col-span-5">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                 The Human Behind the Code!
@@ -131,7 +131,7 @@ export default function Page() {
             </div>
           </Card>
           {/* 7-column Card (right-aligned) */}
-          <Card className="col-span-12 md:col-span-7">
+          <Card className="col-span-12 lg:col-span-7">
             <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                 Beyond the Keyboard!

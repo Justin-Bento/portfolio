@@ -57,7 +57,7 @@ export default function page() {
               </div>
             </div>
           </Card>
-          <Card className="col-span-12 min-h-[20dvh] md:col-span-6">
+          <Card className="col-span-12 min-h-[20dvh] lg:col-span-6">
             <div className="my-16 grid gap-16 px-4 py-5 sm:p-6 lg:grid-cols-1">
               <div id="contact-information" className="overflow-hidden">
                 <h2 className="font-display dark:text-primary-40 text-base font-semibold capitalize">
@@ -111,7 +111,7 @@ export default function page() {
               </div>
             </div>
           </Card>
-          <Card className="col-span-12 min-h-[20dvh] md:col-span-6">
+          <Card className="col-span-12 min-h-[20dvh] lg:col-span-6">
             <div className="px-4 py-5 sm:p-6">
               <ContactForm />
             </div>
