@@ -10,6 +10,8 @@ export const postType = defineType({
     defineField({
       name: "title",
       type: "string",
+      validation: (rule) =>
+        rule.required().error(`Required to generate a page on the website`),
     }),
     defineField({
       name: "slug",
