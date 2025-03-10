@@ -1,6 +1,13 @@
 import { sanityFetch } from "@/sanity/lib/live";
 import { POSTS_QUERY } from "@/sanity/lib/queries";
-import { Card } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { Button } from "@/components/ui/button";
@@ -16,15 +23,14 @@ import Link from "next/link";
 import Navigation from "@/components/Header";
 import Footer from "@/components/Footer";
 
-type PostArticle = {
+interface AllPosts {
   _id: string;
-  slug: { current: string };
-  description: string;
   title: string;
+  description: string;
   mainImage: string;
-  projectCode: string;
   liveDemo: string;
-};
+  projectCode: string;
+}
 
 export default async function Page() {
   const { data: posts } = await sanityFetch({ query: POSTS_QUERY });
@@ -67,40 +73,44 @@ export default async function Page() {
               </p>
             </div>
           </Card>
-          {posts.map((post: PostArticle) => (
-            <Card key={post._id} className="col-span-12 p-6 lg:col-span-6">
-              <div className="relative mb-4 h-10 w-10">
-                <Image
-                  fill
-                  src={urlFor(post.mainImage).url()}
-                  alt={`Image of ${post.title.toLowerCase()}`}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="rounded-full"
-                />
-              </div>
-              <h2 className="my-2 text-2xl font-bold text-gray-900 dark:text-white">
-                {post.title}
-              </h2>
-              <p className="text-balance text-base font-medium leading-relaxed text-gray-500 dark:text-gray-300">
-                {post.description}
-              </p>
-              <span className="mt-4 block space-x-4">
-                <Link href={post.projectCode}>
-                  <Button variant="secondary" size="sm">
-                    <RiGithubLine />
-                    View Code on GitHub
-                  </Button>
-                </Link>
-                <Link href={post.liveDemo}>
-                  <Button variant="secondary" size="sm">
-                    <RiComputerLine />
-                    Interact With Project
-                  </Button>
-                </Link>
-              </span>
-            </Card>
-          ))}
         </section>
+        <ul className="grid list-none grid-cols-12 gap-6 pt-8">
+          {posts.map((post: AllPosts) => (
+            <li key={post._id} className="col-span-12 lg:col-span-6">
+              <Card className="">
+                <CardContent className="space-y-4">
+                  <CardHeader className="relative mb-4 size-3">
+                    <Image
+                      fill
+                      src={urlFor(post.mainImage).url()}
+                      alt={`Image of ${post.title.toLowerCase()}`}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="rounded-full"
+                    />
+                  </CardHeader>
+                  <CardTitle>{post?.title}</CardTitle>
+                  <CardDescription className="text-base/6">
+                    {post?.description}
+                  </CardDescription>
+                  <CardFooter className="space-x-4 pl-0">
+                    <Link href={post.projectCode}>
+                      <Button variant="secondary" size="sm">
+                        <RiGithubLine />
+                        View Code on GitHub
+                      </Button>
+                    </Link>
+                    <Link href={post.liveDemo}>
+                      <Button variant="secondary" size="sm">
+                        <RiComputerLine />
+                        Interact With Project
+                      </Button>
+                    </Link>
+                  </CardFooter>
+                </CardContent>
+              </Card>
+            </li>
+          ))}
+        </ul>
       </main>
       <Footer />
     </>
