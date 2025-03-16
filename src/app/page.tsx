@@ -1,103 +1,158 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Link from "next/link";
+import {
+  RiGithubLine,
+  RiLinkedinBoxLine,
+  RiSoundcloudLine,
+  RiTwitterLine,
+} from "react-icons/ri";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+    <>
+      <Navigation />
+      <main className="min-h-dvh p-4 3xl:container lg:p-8 3xl:mx-auto">
+        <section className="grid grid-cols-1 gap-6 md:grid-cols-12">
+          {/* Main Hero Section */}
+          <div className="group col-span-12">
+            <Card className="flex min-h-[65svh] items-center justify-center lg:min-h-[50rem]">
+              <div className="mx-auto w-10/12 space-y-4">
+                <p className="text-md scroll-m-20 font-bold">Hi, my name is</p>
+                <h1 className="scroll-m-20 text-3xl font-extrabold lg:text-6xl">
+                  Justin Bento
+                </h1>
+                <p className="text-3xl font-extrabold opacity-70 lg:text-6xl">
+                  I bring ideas to life one pixel at a time.
+                </p>
+                <ul className="flex list-none items-center gap-4">
+                  <li className="">
+                    <Link href="/contact">
+                      <Button
+                        variant="secondary"
+                        size="sm"
+                        className="bg-gray-200 hover:bg-gray-200/70"
+                      >
+                        Let&#39;s Connect
+                      </Button>
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/Justin-Bento"
+                    >
+                      <RiGithubLine className="text-2xl hover:fill-primary" />
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.linkedin.com/in/justinbento/"
+                    >
+                      <RiLinkedinBoxLine className="text-2xl hover:fill-primary" />
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://twitter.com/Justin-Bento"
+                    >
+                      <RiTwitterLine className="text-2xl hover:fill-primary" />
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://soundcloud.com/fretfuze"
+                    >
+                      <RiSoundcloudLine className="text-2xl hover:fill-primary" />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </Card>
+          </div>
+          {/* About Me Card */}
+          <div className="group col-span-12 lg:col-span-4">
+            <Link href="/about">
+              <Card className="flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 transition-all group-hover:bg-accent/30 sm:p-6 xl:h-64">
+                <h2 className="text-md/7 font-semibold text-gray-950 dark:text-white">
+                  About Me
+                </h2>
+                <p className="line-clamp-4 text-base text-gray-700 sm:text-sm/6 dark:text-gray-400">
+                  Hello! My name is Justin, and I have a passion for creating
+                  things that live on the internet. My journey into web
+                  development began back in 2019 when I started experimenting
+                  with custom HTML, and CSS themes. What began as a casual
+                  interest in tweaking designs quickly turned into a fascination
+                  with the power of code. As I learned to manipulate HTML and
+                  CSS through computer classes, I realized that these tools
+                  allowed me to bring my ideas to life in ways I hadn&#39;t
+                  imagined.
+                </p>
+                <p className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400">
+                  Read More <span className="block text-base">&rarr;</span>
+                </p>
+              </Card>
+            </Link>
+          </div>
+          {/* Projects Card */}
+          <div className="group col-span-12 lg:col-span-4">
+            <Link href="/projects">
+              <Card className="flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 transition-all group-hover:bg-[#aba388]/30 sm:p-6 xl:h-64">
+                <h2 className="text-md/7 font-semibold text-gray-950 dark:text-white">
+                  Some Things I&#39;ve Built
+                </h2>
+                <p className="line-clamp-4 text-base text-gray-700 sm:text-sm/6 dark:text-gray-400">
+                  I love building interactive projects for the web because it
+                  allows me to bring ideas to life in ways that are both
+                  functional and engaging. Over the years, I&#39;ve had the
+                  opportunity to work on a wide range of projects, from personal
+                  blogs to complex web applications and even simple games. Each
+                  project, no matter how small or large, has been a chance to
+                  learn something new, refine my skills, and deepen my
+                  understanding of core principles. I believe that the
+                  fundamentals are the foundation of great development, so I
+                  regularly revisit the basics to sharpen my skills and ensure
+                  my code is both clean and efficient.
+                </p>
+                <p className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400">
+                  Read More <span className="block text-base">&rarr;</span>
+                </p>
+              </Card>
+            </Link>
+          </div>
+          {/* Work Experience Card */}
+          <div className="group col-span-12 lg:col-span-4">
+            <Link href="/experience">
+              <Card className="flex h-[25vh] flex-col items-start justify-center space-y-3 px-4 py-5 transition-all group-hover:bg-[#c6afb1]/30 sm:p-6 xl:h-64">
+                <h2 className="text-md/7 font-semibold text-gray-950 dark:text-white">
+                  Where I&#39;ve Worked
+                </h2>
+                <p className="line-clamp-4 text-base text-gray-700 sm:text-sm/6 dark:text-gray-400">
+                  After graduating during the pandemic, I found myself at a
+                  crossroads, exploring various career paths to find the right
+                  fit. It was a challenging time, filled with uncertainty, but
+                  it ultimately led me to the world of web development. I
+                  quickly realized that it was something I genuinely enjoyed and
+                  felt driven to pursue.
+                </p>
+                <p className="flex items-center justify-start gap-1 text-sm text-gray-700 group-hover:underline dark:text-gray-400">
+                  Read More <span className="block text-base">&rarr;</span>
+                </p>
+              </Card>
+            </Link>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      <Footer />
+    </>
   );
 }
