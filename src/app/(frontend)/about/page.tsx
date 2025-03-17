@@ -35,7 +35,7 @@ export default function Page() {
                     <BreadcrumbItem>
                       <BreadcrumbLink
                         href="/"
-                        className="font-medium text-black/50 dark:text-white"
+                        className="font-medium text-foreground/80"
                       >
                         Home
                       </BreadcrumbLink>
@@ -44,17 +44,17 @@ export default function Page() {
                     <BreadcrumbItem>
                       <BreadcrumbLink
                         href="/about"
-                        className="font-medium text-black underline dark:text-white"
+                        className="font-medium underline text-foreground"
                       >
                         About
                       </BreadcrumbLink>
                     </BreadcrumbItem>
                   </BreadcrumbList>
                 </Breadcrumb>
-                <h2 className="text-3xl font-extrabold capitalize lg:text-5xl dark:text-white">
+                <h2 className="text-3xl font-extrabold capitalize lg:text-5xl text-foreground">
                   Building with Purpose.
                 </h2>
-                <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
+                <p className="line-clamp-4 text-balance text-black text-muted-foreground">
                   As you know my name is Justin Bento. My job is to write
                   maintainable code and turn ideas into tools that work, look
                   great and are pleasant to use. I build with purpose so every
@@ -70,7 +70,7 @@ export default function Page() {
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                 How I Became a Web Developer?
               </h2>
-              <p className="text-balance text-black opacity-70 dark:text-white">
+              <p className="text-balance text-black text-muted-foreground">
                 My journey into web development began with Humber College&#39;s
                 Multimedia Design program, where I gained hands-on experience
                 working on real-world projects. I continued to grow my skills
@@ -78,7 +78,7 @@ export default function Page() {
                 taught me an essential lesson: success isn&#39;t given—it&#39;s
                 earned through consistent effort and focus.
               </p>
-              <span className="mt-4 inline-flex items-center gap-4">
+              <span className="mt-4 inline-flex items-center gap-4 border-muted-foreground">
                 <RiHtml5Line className="size-7" />
                 <RiCss3Line className="size-7" />
                 <RiJavascriptLine className="size-7" />
@@ -93,7 +93,7 @@ export default function Page() {
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                 How I Approach Design and Creativity!
               </h2>
-              <p className="text-black opacity-70 dark:text-white">
+              <p className="text-black text-muted-foreground">
                 My process starts with understanding users’ needs and
                 challenges. From brainstorming to prototyping, I test and refine
                 ideas until they solve real problems effectively. Design
@@ -113,7 +113,7 @@ export default function Page() {
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                 The Human Behind the Code!
               </h2>
-              <p className="text-black opacity-70 dark:text-white">
+              <p className="text-black text-muted-foreground">
                 I&apos;ve learned to tackle challenges with curiosity and
                 adaptability—skills. I bring these skills to every project I
                 work on. Whether I&apos;m optimizing code, debugging systems, or
@@ -133,7 +133,7 @@ export default function Page() {
               <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
                 Beyond the Keyboard!
               </h2>
-              <p className="line-clamp-4 text-balance text-black opacity-70 dark:text-white">
+              <p className="line-clamp-4 text-balance text-black text-muted-foreground">
                 When I&apos;m not coding, you&apos;ll find me playing guitar or
                 creating music it&apos;s my way to recharge and stay creative.
                 Both music and coding push me to focus, adapt, and find rhythm
