@@ -45,7 +45,7 @@ export default function page() {
                 <h1 className="text-3xl font-extrabold capitalize tracking-tight lg:text-5xl dark:text-white">
                   Let&#39;s work together!
                 </h1>
-                <p className="w-8/12 text-sm/5 md:text-base/7">
+                <p className="text-sm/5 md:text-base/7 md:w-8/12">
                   I&#39;d love to hear from you! Whether you have a project in
                   mind, a collaboration opportunity, or just want to say hello,
                   feel free to reach out. Fill in the form below, and I&#39;ll
