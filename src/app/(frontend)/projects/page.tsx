@@ -28,7 +28,7 @@ export default async function Page() {
       <main className="p-4 3xl:container lg:gap-6 lg:p-8 3xl:mx-auto">
         <section className="grid grid-cols-1 gap-4 md:grid-cols-12">
           <Card className="col-span-12 flex min-h-[65dvh] justify-center rounded-lg border-transparent bg-[#aba388]/30 p-8 xl:min-h-[36rem]">
-            <div className="space-y-2 p-6">
+            <div className="space-y-2">
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem>
@@ -79,18 +79,16 @@ export default async function Page() {
                     ) : null}
                   </CardHeader>
                   <CardTitle>{post?.title}</CardTitle>
-                  <CardDescription className="text-base/6">
-                    {post?.description}
-                  </CardDescription>
-                  <CardFooter className="space-x-4 pl-0">
+                  <CardDescription>{post?.description}</CardDescription>
+                  <CardFooter className="pl-0 flex flex-col lg:flex-row items-start gap-2">
                     <Link href={`${post.projectCode}`}>
-                      <Button variant="secondary" size="sm">
+                      <Button variant="secondary" size="sm" className="w-full">
                         <RiGithubLine />
                         View Code on GitHub
                       </Button>
                     </Link>
                     <Link href={`${post.liveDemo}`}>
-                      <Button variant="secondary" size="sm">
+                      <Button variant="secondary" size="sm" className="w-full">
                         <RiComputerLine />
                         Interact With Project
                       </Button>
