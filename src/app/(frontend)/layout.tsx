@@ -8,7 +8,7 @@ export default function FrontEndLayout({
       <body>
         {/* Layout UI */}
         {/* Place children where you want to render a page or nested layout */}
-        <main>{children}</main>
+        {children}
       </body>
     </html>
   );
