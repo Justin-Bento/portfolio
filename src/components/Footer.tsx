@@ -15,7 +15,7 @@ export interface FooterNavProps {
 export default function Footer() {
   return (
     <footer className="">
-      <Card className="bg-muted shadow-none rounded-none">
+      <Card className="shadow-none rounded-none">
         <CardContent className="px-8 py-16 md:flex md:items-center md:justify-between">
           <ul className="flex list-none justify-start space-x-6 md:order-2 lg:justify-center">
             {footer_navigation.map((item, index) => (
@@ -36,7 +36,7 @@ export default function Footer() {
             ))}
           </ul>
           <div className="mt-8 md:order-1 md:mt-0">
-            <CardDescription>
+            <CardDescription className="text-foreground">
               &copy; {new Date().getFullYear()} Built and designed by Justin
               Bento.
             </CardDescription>
