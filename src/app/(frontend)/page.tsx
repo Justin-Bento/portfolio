@@ -97,7 +97,7 @@ export default function Home() {
                     that these tools allowed me to bring my ideas to life in
                     ways I hadn&#39;t imagined.
                   </CardDescription>
-                  <CardDescription className="flex items-center justify-start gap-1">
+                  <CardDescription className="flex items-center justify-start gap-1 group-hover:underline">
                     Read More <span className="block text-base">&rarr;</span>
                   </CardDescription>
                 </CardContent>
@@ -122,7 +122,7 @@ export default function Home() {
                   regularly revisit the basics to sharpen my skills and ensure
                   my code is both clean and efficient.
                 </CardDescription>
-                <CardDescription className="flex items-center justify-start gap-1">
+                <CardDescription className="flex items-center justify-start gap-1 group-hover:underline">
                   Read More <span className="block text-base">&rarr;</span>
                 </CardDescription>
               </CardContent>
@@ -141,7 +141,7 @@ export default function Home() {
                   quickly realized that it was something I genuinely enjoyed and
                   felt driven to pursue.
                 </CardDescription>
-                <CardDescription className="flex items-center justify-start gap-1">
+                <CardDescription className="flex items-center justify-start gap-1 group-hover:underline">
                   Read More <span className="block text-base">&rarr;</span>
                 </CardDescription>
               </CardContent>
