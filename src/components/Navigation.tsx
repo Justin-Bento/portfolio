@@ -19,7 +19,7 @@ export default function Header() {
           {/* Logo and Mobile Menu Toggle */}
           <div className="flex w-full items-center justify-between">
             <Link href="/">
-              <Logo className="hover:cursor-pointer hover:opacity-70 dark:fill-white" />
+              <Logo className="fill-foreground hover:opacity-70 hover:cursor-pointer" />
             </Link>
             <Button
               variant="outline"
