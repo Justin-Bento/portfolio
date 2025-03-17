@@ -23,15 +23,6 @@ import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-interface AllPosts {
-  _id: string;
-  title: string;
-  description: string;
-  mainImage: string;
-  liveDemo: string;
-  projectCode: string;
-}
-
 export default async function Page() {
   const { data: posts } = await sanityFetch({ query: POSTS_QUERY });
   return (
@@ -75,18 +66,20 @@ export default async function Page() {
           </Card>
         </section>
         <ul className="grid list-none grid-cols-12 gap-6 pt-8">
-          {posts.map((post: AllPosts) => (
+          {posts.map((post) => (
             <li key={post._id} className="col-span-12 lg:col-span-6">
               <Card className="">
                 <CardContent className="space-y-4">
                   <CardHeader className="relative mb-4 size-12">
-                    <Image
-                      fill
-                      src={urlFor(post.mainImage).url()}
-                      alt={`Image of ${post.title.toLowerCase()}`}
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="rounded-full"
-                    />
+                    {post.mainImage ? (
+                      <Image
+                        fill
+                        src={urlFor(post.mainImage).url()}
+                        alt={`Image of ${post.title}`}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="rounded-full"
+                      />
+                    ) : null}
                   </CardHeader>
                   <CardTitle>{post?.title}</CardTitle>
                   <CardDescription className="text-base/6">

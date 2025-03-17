@@ -46,16 +46,24 @@ export const postTypes = defineType({
     defineField({
       name: "projectCode",
       title: "Link to GitHub Repository",
-      type: "string",
+      type: "url",
       description:
         "Add the full URL to the project's GitHub repository (e.g., https://github.com/username/repository).",
+      validation: (Rule) =>
+        Rule.uri({
+          scheme: ["http", "https"],
+        }),
     }),
     defineField({
       name: "liveDemo",
       title: "Link to Live Project Demo",
-      type: "string",
+      type: "url",
       description:
         "Add the full URL to the live, working version of the project (e.g., https://yourproject.com).",
+      validation: (Rule) =>
+        Rule.uri({
+          scheme: ["http", "https"],
+        }),
     }),
   ],
 });
