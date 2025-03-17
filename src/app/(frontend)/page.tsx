@@ -20,7 +20,7 @@ export default function Home() {
         <section className="grid grid-cols-1 gap-6 md:grid-cols-12">
           {/* Main Hero Section */}
           <div className="group col-span-12">
-            <Card className="flex min-h-[65svh] items-center justify-center lg:min-h-[50rem]">
+            <Card className="flex items-center justify-center min-h-[40rem] lg:min-h-[50rem]">
               <div className="mx-auto w-10/12 space-y-4">
                 <p className="text-md scroll-m-20 font-bold">Hi, my name is</p>
                 <h1 className="scroll-m-20 text-3xl font-extrabold lg:text-6xl">
