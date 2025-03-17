@@ -35,11 +35,7 @@ export default function Home() {
                 <ul className="flex list-none items-center gap-4">
                   <li className="">
                     <Link href="/contact">
-                      <Button
-                        variant="secondary"
-                        size="sm"
-                        className="bg-gray-200 hover:bg-gray-200/70"
-                      >
+                      <Button variant="secondary" size="sm">
                         Let&#39;s Connect
                       </Button>
                     </Link>
