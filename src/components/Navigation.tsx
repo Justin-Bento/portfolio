@@ -72,11 +72,11 @@ export default function Header() {
               rel="noopener noreferrer"
               href="https://github.com/Justin-Bento"
             >
-              <Button variant="secondary" className="group hover:underline">
-                <CardDescription className="inline-flex flex-row-reverse items-center gap-2">
+              <Button variant="secondary">
+                <span className="inline-flex flex-row-reverse items-center gap-2">
                   <RiExternalLinkLine className="hover:underline" />
                   Github
-                </CardDescription>
+                </span>
               </Button>
             </Link>
           </div>
