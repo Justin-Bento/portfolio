@@ -10,38 +10,32 @@ export interface FooterNavProps {
   name: string;
   href: string;
   ariaLabel: string;
-  icon: JSX.ElementType; // IconType here defines the icon as a component, not JSX
+  icon: IconType; // Use IconType directly
 }
+
 export const footer_navigation: FooterNavProps[] = [
   {
     name: "SoundCloud",
     href: "https://soundcloud.com/bento-box-519166246",
     ariaLabel: "SoundCloud External Link",
-    icon: (props: IconType) => <RiSoundcloudFill {...props} />,
+    icon: RiSoundcloudFill, // Pass the icon component directly
   },
   {
     name: "Github",
     href: "https://github.com/Justin-Bento",
     ariaLabel: "GitHub External Link",
-    icon: (props: IconType) => <RiGithubFill {...props} />,
+    icon: RiGithubFill, // Pass the icon component directly
   },
   {
     name: "Pintrest",
     href: "https://www.pinterest.ca/bentoajustin/",
     ariaLabel: "Pintrest External Link",
-    icon: (props: IconType) => <RiPinterestFill {...props} />,
+    icon: RiPinterestFill, // Pass the icon component directly
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/justin--bento/",
     ariaLabel: "LinedIn External Link",
-    icon: (props: IconType) => <RiLinkedinBoxFill {...props} />,
+    icon: RiLinkedinBoxFill, // Pass the icon component directly
   },
 ];
-
-export interface IconProps {
-  name: string;
-  href: string;
-  ariaLabel: string;
-  icon: JSX.ElementType; // IconType here defines the icon as a component, not JSX
-}
