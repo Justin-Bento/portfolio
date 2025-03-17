@@ -12,13 +12,10 @@ import Link from "next/link";
 import { footer_navigation } from "@/lib/data";
 import { RiMailLine, RiMapPin2Line } from "react-icons/ri";
 import ContactForm from "@/components/ContactForm";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 
 export default function page() {
   return (
     <>
-      <Navigation />
       <main className="p-4 3xl:container lg:p-8 3xl:mx-auto">
         <section className="grid grid-cols-1 gap-4 md:grid-cols-12">
           <Card className="col-span-12 border-transparent bg-[#c6afb1]/30">
@@ -118,7 +115,6 @@ export default function page() {
           </Card>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

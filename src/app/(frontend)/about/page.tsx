@@ -7,8 +7,6 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Card } from "@/components/ui/card";
 import React from "react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import {
   RiArtboardLine,
   RiCss3Line,
@@ -26,7 +24,6 @@ import {
 export default function Page() {
   return (
     <>
-      <Navigation />
       <main className="p-4 3xl:container lg:gap-6 lg:p-8 3xl:mx-auto">
         <section className="grid grid-cols-1 gap-4 md:grid-cols-12">
           {/* Full-width Card */}
@@ -152,7 +149,6 @@ export default function Page() {
           </Card>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

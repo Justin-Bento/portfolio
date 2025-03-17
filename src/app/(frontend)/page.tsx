@@ -12,13 +12,10 @@ import {
   RiSoundcloudLine,
   RiTwitterLine,
 } from "react-icons/ri";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
-      <Navigation />
       <main className="min-h-dvh p-4 3xl:container lg:p-8 3xl:mx-auto">
         <section className="grid grid-cols-1 gap-6 md:grid-cols-12">
           {/* Main Hero Section */}
@@ -149,7 +146,6 @@ export default function Home() {
           </Link>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
