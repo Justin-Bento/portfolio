@@ -1,69 +1,36 @@
-# Personal Website 
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This GitHub repository holds the code for my personal website. It's purpose is to be a visual representation of my work, while focusing on the impact and design rather than the underlying technologies. 
+## Getting Started
 
-- Project Start Date: Friday 10th February 2023
-- Project End Date:  Tuesday 19th November 2024
-- Project Link: [Node Path Getting Hired Building Your Personal Website](https://www.theodinproject.com/lessons/node-path-getting-hired-building-your-personal-website)
+First, run the development server:
 
-## Features
-
--  Switched framework to Next.js v14 with App Folder
-   -  Fetched data
-   -  Used server and client side components. 
-   -  Accessed next.js route handlers with next/link
--  Utilized Tailwind CSS
-   -  Setup a mobile first design using tailwinds adaptive user interfaces.
-   -  Styled the light and dark mode on the sight
-   -  Installed shadcn/ui for custom components.
--  Setup Sanity Content Management System.
-   - Update projects with their dynamic reloading.
-   - CRUD operations with their project.  
-   - hosted everything underneath /studio 
- - Deployed project with vercel
-
-## Technologies
-
-- Front-end: HTML, CSS, TailwindCSS, JavaScript, TypeScript, React.js, 
-- Back-end: Node.js, Sanity, Next.js, prettier, eslint
-
-## Run Locally  
-  
-Clone the project  
-  
-```bash  
-git clone git@github.com:Justin-Bento/portfolio.git
-```  
-  
-Go to the project directory  
-  
-```bash  
-cd /path/to/project/portfolio  
-```  
-  
-Install dependencies  
-  
-```bash  
-npm install  
-```  
-  
-Start the server  
-  
-```bash  
+```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Environment Variables  
-  
-To run this project, you will need to add the following environment variables to your .env file  
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- ``NEXT_PUBLIC_SANITY_KEY`` 
-- ``NEXT_PUBLIC_SANITY_DATASET``
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Lessons Learned  
-  
-When building this project, things got complicated due too my need to prove that I'm an experienced developer. When in reality I was just an overconfident beginner protecting my own ego. This over-confidence was a double edge sword it made me dive into concepts that were beyond my skillets at the time, and thinking I could figure it out along the way. As a result, I ended up spending hours and sometime days troubleshooting issues that I probably could have avoided with simpler solutions. Looking back, I realize I was trying to prove to myself that I could handle complex tasks, but looking back I realized that scaling back and focusing on things step-by-step would have less frustrating overall while helping me learn these topics one at a time.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Acknowledgements
+## Learn More
 
-I would like to thank Humber College and The Odin Project, who provided invaluable guidance and support throughout this project. Special thanks to the The Odin Project Discord for their answers and resources, which helped me overcome some key technical challenges. 
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
