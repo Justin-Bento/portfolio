@@ -87,7 +87,7 @@ export default function Home() {
           {/* About Me Card */}
           <div className="group col-span-12 lg:col-span-4">
             <Link href="/about">
-              <Card className="group-hover:bg-accent/30">
+              <Card className="group-hover:bg-[#83C6C6]/30">
                 <CardContent className="flex flex-col items-start justify-center space-y-3 transition-all xl:h-64 xl:space-y-6">
                   <CardTitle>About Me</CardTitle>
                   <CardDescription className="line-clamp-4 leading-6">
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
           {/* Projects Card */}
           <Link href="/projects" className="group col-span-12 lg:col-span-4">
-            <Card className="group-hover:bg-accent/30">
+            <Card className="group-hover:bg-[#aba388]/30">
               <CardContent className="flex flex-col items-start justify-center space-y-3 transition-all xl:h-64 xl:space-y-6">
                 <CardTitle>Some Things I&#39;ve Built</CardTitle>
                 <CardDescription className="line-clamp-4 leading-6">
@@ -134,7 +134,7 @@ export default function Home() {
           </Link>
           {/* Work Experience Card */}
           <Link href="/experience" className="group col-span-12 lg:col-span-4">
-            <Card className="group-hover:bg-accent/30">
+            <Card className="group-hover:bg-[#c6afb1]/30">
               <CardContent className="flex flex-col items-start justify-center space-y-3 transition-all xl:h-64 xl:space-y-6">
                 <CardTitle>Where I&#39;ve Worked</CardTitle>
                 <CardDescription className="line-clamp-4 leading-6">
