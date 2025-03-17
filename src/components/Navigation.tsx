@@ -24,7 +24,7 @@ export default function Header() {
             <Button
               variant="outline"
               size="icon"
-              className="lg:hidden dark:text-white"
+              className="lg:hidden dark:text-foreground"
               onClick={toggleMobileMenu}
               aria-label={
                 mobileMenuOpen ? "nav-button-close" : "nav-button-open"
@@ -51,7 +51,7 @@ export default function Header() {
                       variant="link"
                       className="w-full justify-start lg:justify-center"
                     >
-                      <CardDescription className="capitalize text-black dark:text-white">
+                      <CardDescription className="capitalize text-foreground">
                         {navigator}
                       </CardDescription>
                     </Button>
