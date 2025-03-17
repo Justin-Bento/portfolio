@@ -86,13 +86,13 @@ export default async function Page() {
                     {post?.description}
                   </CardDescription>
                   <CardFooter className="space-x-4 pl-0">
-                    <Link href={post.projectCode}>
+                    <Link href={`${post.projectCode}`}>
                       <Button variant="secondary" size="sm">
                         <RiGithubLine />
                         View Code on GitHub
                       </Button>
                     </Link>
-                    <Link href={post.liveDemo}>
+                    <Link href={`${post.liveDemo}`}>
                       <Button variant="secondary" size="sm">
                         <RiComputerLine />
                         Interact With Project
