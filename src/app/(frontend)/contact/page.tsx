@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { footer_navigation, IconProps } from "@/lib/data";
+import { footer_navigation } from "@/lib/data";
 import { RiMailLine, RiMapPin2Line } from "react-icons/ri";
 import ContactForm from "@/components/ContactForm";
 import Navigation from "@/components/Navigation";
@@ -89,7 +89,7 @@ export default function page() {
                   Social&#39;s
                 </h2>
                 <div className="mt-4 flex items-center gap-2">
-                  {footer_navigation.map((item: IconProps) => (
+                  {footer_navigation.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
