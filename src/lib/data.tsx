@@ -1,16 +1,11 @@
-import { IconType } from "react-icons";
-import {
-  RiGithubFill,
-  RiLinkedinBoxFill,
-  RiPinterestFill,
-  RiSoundcloudFill,
-} from "react-icons/ri";
+import { AudioLines, Github, Linkedin, MapPin } from "lucide-react";
+import { Icon } from "lucide-react"; // This is the correct import for IconType
 
 export interface FooterNavProps {
   name: string;
   href: string;
   ariaLabel: string;
-  icon: IconType; // Use IconType directly
+  icon: React.ElementType; // Correct type for the icon components
 }
 
 export const footer_navigation: FooterNavProps[] = [
@@ -18,24 +13,24 @@ export const footer_navigation: FooterNavProps[] = [
     name: "SoundCloud",
     href: "https://soundcloud.com/bento-box-519166246",
     ariaLabel: "SoundCloud External Link",
-    icon: RiSoundcloudFill, // Pass the icon component directly
+    icon: AudioLines, // Pass the icon component directly
   },
   {
     name: "Github",
     href: "https://github.com/Justin-Bento",
     ariaLabel: "GitHub External Link",
-    icon: RiGithubFill, // Pass the icon component directly
+    icon: Github, // Pass the icon component directly
   },
   {
     name: "Pintrest",
     href: "https://www.pinterest.ca/bentoajustin/",
     ariaLabel: "Pintrest External Link",
-    icon: RiPinterestFill, // Pass the icon component directly
+    icon: MapPin, // Pass the icon component directly
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/justin--bento/",
     ariaLabel: "LinedIn External Link",
-    icon: RiLinkedinBoxFill, // Pass the icon component directly
+    icon: Linkedin, // Pass the icon component directly
   },
 ];

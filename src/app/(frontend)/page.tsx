@@ -5,13 +5,8 @@ import {
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
+import { AudioLines, Github, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
-import {
-  RiGithubLine,
-  RiLinkedinBoxLine,
-  RiSoundcloudLine,
-  RiTwitterLine,
-} from "react-icons/ri";
 
 export default function Home() {
   return (
@@ -42,7 +37,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     href="https://github.com/Justin-Bento"
                   >
-                    <RiGithubLine className="text-2xl hover:fill-primary" />
+                    <Github className="text-2xl hover:fill-primary" />
                   </Link>
                 </li>
                 <li className="">
@@ -51,7 +46,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/justinbento/"
                   >
-                    <RiLinkedinBoxLine className="text-2xl hover:fill-primary" />
+                    <Linkedin className="text-2xl hover:fill-primary" />
                   </Link>
                 </li>
                 <li className="">
@@ -60,7 +55,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     href="https://twitter.com/Justin-Bento"
                   >
-                    <RiTwitterLine className="text-2xl hover:fill-primary" />
+                    <Twitter className="text-2xl hover:fill-primary" />
                   </Link>
                 </li>
                 <li className="">
@@ -69,7 +64,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     href="https://soundcloud.com/fretfuze"
                   >
-                    <RiSoundcloudLine className="text-2xl hover:fill-primary" />
+                    <AudioLines className="text-2xl hover:fill-primary" />
                   </Link>
                 </li>
               </ul>

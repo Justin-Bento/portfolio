@@ -10,8 +10,8 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { footer_navigation } from "@/lib/data";
-import { RiMailLine, RiMapPin2Line } from "react-icons/ri";
 import ContactForm from "@/components/ContactForm";
+import { MailOpen, Map } from "lucide-react";
 
 export default function page() {
   return (
@@ -66,7 +66,7 @@ export default function page() {
                 variant="ghost"
                 className="mt-2 inline-flex items-center gap-2"
               >
-                <RiMapPin2Line />
+                <Map />
                 Toronto Ontario
               </Button>
               <hr className="border-1 my-6 border-black/20 dark:border-gray-50" />
@@ -77,7 +77,7 @@ export default function page() {
                 variant="ghost"
                 className="mt-2 inline-flex items-center gap-2 normal-case"
               >
-                <RiMailLine />
+                <MailOpen />
                 contact@justinbento.com
               </Button>
               <hr className="border-1 my-6 border-black/20 dark:border-gray-50" />

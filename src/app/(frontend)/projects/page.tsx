@@ -20,6 +20,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import Link from "next/link";
+import { Github, Laptop } from "lucide-react";
 
 export default async function Page() {
   const { data: posts } = await sanityFetch({ query: POSTS_QUERY });
@@ -82,13 +83,13 @@ export default async function Page() {
                 <CardFooter className="pl-0 flex flex-col lg:flex-row items-start gap-2">
                   <Link href={`${post.projectCode}`}>
                     <Button variant="secondary" size="sm" className="w-full">
-                      <RiGithubLine />
+                      <Github />
                       View Code on GitHub
                     </Button>
                   </Link>
                   <Link href={`${post.liveDemo}`}>
                     <Button variant="secondary" size="sm" className="w-full">
-                      <RiComputerLine />
+                      <Laptop />
                       Interact With Project
                     </Button>
                   </Link>

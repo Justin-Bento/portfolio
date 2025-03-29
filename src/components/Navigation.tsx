@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription } from "./ui/card";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Logo } from "./Logo";
-import { RiCloseLine, RiExternalLinkLine, RiMenuLine } from "react-icons/ri";
+import { ExternalLink, Menu, X } from "lucide-react";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // Set initial state to false (closed)
@@ -30,7 +30,7 @@ export default function Header() {
                 mobileMenuOpen ? "nav-button-close" : "nav-button-open"
               }
             >
-              {mobileMenuOpen ? <RiCloseLine /> : <RiMenuLine />}
+              {mobileMenuOpen ? <X /> : <Menu />}
             </Button>
           </div>
 
@@ -74,7 +74,7 @@ export default function Header() {
             >
               <Button variant="secondary">
                 <span className="inline-flex flex-row-reverse items-center gap-2">
-                  <RiExternalLinkLine className="hover:underline" />
+                  <ExternalLink className="hover:underline" />
                   Github
                 </span>
               </Button>

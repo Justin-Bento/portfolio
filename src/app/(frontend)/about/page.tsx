@@ -6,20 +6,8 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Card } from "@/components/ui/card";
+import { Code, Music, Palette, PersonStanding } from "lucide-react";
 import React from "react";
-import {
-  RiArtboardLine,
-  RiCss3Line,
-  RiGameLine,
-  RiHtml5Line,
-  RiJavascriptLine,
-  RiMusicLine,
-  RiPantoneLine,
-  RiPencilRulerLine,
-  RiPlantLine,
-  RiReactjsLine,
-  RiTailwindCssLine,
-} from "react-icons/ri";
 
 export default function Page() {
   return (
@@ -78,11 +66,7 @@ export default function Page() {
               earned through consistent effort and focus.
             </p>
             <span className="mt-4 inline-flex items-center gap-4 border-muted-foreground">
-              <RiHtml5Line className="size-7" />
-              <RiCss3Line className="size-7" />
-              <RiJavascriptLine className="size-7" />
-              <RiTailwindCssLine className="size-7" />
-              <RiReactjsLine className="size-7" />
+              <Code />
             </span>
           </div>
         </Card>
@@ -100,9 +84,7 @@ export default function Page() {
               solutions for the user.
             </p>
             <span className="mt-4 inline-flex items-center gap-4">
-              <RiPencilRulerLine className="size-7" />
-              <RiArtboardLine className="size-7" />
-              <RiPantoneLine className="size-7" />
+              <Palette />
             </span>
           </div>
         </Card>
@@ -120,9 +102,7 @@ export default function Page() {
               efficient answers to existing and new problems.
             </p>
             <span className="mt-4 inline-flex items-center gap-4">
-              <RiPencilRulerLine className="size-7" />
-              <RiArtboardLine className="size-7" />
-              <RiPantoneLine className="size-7" />
+              <PersonStanding />
             </span>
           </div>
         </Card>
@@ -140,9 +120,7 @@ export default function Page() {
               work.
             </p>
             <span className="mt-4 inline-flex items-center gap-4">
-              <RiMusicLine className="size-7" />
-              <RiGameLine className="size-7" />
-              <RiPlantLine className="size-7" />
+              <Music />
             </span>
           </div>
         </Card>

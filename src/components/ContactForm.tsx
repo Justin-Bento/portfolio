@@ -6,6 +6,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import ThankYou from "@/layout/ThankYou";
 import { RiSendPlane2Line } from "react-icons/ri";
+import { SendHorizontal } from "lucide-react";
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm(
@@ -85,7 +86,7 @@ export default function ContactForm() {
         <fieldset className="space-y-3">
           <Button type="submit" disabled={state.submitting}>
             Submit
-            <RiSendPlane2Line />
+            <SendHorizontal />
           </Button>
           <ValidationError errors={state.errors} />
         </fieldset>
