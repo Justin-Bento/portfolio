@@ -16,9 +16,7 @@ export default function FrontEndLayout({
         enableSystem
         disableTransitionOnChange
       >
-        <main className="min-h-dvh p-4 3xl:container lg:p-8 3xl:mx-auto">
-          {children}
-        </main>
+        <main className="container mx-auto min-h-dvh p-6">{children}</main>
       </ThemeProvider>
       <Footer />
     </>
