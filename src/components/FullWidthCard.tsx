@@ -70,7 +70,7 @@ const BreadcrumbItemComponent: React.FC<{
           {children}
         </BreadcrumbLink>
       </BreadcrumbItem>
-      <BreadcrumbSeparator />
+      {!isActive && <BreadcrumbSeparator />}
     </>
   );
 };
