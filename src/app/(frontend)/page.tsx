@@ -25,9 +25,9 @@ export default function Home() {
               </p>
               <ul className="flex list-none items-center gap-4">
                 <li className="">
-                  <Link href="/contact">
+                  <Link href="/projects">
                     <Button variant="secondary" size="sm">
-                      Let&#39;s Connect
+                      View Proejcts
                     </Button>
                   </Link>
                 </li>
