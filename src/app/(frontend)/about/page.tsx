@@ -1,14 +1,8 @@
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
 import { Card } from "@/components/ui/card";
 import { Code, Music, Palette, PersonStanding } from "lucide-react";
 import React from "react";
 import { Metadata } from "next";
+import FullWidthCard from "@/components/FullWidthCard";
 
 export const metadata: Metadata = {
   title: "About",
@@ -20,44 +14,23 @@ export default function Page() {
   return (
     <>
       <section className="grid grid-cols-1 gap-4 md:grid-cols-12">
-        {/* Full-width Card */}
-        <Card className="col-span-12 border-transparent bg-[#6edede]/30">
-          <div className="mx-auto flex min-h-[65svh] w-11/12 items-center xl:min-h-[36rem]">
-            <div className="space-y-3">
-              <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink
-                      href="/"
-                      className="font-medium text-foreground/80"
-                    >
-                      Home
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbLink
-                      href="/about"
-                      className="font-medium underline text-foreground"
-                    >
-                      About
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-              <h2 className="text-3xl font-extrabold capitalize lg:text-5xl text-foreground">
-                Building with Purpose.
-              </h2>
-              <p className="line-clamp-4 text-balance text-black text-muted-foreground">
-                As you know my name is Justin Bento. My job is to write
-                maintainable code and turn ideas into tools that work, look
-                great and are pleasant to use. I build with purpose so every
-                project I work on is a step forward for myself and the teams I
-                work with.
-              </p>
-            </div>
-          </div>
-        </Card>
+        <FullWidthCard>
+          <FullWidthCard.Breadcrumbs>
+            <FullWidthCard.BreadcrumbItem href="/">
+              Home
+            </FullWidthCard.BreadcrumbItem>
+            <FullWidthCard.BreadcrumbItem href="/about" isActive>
+              About
+            </FullWidthCard.BreadcrumbItem>
+          </FullWidthCard.Breadcrumbs>
+          <FullWidthCard.Heading>Building with Purpose</FullWidthCard.Heading>
+          <FullWidthCard.Overview>
+            As you know my name is Justin Bento. My job is to write maintainable
+            code and turn ideas into tools that work, look great and are
+            pleasant to use. I build with purpose so every project I work on is
+            a step forward for myself and the teams I work with.
+          </FullWidthCard.Overview>
+        </FullWidthCard>
         {/* 7-column Card (left-aligned) */}
         <Card className="col-span-12 lg:col-span-7">
           <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">

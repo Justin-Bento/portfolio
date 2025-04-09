@@ -1,18 +1,12 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { footer_navigation } from "@/lib/data";
 import ContactForm from "@/components/ContactForm";
 import { MailOpen, Map } from "lucide-react";
 import { Metadata } from "next";
+import FullWidthCard from "@/components/FullWidthCard";
 
 export const metadata: Metadata = {
   title: "Cotnact",
@@ -24,42 +18,25 @@ export default function page() {
   return (
     <>
       <section className="grid grid-cols-1 gap-4 md:grid-cols-12">
-        <Card className="col-span-12 border-transparent bg-[#c6afb1]/30">
-          <div className="mx-auto flex min-h-[65svh] w-11/12 items-center xl:min-h-[36rem]">
-            <div className="space-y-3">
-              <Breadcrumb>
-                <BreadcrumbList>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink
-                      href="/"
-                      className="font-medium text-black dark:text-white"
-                    >
-                      Home
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                  <BreadcrumbItem>
-                    <BreadcrumbLink
-                      href="/Projects"
-                      className="font-medium text-black underline dark:text-white"
-                    >
-                      Contact
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                </BreadcrumbList>
-              </Breadcrumb>
-              <h1 className="text-3xl font-extrabold capitalize tracking-tight lg:text-5xl dark:text-white">
-                Let&#39;s work together!
-              </h1>
-              <p className="text-sm/5 md:text-base/7 md:w-8/12">
-                I&#39;d love to hear from you! Whether you have a project in
-                mind, a collaboration opportunity, or just want to say hello,
-                feel free to reach out. Fill in the form below, and I&#39;ll get
-                back to you as soon as possible.
-              </p>
-            </div>
-          </div>
-        </Card>
+        <FullWidthCard>
+          <FullWidthCard.Breadcrumbs>
+            <FullWidthCard.BreadcrumbItem href="/">
+              Home
+            </FullWidthCard.BreadcrumbItem>
+            <FullWidthCard.BreadcrumbItem href="/about" isActive>
+              About
+            </FullWidthCard.BreadcrumbItem>
+          </FullWidthCard.Breadcrumbs>
+          <FullWidthCard.Heading>
+            Let&#39;s work together!
+          </FullWidthCard.Heading>
+          <FullWidthCard.Overview>
+            I&#39;d love to hear from you! Whether you have a project in mind, a
+            collaboration opportunity, or just want to say hello, feel free to
+            reach out. Fill in the form below, and I&#39;ll get back to you as
+            soon as possible.
+          </FullWidthCard.Overview>
+        </FullWidthCard>
         <Card className="col-span-12 min-h-[20dvh] lg:col-span-6">
           <div className="my-16 grid gap-16 px-4 py-5 sm:p-6 lg:grid-cols-1">
             <div id="contact-information" className="overflow-hidden">

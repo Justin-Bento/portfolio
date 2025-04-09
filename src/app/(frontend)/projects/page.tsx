@@ -22,6 +22,7 @@ import Link from "next/link";
 import { Github, Laptop } from "lucide-react";
 
 import { Metadata } from "next";
+import FullWidthCard from "@/components/FullWidthCard";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -34,40 +35,25 @@ export default async function Page() {
   return (
     <>
       <section className="grid grid-cols-1 gap-4 md:grid-cols-12">
-        <Card className="col-span-12 flex min-h-[65dvh] justify-center rounded-lg border-transparent bg-[#aba388]/30 p-8 xl:min-h-[36rem]">
-          <div className="space-y-2">
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink
-                    href="/"
-                    className="font-medium text-black/50 dark:text-white"
-                  >
-                    Home
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbLink
-                    href="/Projects"
-                    className="font-medium text-black underline dark:text-white"
-                  >
-                    Projects
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
-            <h1 className="text-4xl font-bold lg:text-5xl dark:text-white">
-              Building Ideas, One Project at a Time.
-            </h1>
-            <p className="mt-4 max-w-5xl text-balance leading-7 lg:text-lg dark:text-white">
-              Welcome to my portfolio—a showcase of projects that highlight my
-              growth as a developer. Each piece reflects a blend of
-              problem-solving, technical expertise, and a passion for delivering
-              effective solutions.
-            </p>
-          </div>
-        </Card>
+        <FullWidthCard>
+          <FullWidthCard.Breadcrumbs>
+            <FullWidthCard.BreadcrumbItem href="/">
+              Home
+            </FullWidthCard.BreadcrumbItem>
+            <FullWidthCard.BreadcrumbItem href="/projects" isActive>
+              Projects
+            </FullWidthCard.BreadcrumbItem>
+          </FullWidthCard.Breadcrumbs>
+          <FullWidthCard.Heading>
+            Building Ideas, One Project at a Time
+          </FullWidthCard.Heading>
+          <FullWidthCard.Overview>
+            Welcome to my portfolio—a showcase of projects that highlight my
+            growth as a developer. Each piece reflects a blend of
+            problem-solving, technical expertise, and a passion for delivering
+            effective solutions.
+          </FullWidthCard.Overview>
+        </FullWidthCard>
       </section>
       <ul className="grid list-none grid-cols-12 gap-6 pt-8">
         {posts.map((post) => (
