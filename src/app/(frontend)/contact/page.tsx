@@ -23,8 +23,8 @@ export default function page() {
             <FullWidthCard.BreadcrumbItem href="/">
               Home
             </FullWidthCard.BreadcrumbItem>
-            <FullWidthCard.BreadcrumbItem href="/about" isActive>
-              About
+            <FullWidthCard.BreadcrumbItem href="/contact" isActive>
+              Contact
             </FullWidthCard.BreadcrumbItem>
           </FullWidthCard.Breadcrumbs>
           <FullWidthCard.Heading>
