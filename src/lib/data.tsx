@@ -1,5 +1,4 @@
 import { AudioLines, Github, Linkedin, MapPin } from "lucide-react";
-import { Icon } from "lucide-react"; // This is the correct import for IconType
 
 export interface FooterNavProps {
   name: string;

@@ -5,7 +5,6 @@ import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import ThankYou from "@/layout/ThankYou";
-import { RiSendPlane2Line } from "react-icons/ri";
 import { SendHorizontal } from "lucide-react";
 
 export default function ContactForm() {
