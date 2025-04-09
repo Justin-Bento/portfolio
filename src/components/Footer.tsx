@@ -28,7 +28,7 @@ export default function Footer() {
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon
-                    className="h-6 w-6 fill-foreground/80"
+                    className="size-6 hover:border-primary/80"
                     aria-hidden="true"
                   />
                 </Link>
