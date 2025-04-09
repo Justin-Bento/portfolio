@@ -11,13 +11,6 @@ import {
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { Button } from "@/components/ui/button";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
 import Link from "next/link";
 import { Github, Laptop } from "lucide-react";
 
