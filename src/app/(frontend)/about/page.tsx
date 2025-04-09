@@ -8,6 +8,13 @@ import {
 import { Card } from "@/components/ui/card";
 import { Code, Music, Palette, PersonStanding } from "lucide-react";
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "I’m Justin Bento. I live in Toronto, where I build projects to last.",
+};
 
 export default function Page() {
   return (

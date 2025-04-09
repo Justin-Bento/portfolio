@@ -11,7 +11,6 @@ import {
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { Button } from "@/components/ui/button";
-import { RiComputerLine, RiGithubLine } from "react-icons/ri";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -21,6 +20,14 @@ import {
 } from "@/components/ui/breadcrumb";
 import Link from "next/link";
 import { Github, Laptop } from "lucide-react";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "I’m Justin Bento. I live in Toronto, where I build projects to last.",
+};
 
 export default async function Page() {
   const { data: posts } = await sanityFetch({ query: POSTS_QUERY });

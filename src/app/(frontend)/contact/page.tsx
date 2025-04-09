@@ -12,6 +12,13 @@ import Link from "next/link";
 import { footer_navigation } from "@/lib/data";
 import ContactForm from "@/components/ContactForm";
 import { MailOpen, Map } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cotnact",
+  description:
+    "I’m Justin Bento. I live in Toronto, where I build projects to last.",
+};
 
 export default function page() {
   return (

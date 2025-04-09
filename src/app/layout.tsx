@@ -11,9 +11,13 @@ const switzer = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Justin Bento - Portfolio",
+  title: {
+    template: "%s - Justin Bento",
+    default:
+      "Justin Bento - Software developer that deliveres clean, maintainable code for Business Growth",
+  },
   description:
-    "Welcome to my portfolio, heres I bring ideas to life one pixel at a time.",
+    "I’m Justin Bento, a Toronto-based software developer passionate about building scalable solutions.  specialize in delivering user-centric software that aligns with business objectives. I’m eager to contribute my skills to your company.",
   icons: {
     icon: [
       {
