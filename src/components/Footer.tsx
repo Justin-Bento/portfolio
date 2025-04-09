@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="">
       <Card className="shadow-none rounded-none">
-        <CardContent className="container mx-auto px-6 py-16 md:flex md:items-center md:justify-between">
+        <CardContent className="container mx-auto p-6 md:flex md:items-center md:justify-between">
           <ul className="flex list-none justify-start space-x-6 md:order-2 lg:justify-center">
             {footer_navigation.map((item, index) => (
               <li key={index} className="">
