@@ -77,8 +77,8 @@ const BreadcrumbItemComponent: React.FC<{
 
 const Heading: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <h2 className="text-3xl font-extrabold capitalize lg:text-5xl text-foreground">
-      {children}.
+    <h2 className="text-4xl font-bold tracking-tight text-foreground">
+      {children}
     </h2>
   );
 };
