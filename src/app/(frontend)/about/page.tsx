@@ -34,9 +34,8 @@ export default function Page() {
         </FullWidthCard>
         <div className="col-span-12">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-6 lg:grid-rows-2">
-            <div className="relative lg:col-span-3">
-              <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
-              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
+            <Card className="p-0 relative lg:col-span-3">
+              <CardContent className="p-0 relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
                 <div className="relative h-80 w-full">
                   <Image
                     fill
@@ -59,12 +58,10 @@ export default function Page() {
                     management.
                   </p>
                 </div>
-              </div>
-              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
-            </div>
-            <div className="relative lg:col-span-3">
-              <div className="absolute inset-px rounded-lg bg-white lg:rounded-tr-[2rem]" />
-              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
+              </CardContent>
+            </Card>
+            <Card className="p-0 relative lg:col-span-3">
+              <CardContent className="p-0 relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
                 <div className="relative h-80 w-full">
                   <Image
                     fill
@@ -86,12 +83,10 @@ export default function Page() {
                     before continuing with the code.
                   </p>
                 </div>
-              </div>
-              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-tr-[2rem]" />
-            </div>
-            <div className="relative lg:col-span-2">
-              <div className="absolute inset-px rounded-lg bg-white lg:rounded-bl-[2rem]" />
-              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
+              </CardContent>
+            </Card>
+            <Card className="p-0 relative lg:col-span-2">
+              <CardContent className="p-0 relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
                 <img
                   alt=""
                   src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-speed.png"
@@ -109,12 +104,10 @@ export default function Page() {
                     - every line of code helps me grow.
                   </p>
                 </div>
-              </div>
-              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-bl-[2rem]" />
-            </div>
-            <div className="relative lg:col-span-2">
-              <div className="absolute inset-px rounded-lg bg-white" />
-              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+              </CardContent>
+            </Card>
+            <Card className="p-0 relative lg:col-span-2">
+              <CardContent className="p-0 relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
                 <img
                   alt=""
                   src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-integrations.png"
@@ -132,11 +125,10 @@ export default function Page() {
                     needed. For maximum results.
                   </p>
                 </div>
-              </div>
-              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5" />
-            </div>
+              </CardContent>
+            </Card>
             <Card className="p-0 relative lg:col-span-2">
-              <CardContent className="pt-0 px-0 relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
+              <CardContent className="p-0  relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
                 <img
                   alt=""
                   src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
