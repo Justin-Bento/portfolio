@@ -1,4 +1,4 @@
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Code, Music, Palette, PersonStanding } from "lucide-react";
 import React from "react";
 import { Metadata } from "next";
@@ -49,10 +49,10 @@ export default function Page() {
                   <h3 className="text-xs/4 font-semibold text-teal-600">
                     Front-end development
                   </h3>
-                  <p className="mt-2 text-lg font-medium text-gray-950 capitalize">
+                  <p className="mt-2 text-lg font-medium text-foreground capitalize">
                     Lightning-fast builds
                   </p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 line-clamp-2">
+                  <p className="mt-2 max-w-lg text-sm/6 text-muted-foreground line-clamp-2">
                     I use HTML, CSS, JavaScript, React, and TypeScript to create
                     the visual part of websites that users interact with,
                     bringing designs to life. Utilize CMS for content
@@ -73,17 +73,17 @@ export default function Page() {
                     className="object-cover object-left"
                   />
                 </div>
-                <div className="p-10 pt-4">
+                <div className="p-6 lg:p-10 pt-4">
                   <h3 className="text-xs/4 font-semibold text-teal-600">
                     Graphic Design
                   </h3>
-                  <p className="mt-2 text-lg font-medium text-gray-950">
-                    Everything You See Is Designed By Me
+                  <p className="mt-2 text-lg font-medium text-foreground">
+                    If You’re Seeing It, I Dreamed It First.
                   </p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 line-clamp-2">
-                    The graphic designer designs a mockup showing what the
-                    feature will look like on the website, along with the chosen
-                    fonts and color palette. .
+                  <p className="mt-2 max-w-lg text-sm/6 text-muted-foreground line-clamp-2">
+                    My time sepent is spent designg a web mockups to help me
+                    visualise what the feature will look like on the website,
+                    before continuing with the code.
                   </p>
                 </div>
               </div>
@@ -99,14 +99,14 @@ export default function Page() {
                 />
                 <div className="p-10 pt-4">
                   <h3 className="text-xs/4 font-semibold text-teal-600">
-                    Speed
+                    Learning
                   </h3>
-                  <p className="mt-2 text-lg font-medium text-gray-950">
-                    Built for power users
+                  <p className="mt-2 text-lg font-medium text-foreground">
+                    Always Leveling Up
                   </p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 line-clamp-2">
-                    Sed congue eros non finibus molestie. Vestibulum euismod
-                    augue.
+                  <p className="mt-2 max-w-lg text-sm/6 text-muted-foreground line-clamp-2">
+                    Whether it's mastering new tech or deepening my fundamentals
+                    - every line of code helps me grow.
                   </p>
                 </div>
               </div>
@@ -124,20 +124,19 @@ export default function Page() {
                   <h3 className="text-xs/4 font-semibold text-teal-600">
                     Integrations
                   </h3>
-                  <p className="mt-2 text-lg font-medium text-gray-950">
-                    Connect your favorite tools
+                  <p className="mt-2 text-lg font-medium text-foreground">
+                    Built for Tomorrow’s Stack
                   </p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 line-clamp-2">
-                    Maecenas at augue sed elit dictum vulputate, in nisi aliquam
-                    maximus arcu.
+                  <p className="mt-2 max-w-lg text-sm/6 text-muted-foreground line-clamp-2">
+                    My goal is to, integrate what you love—no extra engineering
+                    needed. For maximum results.
                   </p>
                 </div>
               </div>
               <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5" />
             </div>
-            <div className="relative lg:col-span-2">
-              <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
-              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
+            <Card className="p-0 relative lg:col-span-2">
+              <CardContent className="pt-0 px-0 relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
                 <img
                   alt=""
                   src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
@@ -147,17 +146,16 @@ export default function Page() {
                   <h3 className="text-xs/4 font-semibold text-teal-600">
                     Network
                   </h3>
-                  <p className="mt-2 text-lg font-medium text-gray-950">
-                    Globally distributed CDN
+                  <p className="mt-2 text-lg font-medium text-foreground">
+                    Building Bridges, Not Just Contacts
                   </p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 line-clamp-2">
-                    Aenean vulputate justo commodo auctor vehicula in malesuada
-                    semper.
+                  <p className="mt-2 max-w-lg text-sm/6 text-muted-foreground line-clamp-2">
+                    I believe meaningful relationships start with genuine
+                    conversations – across time zones and job titles.
                   </p>
                 </div>
-              </div>
-              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
-            </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
