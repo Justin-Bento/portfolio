@@ -24,12 +24,14 @@ export default function Page() {
               About
             </FullWidthCard.BreadcrumbItem>
           </FullWidthCard.Breadcrumbs>
-          <FullWidthCard.Heading>Building with Purpose</FullWidthCard.Heading>
+          <FullWidthCard.Heading>
+            Building with Purpose or Fun
+          </FullWidthCard.Heading>
           <FullWidthCard.Overview>
-            As you know my name is Justin Bento. My job is to write maintainable
-            code and turn ideas into tools that work, look great and are
-            pleasant to use. I build with purpose so every project I work on is
-            a step forward for myself and the teams I work with.
+            My job is to write maintainable code and turn ideas into tools that
+            work, look great and are pleasant to use. I build with purpose so
+            every project I work on is a step forward for myself and the teams I
+            work with.
           </FullWidthCard.Overview>
         </FullWidthCard>
         <div className="col-span-12">
@@ -87,11 +89,14 @@ export default function Page() {
             </Card>
             <Card className="p-0 relative lg:col-span-2">
               <CardContent className="p-0 relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
-                <img
-                  alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-speed.png"
-                  className="h-80 object-cover object-left"
-                />
+                <div className="relative w-full h-80">
+                  <Image
+                    fill
+                    alt="Man Riding Bike Free Stock Photo"
+                    src="/images/image-7.jpg"
+                    className="h-80 object-cover"
+                  />
+                </div>
                 <div className="p-10 pt-4">
                   <h3 className="text-xs/4 font-semibold text-teal-600">
                     Learning
@@ -100,19 +105,22 @@ export default function Page() {
                     Always Leveling Up
                   </p>
                   <p className="mt-2 max-w-lg text-sm/6 text-muted-foreground line-clamp-2">
-                    Whether it's mastering new tech or deepening my fundamentals
-                    - every line of code helps me grow.
+                    Hoarding knowledge like boxses for wild castles, others for
+                    bedrock. Coding puts it all together.
                   </p>
                 </div>
               </CardContent>
             </Card>
             <Card className="p-0 relative lg:col-span-2">
               <CardContent className="p-0 relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                <img
-                  alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-integrations.png"
-                  className="h-80 object-cover"
-                />
+                <div className="relative w-full h-80">
+                  <Image
+                    fill
+                    alt="Business Cat Free Stock Photo"
+                    src="/images/image-6.jpg"
+                    className="h-80 object-cover"
+                  />
+                </div>
                 <div className="p-10 pt-4">
                   <h3 className="text-xs/4 font-semibold text-teal-600">
                     Integrations
@@ -122,18 +130,21 @@ export default function Page() {
                   </p>
                   <p className="mt-2 max-w-lg text-sm/6 text-muted-foreground line-clamp-2">
                     My goal is to, integrate what you love—no extra engineering
-                    needed. For maximum results.
+                    needed.
                   </p>
                 </div>
               </CardContent>
             </Card>
             <Card className="p-0 relative lg:col-span-2">
               <CardContent className="p-0  relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
-                <img
-                  alt=""
-                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
-                  className="h-80 object-cover"
-                />
+                <div className="relative w-full h-80">
+                  <Image
+                    fill
+                    alt="Funny Dog in Yellow Hat Free Stock Photo"
+                    src="/images/image-5.jpg"
+                    className="h-80 object-cover"
+                  />
+                </div>
                 <div className="p-10 pt-4">
                   <h3 className="text-xs/4 font-semibold text-teal-600">
                     Network
