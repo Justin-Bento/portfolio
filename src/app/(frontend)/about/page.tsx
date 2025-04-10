@@ -3,6 +3,7 @@ import { Code, Music, Palette, PersonStanding } from "lucide-react";
 import React from "react";
 import { Metadata } from "next";
 import FullWidthCard from "@/components/FullWidthCard";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -31,79 +32,134 @@ export default function Page() {
             a step forward for myself and the teams I work with.
           </FullWidthCard.Overview>
         </FullWidthCard>
-        {/* 7-column Card (left-aligned) */}
-        <Card className="col-span-12 lg:col-span-7">
-          <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
-            <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-              How I Became a Web Developer?
-            </h2>
-            <p className="text-balance text-black text-muted-foreground">
-              My journey into web development began with Humber College&#39;s
-              Multimedia Design program, where I gained hands-on experience
-              working on real-world projects. I continued to grow my skills
-              through The Odin Project, learning by building. My early work
-              taught me an essential lesson: success isn&#39;t given—it&#39;s
-              earned through consistent effort and focus.
-            </p>
-            <span className="mt-4 inline-flex items-center gap-4 border-muted-foreground">
-              <Code />
-            </span>
+        <div className="col-span-12">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-6 lg:grid-rows-2">
+            <div className="relative lg:col-span-3">
+              <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
+                <div className="relative h-80 w-full">
+                  <Image
+                    fill
+                    alt="Front-end development illustration"
+                    src="/images/image-2.png"
+                    className="object-cover object-left"
+                  />
+                </div>
+                <div className="p-6 lg:p-10 pt-4">
+                  <h3 className="text-xs/4 font-semibold text-teal-600">
+                    Front-end development
+                  </h3>
+                  <p className="mt-2 text-lg font-medium text-gray-950 capitalize">
+                    Lightning-fast builds
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 line-clamp-2">
+                    I use HTML, CSS, JavaScript, React, and TypeScript to create
+                    the visual part of websites that users interact with,
+                    bringing designs to life. Utilize CMS for content
+                    management.
+                  </p>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
+            </div>
+            <div className="relative lg:col-span-3">
+              <div className="absolute inset-px rounded-lg bg-white lg:rounded-tr-[2rem]" />
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
+                <div className="relative h-80 w-full">
+                  <Image
+                    fill
+                    alt="Front-end development illustration"
+                    src="/images/image-4.png"
+                    className="object-cover object-left"
+                  />
+                </div>
+                <div className="p-10 pt-4">
+                  <h3 className="text-xs/4 font-semibold text-teal-600">
+                    Graphic Design
+                  </h3>
+                  <p className="mt-2 text-lg font-medium text-gray-950">
+                    Everything You See Is Designed By Me
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 line-clamp-2">
+                    The graphic designer designs a mockup showing what the
+                    feature will look like on the website, along with the chosen
+                    fonts and color palette. .
+                  </p>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-tr-[2rem]" />
+            </div>
+            <div className="relative lg:col-span-2">
+              <div className="absolute inset-px rounded-lg bg-white lg:rounded-bl-[2rem]" />
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
+                <img
+                  alt=""
+                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-speed.png"
+                  className="h-80 object-cover object-left"
+                />
+                <div className="p-10 pt-4">
+                  <h3 className="text-xs/4 font-semibold text-teal-600">
+                    Speed
+                  </h3>
+                  <p className="mt-2 text-lg font-medium text-gray-950">
+                    Built for power users
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 line-clamp-2">
+                    Sed congue eros non finibus molestie. Vestibulum euismod
+                    augue.
+                  </p>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-bl-[2rem]" />
+            </div>
+            <div className="relative lg:col-span-2">
+              <div className="absolute inset-px rounded-lg bg-white" />
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+                <img
+                  alt=""
+                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-integrations.png"
+                  className="h-80 object-cover"
+                />
+                <div className="p-10 pt-4">
+                  <h3 className="text-xs/4 font-semibold text-teal-600">
+                    Integrations
+                  </h3>
+                  <p className="mt-2 text-lg font-medium text-gray-950">
+                    Connect your favorite tools
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 line-clamp-2">
+                    Maecenas at augue sed elit dictum vulputate, in nisi aliquam
+                    maximus arcu.
+                  </p>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5" />
+            </div>
+            <div className="relative lg:col-span-2">
+              <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
+                <img
+                  alt=""
+                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
+                  className="h-80 object-cover"
+                />
+                <div className="p-10 pt-4">
+                  <h3 className="text-xs/4 font-semibold text-teal-600">
+                    Network
+                  </h3>
+                  <p className="mt-2 text-lg font-medium text-gray-950">
+                    Globally distributed CDN
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 line-clamp-2">
+                    Aenean vulputate justo commodo auctor vehicula in malesuada
+                    semper.
+                  </p>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
+            </div>
           </div>
-        </Card>
-        {/* 5-column Card (right-aligned) */}
-        <Card className="col-span-12 lg:col-span-5">
-          <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
-            <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-              How I Approach Design and Creativity!
-            </h2>
-            <p className="text-black text-muted-foreground">
-              My process starts with understanding users’ needs and challenges.
-              From brainstorming to prototyping, I test and refine ideas until
-              they solve real problems effectively. Design Thinking guides me,
-              but I keep things practical—what matters most is delivering
-              solutions for the user.
-            </p>
-            <span className="mt-4 inline-flex items-center gap-4">
-              <Palette />
-            </span>
-          </div>
-        </Card>
-        {/* 5-column Card (left-aligned) */}
-        <Card className="col-span-12 lg:col-span-5">
-          <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
-            <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-              The Human Behind the Code!
-            </h2>
-            <p className="text-black text-muted-foreground">
-              I&apos;ve learned to tackle challenges with curiosity and
-              adaptability—skills. I bring these skills to every project I work
-              on. Whether I&apos;m optimizing code, debugging systems, or
-              brainstorming new solutions, I thrive on finding creative,
-              efficient answers to existing and new problems.
-            </p>
-            <span className="mt-4 inline-flex items-center gap-4">
-              <PersonStanding />
-            </span>
-          </div>
-        </Card>
-        {/* 7-column Card (right-aligned) */}
-        <Card className="col-span-12 lg:col-span-7">
-          <div className="mx-auto flex min-h-[37vh] w-11/12 flex-col justify-center gap-2">
-            <h2 className="text-xl font-semibold capitalize leading-normal tracking-wide">
-              Beyond the Keyboard!
-            </h2>
-            <p className="line-clamp-4 text-balance text-black text-muted-foreground">
-              When I&apos;m not coding, you&apos;ll find me playing guitar or
-              creating music it&apos;s my way to recharge and stay creative.
-              Both music and coding push me to focus, adapt, and find rhythm in
-              problem-solving. It&apos;s how I keep ideas flowing in life and
-              work.
-            </p>
-            <span className="mt-4 inline-flex items-center gap-4">
-              <Music />
-            </span>
-          </div>
-        </Card>
+        </div>
       </section>
     </>
   );
