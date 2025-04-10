@@ -16,7 +16,7 @@ export default function ContactForm() {
   }
   return (
     <>
-      <form onSubmit={handleSubmit} className="space-y-8">
+      <form onSubmit={handleSubmit} className="space-y-5">
         <fieldset className="space-y-3">
           <Label htmlFor="firstName" defaultValue="firstName">
             First Name
