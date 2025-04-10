@@ -64,17 +64,29 @@ export default async function Page() {
                     />
                   ) : null}
                 </CardHeader>
-                <CardTitle>{post?.title}</CardTitle>
-                <CardDescription>{post?.description}</CardDescription>
+                <CardTitle className="font-medium text-foreground">
+                  {post?.title}
+                </CardTitle>
+                <CardDescription className="mt-2 text-sm text-muted-foreground text-balance">
+                  {post?.description}
+                </CardDescription>
                 <CardFooter className="pl-0 flex flex-col lg:flex-row items-start gap-2">
                   <Link href={`${post.projectCode}`}>
-                    <Button variant="secondary" size="sm" className="w-full">
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      className="w-full text-xs"
+                    >
                       <Github />
                       View Code on GitHub
                     </Button>
                   </Link>
                   <Link href={`${post.liveDemo}`}>
-                    <Button variant="secondary" size="sm" className="w-full">
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      className="w-full text-xs"
+                    >
                       <Laptop />
                       Interact With Project
                     </Button>
