@@ -3,7 +3,6 @@ import { Card, CardContent } from "./ui/card";
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { GithubIcon } from "lucide-react";
 
 // Define TypeScript interfaces for props
 interface MediaProps {
