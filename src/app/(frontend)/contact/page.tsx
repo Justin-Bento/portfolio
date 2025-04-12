@@ -71,7 +71,7 @@ export default function page() {
                   <span className="text-teal-500 font-semibold">
                     Toronto, ON
                   </span>
-                  , but my ideas sail globally and I'm ready to help.
+                  but my ideas sail globally and I&#39;m ready to help.
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10">
@@ -92,7 +92,7 @@ export default function page() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                 <p className="mt-2 text-lg font-medium text-foreground max-lg:text-center">
-                  Let's Get In Touch
+                  Let&#39;s Get In Touch
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-muted-foreground max-lg:text-center">
                   No bots here—just me. If you like what you see and want to
