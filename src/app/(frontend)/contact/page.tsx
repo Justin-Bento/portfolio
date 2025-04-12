@@ -1,10 +1,5 @@
 import React from "react";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { footer_navigation } from "@/lib/data";
 import ContactForm from "@/components/ContactForm";
-import { MailOpen, Map } from "lucide-react";
 import { Metadata } from "next";
 import FullWidthCard from "@/components/FullWidthCard";
 import Image from "next/image";
@@ -47,8 +42,8 @@ export default function page() {
                   Open for Collaborations
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-muted-foreground max-lg:text-center">
-                  I’m always open to new collaborations—Follow me on GitHub to
-                  collaborate with eachothers projects.
+                  I&#39;m always open to new collaborations—Follow me on GitHub
+                  to collaborate with eachothers projects.
                 </p>
               </div>
               <div className="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
@@ -101,7 +96,7 @@ export default function page() {
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-muted-foreground max-lg:text-center">
                   No bots here—just me. If you like what you see and want to
-                  work together, let’s make it happen.
+                  work together, let&#39;s make it happen.
                 </p>
               </div>
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">

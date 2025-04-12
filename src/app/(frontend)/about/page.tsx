@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Music, Palette, PersonStanding } from "lucide-react";
 import React from "react";
 import { Metadata } from "next";
 import FullWidthCard from "@/components/FullWidthCard";
