@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import Wrapper from "@/components/Wrapper";
 
 export default function FrontEndLayout({
   children,
@@ -16,8 +17,8 @@ export default function FrontEndLayout({
         enableSystem
         disableTransitionOnChange
       >
-        <main className="w-screen xl:container mx-auto min-h-dvh p-4 md:p-6">
-          {children}
+        <main className="">
+          <Wrapper>{children}</Wrapper>
         </main>
       </ThemeProvider>
       <Footer />
