@@ -75,10 +75,11 @@ export default function page() {
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10">
-                <div className="relative w-full h-[25rem]">
+                <div className="relative w-full aspect-square lg:h-[25rem]">
                   <Image
-                    fill
-                    className="w-full max-lg:max-w-xs rounded-3xl"
+                    width={3072}
+                    height={4080}
+                    className="object-cover rounded-3xl"
                     src="/images/image-3.jpg"
                     alt=""
                   />
