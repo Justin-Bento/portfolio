@@ -15,8 +15,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-30">
-      <Card className="rounded-none">
-        <CardContent>
+      <Card className="rounded-none p-0">
+        <CardContent className="py-0">
           <Wrapper className="grid grid-cols-1 items-center gap-4 lg:grid-cols-3">
             {/* Logo and Mobile Menu Toggle */}
             <div className="flex w-full items-center justify-between">
