@@ -18,7 +18,7 @@ export default function FrontEndLayout({
         disableTransitionOnChange
       >
         <main className="">
-          <Wrapper>{children}</Wrapper>
+          <Wrapper className="min-h-dvh">{children}</Wrapper>
         </main>
       </ThemeProvider>
       <Footer />

@@ -7,9 +7,7 @@ type ExampleProps = {
 
 export default function Wrapper({ children, className = "" }: ExampleProps) {
   return (
-    <div
-      className={`w-screen xl:container mx-auto min-h-dvh p-4 md:p-6 ${className}`}
-    >
+    <div className={`w-screen xl:container mx-auto p-4 md:p-6 ${className}`}>
       {children}
     </div>
   );
