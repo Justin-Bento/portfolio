@@ -85,7 +85,7 @@ const Heading: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
 const Overview: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <p className="line-clamp-4 text-balance leading-[2] text-muted-foreground">
+    <p className="line-clamp-4 text-balance leading-[2] text-foreground">
       {children}
     </p>
   );
