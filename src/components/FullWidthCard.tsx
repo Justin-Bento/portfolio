@@ -26,7 +26,7 @@ interface BannerComposition {
 
 const FullWidthCard: React.FC<FullWidthCardProps> & BannerComposition = ({
   children,
-  className = "col-span-12 bg-primary/10 h-[65svh] w-full",
+  className = "col-span-12 bg-zinc-200 h-[65svh] w-full",
   cardClassName = "flex flex-col h-full justify-center",
   minHeight,
   ...props
