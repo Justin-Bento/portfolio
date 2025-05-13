@@ -58,15 +58,7 @@ export default function Home() {
                     <Linkedin className="text-2xl hover:stroke-sky-500" />
                   </Link>
                 </li>
-                <li className="">
-                  <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://twitter.com/Justin-Bento"
-                  >
-                    <Twitter className="text-2xl hover:stroke-sky-500" />
-                  </Link>
-                </li>
+
                 <li className="">
                   <Link
                     target="_blank"
