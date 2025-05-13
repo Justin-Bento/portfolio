@@ -16,12 +16,11 @@ export default function Home() {
         <div className="group col-span-12">
           <Card className="flex items-center justify-center min-h-[50rem]">
             <div className="mx-auto w-10/12 space-y-4">
-              <p className="text-md scroll-m-20 font-bold">Hi, my name is</p>
-              <h1 className="scroll-m-20 text-3xl font-extrabold lg:text-6xl">
-                Justin Bento
+              <h1 className="scroll-m-20 text-3xl font-extrabold lg:text-6xl text-pretty">
+                Hi, my name is Justin Bento
               </h1>
-              <p className="text-3xl font-extrabold opacity-70 lg:text-6xl">
-                I bring ideas to life one pixel at a time.
+              <p className="text-3xl font-extrabold opacity-70 lg:text-6xl text-pretty">
+                I am a Full-Stack Developer.
               </p>
               <ul className="flex list-none items-center gap-4">
                 <li className="">
