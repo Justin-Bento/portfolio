@@ -14,7 +14,7 @@ export default function Home() {
       <section className="grid grid-cols-1 gap-6 md:grid-cols-12">
         {/* Main Hero Section */}
         <div className="group col-span-12">
-          <Card className="flex items-center justify-center min-h-[50rem]">
+          <Card className="flex items-center justify-center aspect-video">
             <div className="mx-auto w-10/12">
               <div className="relative w-16 h-16 mb-6">
                 <Image
