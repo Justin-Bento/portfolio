@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
-import { AudioLines, Github, Linkedin, Twitter } from "lucide-react";
+import { AudioLines, Github, Linkedin } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -14,21 +14,30 @@ export default function Home() {
       <section className="grid grid-cols-1 gap-6 md:grid-cols-12">
         {/* Main Hero Section */}
         <div className="group col-span-12">
-          <Card className="flex items-center justify-center min-h-[50rem]">
-            <div className="mx-auto w-10/12 space-y-4">
-              <p className="text-md scroll-m-20 font-bold">Hi, my name is</p>
-              <h1 className="scroll-m-20 text-3xl font-extrabold lg:text-6xl">
-                Justin Bento
+          <Card className="flex items-center justify-center aspect-video">
+            <div className="mx-auto w-10/12">
+              <div className="relative w-16 h-16 mb-6">
+                <Image
+                  fill
+                  src="/images/justin-bento-image.jpg"
+                  alt="An image of Justin Bento taking a selfie."
+                  className="w-full h-full rounded-md grayscale object-top"
+                />
+              </div>
+              <h1 className="scroll-m-20 text-3xl font-extrabold lg:text-6xl text-pretty">
+                Hi, my name is{" "}
+                <span className="text-sky-500 underline">Justin Bento</span>
               </h1>
-              <p className="text-3xl font-extrabold opacity-70 lg:text-6xl">
-                I bring ideas to life one pixel at a time.
+              <p className="text-3xl font-extrabold opacity-70 lg:text-6xl text-pretty leading-[2]">
+                I am a Full-Stack Developer.
               </p>
-              <ul className="flex list-none items-center gap-4">
+              <ul className="flex list-none items-center gap-4 mt-4">
                 <li className="">
-                  <Link href="/projects">
-                    <Button variant="secondary" size="sm">
-                      View Proejcts
-                    </Button>
+                  <Link
+                    href="/projects"
+                    className="bg-black text-white py-2.5 px-5 text-sm uppercase tracking-wide leading-[2] font-medium hover:bg-sky-500 transition-all"
+                  >
+                    View Proejcts
                   </Link>
                 </li>
                 <li className="">
@@ -37,7 +46,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     href="https://github.com/Justin-Bento"
                   >
-                    <Github className="text-2xl hover:fill-primary" />
+                    <Github className="text-2xl hover:stroke-sky-500" />
                   </Link>
                 </li>
                 <li className="">
@@ -46,25 +55,17 @@ export default function Home() {
                     rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/justinbento/"
                   >
-                    <Linkedin className="text-2xl hover:fill-primary" />
+                    <Linkedin className="text-2xl hover:stroke-sky-500" />
                   </Link>
                 </li>
-                <li className="">
-                  <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://twitter.com/Justin-Bento"
-                  >
-                    <Twitter className="text-2xl hover:fill-primary" />
-                  </Link>
-                </li>
+
                 <li className="">
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://soundcloud.com/fretfuze"
                   >
-                    <AudioLines className="text-2xl hover:fill-primary" />
+                    <AudioLines className="text-2xl hover:stroke-sky-500" />
                   </Link>
                 </li>
               </ul>

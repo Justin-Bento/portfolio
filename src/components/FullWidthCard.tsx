@@ -26,7 +26,7 @@ interface BannerComposition {
 
 const FullWidthCard: React.FC<FullWidthCardProps> & BannerComposition = ({
   children,
-  className = "col-span-12 bg-primary/10 h-[65svh] w-full",
+  className = "col-span-12 bg-zinc-200 aspect-[16/7] w-full overflow-hidden",
   cardClassName = "flex flex-col h-full justify-center",
   minHeight,
   ...props
@@ -77,7 +77,7 @@ const BreadcrumbItemComponent: React.FC<{
 
 const Heading: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <h2 className="text-4xl font-bold tracking-tight text-foreground">
+    <h2 className="text-4xl font-bold leading-[1] tracking-tight text-foreground">
       {children}
     </h2>
   );
@@ -85,7 +85,7 @@ const Heading: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
 const Overview: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <p className="line-clamp-4 text-balance text-muted-foreground">
+    <p className="line-clamp-4 text-balance leading-[2] text-foreground">
       {children}
     </p>
   );

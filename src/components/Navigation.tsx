@@ -67,7 +67,10 @@ export default function Header() {
             rel="noopener noreferrer"
             href="https://github.com/Justin-Bento"
           >
-            <Button variant="secondary">
+            <Button
+              variant="secondary"
+              className="bg-zinc-200 shadow-none rounded hover:bg-zinc-200/50"
+            >
               <span className="inline-flex flex-row-reverse items-center gap-2">
                 <ExternalLink className="hover:underline" />
                 Github

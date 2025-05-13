@@ -40,9 +40,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${switzer.className}  antialiased`}>{children}</body>
-      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+    <html>
+      <body className={`${switzer.className}  antialiased`}>
+        {children}
+        <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+      </body>
     </html>
   );
 }

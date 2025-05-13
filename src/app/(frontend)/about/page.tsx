@@ -46,7 +46,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="p-6 lg:p-10 pt-4">
-                  <h3 className="text-xs/4 font-semibold text-teal-600">
+                  <h3 className="text-xs/4 font-semibold text-sky-600">
                     Front-end development
                   </h3>
                   <p className="mt-2 text-lg font-medium text-foreground capitalize">
@@ -72,7 +72,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="p-6 lg:p-10 pt-4">
-                  <h3 className="text-xs/4 font-semibold text-teal-600">
+                  <h3 className="text-xs/4 font-semibold text-sky-600">
                     Graphic Design
                   </h3>
                   <p className="mt-2 text-lg font-medium text-foreground">
@@ -97,7 +97,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="p-10 pt-4">
-                  <h3 className="text-xs/4 font-semibold text-teal-600">
+                  <h3 className="text-xs/4 font-semibold text-sky-600">
                     Learning
                   </h3>
                   <p className="mt-2 text-lg font-medium text-foreground">
@@ -121,7 +121,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="p-10 pt-4">
-                  <h3 className="text-xs/4 font-semibold text-teal-600">
+                  <h3 className="text-xs/4 font-semibold text-sky-600">
                     Integrations
                   </h3>
                   <p className="mt-2 text-lg font-medium text-foreground">
@@ -145,7 +145,7 @@ export default function Page() {
                   />
                 </div>
                 <div className="p-10 pt-4">
-                  <h3 className="text-xs/4 font-semibold text-teal-600">
+                  <h3 className="text-xs/4 font-semibold text-sky-600">
                     Network
                   </h3>
                   <p className="mt-2 text-lg font-medium text-foreground">
