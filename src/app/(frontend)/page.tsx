@@ -5,6 +5,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { AudioLines, Github, Linkedin, Twitter } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -15,6 +16,14 @@ export default function Home() {
         <div className="group col-span-12">
           <Card className="flex items-center justify-center min-h-[50rem]">
             <div className="mx-auto w-10/12">
+              <div className="relative w-16 h-16 mb-6">
+                <Image
+                  fill
+                  src="/images/justin-bento-image.jpg"
+                  alt="An image of Justin Bento taking a selfie."
+                  className="w-full h-full rounded-md grayscale object-top"
+                />
+              </div>
               <h1 className="scroll-m-20 text-3xl font-extrabold lg:text-6xl text-pretty">
                 Hi, my name is{" "}
                 <span className="text-sky-500 underline">Justin Bento</span>
