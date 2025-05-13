@@ -76,7 +76,7 @@ const Media = ({
 
 // Headline subcomponent
 const Headline = ({ children, className = "" }: HeadlineProps) => (
-  <h2 className={` scroll-m-20 text-lg mb-1 font-semibold ${className}`}>
+  <h2 className={` scroll-m-20 text-lg/[2] mb-1 font-semibold ${className}`}>
     {children}
   </h2>
 );
@@ -84,7 +84,7 @@ const Headline = ({ children, className = "" }: HeadlineProps) => (
 // Description subcomponent
 const Description = ({ children, className = "" }: DescriptionProps) => (
   <p
-    className={`text-sm/relaxed text-muted-foreground tracking-wide line-clamp-2 ${className}`}
+    className={`text-sm/[1.75] text-muted-foreground tracking-wide line-clamp-2 ${className}`}
   >
     {children}
   </p>
