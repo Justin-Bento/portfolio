@@ -77,7 +77,7 @@ const BreadcrumbItemComponent: React.FC<{
 
 const Heading: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <h2 className="text-4xl font-bold tracking-tight text-foreground">
+    <h2 className="text-4xl font-bold leading-[1] tracking-tight text-foreground">
       {children}
     </h2>
   );
@@ -85,7 +85,7 @@ const Heading: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
 const Overview: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <p className="line-clamp-4 text-balance text-muted-foreground">
+    <p className="line-clamp-4 text-balance leading-[2] text-muted-foreground">
       {children}
     </p>
   );
