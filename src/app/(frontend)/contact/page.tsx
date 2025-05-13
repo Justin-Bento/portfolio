@@ -67,9 +67,9 @@ export default function page() {
                   Where in the World Am I?
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-muted-foreground max-lg:text-center">
-                  Currently anchored in
-                  <span className="text-teal-500 font-semibold">
-                    Toronto, ON
+                  Currently anchored in{" "}
+                  <span className="text-sky-500 font-semibold">
+                    Toronto, ON{" "}
                   </span>
                   but my ideas sail globally and I&#39;m ready to help.
                 </p>
