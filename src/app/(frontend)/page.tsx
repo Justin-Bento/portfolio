@@ -46,7 +46,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     href="https://github.com/Justin-Bento"
                   >
-                    <Github className="text-2xl hover:fill-primary" />
+                    <Github className="text-2xl hover:stroke-sky-500" />
                   </Link>
                 </li>
                 <li className="">
@@ -55,7 +55,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/justinbento/"
                   >
-                    <Linkedin className="text-2xl hover:fill-primary" />
+                    <Linkedin className="text-2xl hover:stroke-sky-500" />
                   </Link>
                 </li>
                 <li className="">
@@ -64,7 +64,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     href="https://twitter.com/Justin-Bento"
                   >
-                    <Twitter className="text-2xl hover:fill-primary" />
+                    <Twitter className="text-2xl hover:stroke-sky-500" />
                   </Link>
                 </li>
                 <li className="">
@@ -73,7 +73,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     href="https://soundcloud.com/fretfuze"
                   >
-                    <AudioLines className="text-2xl hover:fill-primary" />
+                    <AudioLines className="text-2xl hover:stroke-sky-500" />
                   </Link>
                 </li>
               </ul>
