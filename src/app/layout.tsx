@@ -41,8 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={`${switzer.className}  antialiased`}>{children}</body>
-      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+      <body className={`${switzer.className}  antialiased`}>
+        {children}
+        <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+      </body>
     </html>
   );
 }
